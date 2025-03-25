@@ -1,7 +1,17 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
 		<type fullname="LoginManager">
+			<method name="HandleLogin"/>
+		</type>
+		<type fullname="PlayButton">
+			<method name="Exit"/>
+			<method name="StartGame"/>
+		</type>
+		<type fullname="RegisterManager">
 			<method name="openWebPage"/>
+		</type>
+		<type fullname="ShowHide">
+			<method name="showLoginForm"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
