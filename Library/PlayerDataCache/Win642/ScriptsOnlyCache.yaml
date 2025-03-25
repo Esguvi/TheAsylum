@@ -2,7 +2,9 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - LoginManager
-    - PlayButton
+    - MainSceneScript
+    - OptionsBtnsScripts
+    - Readme
     - RegisterManager
     - ShowHide
     - TypewriterEffect
@@ -297,96 +299,28 @@ ScriptsOnlyBuild:
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
   - assembly: Assembly-CSharp
-    fullTypeName: PlayButton
+    fullTypeName: OptionsBtnsScripts
     methodName: Exit
   - assembly: Assembly-CSharp
-    fullTypeName: PlayButton
+    fullTypeName: OptionsBtnsScripts
+    methodName: ConfGrafics
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: ConfAudio
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
+    methodName: Options
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
+    methodName: Exit
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
+    methodName: Credits
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
     methodName: StartGame
   sceneClasses:
-    Assets/Scenes/MainScreen.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 13968}
-    - Class: 114
-      Script: {instanceID: 14410}
-    - Class: 114
-      Script: {instanceID: 14700}
-    - Class: 114
-      Script: {instanceID: 14796}
-    - Class: 114
-      Script: {instanceID: 14954}
-    - Class: 114
-      Script: {instanceID: 15182}
-    - Class: 114
-      Script: {instanceID: 15632}
-    - Class: 114
-      Script: {instanceID: 16028}
-    - Class: 114
-      Script: {instanceID: 16092}
-    - Class: 114
-      Script: {instanceID: 16242}
-    - Class: 114
-      Script: {instanceID: 17768}
-    - Class: 114
-      Script: {instanceID: 18406}
-    - Class: 114
-      Script: {instanceID: 18702}
-    - Class: 114
-      Script: {instanceID: 18762}
-    - Class: 114
-      Script: {instanceID: 18884}
-    - Class: 114
-      Script: {instanceID: 20274}
-    - Class: 114
-      Script: {instanceID: 21400}
-    - Class: 114
-      Script: {instanceID: 21518}
-    - Class: 114
-      Script: {instanceID: 23910}
-    - Class: 114
-      Script: {instanceID: 24012}
-    - Class: 114
-      Script: {instanceID: 24728}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/LoginRegisterScreen.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -494,17 +428,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19754}
     - Class: 114
-      Script: {instanceID: 19932}
+      Script: {instanceID: 19930}
+    - Class: 114
+      Script: {instanceID: 20026}
     - Class: 114
       Script: {instanceID: 20028}
     - Class: 114
-      Script: {instanceID: 20030}
+      Script: {instanceID: 20272}
     - Class: 114
-      Script: {instanceID: 20274}
+      Script: {instanceID: 20982}
     - Class: 114
-      Script: {instanceID: 20984}
-    - Class: 114
-      Script: {instanceID: 21018}
+      Script: {instanceID: 21016}
     - Class: 114
       Script: {instanceID: 21400}
     - Class: 114
@@ -556,6 +490,170 @@ ScriptsOnlyBuild:
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/MainScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14410}
+    - Class: 114
+      Script: {instanceID: 14700}
+    - Class: 114
+      Script: {instanceID: 14796}
+    - Class: 114
+      Script: {instanceID: 14954}
+    - Class: 114
+      Script: {instanceID: 15182}
+    - Class: 114
+      Script: {instanceID: 15632}
+    - Class: 114
+      Script: {instanceID: 16028}
+    - Class: 114
+      Script: {instanceID: 16092}
+    - Class: 114
+      Script: {instanceID: 17768}
+    - Class: 114
+      Script: {instanceID: 18406}
+    - Class: 114
+      Script: {instanceID: 18702}
+    - Class: 114
+      Script: {instanceID: 18762}
+    - Class: 114
+      Script: {instanceID: 18884}
+    - Class: 114
+      Script: {instanceID: 20272}
+    - Class: 114
+      Script: {instanceID: 21400}
+    - Class: 114
+      Script: {instanceID: 21518}
+    - Class: 114
+      Script: {instanceID: 23910}
+    - Class: 114
+      Script: {instanceID: 24012}
+    - Class: 114
+      Script: {instanceID: 24728}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/OptionsScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14410}
+    - Class: 114
+      Script: {instanceID: 14700}
+    - Class: 114
+      Script: {instanceID: 14796}
+    - Class: 114
+      Script: {instanceID: 14954}
+    - Class: 114
+      Script: {instanceID: 15182}
+    - Class: 114
+      Script: {instanceID: 15632}
+    - Class: 114
+      Script: {instanceID: 16028}
+    - Class: 114
+      Script: {instanceID: 16092}
+    - Class: 114
+      Script: {instanceID: 17768}
+    - Class: 114
+      Script: {instanceID: 18406}
+    - Class: 114
+      Script: {instanceID: 18702}
+    - Class: 114
+      Script: {instanceID: 18762}
+    - Class: 114
+      Script: {instanceID: 18884}
+    - Class: 114
+      Script: {instanceID: 20272}
+    - Class: 114
+      Script: {instanceID: 21344}
+    - Class: 114
+      Script: {instanceID: 21400}
+    - Class: 114
+      Script: {instanceID: 21518}
+    - Class: 114
+      Script: {instanceID: 23910}
+    - Class: 114
+      Script: {instanceID: 24012}
+    - Class: 114
+      Script: {instanceID: 24728}
+    - Class: 115
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -714,10 +812,10 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 89813b3ad5859268c49a4fc18d4b3885
+      Hash: 887d72eb1fb754ae2ce2b2f2f1dda9a6
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PlayButton
+    className: MainSceneScript
   - hash:
       serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
@@ -1518,12 +1616,6 @@ ScriptsOnlyBuild:
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 0ddedb46a2ff61f2b4de0f3498d6296a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: UIManager
-  - hash:
-      serializedVersion: 2
       Hash: f5df081962c06a171f380eb236cd1f3c
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
@@ -1704,6 +1796,12 @@ ScriptsOnlyBuild:
     className: ColorAdjustments
   - hash:
       serializedVersion: 2
+      Hash: af4040aba80a9f3c2ffb426c9b57df91
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OptionsBtnsScripts
+  - hash:
+      serializedVersion: 2
       Hash: 96e7bcfd2d072992dab64ac44058b930
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1818,7 +1916,7 @@ ScriptsOnlyBuild:
     className: ShowHide
   - hash:
       serializedVersion: 2
-      Hash: a2fa765a4194e061b5304b1279b62146
+      Hash: 1e87ba308e8ce5fe27e716ca231db1d7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: LoginManager
@@ -2352,6 +2450,7 @@ ScriptsOnlyBuild:
     className: FirebaseMonoBehaviour
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/LoginRegisterScreen.unity
+  - Assets/Scenes/OptionsScreen.unity
   - Assets/Scenes/MainScreen.unity
-  playerPath: C:/Users/victo/Desktop/UnityTest/Test.exe
+  playerPath: C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test.exe

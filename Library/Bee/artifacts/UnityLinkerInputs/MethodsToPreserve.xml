@@ -3,9 +3,16 @@
 		<type fullname="LoginManager">
 			<method name="HandleLogin"/>
 		</type>
-		<type fullname="PlayButton">
+		<type fullname="MainSceneScript">
+			<method name="Credits"/>
 			<method name="Exit"/>
+			<method name="Options"/>
 			<method name="StartGame"/>
+		</type>
+		<type fullname="OptionsBtnsScripts">
+			<method name="ConfAudio"/>
+			<method name="ConfGrafics"/>
+			<method name="Exit"/>
 		</type>
 		<type fullname="RegisterManager">
 			<method name="openWebPage"/>
