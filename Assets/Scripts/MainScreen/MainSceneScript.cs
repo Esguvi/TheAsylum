@@ -6,7 +6,7 @@ public class MainSceneScript : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("JUGAR");
-        SceneManager.LoadScene("GameScreen");
+        SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
     }
 
     public void Options()

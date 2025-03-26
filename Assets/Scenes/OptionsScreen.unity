@@ -772,7 +772,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   resumeBtn: {fileID: 54818651}
-  homeBtn: {fileID: 775271347}
+  videoPlayer: {fileID: 1138600346}
+  video: {fileID: 32900000, guid: 9a03ae1cf9635de409937182a1bf32f5, type: 3}
 --- !u!1 &636031555
 GameObject:
   m_ObjectHideFlags: 0
@@ -1451,7 +1452,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138600345}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9a03ae1cf9635de409937182a1bf32f5, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 330585545}
@@ -2134,9 +2135,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_StringReference:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:c3a645e6be9a7a841a5425de730ba5b3
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 312446041608192
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0
