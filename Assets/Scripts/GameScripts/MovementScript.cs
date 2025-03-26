@@ -29,19 +29,15 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Tab)) 
+        if (Input.GetKey(KeyCode.Tab) && SceneManager.sceneCount == 1) 
         {
             SceneManager.LoadScene("OptionsScreen",LoadSceneMode.Additive);
-            OptionsBtnsScripts.backScene = "GameScene";
+            OptionsBtnsScripts.backScene = true;
         }
 
         if (Input.GetMouseButtonDown(0))
         {
             pulsado = true;
-            if (Cursor.lockState != CursorLockMode.Locked && SceneManager.loadedSceneCount == 1)
-            {
-                LockMouse();
-            }
         }else if (Input.GetMouseButtonUp(0))
         {
             pulsado = false;

@@ -13,6 +13,7 @@ public class MainSceneScript : MonoBehaviour
     {
         Debug.Log("OPCIONES");
         SceneManager.LoadScene("OptionsScreen",LoadSceneMode.Additive);
+        OptionsBtnsScripts.backScene = false;
     }
 
     public void Credits()

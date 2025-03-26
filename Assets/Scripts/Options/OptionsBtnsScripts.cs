@@ -1,15 +1,38 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class OptionsBtnsScripts : MonoBehaviour
 {
-    public static string backScene;
+    public static bool backScene;
+
+    public GameObject resumeBtn;
+    public TMP_Text homeBtn;
 
     private void Start()
     {
+        if (backScene) 
+        { 
+            resumeBtn.SetActive(true);
+            homeBtn.text = "Menu Principal";
+        }
+        else
+        {
+            resumeBtn.SetActive(false);
+            homeBtn.text = "Volver";
+        }
+
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.Confined;
 
+    }
+    public void Resume()
+    {
+        Debug.Log("Reanudar");
+
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
+
+        MovementScript.LockMouse();
     }
     public void ConfAudio()
     {
@@ -28,7 +51,7 @@ public class OptionsBtnsScripts : MonoBehaviour
     public void Exit()
     {
         Debug.Log("SALIR");
-        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
+        SceneManager.LoadScene("MainScreen");
     }
 
 }
