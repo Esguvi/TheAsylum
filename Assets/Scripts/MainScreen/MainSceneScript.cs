@@ -6,12 +6,13 @@ public class MainSceneScript : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("JUGAR");
+        SceneManager.LoadScene("GameScene");
     }
 
     public void Options()
     {
         Debug.Log("OPCIONES");
-        SceneManager.LoadScene("OptionsScreen");
+        SceneManager.LoadScene("OptionsScreen",LoadSceneMode.Additive);
     }
 
     public void Credits()

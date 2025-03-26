@@ -3,6 +3,14 @@ using UnityEngine.SceneManagement;
 
 public class OptionsBtnsScripts : MonoBehaviour
 {
+    public static string backScene;
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
+
+    }
     public void ConfAudio()
     {
         Debug.Log("AUDIO");
@@ -20,7 +28,7 @@ public class OptionsBtnsScripts : MonoBehaviour
     public void Exit()
     {
         Debug.Log("SALIR");
-        SceneManager.LoadScene("MainScreen");
+        SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
     }
 
 }

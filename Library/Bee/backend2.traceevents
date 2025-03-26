@@ -1,393 +1,346 @@
 { "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
-,{ "pid":12345, "tid":0, "ts":1742917484572685, "dur":20307, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484592996, "dur":116, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484593173, "dur":349, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484593685, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/level0" }}
-,{ "pid":12345, "tid":0, "ts":1742917484593775, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/level2" }}
-,{ "pid":12345, "tid":0, "ts":1742917484593918, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":0, "ts":1742917484594220, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":0, "ts":1742917484594511, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/FirebaseCppAuth.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484594742, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.Auth.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484594986, "dur":57, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595045, "dur":68, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595228, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595322, "dur":86, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595471, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595612, "dur":105, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484595808, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484596005, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484596237, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484596625, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484597579, "dur":58, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":0, "ts":1742917484598643, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":0, "ts":1742917484593540, "dur":5618, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484599159, "dur":196157, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484795317, "dur":201, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484795816, "dur":1892, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
-,{ "pid":12345, "tid":1, "ts":1742917484594166, "dur":5237, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1742917484599692, "dur":653, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\Unity.IL2CPP.Api.Output.xml" }}
-,{ "pid":12345, "tid":1, "ts":1742917484599410, "dur":1389, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1742917484601392, "dur":1465, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Messaging.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484600800, "dur":2410, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1742917484603210, "dur":5051, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1742917484608262, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1742917484612684, "dur":6281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
-,{ "pid":12345, "tid":1, "ts":1742917484620531, "dur":3343, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":1, "ts":1742917484628176, "dur":19113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/FirebaseCppAuth.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484647398, "dur":11552, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Runtime.Serialization.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484659053, "dur":12294, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.PhysicsModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484671408, "dur":8248, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.CoreModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484679684, "dur":5524, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.VRModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484685329, "dur":5655, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484690999, "dur":5061, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.Platform.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484696100, "dur":4885, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484701008, "dur":4941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484705973, "dur":4485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484715266, "dur":222, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":1, "ts":1742917484710479, "dur":5027, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.IO.Compression.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484715543, "dur":4613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UmbraModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484720182, "dur":5630, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
-,{ "pid":12345, "tid":1, "ts":1742917484725842, "dur":5570, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/level2" }}
-,{ "pid":12345, "tid":1, "ts":1742917484731478, "dur":63943, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484594160, "dur":5174, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484599350, "dur":858, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484600655, "dur":1122, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.TundraBackend.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484600208, "dur":1695, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484602197, "dur":880, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Net.NameResolution.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484601903, "dur":1409, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484603312, "dur":4900, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484611522, "dur":7509, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
-,{ "pid":12345, "tid":2, "ts":1742917484619104, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1742917484622953, "dur":114, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484619721, "dur":3358, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/web.config" }}
-,{ "pid":12345, "tid":2, "ts":1742917484625717, "dur":32613, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/D3D12/D3D12Core.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484658452, "dur":12040, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484670521, "dur":5810, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.Firestore.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484676364, "dur":5637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.LocalizationModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484682037, "dur":4736, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ARModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484686860, "dur":5428, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484692318, "dur":5431, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484697776, "dur":5180, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Security.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484702968, "dur":5500, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.HotReloadModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484708496, "dur":3795, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484712326, "dur":5107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484717464, "dur":3859, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484725208, "dur":97, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484721371, "dur":4333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":2, "ts":1742917484725727, "dur":163, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":2, "ts":1742917484725900, "dur":7064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/resources.assets" }}
-,{ "pid":12345, "tid":2, "ts":1742917484733018, "dur":62307, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484594347, "dur":5119, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484599470, "dur":507, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484600218, "dur":1198, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.TextWriterTraceListener.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484599977, "dur":1741, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484601718, "dur":857, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484602576, "dur":1064, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484603641, "dur":4516, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484608159, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1742917484609990, "dur":8784, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/config" }}
-,{ "pid":12345, "tid":3, "ts":1742917484619795, "dur":2844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
-,{ "pid":12345, "tid":3, "ts":1742917484622698, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test.exe" }}
-,{ "pid":12345, "tid":3, "ts":1742917484622768, "dur":3466, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test.exe" }}
-,{ "pid":12345, "tid":3, "ts":1742917484644132, "dur":55, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":3, "ts":1742917484626362, "dur":17860, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/UnityCrashHandler64.exe" }}
-,{ "pid":12345, "tid":3, "ts":1742917484644365, "dur":9661, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Burst.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484654078, "dur":8070, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484662196, "dur":11449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484673860, "dur":7485, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.WindModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484681383, "dur":5417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.XRModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484686875, "dur":4190, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484691089, "dur":6261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Collections.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484697364, "dur":4380, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Xml.Linq.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484701761, "dur":5647, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.EnterpriseServices.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484707440, "dur":4247, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.InputForUIModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484711710, "dur":4210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.VFXModule.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484716146, "dur":4031, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.ServiceModel.Internals.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484720207, "dur":7139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll" }}
-,{ "pid":12345, "tid":3, "ts":1742917484727392, "dur":5564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/level0" }}
-,{ "pid":12345, "tid":3, "ts":1742917484733009, "dur":62314, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484594601, "dur":4877, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484599699, "dur":769, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.Loader.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484599481, "dur":1204, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484601046, "dur":1176, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Web.Http.SelfHost.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484600685, "dur":1600, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484602285, "dur":488, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484602773, "dur":5564, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484608339, "dur":102, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1742917484618544, "dur":3083, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/web.config" }}
-,{ "pid":12345, "tid":4, "ts":1742917484621883, "dur":34014, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484656022, "dur":13366, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484669455, "dur":6456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Burst.Unsafe.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484675951, "dur":8491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.ComponentModel.Composition.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484684467, "dur":5904, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484690402, "dur":5349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484695784, "dur":4443, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484700245, "dur":5793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484706059, "dur":4249, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484710330, "dur":4261, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484714617, "dur":4752, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ClothModule.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484724061, "dur":66, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":4, "ts":1742917484719393, "dur":4747, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":4, "ts":1742917484724251, "dur":4975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Resources/unity_builtin_extra" }}
-,{ "pid":12345, "tid":4, "ts":1742917484729307, "dur":5899, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/globalgamemanagers.assets" }}
-,{ "pid":12345, "tid":4, "ts":1742917484735230, "dur":60064, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484595047, "dur":4682, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484599730, "dur":444, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484600333, "dur":858, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\monolinker.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484600174, "dur":1286, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484601460, "dur":477, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484601938, "dur":480, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484602468, "dur":706, "ph":"X", "name": "File",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484602419, "dur":1289, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484603708, "dur":4424, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484608141, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":5, "ts":1742917484608211, "dur":153, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1742917484613319, "dur":5963, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/app.info" }}
-,{ "pid":12345, "tid":5, "ts":1742917484619874, "dur":4425, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":5, "ts":1742917484624357, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/StreamingAssets/google-services.json" }}
-,{ "pid":12345, "tid":5, "ts":1742917484626256, "dur":2830, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/StreamingAssets/google-services.json" }}
-,{ "pid":12345, "tid":5, "ts":1742917484629130, "dur":6725, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/sharedassets2.assets" }}
-,{ "pid":12345, "tid":5, "ts":1742917484638723, "dur":7072, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Core.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484645836, "dur":13139, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484659072, "dur":11584, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TilemapModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484670716, "dur":7280, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484678036, "dur":5608, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Configuration.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484683659, "dur":4962, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484688663, "dur":5300, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484693991, "dur":4050, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.VehiclesModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484698061, "dur":4936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484703019, "dur":5377, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AnimationModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484708429, "dur":3848, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484712309, "dur":4108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484716435, "dur":4936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484721399, "dur":4299, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":5, "ts":1742917484725849, "dur":7266, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/resources.assets.resS" }}
-,{ "pid":12345, "tid":5, "ts":1742917484733135, "dur":62148, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484594258, "dur":5196, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484599462, "dur":800, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484600818, "dur":1224, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\Bee.Stevedore.Program.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484600262, "dur":1952, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484602214, "dur":467, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484602682, "dur":569, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484603252, "dur":4866, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484609017, "dur":493, "ph":"X", "name": "WriteText",  "args": { "detail":"Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
-,{ "pid":12345, "tid":6, "ts":1742917484609515, "dur":75, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\PlayerDataCache\\Win642\\Data\\boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1742917484609721, "dur":1239, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484610965, "dur":780, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484611807, "dur":781, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484612595, "dur":105, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484612706, "dur":69, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484612781, "dur":372, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484613158, "dur":186, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484613348, "dur":394, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484613747, "dur":126, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484613883, "dur":936, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484614832, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484615002, "dur":385, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484615393, "dur":178, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484615573, "dur":610, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484616185, "dur":337, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484616524, "dur":226, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484616751, "dur":277, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":6, "ts":1742917484617509, "dur":88, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\Player02d4bec7-inputdata.json" }}
-,{ "pid":12345, "tid":6, "ts":1742917484609513, "dur":8124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1742917484618037, "dur":97, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":6, "ts":1742917484619273, "dur":168792, "ph":"X", "name": "AddBootConfigGUID",  "args": { "detail":"Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1742917484794344, "dur":84, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1742917484794328, "dur":101, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/boot.config" }}
-,{ "pid":12345, "tid":6, "ts":1742917484794452, "dur":793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/boot.config" }}
-,{ "pid":12345, "tid":7, "ts":1742917484593932, "dur":5320, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1742917484600400, "dur":132, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Assets/StreamingAssets" }}
-,{ "pid":12345, "tid":7, "ts":1742917484600532, "dur":883, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/il2cpp/build/deploy" }}
-,{ "pid":12345, "tid":7, "ts":1742917484601415, "dur":5261, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/il2cpp/libil2cpp" }}
-,{ "pid":12345, "tid":7, "ts":1742917484606677, "dur":63, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport" }}
-,{ "pid":12345, "tid":7, "ts":1742917484606740, "dur":991, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono" }}
-,{ "pid":12345, "tid":7, "ts":1742917484607731, "dur":51, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources" }}
-,{ "pid":12345, "tid":7, "ts":1742917484607782, "dur":179, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/BuildPipeline" }}
-,{ "pid":12345, "tid":7, "ts":1742917484607961, "dur":93, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Library/PlayerDataCache/Win642/Data" }}
-,{ "pid":12345, "tid":7, "ts":1742917484599256, "dur":8858, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608122, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteResponseFile Library/Bee/artifacts/rsp/11432229432282886313.rsp" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608512, "dur":110, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608626, "dur":55, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.AI.Navigation.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608683, "dur":217, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Burst.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608902, "dur":282, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Collections.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484609189, "dur":743, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484609941, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.InputSystem.ForUI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484610113, "dur":898, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484611016, "dur":119, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Multiplayer.Center.Common.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484611143, "dur":398, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Rendering.LightTransport.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484611547, "dur":97, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484611647, "dur":962, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484612614, "dur":168, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484612790, "dur":344, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484613138, "dur":108, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484613252, "dur":343, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484613643, "dur":228, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484613883, "dur":1061, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484614948, "dur":122, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484615072, "dur":316, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484615393, "dur":167, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484615566, "dur":600, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484616169, "dur":345, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484616522, "dur":220, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484616748, "dur":287, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484617510, "dur":63, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\artifacts\\UnityLinkerInputs\\MethodsToPreserve.xml" }}
-,{ "pid":12345, "tid":7, "ts":1742917484617695, "dur":104, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TestAsylum\\Library\\Bee\\artifacts\\UnityLinkerInputs\\EditorToUnityLinkerData.json" }}
-,{ "pid":12345, "tid":7, "ts":1742917484608230, "dur":9845, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
-,{ "pid":12345, "tid":7, "ts":1742917484618076, "dur":2687, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1742917484632905, "dur":2674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":7, "ts":1742917484635583, "dur":117, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":7, "ts":1742917484635703, "dur":53, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
-,{ "pid":12345, "tid":7, "ts":1742917484638785, "dur":3564, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/lib_burst_generated.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484642695, "dur":5566, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/netstandard.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484648294, "dur":10841, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484659163, "dur":12107, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TerrainModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484671402, "dur":8156, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.TaskExtension.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484679584, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484684656, "dur":4212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.App.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484688891, "dur":5044, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484693960, "dur":4696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484698679, "dur":5533, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484704232, "dur":6102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.SubstanceModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484710355, "dur":4240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TLSModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484714610, "dur":3833, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.IMGUIModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484718480, "dur":4037, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
-,{ "pid":12345, "tid":7, "ts":1742917484722542, "dur":6970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/sharedassets0.assets.resS" }}
-,{ "pid":12345, "tid":7, "ts":1742917484729567, "dur":65744, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484594755, "dur":4964, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484599721, "dur":540, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Resources.ResourceManager.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484599721, "dur":1042, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484601167, "dur":1351, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Reactive.Windows.Threading.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484600763, "dur":1789, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484602553, "dur":929, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484603483, "dur":4672, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484608157, "dur":132, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1742917484610976, "dur":96, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484611594, "dur":6605, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
-,{ "pid":12345, "tid":8, "ts":1742917484618613, "dur":2420, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
-,{ "pid":12345, "tid":8, "ts":1742917484621089, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484625906, "dur":116, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484621813, "dur":4232, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484626231, "dur":107, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/StreamingAssets/google-services-desktop.json" }}
-,{ "pid":12345, "tid":8, "ts":1742917484626532, "dur":5935, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/StreamingAssets/google-services-desktop.json" }}
-,{ "pid":12345, "tid":8, "ts":1742917484632550, "dur":3400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/sharedassets1.assets" }}
-,{ "pid":12345, "tid":8, "ts":1742917484638924, "dur":6619, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484645584, "dur":9359, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484654970, "dur":14024, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Transactions.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484669041, "dur":5282, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Mono.Security.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484674354, "dur":5975, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484680369, "dur":5586, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.GIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484686000, "dur":5089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484691107, "dur":5064, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Mathematics.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484696186, "dur":4942, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Net.Http.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484701151, "dur":6344, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Data.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484707515, "dur":3449, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484710998, "dur":4577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AMDModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484715600, "dur":3686, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AudioModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484723532, "dur":57, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":8, "ts":1742917484719308, "dur":4307, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
-,{ "pid":12345, "tid":8, "ts":1742917484723820, "dur":5760, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/ScriptingAssemblies.json" }}
-,{ "pid":12345, "tid":8, "ts":1742917484729633, "dur":65676, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484594967, "dur":4758, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484599727, "dur":432, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484600160, "dur":759, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484600920, "dur":811, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484602250, "dur":549, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Reflection.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484601732, "dur":1498, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484603231, "dur":4975, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484608210, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1742917484619141, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":9, "ts":1742917484613278, "dur":5939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/web.config" }}
-,{ "pid":12345, "tid":9, "ts":1742917484619766, "dur":3680, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
-,{ "pid":12345, "tid":9, "ts":1742917484623536, "dur":60479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/UnityPlayer.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484684087, "dur":4076, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.VisualScripting.Core.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484688199, "dur":4858, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Drawing.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484693079, "dur":5091, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.DirectorModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484698192, "dur":5369, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Numerics.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484703582, "dur":5105, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.StreamingModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484708715, "dur":5865, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UIElementsModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484714603, "dur":4146, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.VideoModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484718766, "dur":4445, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
-,{ "pid":12345, "tid":9, "ts":1742917484723237, "dur":6210, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/sharedassets0.assets" }}
-,{ "pid":12345, "tid":9, "ts":1742917484729482, "dur":5136, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/globalgamemanagers" }}
-,{ "pid":12345, "tid":9, "ts":1742917484734683, "dur":60634, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484595208, "dur":5184, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484600394, "dur":869, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484601263, "dur":437, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484601700, "dur":938, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484602638, "dur":785, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484603423, "dur":4737, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484608161, "dur":83, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":10, "ts":1742917484610004, "dur":8856, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/browscap.ini" }}
-,{ "pid":12345, "tid":10, "ts":1742917484619825, "dur":3108, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":10, "ts":1742917484622968, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":10, "ts":1742917484626035, "dur":31953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Resources/unity default resources" }}
-,{ "pid":12345, "tid":10, "ts":1742917484658083, "dur":11043, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Data.DataSetExtensions.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484669159, "dur":7189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Firebase.Auth.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484676373, "dur":6921, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484683314, "dur":6167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Xml.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484689504, "dur":5432, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484698869, "dur":78, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":10, "ts":1742917484694965, "dur":3996, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.GameCenterModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484698982, "dur":4992, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484703992, "dur":5306, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.Physics2DModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484709321, "dur":3677, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484713020, "dur":4844, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484717884, "dur":3993, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484721904, "dur":5224, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.dll" }}
-,{ "pid":12345, "tid":10, "ts":1742917484727170, "dur":5702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/level1" }}
-,{ "pid":12345, "tid":10, "ts":1742917484732927, "dur":62396, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484595666, "dur":4742, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484600408, "dur":674, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\Tools\\BuildPipeline\\Bee.Stevedore.Program.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484600408, "dur":1094, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484601748, "dur":549, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Xml.XDocument.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484601502, "dur":1669, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484603172, "dur":5095, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484611459, "dur":7704, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
-,{ "pid":12345, "tid":11, "ts":1742917484619787, "dur":3783, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
-,{ "pid":12345, "tid":11, "ts":1742917484670729, "dur":68, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484628108, "dur":42703, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/FirebaseCppApp-12_7_0.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484670893, "dur":6473, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484677411, "dur":5822, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.VisualScripting.Flow.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484683268, "dur":3978, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484687269, "dur":5051, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.Runtime.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484692377, "dur":4417, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484696816, "dur":5089, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Google.MiniJson.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484701920, "dur":5854, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484707801, "dur":3964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484711788, "dur":4545, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484716350, "dur":7750, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/mscorlib.dll" }}
-,{ "pid":12345, "tid":11, "ts":1742917484724114, "dur":165, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":11, "ts":1742917484724333, "dur":4055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/RuntimeInitializeOnLoads.json" }}
-,{ "pid":12345, "tid":11, "ts":1742917484728430, "dur":9731, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/globalgamemanagers.assets.resS" }}
-,{ "pid":12345, "tid":11, "ts":1742917484738183, "dur":57114, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484595387, "dur":5013, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484600409, "dur":771, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\Tools\\BuildPipeline\\Unity.Cecil.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484600408, "dur":1514, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484601923, "dur":900, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484602823, "dur":5506, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484608329, "dur":108, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1742917484614881, "dur":4782, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1742917484619718, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1742917484621255, "dur":3025, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
-,{ "pid":12345, "tid":12, "ts":1742917484624340, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/FirebaseCppFirestore.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484628199, "dur":39499, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Plugins/x86_64/FirebaseCppFirestore.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484673504, "dur":70, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484667800, "dur":5850, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484673720, "dur":65, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484679038, "dur":50, "ph":"X", "name": "EmitNodeFinish",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484673802, "dur":5326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.GridModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484679156, "dur":63, "ph":"X", "name": "EmitNodeStart",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":12, "ts":1742917484679229, "dur":5528, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.AIModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484684793, "dur":4823, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/System.IO.Compression.FileSystem.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484689636, "dur":5576, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.InputSystem.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484695228, "dur":4201, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.MarshallingModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484699453, "dur":5953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484705436, "dur":4349, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484709797, "dur":4281, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.PropertiesModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484714135, "dur":3678, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.InputModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484717835, "dur":4114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
-,{ "pid":12345, "tid":12, "ts":1742917484721973, "dur":9456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist2/Test_Data/sharedassets0.resource" }}
-,{ "pid":12345, "tid":12, "ts":1742917484731492, "dur":63922, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
-,{ "pid":12345, "tid":0, "ts":1742917484800645, "dur":921, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid":12345, "tid":0, "ts":1742982231200100, "dur":22571, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231222680, "dur":205, "ph":"X", "name": "RemoveStaleOutputs",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231222953, "dur":385, "ph":"X", "name": "BuildQueueInit",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231223463, "dur":120, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/globalgamemanagers.assets.resS" }}
+,{ "pid":12345, "tid":0, "ts":1742982231223641, "dur":80, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/level1" }}
+,{ "pid":12345, "tid":0, "ts":1742982231223936, "dur":100, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":0, "ts":1742982231224220, "dur":52, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info" }}
+,{ "pid":12345, "tid":0, "ts":1742982231224410, "dur":72, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231224937, "dur":209, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231225153, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231225330, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231225781, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231226005, "dur":54, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231226889, "dur":61, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231227338, "dur":55, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231227609, "dur":66, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231227683, "dur":56, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231227853, "dur":53, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231228041, "dur":51, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":0, "ts":1742982231228584, "dur":50, "ph":"X", "name": "EmitFirstTimeEnqueue",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/app.info" }}
+,{ "pid":12345, "tid":0, "ts":1742982231223366, "dur":5938, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231229306, "dur":28348, "ph":"X", "name": "WaitForBuildFinished", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231257656, "dur":280, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231258123, "dur":2060, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1742982231224931, "dur":4451, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231229384, "dur":1265, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231230649, "dur":615, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231231264, "dur":717, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231232161, "dur":1288, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Security.Cryptography.Encryption.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231231982, "dur":2645, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231234628, "dur":6651, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241286, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241397, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241462, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241517, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241582, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241687, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/google-services-desktop.json" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241846, "dur":64, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241914, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231241984, "dur":9886, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231251873, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231251972, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231252034, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231252793, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Burst.Unsafe.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231252850, "dur":60, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231252919, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231252976, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253047, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253106, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253171, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253236, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253297, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253357, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253431, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253496, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1742982231253565, "dur":4074, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231223995, "dur":5340, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231229619, "dur":1323, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\WindowsBase.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231229391, "dur":2522, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231231914, "dur":1108, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231233022, "dur":1536, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231234559, "dur":6718, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231241278, "dur":151, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":2, "ts":1742982231241431, "dur":133, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231241575, "dur":161, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test.exe" }}
+,{ "pid":12345, "tid":2, "ts":1742982231241736, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231241840, "dur":176, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231242025, "dur":9893, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231251920, "dur":209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252130, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252196, "dur":56, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252254, "dur":388, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252704, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252767, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252831, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252897, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231252965, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.MultiplayerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253024, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253083, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253148, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253233, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.HierarchyCoreModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253311, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253374, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253436, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1742982231253504, "dur":4154, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1742982231223861, "dur":5458, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1742982231231141, "dur":195, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Assets/StreamingAssets" }}
+,{ "pid":12345, "tid":3, "ts":1742982231231336, "dur":1716, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/il2cpp/build/deploy" }}
+,{ "pid":12345, "tid":3, "ts":1742982231233052, "dur":6478, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/il2cpp/libil2cpp" }}
+,{ "pid":12345, "tid":3, "ts":1742982231239530, "dur":78, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport" }}
+,{ "pid":12345, "tid":3, "ts":1742982231239608, "dur":1106, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono" }}
+,{ "pid":12345, "tid":3, "ts":1742982231240714, "dur":53, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/win64_player_nondevelopment_mono/Data/Resources" }}
+,{ "pid":12345, "tid":3, "ts":1742982231240767, "dur":206, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/BuildPipeline" }}
+,{ "pid":12345, "tid":3, "ts":1742982231240973, "dur":111, "ph":"X", "name": "CheckGlobSignature",  "args": { "detail":"Library/PlayerDataCache/Win642/Data" }}
+,{ "pid":12345, "tid":3, "ts":1742982231229323, "dur":11823, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1742982231241238, "dur":1279, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"UnityLinker C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/unitylinker_dwek.traceevents" }}
+,{ "pid":12345, "tid":3, "ts":1742982231242518, "dur":2388, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1742982231251781, "dur":1919, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker" }}
+,{ "pid":12345, "tid":3, "ts":1742982231253701, "dur":94, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1742982231254216, "dur":553, "ph":"X", "name": "ComputeFileSignatureSha1",  "args": { "detail":"Library\\Bee\\artifacts\\WinPlayerBuildProgram\\AsyncPluginsFromLinker\\x86_64\\lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1742982231254188, "dur":581, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":3, "ts":1742982231255206, "dur":2317, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/lib_burst_generated.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231224085, "dur":5269, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231229354, "dur":477, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231229832, "dur":438, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231230270, "dur":1164, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231231619, "dur":2356, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231231436, "dur":3711, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231235148, "dur":6087, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231241267, "dur":245, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231241521, "dur":802, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config" }}
+,{ "pid":12345, "tid":4, "ts":1742982231242383, "dur":9421, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231251806, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231251931, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252018, "dur":140, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252168, "dur":85, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252253, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252380, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252475, "dur":173, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252649, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252800, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Multiplayer.Center.Common.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252883, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231252953, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253012, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253072, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253155, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253215, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253279, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253345, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253421, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1742982231253488, "dur":4146, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231224295, "dur":5389, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231230267, "dur":1752, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Diagnostics.StackTrace.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231229685, "dur":2688, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231232409, "dur":1597, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\Facades\\System.Linq.Queryable.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231232374, "dur":2768, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231235143, "dur":6128, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241273, "dur":124, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241398, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241475, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241601, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241707, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241761, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231241955, "dur":10049, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231252004, "dur":86, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231252090, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231252407, "dur":282, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231252690, "dur":73, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231252764, "dur":341, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253115, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputForUIModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253175, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253256, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253323, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253387, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253493, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1742982231253557, "dur":4071, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231224541, "dur":4884, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231229426, "dur":473, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231229899, "dur":670, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231230569, "dur":1018, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231231588, "dur":1165, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231232754, "dur":1174, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231233929, "dur":7530, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231241460, "dur":188, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1742982231241649, "dur":84, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231241867, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231241978, "dur":9951, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231251931, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252023, "dur":69, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252104, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252220, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252341, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252449, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252552, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AMDModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252782, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252846, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252927, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231252994, "dur":71, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253066, "dur":59, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253138, "dur":62, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253200, "dur":62, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253272, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253337, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253410, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253469, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1742982231253551, "dur":4086, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231225592, "dur":3785, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231230273, "dur":1917, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Threading.Overlapped.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231229379, "dur":2844, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231232224, "dur":700, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231232924, "dur":666, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231233591, "dur":980, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231234571, "dur":6693, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241268, "dur":83, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241365, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241424, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241638, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppAuth.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241879, "dur":51, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231241944, "dur":10490, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231252664, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Burst.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231252767, "dur":203, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231252986, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231253063, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231253147, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231253200, "dur":73, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1742982231253350, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1742982231253454, "dur":4199, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231224181, "dur":6127, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231230308, "dur":1189, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231231498, "dur":1259, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231232758, "dur":1198, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231233957, "dur":7453, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231241411, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":8, "ts":1742982231241530, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1742982231241797, "dur":174, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":8, "ts":1742982231241972, "dur":9951, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231251925, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252021, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252087, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252198, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252302, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252407, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252512, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252667, "dur":54, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252810, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252863, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231252926, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Mathematics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253089, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253204, "dur":56, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253261, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253336, "dur":60, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253448, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253502, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1742982231253570, "dur":4098, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231224377, "dur":5304, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231229681, "dur":1155, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231230900, "dur":2452, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\MonoBleedingEdge\\lib\\mono\\unityjit-win32\\System.Web.Abstractions.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231230837, "dur":3122, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231233959, "dur":7328, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241289, "dur":91, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241381, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241561, "dur":87, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241648, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241820, "dur":69, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":9, "ts":1742982231241948, "dur":10269, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252218, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252349, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252452, "dur":78, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252534, "dur":110, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252644, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252712, "dur":114, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252827, "dur":66, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252902, "dur":66, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231252969, "dur":63, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253060, "dur":104, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253165, "dur":88, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253268, "dur":115, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253396, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ContentLoadModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253493, "dur":68, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1742982231253579, "dur":4081, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231224731, "dur":5586, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231230317, "dur":2172, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\Analytics.exe" }}
+,{ "pid":12345, "tid":10, "ts":1742982231230317, "dur":2808, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231233298, "dur":701, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231233125, "dur":1692, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231234818, "dur":6449, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241269, "dur":105, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241375, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241438, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241493, "dur":50, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241554, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241611, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241672, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppFirestore.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241860, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231241932, "dur":10532, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231252820, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231252941, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Collections.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253060, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253238, "dur":54, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253303, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253355, "dur":58, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253423, "dur":58, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1742982231253534, "dur":4097, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231224901, "dur":4500, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231230034, "dur":1620, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\il2cpp\\build\\deploy\\System.Runtime.InteropServices.JavaScript.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231229402, "dur":2633, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231232035, "dur":1134, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231233169, "dur":1556, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231234726, "dur":6548, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241276, "dur":98, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241375, "dur":125, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241512, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241619, "dur":77, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppApp-12_7_0.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241786, "dur":72, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241883, "dur":75, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231241968, "dur":9906, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231251876, "dur":96, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231251973, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252042, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252148, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252316, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252694, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252839, "dur":72, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252911, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231252980, "dur":55, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253035, "dur":95, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253132, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PropertiesModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253207, "dur":129, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253345, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253415, "dur":87, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1742982231253512, "dur":4129, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231225190, "dur":4232, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231229429, "dur":1231, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231230661, "dur":1188, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231231850, "dur":1150, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231234013, "dur":509, "ph":"X", "name": "File",  "args": { "detail":"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\PlaybackEngines\\WindowsStandaloneSupport\\Variations\\mono\\Managed\\UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231233001, "dur":1585, "ph":"X", "name": "EarlyStatNonGeneratedFile",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231234586, "dur":6723, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241311, "dur":95, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241454, "dur":50, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241505, "dur":112, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241618, "dur":230, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241848, "dur":117, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":12, "ts":1742982231241966, "dur":9960, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231251928, "dur":94, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252023, "dur":53, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252095, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252219, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252330, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252460, "dur":57, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252620, "dur":77, "ph":"X", "name": "EmitNodeUpToDate",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252699, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252806, "dur":63, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252869, "dur":56, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252934, "dur":59, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231252994, "dur":67, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253069, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253131, "dur":57, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253198, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253260, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253320, "dur":81, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253401, "dur":71, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1742982231253482, "dur":4100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1742982231263358, "dur":800, "ph":"X", "name": "ProfilerWriteOutput" }
 ,
