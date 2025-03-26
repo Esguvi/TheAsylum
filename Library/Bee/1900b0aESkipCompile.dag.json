@@ -10,7 +10,8 @@
       "ToBuildDependencies": [
         1,
         2,
-        3
+        3,
+        4
       ],
       "DebugActionIndex": 0
     },
@@ -24,9 +25,26 @@
       "DebugActionIndex": 1
     },
     {
+      "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/6097564273297756792.rsp",
+      "DisplayName": "Writing 6097564273297756792.rsp",
+      "ActionType": "WriteFile",
+      "PayloadOffset": 83,
+      "PayloadLength": 7592,
+      "PayloadDebugContentSnippet": "-a=\"C:\\Users\\victo\\Desktop\\Uni",
+      "Inputs": [],
+      "InputFlags": [],
+      "Outputs": [
+        "Library/Bee/artifacts/rsp/6097564273297756792.rsp"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 2
+    },
+    {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "Extracting script serialization layouts",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Firebase.App.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Firebase.Auth.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Firebase.Firestore.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Firebase.Platform.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Firebase.TaskExtension.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\\Google.MiniJson.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Burst.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Collections.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.InputSystem.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.InputSystem.ForUI.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.InputSystem.TestFramework.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Mathematics.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Multiplayer.Center.Common.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.PerformanceTesting.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Rendering.LightTransport.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipeline.Universal.ShaderLibrary.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Core.Runtime.Shared.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Core.ShaderLibrary.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.GPUDriven.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Universal.2D.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Universal.Config.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Universal.Runtime.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.RenderPipelines.Universal.Shaders.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.CodeGen\\Unity.Burst.Cecil.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.CodeGen\\Unity.Burst.Cecil.Mdb.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.CodeGen\\Unity.Burst.Cecil.Pdb.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.CodeGen\\Unity.Burst.Cecil.Rocks.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.Unsafe.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.collections@56bff8827a7e\\Unity.Collections.LowLevel.ILSupport\\Unity.Collections.LowLevel.ILSupport.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f\\Mono.Cecil.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f\\Mono.Cecil.Mdb.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f\\Mono.Cecil.Pdb.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f\\Mono.Cecil.Rocks.dll\" -a=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Assets\\Firebase\\Plugins\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\NetStandard\\EditorExtensions\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\6000.0.37f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.burst@7a907cf5a459\\Unity.Burst.CodeGen\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.collections@56bff8827a7e\\Unity.Collections.LowLevel.ILSupport\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.ext.nunit@60ef35ffd3cd\\net40\\unity-custom\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.nuget.mono-cecil@d6f9955a5d5f\" -s=\"C:\\Users\\victo\\Desktop\\UnityProjects\\Test\\Library\\PackageCache\\com.unity.visualscripting@1b53f46e931b\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" @\"Library\\Bee\\artifacts\\rsp\\6097564273297756792.rsp\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -37,15 +55,19 @@
         "Assets/Firebase/Plugins/Firebase.TaskExtension.dll",
         "Assets/Firebase/Plugins/Google.MiniJson.dll",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
+        "Library/ScriptAssemblies/Unity.Addressables.dll",
         "Library/ScriptAssemblies/Unity.AI.Navigation.dll",
         "Library/ScriptAssemblies/Unity.Burst.dll",
         "Library/ScriptAssemblies/Unity.Collections.dll",
         "Library/ScriptAssemblies/Unity.InputSystem.dll",
         "Library/ScriptAssemblies/Unity.InputSystem.ForUI.dll",
         "Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll",
+        "Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.013.dll",
+        "Library/ScriptAssemblies/Unity.Localization.dll",
         "Library/ScriptAssemblies/Unity.Mathematics.dll",
         "Library/ScriptAssemblies/Unity.Multiplayer.Center.Common.dll",
         "Library/ScriptAssemblies/Unity.PerformanceTesting.dll",
+        "Library/ScriptAssemblies/Unity.Profiling.Core.dll",
         "Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll",
         "Library/ScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
         "Library/ScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
@@ -57,6 +79,8 @@
         "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll",
         "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll",
         "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
+        "Library/ScriptAssemblies/Unity.ResourceManager.dll",
+        "Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll",
         "Library/ScriptAssemblies/Unity.TextMeshPro.dll",
         "Library/ScriptAssemblies/Unity.Timeline.dll",
         "Library/ScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -75,7 +99,9 @@
         "Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.Mdb.dll",
         "Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.Pdb.dll",
         "Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.Rocks.dll",
-        "Library/PackageCache/com.unity.visualscripting@1b53f46e931b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+        "Library/PackageCache/com.unity.nuget.newtonsoft-json@74deb55db2a0/Runtime/Newtonsoft.Json.dll",
+        "Library/PackageCache/com.unity.visualscripting@1b53f46e931b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
+        "Library/Bee/artifacts/rsp/6097564273297756792.rsp"
       ],
       "InputFlags": [
         0,
@@ -125,7 +151,15 @@
         0,
         0,
         0,
-        0
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        8
       ],
       "Outputs": [
         "Library/BuildPlayerData/Editor/TypeDb-All.json"
@@ -133,9 +167,12 @@
       "OutputFlags": [
         0
       ],
+      "ToBuildDependencies": [
+        2
+      ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 2
+      "DebugActionIndex": 3
     },
     {
       "Annotation": "ScriptAssembliesAndTypeDB",
@@ -146,9 +183,9 @@
       "OutputFlags": [],
       "ToBuildDependencies": [
         1,
-        2
+        3
       ],
-      "DebugActionIndex": 3
+      "DebugActionIndex": 4
     }
   ],
   "FileSignatures": [
@@ -323,10 +360,16 @@
       "File": "Library/PackageCache/com.unity.nuget.mono-cecil@d6f9955a5d5f/Mono.Cecil.Rocks.dll"
     },
     {
+      "File": "Library/PackageCache/com.unity.nuget.newtonsoft-json@74deb55db2a0/Runtime/Newtonsoft.Json.dll"
+    },
+    {
       "File": "Library/PackageCache/com.unity.visualscripting@1b53f46e931b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Addressables.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.AI.Navigation.dll"
@@ -347,6 +390,12 @@
       "File": "Library/ScriptAssemblies/Unity.InputSystem.TestFramework.dll"
     },
     {
+      "File": "Library/ScriptAssemblies/Unity.InternalAPIEngineBridge.013.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Localization.dll"
+    },
+    {
       "File": "Library/ScriptAssemblies/Unity.Mathematics.dll"
     },
     {
@@ -354,6 +403,9 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.PerformanceTesting.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.Profiling.Core.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll"
@@ -387,6 +439,12 @@
     },
     {
       "File": "Library/ScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.ResourceManager.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.TextMeshPro.dll"
@@ -436,7 +494,7 @@
         "NamedNodes": {
           "all_tundra_nodes": 0,
           "ScriptAssemblies": 1,
-          "ScriptAssembliesAndTypeDB": 3
+          "ScriptAssembliesAndTypeDB": 4
         }
 ,  "DefaultNodes": [
     0

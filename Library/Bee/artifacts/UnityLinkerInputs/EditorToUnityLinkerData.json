@@ -21,8 +21,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -31,8 +33,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -48,14 +52,44 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
+            "fullManagedTypeName": "LocaleSelector",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
             "fullManagedTypeName": "LoginManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MainSceneScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.ResourceManager.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MonoBehaviourCallbackHooks",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "MovementScript",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -72,8 +106,10 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -89,22 +125,24 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "OptionsBtnsScripts",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
             "nativeClass": "PhysicsManager",
             "fullManagedTypeName": "",
             "moduleName": "Physics",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "PlayButton",
-            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -199,13 +237,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "TypewriterEffect",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioManager",
             "fullManagedTypeName": "UnityEditor.AudioManager",
@@ -232,8 +263,10 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -273,12 +306,44 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioResource",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MainScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SampleClip",
+            "fullManagedTypeName": "UnityEngine.Audio.AudioResource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MainScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "AudioBehaviour",
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioClip",
+            "fullManagedTypeName": "UnityEngine.AudioClip",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MainScreen.unity"
             ]
         },
         {
@@ -287,8 +352,19 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "AudioSource",
+            "fullManagedTypeName": "UnityEngine.AudioSource",
+            "moduleName": "Audio",
+            "usedInScenes": [
+                "Assets/Scenes/MainScreen.unity"
             ]
         },
         {
@@ -297,8 +373,19 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider",
+            "fullManagedTypeName": "UnityEngine.BoxCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -307,8 +394,10 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -317,8 +406,9 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -327,8 +417,27 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CapsuleCollider",
+            "fullManagedTypeName": "UnityEngine.CapsuleCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Collider",
+            "fullManagedTypeName": "UnityEngine.Collider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -337,8 +446,10 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -354,8 +465,9 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -378,7 +490,8 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MainScreen.unity"
             ]
         },
         {
@@ -387,8 +500,10 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -439,8 +554,10 @@
             "fullManagedTypeName": "UnityEngine.Light",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -449,9 +566,60 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Components.LocalizeStringEvent",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Locale",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.LocalizationBehaviour",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Settings.LocalizationSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.SharedTableData",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.StringTable",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.VariantsPropertyDriver",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
@@ -459,8 +627,37 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Mesh",
+            "fullManagedTypeName": "UnityEngine.Mesh",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshFilter",
+            "fullManagedTypeName": "UnityEngine.MeshFilter",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "MeshRenderer",
+            "fullManagedTypeName": "UnityEngine.MeshRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -469,8 +666,10 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -479,8 +678,10 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -496,8 +697,19 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Renderer",
+            "fullManagedTypeName": "UnityEngine.Renderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -933,8 +1145,10 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -943,8 +1157,18 @@
             "fullManagedTypeName": "UnityEngine.RenderTexture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Rigidbody",
+            "fullManagedTypeName": "UnityEngine.Rigidbody",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -953,8 +1177,10 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -963,8 +1189,9 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -973,8 +1200,10 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -983,8 +1212,10 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -993,8 +1224,10 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -1003,8 +1236,10 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -1118,8 +1353,9 @@
             "fullManagedTypeName": "UnityEngine.Video.VideoClip",
             "moduleName": "Video",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         },
         {
@@ -1128,8 +1364,9 @@
             "fullManagedTypeName": "UnityEngine.Video.VideoPlayer",
             "moduleName": "Video",
             "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
-                "Assets/Scenes/SampleScene.unity"
+                "Assets/Scenes/OptionsScreen.unity"
             ]
         }
     ],

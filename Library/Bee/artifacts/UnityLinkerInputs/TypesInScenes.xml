@@ -1,10 +1,12 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
-		<type fullname="PlayButton" preserve="nothing"/>
+		<type fullname="MainSceneScript" preserve="nothing"/>
+		<type fullname="MovementScript" preserve="nothing"/>
+		<type fullname="OptionsBtnsScripts" preserve="nothing"/>
 		<type fullname="RegisterManager" preserve="nothing"/>
 		<type fullname="ShowHide" preserve="nothing"/>
-		<type fullname="TypewriterEffect" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
@@ -13,6 +15,15 @@
 		<type fullname="UnityEngine.InputSystem.InputSystemObject" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.RemoteInputPlayerConnection" preserve="nothing"/>
 		<type fullname="UnityEngine.InputSystem.UI.InputSystemUIInputModule" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="Unity.Localization">
+		<type fullname="UnityEngine.Localization.Components.LocalizeStringEvent" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.ProbeVolumesOptions" preserve="nothing"/>
@@ -78,6 +89,9 @@
 		<type fullname="UnityEngine.Rendering.Universal.Vignette" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.Universal.WhiteBalance" preserve="nothing"/>
 	</assembly>
+	<assembly fullname="Unity.ResourceManager">
+		<type fullname="MonoBehaviourCallbackHooks" preserve="nothing"/>
+	</assembly>
 	<assembly fullname="Unity.TextMeshPro">
 		<type fullname="TMPro.TextMeshProUGUI" preserve="nothing"/>
 		<type fullname="TMPro.TMP_ColorGradient" preserve="nothing"/>
@@ -97,12 +111,18 @@
 		<type fullname="UnityEditor.TagManager" preserve="nothing"/>
 		<type fullname="UnityEditor.TimeManager" preserve="nothing"/>
 		<type fullname="UnityEditor.VFXManager" preserve="nothing"/>
+		<type fullname="UnityEngine.Audio.AudioResource" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioBehaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioClip" preserve="nothing"/>
 		<type fullname="UnityEngine.AudioListener" preserve="nothing"/>
+		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
+		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
+		<type fullname="UnityEngine.Collider" preserve="nothing"/>
 		<type fullname="UnityEngine.Component" preserve="nothing"/>
 		<type fullname="UnityEngine.ComputeShader" preserve="nothing"/>
 		<type fullname="UnityEngine.Cubemap" preserve="nothing"/>
@@ -111,13 +131,18 @@
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.Material" preserve="nothing"/>
+		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshFilter" preserve="nothing"/>
+		<type fullname="UnityEngine.MeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
 		<type fullname="UnityEngine.QualitySettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
+		<type fullname="UnityEngine.Renderer" preserve="nothing"/>
 		<type fullname="UnityEngine.Rendering.GraphicsSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderTexture" preserve="nothing"/>
+		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.Shader" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>

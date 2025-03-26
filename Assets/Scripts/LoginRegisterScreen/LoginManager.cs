@@ -10,11 +10,13 @@ public class LoginManager : MonoBehaviour
 {
     public TMP_InputField userEmail;
     public TMP_InputField userPassword;
+    public GameObject error;
     private FirebaseAuth auth;
 
     void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
+        error.SetActive(false);
     }
 
     public void HandleLogin()
@@ -32,6 +34,8 @@ public class LoginManager : MonoBehaviour
 
         if (loginTask.Exception != null)
         {
+            error.SetActive(true);
+            //EditorUtility.DisplayDialog("ERROR","Email y/o contraseña incorrectos","Aceptar");
             Debug.LogError("Login failed: " + loginTask.Exception);
         }
         else

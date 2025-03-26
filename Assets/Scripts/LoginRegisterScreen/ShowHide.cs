@@ -12,4 +12,11 @@ public class ShowHide : MonoBehaviour
         gameObjectLoginBtn.SetActive(false);
         gameObjectRegisterBtn.SetActive(false);
     }
+
+    public void returnForms()
+    {
+        gameObjectLogin.SetActive(false);
+        gameObjectLoginBtn.SetActive(true);
+        gameObjectRegisterBtn.SetActive(true);  
+    }
 }

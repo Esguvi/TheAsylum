@@ -1,11 +1,24 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - LocaleSelector
     - LoginManager
-    - PlayButton
+    - MainSceneScript
+    - MovementScript
+    - OptionsBtnsScripts
     - RegisterManager
     - ShowHide
-    - TypewriterEffect
+    Unity.Addressables.Editor.dll:
+    - UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject
+    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptFastMode
+    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptPackedMode
+    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptPackedPlayMode
+    - UnityEditor.AddressableAssets.BuildReportVisualizer.BuildReportWindow
+    - UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
+    - UnityEditor.AddressableAssets.Settings.AddressableAssetGroupTemplate
+    - UnityEditor.AddressableAssets.Settings.AddressableAssetSettings
+    - UnityEditor.AddressableAssets.Settings.GroupSchemas.BundledAssetGroupSchema
+    - UnityEditor.AddressableAssets.Settings.GroupSchemas.ContentUpdateGroupSchema
     Unity.InputSystem.dll:
     - UnityEngine.InputSystem.InputActionAsset
     - UnityEngine.InputSystem.InputActionReference
@@ -13,6 +26,17 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputSystemObject
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
+    Unity.Localization.Editor.dll:
+    - UnityEditor.Localization.LocalizationProjectSettings
+    - UnityEditor.Localization.StringTableCollection
+    Unity.Localization.dll:
+    - UnityEngine.Localization.Components.LocalizeStringEvent
+    - UnityEngine.Localization.Locale
+    - UnityEngine.Localization.LocalizationBehaviour
+    - UnityEngine.Localization.Settings.LocalizationSettings
+    - UnityEngine.Localization.Tables.SharedTableData
+    - UnityEngine.Localization.Tables.StringTable
+    - UnityEngine.Localization.VariantsPropertyDriver
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -78,6 +102,8 @@ ScriptsOnlyBuild:
     - UnityEngine.Rendering.Universal.UniversalRendererData
     - UnityEngine.Rendering.Universal.Vignette
     - UnityEngine.Rendering.Universal.WhiteBalance
+    Unity.ResourceManager.dll:
+    - MonoBehaviourCallbackHooks
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -135,6 +161,37 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.InputBinding
     - UnityEngine.InputSystem.InputControlScheme
     - UnityEngine.InputSystem.InputControlScheme/DeviceRequirement
+    Unity.Localization:
+    - UnityEngine.Localization.Events.UnityEventString
+    - UnityEngine.Localization.LocaleIdentifier
+    - UnityEngine.Localization.LocalizedString
+    - UnityEngine.Localization.Metadata.MetadataCollection
+    - UnityEngine.Localization.Settings.CommandLineLocaleSelector
+    - UnityEngine.Localization.Settings.LocalesProvider
+    - UnityEngine.Localization.Settings.LocalizedAssetDatabase
+    - UnityEngine.Localization.Settings.LocalizedStringDatabase
+    - UnityEngine.Localization.Settings.SpecificLocaleSelector
+    - UnityEngine.Localization.Settings.SystemLocaleSelector
+    - UnityEngine.Localization.SmartFormat.Core.Parsing.Parser
+    - UnityEngine.Localization.SmartFormat.Core.Settings.SmartSettings
+    - UnityEngine.Localization.SmartFormat.Extensions.ChooseFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.ConditionalFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.DefaultFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.DefaultSource
+    - UnityEngine.Localization.SmartFormat.Extensions.DictionarySource
+    - UnityEngine.Localization.SmartFormat.Extensions.IsMatchFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.ListFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.PersistentVariablesSource
+    - UnityEngine.Localization.SmartFormat.Extensions.PluralLocalizationFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.ReflectionSource
+    - UnityEngine.Localization.SmartFormat.Extensions.SubStringFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.TimeFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.ValueTupleSource
+    - UnityEngine.Localization.SmartFormat.Extensions.XElementFormatter
+    - UnityEngine.Localization.SmartFormat.Extensions.XmlSource
+    - UnityEngine.Localization.SmartFormat.SmartFormatter
+    - UnityEngine.Localization.Tables.TableEntryReference
+    - UnityEngine.Localization.Tables.TableReference
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.APVLeakReductionModeParameter
     - UnityEngine.Rendering.BoolParameter
@@ -245,15 +302,42 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
     - UnityEngine.UI.Toggle/ToggleEvent
   methodsToPreserve:
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: LoginManager
     methodName: HandleLogin
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: LocaleSelector
+    methodName: ToggleLanguage
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: ShowHide
     methodName: showLoginForm
   - assembly: Assembly-CSharp
     fullTypeName: RegisterManager
     methodName: openWebPage
+  - assembly: Assembly-CSharp
+    fullTypeName: ShowHide
+    methodName: returnForms
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerButton
     methodName: OnAction
@@ -296,14 +380,125 @@ ScriptsOnlyBuild:
   - assembly: Unity.RenderPipelines.Core.Runtime
     fullTypeName: UnityEngine.Rendering.UI.DebugUIHandlerPanel
     methodName: ResetDebugManager
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Assembly-CSharp
-    fullTypeName: PlayButton
+    fullTypeName: MainSceneScript
+    methodName: Options
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
     methodName: Exit
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Assembly-CSharp
-    fullTypeName: PlayButton
+    fullTypeName: MainSceneScript
+    methodName: Credits
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: MainSceneScript
     methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: Resume
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: Return
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: ConfScreen
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: ConfKeys
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Assembly-CSharp
+    fullTypeName: OptionsBtnsScripts
+    methodName: ConfAudio
   sceneClasses:
-    Assets/Scenes/MainScreen.unity:
+    Assets/Scenes/GameScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16984}
+    - Class: 114
+      Script: {instanceID: 17166}
+    - Class: 114
+      Script: {instanceID: 18478}
+    - Class: 114
+      Script: {instanceID: 21182}
+    - Class: 114
+      Script: {instanceID: 21600}
+    - Class: 114
+      Script: {instanceID: 21736}
+    - Class: 114
+      Script: {instanceID: 24634}
+    - Class: 114
+      Script: {instanceID: 24770}
+    - Class: 114
+      Script: {instanceID: 74214}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/LoginRegisterScreen.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -316,7 +511,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
       Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
@@ -327,48 +526,152 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13968}
+      Script: {instanceID: 16012}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 16206}
     - Class: 114
-      Script: {instanceID: 14700}
+      Script: {instanceID: 16488}
     - Class: 114
-      Script: {instanceID: 14796}
+      Script: {instanceID: 16538}
     - Class: 114
-      Script: {instanceID: 14954}
+      Script: {instanceID: 16748}
     - Class: 114
-      Script: {instanceID: 15182}
+      Script: {instanceID: 16920}
     - Class: 114
-      Script: {instanceID: 15632}
+      Script: {instanceID: 16984}
     - Class: 114
-      Script: {instanceID: 16028}
+      Script: {instanceID: 17044}
     - Class: 114
-      Script: {instanceID: 16092}
+      Script: {instanceID: 17166}
     - Class: 114
-      Script: {instanceID: 16242}
+      Script: {instanceID: 17192}
     - Class: 114
-      Script: {instanceID: 17768}
+      Script: {instanceID: 17264}
     - Class: 114
-      Script: {instanceID: 18406}
+      Script: {instanceID: 17412}
     - Class: 114
-      Script: {instanceID: 18702}
+      Script: {instanceID: 17700}
     - Class: 114
-      Script: {instanceID: 18762}
+      Script: {instanceID: 17940}
     - Class: 114
-      Script: {instanceID: 18884}
+      Script: {instanceID: 18332}
     - Class: 114
-      Script: {instanceID: 20274}
+      Script: {instanceID: 18402}
     - Class: 114
-      Script: {instanceID: 21400}
+      Script: {instanceID: 18478}
     - Class: 114
-      Script: {instanceID: 21518}
+      Script: {instanceID: 18594}
     - Class: 114
-      Script: {instanceID: 23910}
+      Script: {instanceID: 18840}
     - Class: 114
-      Script: {instanceID: 24012}
+      Script: {instanceID: 18934}
     - Class: 114
-      Script: {instanceID: 24728}
+      Script: {instanceID: 18976}
+    - Class: 114
+      Script: {instanceID: 19038}
+    - Class: 114
+      Script: {instanceID: 19080}
+    - Class: 114
+      Script: {instanceID: 19122}
+    - Class: 114
+      Script: {instanceID: 19448}
+    - Class: 114
+      Script: {instanceID: 20078}
+    - Class: 114
+      Script: {instanceID: 20446}
+    - Class: 114
+      Script: {instanceID: 20458}
+    - Class: 114
+      Script: {instanceID: 20814}
+    - Class: 114
+      Script: {instanceID: 20922}
+    - Class: 114
+      Script: {instanceID: 21182}
+    - Class: 114
+      Script: {instanceID: 21244}
+    - Class: 114
+      Script: {instanceID: 21300}
+    - Class: 114
+      Script: {instanceID: 21538}
+    - Class: 114
+      Script: {instanceID: 21600}
+    - Class: 114
+      Script: {instanceID: 21698}
+    - Class: 114
+      Script: {instanceID: 21736}
+    - Class: 114
+      Script: {instanceID: 21766}
+    - Class: 114
+      Script: {instanceID: 21852}
+    - Class: 114
+      Script: {instanceID: 21938}
+    - Class: 114
+      Script: {instanceID: 22060}
+    - Class: 114
+      Script: {instanceID: 22726}
+    - Class: 114
+      Script: {instanceID: 22930}
+    - Class: 114
+      Script: {instanceID: 23040}
+    - Class: 114
+      Script: {instanceID: 23042}
+    - Class: 114
+      Script: {instanceID: 23334}
+    - Class: 114
+      Script: {instanceID: 24148}
+    - Class: 114
+      Script: {instanceID: 24186}
+    - Class: 114
+      Script: {instanceID: 24634}
+    - Class: 114
+      Script: {instanceID: 24770}
+    - Class: 114
+      Script: {instanceID: 24794}
+    - Class: 114
+      Script: {instanceID: 25690}
+    - Class: 114
+      Script: {instanceID: 25736}
+    - Class: 114
+      Script: {instanceID: 25924}
+    - Class: 114
+      Script: {instanceID: 26380}
+    - Class: 114
+      Script: {instanceID: 26452}
+    - Class: 114
+      Script: {instanceID: 26762}
+    - Class: 114
+      Script: {instanceID: 26840}
+    - Class: 114
+      Script: {instanceID: 26954}
+    - Class: 114
+      Script: {instanceID: 27430}
+    - Class: 114
+      Script: {instanceID: 27550}
+    - Class: 114
+      Script: {instanceID: 27552}
+    - Class: 114
+      Script: {instanceID: 27578}
+    - Class: 114
+      Script: {instanceID: 27690}
+    - Class: 114
+      Script: {instanceID: 27848}
+    - Class: 114
+      Script: {instanceID: 27950}
+    - Class: 114
+      Script: {instanceID: 27982}
+    - Class: 114
+      Script: {instanceID: 28156}
+    - Class: 114
+      Script: {instanceID: 28432}
+    - Class: 114
+      Script: {instanceID: 28536}
+    - Class: 114
+      Script: {instanceID: 28778}
+    - Class: 114
+      Script: {instanceID: 28970}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -386,7 +689,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 329
       Script: {instanceID: 0}
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/MainScreen.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -399,7 +702,94 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
-    - Class: 49
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16012}
+    - Class: 114
+      Script: {instanceID: 16538}
+    - Class: 114
+      Script: {instanceID: 16882}
+    - Class: 114
+      Script: {instanceID: 16984}
+    - Class: 114
+      Script: {instanceID: 17166}
+    - Class: 114
+      Script: {instanceID: 17412}
+    - Class: 114
+      Script: {instanceID: 17940}
+    - Class: 114
+      Script: {instanceID: 18402}
+    - Class: 114
+      Script: {instanceID: 18478}
+    - Class: 114
+      Script: {instanceID: 19448}
+    - Class: 114
+      Script: {instanceID: 20446}
+    - Class: 114
+      Script: {instanceID: 21182}
+    - Class: 114
+      Script: {instanceID: 21538}
+    - Class: 114
+      Script: {instanceID: 21600}
+    - Class: 114
+      Script: {instanceID: 21736}
+    - Class: 114
+      Script: {instanceID: 23334}
+    - Class: 114
+      Script: {instanceID: 24634}
+    - Class: 114
+      Script: {instanceID: 24770}
+    - Class: 114
+      Script: {instanceID: 27552}
+    - Class: 114
+      Script: {instanceID: 27690}
+    - Class: 114
+      Script: {instanceID: 28536}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/OptionsScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -412,150 +802,50 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 13968}
+      Script: {instanceID: 16012}
     - Class: 114
-      Script: {instanceID: 14126}
+      Script: {instanceID: 16538}
     - Class: 114
-      Script: {instanceID: 14366}
+      Script: {instanceID: 16882}
     - Class: 114
-      Script: {instanceID: 14410}
+      Script: {instanceID: 16984}
     - Class: 114
-      Script: {instanceID: 14586}
+      Script: {instanceID: 17166}
     - Class: 114
-      Script: {instanceID: 14736}
+      Script: {instanceID: 17412}
     - Class: 114
-      Script: {instanceID: 14796}
+      Script: {instanceID: 17940}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 18402}
     - Class: 114
-      Script: {instanceID: 14954}
+      Script: {instanceID: 18478}
     - Class: 114
-      Script: {instanceID: 14980}
+      Script: {instanceID: 19448}
     - Class: 114
-      Script: {instanceID: 15046}
+      Script: {instanceID: 20446}
     - Class: 114
-      Script: {instanceID: 15182}
+      Script: {instanceID: 21182}
     - Class: 114
-      Script: {instanceID: 15432}
+      Script: {instanceID: 21538}
     - Class: 114
-      Script: {instanceID: 15632}
+      Script: {instanceID: 21600}
     - Class: 114
-      Script: {instanceID: 15974}
+      Script: {instanceID: 21736}
     - Class: 114
-      Script: {instanceID: 16028}
+      Script: {instanceID: 23334}
     - Class: 114
-      Script: {instanceID: 16092}
+      Script: {instanceID: 24634}
     - Class: 114
-      Script: {instanceID: 16180}
+      Script: {instanceID: 24770}
     - Class: 114
-      Script: {instanceID: 16242}
+      Script: {instanceID: 27552}
     - Class: 114
-      Script: {instanceID: 16400}
+      Script: {instanceID: 27690}
     - Class: 114
-      Script: {instanceID: 16486}
+      Script: {instanceID: 28536}
     - Class: 114
-      Script: {instanceID: 16522}
-    - Class: 114
-      Script: {instanceID: 16578}
-    - Class: 114
-      Script: {instanceID: 16610}
-    - Class: 114
-      Script: {instanceID: 16642}
-    - Class: 114
-      Script: {instanceID: 17472}
-    - Class: 114
-      Script: {instanceID: 17768}
-    - Class: 114
-      Script: {instanceID: 17780}
-    - Class: 114
-      Script: {instanceID: 18174}
-    - Class: 114
-      Script: {instanceID: 18406}
-    - Class: 114
-      Script: {instanceID: 18462}
-    - Class: 114
-      Script: {instanceID: 18500}
-    - Class: 114
-      Script: {instanceID: 18702}
-    - Class: 114
-      Script: {instanceID: 18762}
-    - Class: 114
-      Script: {instanceID: 18852}
-    - Class: 114
-      Script: {instanceID: 18884}
-    - Class: 114
-      Script: {instanceID: 18914}
-    - Class: 114
-      Script: {instanceID: 18988}
-    - Class: 114
-      Script: {instanceID: 19068}
-    - Class: 114
-      Script: {instanceID: 19176}
-    - Class: 114
-      Script: {instanceID: 19754}
-    - Class: 114
-      Script: {instanceID: 19932}
-    - Class: 114
-      Script: {instanceID: 20028}
-    - Class: 114
-      Script: {instanceID: 20030}
-    - Class: 114
-      Script: {instanceID: 20274}
-    - Class: 114
-      Script: {instanceID: 20984}
-    - Class: 114
-      Script: {instanceID: 21018}
-    - Class: 114
-      Script: {instanceID: 21400}
-    - Class: 114
-      Script: {instanceID: 21518}
-    - Class: 114
-      Script: {instanceID: 21540}
-    - Class: 114
-      Script: {instanceID: 22306}
-    - Class: 114
-      Script: {instanceID: 22340}
-    - Class: 114
-      Script: {instanceID: 22496}
-    - Class: 114
-      Script: {instanceID: 22898}
-    - Class: 114
-      Script: {instanceID: 22950}
-    - Class: 114
-      Script: {instanceID: 23220}
-    - Class: 114
-      Script: {instanceID: 23292}
-    - Class: 114
-      Script: {instanceID: 23384}
-    - Class: 114
-      Script: {instanceID: 23798}
-    - Class: 114
-      Script: {instanceID: 23908}
-    - Class: 114
-      Script: {instanceID: 23910}
-    - Class: 114
-      Script: {instanceID: 23926}
-    - Class: 114
-      Script: {instanceID: 24012}
-    - Class: 114
-      Script: {instanceID: 24146}
-    - Class: 114
-      Script: {instanceID: 24230}
-    - Class: 114
-      Script: {instanceID: 24258}
-    - Class: 114
-      Script: {instanceID: 24408}
-    - Class: 114
-      Script: {instanceID: 24646}
-    - Class: 114
-      Script: {instanceID: 24728}
-    - Class: 114
-      Script: {instanceID: 24940}
-    - Class: 114
-      Script: {instanceID: 25106}
+      Script: {instanceID: 70692}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -616,6 +906,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.UI
     className: VirtualMouseInput
+  - hash:
+      serializedVersion: 2
+      Hash: d37ad14256fd8981fb1b86529147c9aa
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.SmartFormat.PersistentVariables
+    className: VariablesGroupAsset
   - hash:
       serializedVersion: 2
       Hash: b72d9c057c0f9460abf04218f4cc4f0e
@@ -714,10 +1010,10 @@ ScriptsOnlyBuild:
     className: GroupTrack
   - hash:
       serializedVersion: 2
-      Hash: 89813b3ad5859268c49a4fc18d4b3885
+      Hash: 887d72eb1fb754ae2ce2b2f2f1dda9a6
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: PlayButton
+    className: MainSceneScript
   - hash:
       serializedVersion: 2
       Hash: f669be52680c88846b2093fd41d1e06e
@@ -816,6 +1112,12 @@ ScriptsOnlyBuild:
     className: UnityOnScrollRectValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: d4b968135f38855075545c460a2152c4
+    assemblyName: Unity.ScriptableBuildPipeline
+    namespaceName: UnityEngine.Build.Pipeline
+    className: CompatibilityAssetBundleManifest
+  - hash:
+      serializedVersion: 2
       Hash: dd9dda1dfd39e605c49e72003342ef5d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -828,16 +1130,28 @@ ScriptsOnlyBuild:
     className: HIDDescriptorWindow
   - hash:
       serializedVersion: 2
-      Hash: 66496b917404bcb20f6bf50861c1adc6
-    assemblyName: Unity.RenderPipelines.Core.Runtime
-    namespaceName: UnityEngine.Rendering
-    className: ProbeVolumeBakingSet
+      Hash: 4589663d9152f056bd461affcfe2eb8a
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Tables
+    className: SharedTableData
   - hash:
       serializedVersion: 2
       Hash: dbe4f05d59170430398f6453d7253fe5
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerWidget
+  - hash:
+      serializedVersion: 2
+      Hash: 66496b917404bcb20f6bf50861c1adc6
+    assemblyName: Unity.RenderPipelines.Core.Runtime
+    namespaceName: UnityEngine.Rendering
+    className: ProbeVolumeBakingSet
+  - hash:
+      serializedVersion: 2
+      Hash: 447933b43ae4df1a58de23915900639b
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizedGameObjectEvent
   - hash:
       serializedVersion: 2
       Hash: 6d971045f8e67def7430d0b6f3cb0700
@@ -886,6 +1200,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerUpMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: caa7cab84dd4619d43f84782ae10ab2e
+    assemblyName: Unity.ResourceManager
+    namespaceName: UnityEngine.ResourceManagement.Util
+    className: DelayedActionManager
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
@@ -1110,10 +1430,28 @@ ScriptsOnlyBuild:
     className: WhiteBalance
   - hash:
       serializedVersion: 2
+      Hash: abbe840750f50fcc0715f7e799957691
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization
+    className: Locale
+  - hash:
+      serializedVersion: 2
       Hash: e88d71ef93aba4e7faf243430f6a10ce
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: MacroScriptableObject
+  - hash:
+      serializedVersion: 2
+      Hash: bd68dd0edf736a7ae0b115f5018add9e
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization
+    className: LocalizationBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 5e1385fb810edb502b726897f1f9be65
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizeStringEvent
   - hash:
       serializedVersion: 2
       Hash: 4f353524ce6564e40764f1ea080b2d85
@@ -1272,6 +1610,12 @@ ScriptsOnlyBuild:
     className: UnityOnTransformParentChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 7d02d0315047067dfffb504006db6d2d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: LocaleSelector
+  - hash:
+      serializedVersion: 2
       Hash: 6cf63e9dc888f92a3672d2e4db631c8e
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
@@ -1296,6 +1640,12 @@ ScriptsOnlyBuild:
     className: RegisterManager
   - hash:
       serializedVersion: 2
+      Hash: d0c9ca82d3c1355aa1166f4008517e61
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Tables
+    className: StringTable
+  - hash:
+      serializedVersion: 2
       Hash: 113e54f67456d0e7754c0598ee2a6dd4
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -1312,6 +1662,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.InputSystem
     namespaceName: UnityEngine.InputSystem.Editor
     className: InputActionDebuggerWindow
+  - hash:
+      serializedVersion: 2
+      Hash: db18e5c5ce9b9109cd1d05c318bfa8ba
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizeTextureEvent
   - hash:
       serializedVersion: 2
       Hash: 919dc7ec08f773fcae2d21a1e018bd99
@@ -1336,6 +1692,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Universal.Runtime
     namespaceName: UnityEngine.Rendering.Universal
     className: ColorCurves
+  - hash:
+      serializedVersion: 2
+      Hash: 3c1cec94da9a17a60feaa2130e29dd8b
+    assemblyName: Unity.ResourceManager
+    namespaceName: 
+    className: MonoBehaviourCallbackHooks
   - hash:
       serializedVersion: 2
       Hash: 47f78e94e3df8d612cefa1307a19e2ce
@@ -1434,6 +1796,12 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerFloatField
   - hash:
       serializedVersion: 2
+      Hash: 9694711cf2cfbc3739a583dd0eede01e
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Settings
+    className: LocalizationSettings
+  - hash:
+      serializedVersion: 2
       Hash: a908b098f2284663c0b9130e88844772
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering.UI
@@ -1512,16 +1880,22 @@ ScriptsOnlyBuild:
     className: ForwardRendererData
   - hash:
       serializedVersion: 2
+      Hash: 223ce65fc6a9e91e4a8ad149dcadebde
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization
+    className: VariantsPropertyDriver
+  - hash:
+      serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Scrollbar
   - hash:
       serializedVersion: 2
-      Hash: 0ddedb46a2ff61f2b4de0f3498d6296a
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: UIManager
+      Hash: 0acc65aa24540c28839a8f5cbd26ea2e
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.PropertyVariants
+    className: GameObjectLocalizer
   - hash:
       serializedVersion: 2
       Hash: f5df081962c06a171f380eb236cd1f3c
@@ -1582,6 +1956,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: e43b2afea14a30f60444a1b4bb2fd6a1
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizeSpriteEvent
   - hash:
       serializedVersion: 2
       Hash: 1ce63d97d1ca25cba2d91d5f32fd5f79
@@ -1794,6 +2174,12 @@ ScriptsOnlyBuild:
     className: NavMeshModifierVolume
   - hash:
       serializedVersion: 2
+      Hash: 4d2211133ad61dff6e3fbe0299384a1d
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizeAudioClipEvent
+  - hash:
+      serializedVersion: 2
       Hash: d497e277ee09923aa44c51901a8f68f9
     assemblyName: Unity.RenderPipelines.Core.Runtime
     namespaceName: UnityEngine.Rendering
@@ -1818,7 +2204,7 @@ ScriptsOnlyBuild:
     className: ShowHide
   - hash:
       serializedVersion: 2
-      Hash: a2fa765a4194e061b5304b1279b62146
+      Hash: 1e87ba308e8ce5fe27e716ca231db1d7
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: LoginManager
@@ -2232,6 +2618,18 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
+      Hash: cfbc633b27da8b0a4ed7579c25bce87c
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Tables
+    className: AssetTable
+  - hash:
+      serializedVersion: 2
+      Hash: e3ffaf7038c2becc145e29a924cd5132
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Pseudo
+    className: PseudoLocale
+  - hash:
+      serializedVersion: 2
       Hash: e6b258489c88376c5869946b2735e7e5
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -2242,6 +2640,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline
     namespaceName: UnityEngine.Timeline
     className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 0468c41f6b5acab8b316fd1fc1a212a7
+    assemblyName: Unity.Localization
+    namespaceName: UnityEngine.Localization.Components
+    className: LocalizedMonoBehaviour
   - hash:
       serializedVersion: 2
       Hash: b88e78b6860b6061b2c681ea9b80b6bf
@@ -2350,8 +2754,22 @@ ScriptsOnlyBuild:
     assemblyName: Firebase.Platform.dll
     namespaceName: Firebase.Platform
     className: FirebaseMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: 8ea2439ccf3c10699edbc31b6a3a8b71
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OptionsBtnsScripts
+  - hash:
+      serializedVersion: 2
+      Hash: f4bfc5edb4d4f4d66199f2464f83f59b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MovementScript
   platform: 19
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
+  - Assets/Scenes/LoginRegisterScreen.unity
   - Assets/Scenes/MainScreen.unity
+  - Assets/Scenes/OptionsScreen.unity
+  - Assets/Scenes/GameScreen.unity
   playerPath: C:/Users/victo/Desktop/UnityTest/Test.exe
