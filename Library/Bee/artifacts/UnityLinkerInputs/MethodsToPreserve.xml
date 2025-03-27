@@ -1,5 +1,11 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioConfScript">
+			<method name="changeVolum"/>
+		</type>
+		<type fullname="KeyMoConfScript">
+			<method name="changeSensibility"/>
+		</type>
 		<type fullname="LocaleSelector">
 			<method name="ToggleLanguage"/>
 		</type>
@@ -21,6 +27,10 @@
 		</type>
 		<type fullname="RegisterManager">
 			<method name="openWebPage"/>
+		</type>
+		<type fullname="ScreenScripts">
+			<method name="changeLenguage"/>
+			<method name="fullScreen"/>
 		</type>
 		<type fullname="ShowHide">
 			<method name="returnForms"/>
