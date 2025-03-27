@@ -5,9 +5,6 @@ using Firebase.Auth;
 using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Rendering.DebugUI;
-using System.Windows;
-using UnityEditor;
 
 public class LoginManager : MonoBehaviour
 {
@@ -37,12 +34,9 @@ public class LoginManager : MonoBehaviour
 
         if (loginTask.Exception != null)
         {
-
             error.SetActive(true);
             //EditorUtility.DisplayDialog("ERROR","Email y/o contraseña incorrectos","Aceptar");
             Debug.LogError("Login failed: " + loginTask.Exception);
-            
-            
         }
         else
         {

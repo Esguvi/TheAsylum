@@ -195,7 +195,25 @@
         185,
         186,
         187,
-        188
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206
       ],
       "DebugActionIndex": 0
     },
@@ -362,6 +380,24 @@
       "DebugActionIndex": 9
     },
     {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/resources.resource",
+      "DisplayName": "Copying resources.resource",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/resources.resource"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/resources.resource"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 10
+    },
+    {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Resources/unity_builtin_extra",
       "DisplayName": "Copying unity_builtin_extra",
       "ActionType": "CopyFiles",
@@ -377,7 +413,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 10
+      "DebugActionIndex": 11
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/RuntimeInitializeOnLoads.json",
@@ -395,7 +431,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 11
+      "DebugActionIndex": 12
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/ScriptingAssemblies.json",
@@ -413,7 +449,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets0.assets",
@@ -431,7 +467,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets0.assets.resS",
@@ -449,7 +485,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets0.resource",
@@ -467,7 +503,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets1.assets",
@@ -485,7 +521,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets2.assets",
@@ -503,7 +539,25 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 18
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets2.assets.resS",
+      "DisplayName": "Copying sharedassets2.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/sharedassets2.assets.resS"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets2.assets.resS"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/sharedassets3.assets",
@@ -521,14 +575,14 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 20
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info",
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 55226,
+      "PayloadLength": 56160,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "InputFlags": [],
@@ -538,7 +592,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 21
     },
     {
       "Annotation": "AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config",
@@ -556,6 +610,7 @@
         "Library/PlayerDataCache/Win642/Data/level3",
         "Library/PlayerDataCache/Win642/Data/resources.assets",
         "Library/PlayerDataCache/Win642/Data/resources.assets.resS",
+        "Library/PlayerDataCache/Win642/Data/resources.resource",
         "Library/PlayerDataCache/Win642/Data/Resources/unity_builtin_extra",
         "Library/PlayerDataCache/Win642/Data/RuntimeInitializeOnLoads.json",
         "Library/PlayerDataCache/Win642/Data/ScriptingAssemblies.json",
@@ -564,6 +619,7 @@
         "Library/PlayerDataCache/Win642/Data/sharedassets0.resource",
         "Library/PlayerDataCache/Win642/Data/sharedassets1.assets",
         "Library/PlayerDataCache/Win642/Data/sharedassets2.assets",
+        "Library/PlayerDataCache/Win642/Data/sharedassets2.assets.resS",
         "Library/PlayerDataCache/Win642/Data/sharedassets3.assets",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AMDModule.dll",
@@ -640,13 +696,17 @@
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.013.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Localization.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Profiling.Core.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
@@ -658,6 +718,8 @@
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.ScriptableBuildPipeline.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -671,6 +733,7 @@
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Firebase.Auth.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.visualscripting@1b53f46e931b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.burst@7a907cf5a459/Unity.Burst.Unsafe.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.nuget.newtonsoft-json@74deb55db2a0/Runtime/AOT/Newtonsoft.Json.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Firebase.Platform.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Google.MiniJson.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Accessibility.dll",
@@ -1408,6 +1471,15 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         2,
         2,
         2,
@@ -1451,11 +1523,11 @@
         0
       ],
       "ToBuildDependencies": [
-        19
+        21
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 22
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/boot.config",
@@ -1474,9 +1546,9 @@
         2
       ],
       "ToBuildDependencies": [
-        20
+        22
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/google-services-desktop.json",
@@ -1494,7 +1566,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/google-services.json",
@@ -1512,7 +1584,169 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 25
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/catalog.bin",
+      "DisplayName": "Copying catalog.bin",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/catalog.bin"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/catalog.bin"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 26
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/catalog.hash",
+      "DisplayName": "Copying catalog.hash",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/catalog.hash"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/catalog.hash"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 27
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/settings.json",
+      "DisplayName": "Copying settings.json",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/settings.json"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/settings.json"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 28
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/AddressablesLink/link.xml",
+      "DisplayName": "Copying link.xml",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/AddressablesLink/link.xml"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/AddressablesLink/link.xml"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 29
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/10432802f0d3abad83ec7c6f93d9e345_monoscripts_8fe87d4c5efbca97a32e75bf6a973c40.bundle",
+      "DisplayName": "Copying 10432802f0d3abad83ec7c6f93d9e345_monoscripts_8fe87d4c5efbca97a32e75bf6a973c40.bundle",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/StandaloneWindows64/10432802f0d3abad83ec7c6f93d9e345_monoscripts_8fe87d4c5efbca97a32e75bf6a973c40.bundle"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/10432802f0d3abad83ec7c6f93d9e345_monoscripts_8fe87d4c5efbca97a32e75bf6a973c40.bundle"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 30
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-assets-shared_assets_all.bundle",
+      "DisplayName": "Copying localization-assets-shared_assets_all.bundle",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/StandaloneWindows64/localization-assets-shared_assets_all.bundle"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-assets-shared_assets_all.bundle"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 31
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle",
+      "DisplayName": "Copying localization-locales_assets_all.bundle",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/StandaloneWindows64/localization-locales_assets_all.bundle"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 32
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle",
+      "DisplayName": "Copying localization-string-tables-english(en)_assets_all.bundle",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 33
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-spanish(es)_assets_all.bundle",
+      "DisplayName": "Copying localization-string-tables-spanish(es)_assets_all.bundle",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/com.unity.addressables/aa/Windows/StandaloneWindows64/localization-string-tables-spanish(es)_assets_all.bundle"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-spanish(es)_assets_all.bundle"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppFirestore.dll",
@@ -1530,7 +1764,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppAuth.dll",
@@ -1548,7 +1782,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/FirebaseCppApp-12_7_0.dll",
@@ -1566,14 +1800,14 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/11432229432282886313.rsp",
       "DisplayName": "Writing 11432229432282886313.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 55399,
-      "PayloadLength": 82208,
+      "PayloadOffset": 56333,
+      "PayloadLength": 84428,
       "PayloadDebugContentSnippet": "--allowed-assembly=\"C:/Program",
       "Inputs": [],
       "InputFlags": [],
@@ -1583,7 +1817,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "UnityLinker C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/unitylinker_dwek.traceevents",
@@ -1666,13 +1900,17 @@
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.XRModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Addressables.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.AI.Navigation.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Burst.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Collections.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InputSystem.ForUI.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.InternalAPIEngineBridge.013.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Localization.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Mathematics.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Multiplayer.Center.Common.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Profiling.Core.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Rendering.LightTransport.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Core.Runtime.dll",
@@ -1684,6 +1922,8 @@
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Config.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.RenderPipelines.Universal.Shaders.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.ResourceManager.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.ScriptableBuildPipeline.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.TextMeshPro.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.Timeline.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/PlayerScriptAssemblies/Unity.VisualScripting.Core.dll",
@@ -1697,6 +1937,7 @@
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Firebase.Auth.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.visualscripting@1b53f46e931b/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.burst@7a907cf5a459/Unity.Burst.Unsafe.dll",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/PackageCache/com.unity.nuget.newtonsoft-json@74deb55db2a0/Runtime/AOT/Newtonsoft.Json.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Firebase.Platform.dll",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/Firebase/Plugins/Google.MiniJson.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32/Accessibility.dll",
@@ -1986,6 +2227,7 @@
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/UnityLinkerInputs/TypesInScenes.xml",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/UnityLinkerInputs/SerializedTypes.xml",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/InputSystem/StandaloneWindows64Link.xml",
+        "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Assets/AddressableAssetsData/link.xml",
         "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/artifacts/UnityLinkerInputs/EditorToUnityLinkerData.json",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/modules.asset",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/il2cpp/build/deploy/Analytics.Api.Output.dll",
@@ -2912,6 +3154,14 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         8
       ],
       "Outputs": [
@@ -2927,7 +3177,7 @@
         0
       ],
       "ToBuildDependencies": [
-        27
+        38
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
@@ -2953,7 +3203,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Assembly-CSharp.dll",
@@ -2972,9 +3222,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Firebase.App.dll",
@@ -2993,9 +3243,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Firebase.Auth.dll",
@@ -3014,9 +3264,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Firebase.Firestore.dll",
@@ -3035,9 +3285,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Firebase.Platform.dll",
@@ -3056,9 +3306,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Firebase.TaskExtension.dll",
@@ -3077,9 +3327,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Google.MiniJson.dll",
@@ -3098,9 +3348,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Mono.Security.dll",
@@ -3119,9 +3369,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/mscorlib.dll",
@@ -3140,9 +3390,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/netstandard.dll",
@@ -3161,9 +3411,30 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 49
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Newtonsoft.Json.dll",
+      "DisplayName": "Copying Newtonsoft.Json.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Newtonsoft.Json.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Newtonsoft.Json.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.ComponentModel.Composition.dll",
@@ -3182,9 +3453,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Configuration.dll",
@@ -3203,9 +3474,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Core.dll",
@@ -3224,9 +3495,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -3245,9 +3516,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Data.dll",
@@ -3266,9 +3537,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.dll",
@@ -3287,9 +3558,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Drawing.dll",
@@ -3308,9 +3579,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.EnterpriseServices.dll",
@@ -3329,9 +3600,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.IO.Compression.dll",
@@ -3350,9 +3621,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -3371,9 +3642,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Net.Http.dll",
@@ -3392,9 +3663,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Numerics.dll",
@@ -3413,9 +3684,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Runtime.dll",
@@ -3434,9 +3705,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Runtime.Serialization.dll",
@@ -3455,9 +3726,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Security.dll",
@@ -3476,9 +3747,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.ServiceModel.Internals.dll",
@@ -3497,9 +3768,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Transactions.dll",
@@ -3518,9 +3789,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Xml.dll",
@@ -3539,9 +3810,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/System.Xml.Linq.dll",
@@ -3560,9 +3831,30 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 69
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Addressables.dll",
+      "DisplayName": "Copying Unity.Addressables.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Addressables.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Addressables.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.AI.Navigation.dll",
@@ -3581,9 +3873,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Burst.dll",
@@ -3602,9 +3894,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -3623,9 +3915,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Collections.dll",
@@ -3644,9 +3936,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -3665,9 +3957,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.InputSystem.dll",
@@ -3686,9 +3978,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.InputSystem.ForUI.dll",
@@ -3707,9 +3999,51 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 77
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.InternalAPIEngineBridge.013.dll",
+      "DisplayName": "Copying Unity.InternalAPIEngineBridge.013.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.InternalAPIEngineBridge.013.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.InternalAPIEngineBridge.013.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 78
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Localization.dll",
+      "DisplayName": "Copying Unity.Localization.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Localization.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Localization.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Mathematics.dll",
@@ -3728,9 +4062,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Multiplayer.Center.Common.dll",
@@ -3749,9 +4083,30 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 81
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Profiling.Core.dll",
+      "DisplayName": "Copying Unity.Profiling.Core.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Profiling.Core.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Profiling.Core.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll",
@@ -3770,9 +4125,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
@@ -3791,9 +4146,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
@@ -3812,9 +4167,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
@@ -3833,9 +4188,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll",
@@ -3854,9 +4209,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
@@ -3875,9 +4230,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
@@ -3896,9 +4251,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
@@ -3917,9 +4272,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll",
@@ -3938,9 +4293,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
@@ -3959,9 +4314,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll",
@@ -3980,9 +4335,51 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 93
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.ResourceManager.dll",
+      "DisplayName": "Copying Unity.ResourceManager.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.ResourceManager.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.ResourceManager.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 94
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.ScriptableBuildPipeline.dll",
+      "DisplayName": "Copying Unity.ScriptableBuildPipeline.dll",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.ScriptableBuildPipeline.dll"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.ScriptableBuildPipeline.dll"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "ToBuildDependencies": [
+        39
+      ],
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.TextMeshPro.dll",
@@ -4001,9 +4398,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.Timeline.dll",
@@ -4022,9 +4419,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -4043,9 +4440,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -4064,9 +4461,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -4085,9 +4482,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/Unity.VisualScripting.State.dll",
@@ -4106,9 +4503,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -4127,9 +4524,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AIModule.dll",
@@ -4148,9 +4545,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AMDModule.dll",
@@ -4169,9 +4566,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -4190,9 +4587,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -4211,9 +4608,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ARModule.dll",
@@ -4232,9 +4629,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -4253,9 +4650,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.AudioModule.dll",
@@ -4274,9 +4671,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ClothModule.dll",
@@ -4295,9 +4692,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -4316,9 +4713,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -4337,9 +4734,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ContentLoadModule.dll",
@@ -4358,9 +4755,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.CoreModule.dll",
@@ -4379,9 +4776,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -4400,9 +4797,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -4421,9 +4818,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.dll",
@@ -4442,9 +4839,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -4463,9 +4860,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -4484,9 +4881,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GIModule.dll",
@@ -4505,9 +4902,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
@@ -4526,9 +4923,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.GridModule.dll",
@@ -4547,9 +4944,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
@@ -4568,9 +4965,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -4589,9 +4986,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -4610,9 +5007,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -4631,9 +5028,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputForUIModule.dll",
@@ -4652,9 +5049,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -4673,9 +5070,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.InputModule.dll",
@@ -4694,9 +5091,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -4715,9 +5112,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -4736,9 +5133,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.MarshallingModule.dll",
@@ -4757,9 +5154,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.MultiplayerModule.dll",
@@ -4778,9 +5175,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -4799,9 +5196,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -4820,9 +5217,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -4841,9 +5238,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -4862,9 +5259,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -4883,9 +5280,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.PropertiesModule.dll",
@@ -4904,9 +5301,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -4925,9 +5322,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -4946,9 +5343,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
@@ -4967,9 +5364,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -4988,9 +5385,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -5009,9 +5406,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -5030,9 +5427,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -5051,9 +5448,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -5072,9 +5469,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -5093,9 +5490,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -5114,9 +5511,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -5135,9 +5532,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -5156,9 +5553,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -5177,9 +5574,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -5198,9 +5595,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -5219,9 +5616,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.TLSModule.dll",
@@ -5240,9 +5637,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UI.dll",
@@ -5261,9 +5658,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -5282,9 +5679,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UIModule.dll",
@@ -5303,9 +5700,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -5324,9 +5721,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -5345,9 +5742,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -5366,9 +5763,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -5387,9 +5784,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -5408,9 +5805,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -5429,9 +5826,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -5450,9 +5847,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -5471,9 +5868,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -5492,9 +5889,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -5513,9 +5910,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -5534,9 +5931,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -5555,9 +5952,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VFXModule.dll",
@@ -5576,9 +5973,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VideoModule.dll",
@@ -5597,9 +5994,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -5618,9 +6015,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.VRModule.dll",
@@ -5639,9 +6036,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.WindModule.dll",
@@ -5660,9 +6057,9 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Managed/UnityEngine.XRModule.dll",
@@ -5681,16 +6078,16 @@
         2
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 137730,
-      "PayloadLength": 12433,
+      "PayloadOffset": 140884,
+      "PayloadLength": 13056,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
       "Inputs": [
@@ -5704,6 +6101,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Mono.Security.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/mscorlib.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/netstandard.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Newtonsoft.Json.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.ComponentModel.Composition.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Configuration.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Core.dll",
@@ -5723,6 +6121,7 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Transactions.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Xml.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/System.Xml.Linq.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Addressables.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.AI.Navigation.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Burst.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Burst.Unsafe.dll",
@@ -5730,8 +6129,11 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Collections.LowLevel.ILSupport.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.InputSystem.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.InputSystem.ForUI.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.InternalAPIEngineBridge.013.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Localization.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Mathematics.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Multiplayer.Center.Common.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Profiling.Core.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Rendering.LightTransport.Runtime.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.RenderPipelines.Core.Runtime.dll",
@@ -5743,6 +6145,8 @@
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.RenderPipelines.Universal.Config.Runtime.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.RenderPipelines.Universal.Runtime.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.RenderPipelines.Universal.Shaders.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.ResourceManager.dll",
+        "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.ScriptableBuildPipeline.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.TextMeshPro.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.Timeline.dll",
         "Library/Bee/artifacts/WinPlayerBuildProgram/ManagedStripped/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -5961,6 +6365,13 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0
       ],
       "Outputs": [],
@@ -5974,14 +6385,14 @@
         0
       ],
       "ToBuildDependencies": [
-        28
+        39
       ],
       "StatSignatures": [
         {
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker"
         },
         {
-          "File": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64"
+          "File": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/no_plugins_were_generated.txt"
         },
         {
           "File": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinkerSymbols"
@@ -5992,42 +6403,38 @@
           "Path": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker"
         },
         {
-          "Path": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64",
-          "Recurse": 1
-        },
-        {
           "Path": "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinkerSymbols",
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 177
     },
     {
-      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/lib_burst_generated.dll",
-      "DisplayName": "Copying lib_burst_generated.dll",
+      "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/no_plugins_were_generated.txt",
+      "DisplayName": "Copying no_plugins_were_generated.txt",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/x86_64/lib_burst_generated.dll"
+        "Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker/no_plugins_were_generated.txt"
       ],
       "InputFlags": [
         0
       ],
       "Outputs": [
-        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/x86_64/lib_burst_generated.dll"
+        "C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Plugins/no_plugins_were_generated.txt"
       ],
       "OutputFlags": [
         2
       ],
       "ToBuildDependencies": [
-        159
+        177
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 150252,
+      "PayloadOffset": 154029,
       "PayloadLength": 19,
       "PayloadDebugContentSnippet": "DefaultCompany\nTest",
       "Inputs": [],
@@ -6038,7 +6445,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/app.info",
@@ -6057,9 +6464,9 @@
         2
       ],
       "ToBuildDependencies": [
-        161
+        179
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test_Data/Resources/unity default resources",
@@ -6077,7 +6484,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/Test.exe",
@@ -6095,7 +6502,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -6113,7 +6520,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -6131,7 +6538,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -6149,7 +6556,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -6167,7 +6574,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -6185,7 +6592,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -6203,7 +6610,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -6221,7 +6628,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -6239,7 +6646,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -6257,7 +6664,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -6275,7 +6682,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -6293,7 +6700,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -6311,7 +6718,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -6329,7 +6736,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -6347,7 +6754,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -6365,7 +6772,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -6383,7 +6790,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -6401,7 +6808,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -6419,7 +6826,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/config",
@@ -6437,7 +6844,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -6455,7 +6862,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/UnityCrashHandler64.exe",
@@ -6473,7 +6880,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/UnityPlayer.dll",
@@ -6491,7 +6898,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "CopyFiles C:/Users/Dell/Desktop/TheAsylumTFG/dist/D3D12/D3D12Core.dll",
@@ -6509,7 +6916,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "Player",
@@ -6537,12 +6944,14 @@
         16,
         17,
         18,
-        21,
-        22,
+        19,
+        20,
         23,
         24,
         25,
         26,
+        27,
+        28,
         29,
         30,
         31,
@@ -6552,8 +6961,6 @@
         35,
         36,
         37,
-        38,
-        39,
         40,
         41,
         42,
@@ -6673,7 +7080,9 @@
         156,
         157,
         158,
+        159,
         160,
+        161,
         162,
         163,
         164,
@@ -6689,9 +7098,7 @@
         174,
         175,
         176,
-        177,
         178,
-        179,
         180,
         181,
         182,
@@ -6699,9 +7106,27 @@
         184,
         185,
         186,
-        187
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 206
     }
   ],
   "FileSignatures": [
@@ -6925,7 +7350,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 188
+          "Player": 206
         }
 ,  "DefaultNodes": [
     0

@@ -1,0 +1,23 @@
+using System;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class AudioConfScript : MonoBehaviour
+{
+    public static float audio = 0.5f;
+
+    public Slider slider;
+    public TMP_Text txtValue;
+
+    private void Start()
+    {
+        slider.value = audio*100;
+    }
+
+    public void changeVolum()
+    {
+        audio = slider.value/100;
+        txtValue.text = Math.Round(slider.value, 3).ToString();
+    }
+}

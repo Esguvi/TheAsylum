@@ -1,30 +1,47 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 public class OptionsBtnsScripts : MonoBehaviour
 {
+
     public static bool backScene;
 
     public GameObject resumeBtn;
-    public TMP_Text homeBtn;
+    public GameObject audioConf;
+    public GameObject keyMoConf;
+    public GameObject screenConf;
+    public VideoPlayer videoPlayer;
+    public VideoClip video;
+
+    private void disableAll()
+    {
+        audioConf.SetActive(false);
+        keyMoConf.SetActive(false);
+        screenConf.SetActive(false);
+}
 
     private void Start()
     {
-        if (backScene) 
-        { 
+        disableAll();
+        audioConf.SetActive(true);
+        if (backScene)
+        {
+            Debug.Log("ENTRO");
+            videoPlayer.Stop();
             resumeBtn.SetActive(true);
-            homeBtn.text = "Menu Principal";
+            videoPlayer.clip = video;
+            videoPlayer.Play();
         }
         else
         {
             resumeBtn.SetActive(false);
-            homeBtn.text = "Volver";
         }
 
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
-
+        Cursor.lockState = CursorLockMode.None;
+        
     }
     public void Resume()
     {
@@ -34,24 +51,38 @@ public class OptionsBtnsScripts : MonoBehaviour
 
         MovementScript.LockMouse();
     }
+
     public void ConfAudio()
     {
         Debug.Log("AUDIO");
+        disableAll();
+        audioConf.SetActive(true);
     }
 
     public void ConfKeys()
     {
-        Debug.Log("KEYS");
+        Debug.Log("TECLADO / RATÓN");
+        disableAll();
+        keyMoConf.SetActive(true);
     }
-    public void ConfGrafics()
+    public void ConfScreen()
     {
-        Debug.Log("GRAFICOS");
+        Debug.Log("PANTALLA");
+        disableAll();
+        screenConf.SetActive(true);
     }
 
-    public void Exit()
+    public void Return()
     {
-        Debug.Log("SALIR");
-        SceneManager.LoadScene("MainScreen");
+        Debug.Log("VOLVER");
+        if (backScene)
+        {
+            SceneManager.LoadScene("MainScreen");
+        }
+        else
+        {
+            SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
+        }
     }
 
 }

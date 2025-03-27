@@ -6,6 +6,38 @@
 		<type fullname="UnityEngine.InputSystem.InputControlScheme" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.InputSystem.InputControlScheme/DeviceRequirement" preserve="nothing" serialized="true"/>
 	</assembly>
+	<assembly fullname="Unity.Localization">
+		<type fullname="UnityEngine.Localization.Events.UnityEventString" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.LocaleIdentifier" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.LocalizedString" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Metadata.MetadataCollection" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.CommandLineLocaleSelector" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.LocalesProvider" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.LocalizedAssetDatabase" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.LocalizedStringDatabase" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.SpecificLocaleSelector" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Settings.SystemLocaleSelector" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Core.Parsing.Parser" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Core.Settings.SmartSettings" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.ChooseFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.ConditionalFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.DefaultFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.DefaultSource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.DictionarySource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.IsMatchFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.ListFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.PersistentVariablesSource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.PluralLocalizationFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.ReflectionSource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.SubStringFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.TimeFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.ValueTupleSource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.XElementFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.Extensions.XmlSource" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.SmartFormat.SmartFormatter" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Tables.TableEntryReference" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.Localization.Tables.TableReference" preserve="nothing" serialized="true"/>
+	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.APVLeakReductionModeParameter" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.Rendering.BoolParameter" preserve="nothing" serialized="true"/>
@@ -78,6 +110,9 @@
 		<type fullname="TMPro.KerningTable" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.LigatureSubstitutionRecord" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_Character" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/DropdownEvent" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionData" preserve="nothing" serialized="true"/>
+		<type fullname="TMPro.TMP_Dropdown/OptionDataList" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_FontFeatureTable" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_FontWeightPair" preserve="nothing" serialized="true"/>
 		<type fullname="TMPro.TMP_InputField/OnChangeEvent" preserve="nothing" serialized="true"/>
@@ -119,6 +154,7 @@
 		<type fullname="UnityEngine.UI.Navigation" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Scrollbar/ScrollEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.ScrollRect/ScrollRectEvent" preserve="nothing" serialized="true"/>
+		<type fullname="UnityEngine.UI.Slider/SliderEvent" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.SpriteState" preserve="nothing" serialized="true"/>
 		<type fullname="UnityEngine.UI.Toggle/ToggleEvent" preserve="nothing" serialized="true"/>
 	</assembly>

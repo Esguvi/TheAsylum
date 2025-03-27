@@ -1,5 +1,14 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AudioConfScript">
+			<method name="changeVolum"/>
+		</type>
+		<type fullname="KeyMoConfScript">
+			<method name="changeSensibility"/>
+		</type>
+		<type fullname="LocaleSelector">
+			<method name="ToggleLanguage"/>
+		</type>
 		<type fullname="LoginManager">
 			<method name="HandleLogin"/>
 		</type>
@@ -11,14 +20,20 @@
 		</type>
 		<type fullname="OptionsBtnsScripts">
 			<method name="ConfAudio"/>
-			<method name="ConfGrafics"/>
-			<method name="Exit"/>
+			<method name="ConfKeys"/>
+			<method name="ConfScreen"/>
 			<method name="Resume"/>
+			<method name="Return"/>
 		</type>
 		<type fullname="RegisterManager">
 			<method name="openWebPage"/>
 		</type>
+		<type fullname="ScreenScripts">
+			<method name="changeLenguage"/>
+			<method name="fullScreen"/>
+		</type>
 		<type fullname="ShowHide">
+			<method name="returnForms"/>
 			<method name="showLoginForm"/>
 		</type>
 	</assembly>
@@ -46,6 +61,28 @@
 			<method name="OnDecrement"/>
 			<method name="OnIncrement"/>
 			<method name="OnIncrement"/>
+		</type>
+	</assembly>
+	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
+		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
 		</type>
 	</assembly>
 </linker>
