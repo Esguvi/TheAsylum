@@ -1,24 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEngine.Rendering.DebugUI.Table;
 
 public class MovementScript : MonoBehaviour
 {
-    public float velocidad;
-    public float salto;
-    public float sensibility;
+    public float velocidad = 5f;
+    public float salto = 5f;
+    public float gravedad = 9.81f;
+    public float sensibility = 2f;
     public Transform grabPoint;
     public Transform flashLight;
 
-    private Rigidbody rb;
+    private CharacterController controller;
     private float rotVer;
     private float rotHor;
     private bool pulsado;
+    private float velocidadY; 
+
+    private Animator anim;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        controller = GetComponent<CharacterController>();
         LockMouse();
+        anim = GetComponent<Animator>();
     }
 
     public static void LockMouse()
@@ -29,6 +33,7 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
+        sensibility = KeyMoConfScript.sensibility;
         if (Input.GetKey(KeyCode.Tab) && SceneManager.sceneCount == 1)
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
@@ -43,19 +48,20 @@ public class MovementScript : MonoBehaviour
         {
             pulsado = false;
         }
-        bool salto = Physics.Raycast(transform.position, Vector3.down, 2f);
-        if (Input.GetKeyDown(KeyCode.Space) && salto)
-        {
-            Jump();
-        }
-        Camera.main.transform.position = new Vector3(
-                                                transform.position.x,
-                                                transform.position.y + 0.7f,
-                                                transform.position.z);
 
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.transform.forward * 4f, Color.red);
+        bool enSuelo = controller.isGrounded;
+
+        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+        {
+            velocidadY = salto;
+        }
+
+        Vector3 offset = transform.rotation * new Vector3(0, 85f, 11f);
+        Camera.main.transform.position = transform.position + offset;
+
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 4f, Color.red);
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.transform.forward, out hit, 4f))
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 4f))
         {
             if (hit.rigidbody != null)
             {
@@ -63,62 +69,79 @@ public class MovementScript : MonoBehaviour
                 {
                     hit.rigidbody.useGravity = false;
                     hit.rigidbody.MovePosition(grabPoint.position);
-
                 }
                 else
                 {
                     hit.rigidbody.useGravity = true;
                 }
+
                 if (Input.GetMouseButtonDown(1))
                 {
                     hit.rigidbody.useGravity = true;
                     pulsado = false;
-                    hit.rigidbody.AddForce(Camera.main.transform.transform.forward * 1000f);
+                    hit.rigidbody.AddForce(Camera.main.transform.forward * 1000f);
                 }
-
             }
-
         }
 
-
-        float inputX = Input.GetAxis("Mouse X") * sensibility;
-
-        rotVer += inputX;
         if (rotVer > 350 || rotVer < -350)
         {
             rotVer = 0;
         }
+
+        // Rotación con el ratón
+        float inputX = Input.GetAxis("Mouse X") * sensibility;
+        rotVer += inputX;
         rotVer = Mathf.Clamp(rotVer, -360, 360);
 
         float inputY = Input.GetAxis("Mouse Y") * sensibility;
-
         rotHor -= inputY;
-
         rotHor = Mathf.Clamp(rotHor, -90, 90);
 
         transform.eulerAngles = new Vector2(0, rotVer);
-
         Camera.main.transform.eulerAngles = new Vector2(rotHor, rotVer);
 
         flashLight.position = Camera.main.transform.position;
         flashLight.rotation = Camera.main.transform.rotation;
     }
+
     private void FixedUpdate()
     {
-        Vector3 rotacion = new Vector3(0, 90, 0);
-        float ver;
         float hor = Input.GetAxis("Horizontal") * velocidad;
-        if (transform.rotation.y < 90 && transform.rotation.y > -90)
-        {
-            ver = Input.GetAxis("Vertical") * velocidad;
-        }
-        else ver = Input.GetAxis("Vertical") * velocidad * -1f;
-        Vector3 direccion = new Vector3(hor, 0, ver);
-        transform.Translate(direccion);
-    }
+        float ver = Input.GetAxis("Vertical") * velocidad;
 
-    private void Jump()
-    {
-        rb.AddForce(Vector3.up * salto);
+        // Movimiento basado en la rotación del personaje
+        Vector3 move = transform.right * hor + transform.forward * ver;
+
+        // Manejo de la gravedad
+        if (controller.isGrounded)
+        {
+            if (velocidadY < 0)
+            {
+                velocidadY = -20f; // Pequeña fuerza hacia abajo para mantener contacto con el suelo
+            }
+        }
+        else
+        {
+            if (velocidadY < 0)
+            {
+                // Si está cayendo, aumentamos la gravedad para caer más rápido
+                velocidadY -= (gravedad * 40f) * Time.deltaTime;
+            }
+            else
+            {
+                // Gravedad normal al subir
+                velocidadY -= (gravedad * 40f) * Time.deltaTime;
+            }
+        }
+
+        move.y = velocidadY;
+
+        // Mover al personaje usando CharacterController
+        controller.Move(move * Time.deltaTime);
+
+        // Animaciones
+        anim.SetFloat("VelX", hor);
+        anim.SetFloat("VelY", ver);
     }
 }

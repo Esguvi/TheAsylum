@@ -9,13 +9,26 @@ public class OptionsBtnsScripts : MonoBehaviour
     public static bool backScene;
 
     public GameObject resumeBtn;
+    public GameObject audioConf;
+    public GameObject keyMoConf;
+    public GameObject screenConf;
     public VideoPlayer videoPlayer;
     public VideoClip video;
 
+    private void disableAll()
+    {
+        audioConf.SetActive(false);
+        keyMoConf.SetActive(false);
+        screenConf.SetActive(false);
+}
+
     private void Start()
     {
+        disableAll();
+        audioConf.SetActive(true);
         if (backScene)
         {
+            Debug.Log("ENTRO");
             videoPlayer.Stop();
             resumeBtn.SetActive(true);
             videoPlayer.clip = video;
@@ -27,14 +40,9 @@ public class OptionsBtnsScripts : MonoBehaviour
         }
 
         Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.None;
+        
     }
-
-    public void ConfAudio()
-    {
-        Debug.Log("AUDIO");
-    }
-
     public void Resume()
     {
         Debug.Log("Reanudar");
@@ -44,19 +52,30 @@ public class OptionsBtnsScripts : MonoBehaviour
         MovementScript.LockMouse();
     }
 
+    public void ConfAudio()
+    {
+        Debug.Log("AUDIO");
+        disableAll();
+        audioConf.SetActive(true);
+    }
+
     public void ConfKeys()
     {
         Debug.Log("TECLADO / RATÓN");
+        disableAll();
+        keyMoConf.SetActive(true);
     }
     public void ConfScreen()
     {
         Debug.Log("PANTALLA");
+        disableAll();
+        screenConf.SetActive(true);
     }
 
     public void Return()
     {
         Debug.Log("VOLVER");
-        if(backScene)
+        if (backScene)
         {
             SceneManager.LoadScene("MainScreen");
         }

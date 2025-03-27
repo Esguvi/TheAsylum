@@ -1,5 +1,6 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
+		<type fullname="ChangeUsername" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
 		<type fullname="MainSceneScript" preserve="nothing"/>
@@ -7,6 +8,7 @@
 		<type fullname="OptionsBtnsScripts" preserve="nothing"/>
 		<type fullname="PersistentVideo" preserve="nothing"/>
 		<type fullname="RegisterManager" preserve="nothing"/>
+		<type fullname="SessionManager" preserve="nothing"/>
 		<type fullname="ShowHide" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
