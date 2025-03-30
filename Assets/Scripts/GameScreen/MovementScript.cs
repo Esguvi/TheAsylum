@@ -1,5 +1,6 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class MovementScript : MonoBehaviour
 {
@@ -14,15 +15,23 @@ public class MovementScript : MonoBehaviour
     private float rotVer;
     private float rotHor;
     private bool pulsado;
-    private float velocidadY; 
+    private float velocidadY;
 
     private Animator anim;
+
+    public GameObject inventario;
+    private float nextAllowedPressTime = 0f;
+    public float cooldown = 1f;
+
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         LockMouse();
         anim = GetComponent<Animator>();
+        inventario = GameObject.Find("InvantoryBar");
+        inventario.SetActive(false);
+       
     }
 
     public static void LockMouse()
@@ -33,8 +42,10 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
+
         sensibility = KeyMoConfScript.sensibility;
-        if (Input.GetKey(KeyCode.Tab) && SceneManager.sceneCount == 1)
+
+        if (Input.GetKey(KeyCode.Escape) && SceneManager.sceneCount == 1)
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
@@ -47,6 +58,22 @@ public class MovementScript : MonoBehaviour
         else if (Input.GetMouseButtonUp(0))
         {
             pulsado = false;
+        }
+        if (inventario != null)
+        {
+            if(inventario.activeSelf == false && Input.GetKey(KeyCode.Q) && Time.time >= nextAllowedPressTime)
+            {
+                
+                inventario.SetActive(true);
+                nextAllowedPressTime = Time.time + cooldown;
+
+            }
+            else if (inventario.activeSelf == true && Input.GetKey(KeyCode.Q) && Time.time >= nextAllowedPressTime)
+            {
+                
+                inventario.SetActive(false);
+                nextAllowedPressTime = Time.time + cooldown;
+            }
         }
 
         bool enSuelo = controller.isGrounded;
@@ -89,7 +116,6 @@ public class MovementScript : MonoBehaviour
             rotVer = 0;
         }
 
-        // Rotación con el ratón
         float inputX = Input.GetAxis("Mouse X") * sensibility;
         rotVer += inputX;
         rotVer = Mathf.Clamp(rotVer, -360, 360);
@@ -110,38 +136,36 @@ public class MovementScript : MonoBehaviour
         float hor = Input.GetAxis("Horizontal") * velocidad;
         float ver = Input.GetAxis("Vertical") * velocidad;
 
-        // Movimiento basado en la rotación del personaje
         Vector3 move = transform.right * hor + transform.forward * ver;
 
-        // Manejo de la gravedad
         if (controller.isGrounded)
         {
             if (velocidadY < 0)
             {
-                velocidadY = -20f; // Pequeña fuerza hacia abajo para mantener contacto con el suelo
+                velocidadY = -20f; 
             }
         }
         else
         {
             if (velocidadY < 0)
             {
-                // Si está cayendo, aumentamos la gravedad para caer más rápido
                 velocidadY -= (gravedad * 40f) * Time.deltaTime;
             }
             else
             {
-                // Gravedad normal al subir
                 velocidadY -= (gravedad * 40f) * Time.deltaTime;
             }
         }
 
         move.y = velocidadY;
 
-        // Mover al personaje usando CharacterController
         controller.Move(move * Time.deltaTime);
 
-        // Animaciones
         anim.SetFloat("VelX", hor);
         anim.SetFloat("VelY", ver);
+    }
+    private IEnumerator SpawnDelay()
+    {
+        yield return new WaitForSeconds(2);
     }
 }
