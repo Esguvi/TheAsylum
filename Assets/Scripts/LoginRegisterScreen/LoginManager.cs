@@ -1,7 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI;
-using Firebase;
 using Firebase.Auth;
+using Firebase.Firestore;
 using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -11,17 +10,20 @@ public class LoginManager : MonoBehaviour
     public TMP_InputField userEmail;
     public TMP_InputField userPassword;
     public GameObject error;
+
     private FirebaseAuth auth;
+    private FirebaseFirestore db;
 
     void Start()
     {
         auth = FirebaseAuth.DefaultInstance;
+        db = FirebaseFirestore.DefaultInstance;
         error.SetActive(false);
     }
 
     public void HandleLogin()
     {
-        string email = userEmail.text;
+        string email = userEmail.text.Trim();
         string password = userPassword.text;
 
         StartCoroutine(LoginUser(email, password));
@@ -35,13 +37,60 @@ public class LoginManager : MonoBehaviour
         if (loginTask.Exception != null)
         {
             error.SetActive(true);
-            //EditorUtility.DisplayDialog("ERROR","Email y/o contraseña incorrectos","Aceptar");
             Debug.LogError("Login failed: " + loginTask.Exception);
         }
         else
         {
             FirebaseUser user = loginTask.Result.User;
-            SceneManager.LoadScene("MainScreen");
+            if (user != null)
+            {
+                StartCoroutine(LoadUsername(user));
+            }
+            else
+            {
+                Debug.LogError("Error: Usuario es null después del login.");
+            }
         }
+    }
+
+    IEnumerator LoadUsername(FirebaseUser user)
+    {
+        if (user == null)
+        {
+            Debug.LogError("Error: FirebaseUser es null.");
+            yield break;
+        }
+
+        var userDoc = db.Collection("users").Document(user.UserId).GetSnapshotAsync();
+        yield return new WaitUntil(() => userDoc.IsCompleted);
+
+        if (userDoc.Exception != null)
+        {
+            Debug.LogError("Error obteniendo el username: " + userDoc.Exception);
+            yield break;
+        }
+
+        DocumentSnapshot snapshot = userDoc.Result;
+        string username = "Invitado";
+
+        if (snapshot.Exists && snapshot.ContainsField("username"))
+        {
+            username = snapshot.GetValue<string>("username");
+        }
+        else
+        {
+            username = user.Email.Split('@')[0];
+        }
+
+        if (SessionManager.Instance != null)
+        {
+            SessionManager.Instance.SetUser(username);
+        }
+        else
+        {
+            Debug.LogError("Error: SessionManager.Instance es null.");
+        }
+
+        SceneManager.LoadScene("MainScreen");
     }
 }

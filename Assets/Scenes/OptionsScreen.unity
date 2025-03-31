@@ -313,7 +313,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 580929082}
+      - m_Target: {fileID: 580929079}
         m_TargetAssemblyTypeName: OptionsBtnsScripts, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -651,7 +651,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 175946861}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 726f98bf7e3748644a218f55c9ebc843, type: 3}
+  m_Script: {fileID: 11500000, guid: b3d6c87f41066f6449391477b6e0fafd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   drop: {fileID: 1198282125}
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 580929082}
+      - m_Target: {fileID: 580929079}
         m_TargetAssemblyTypeName: OptionsBtnsScripts, Assembly-CSharp
         m_MethodName: Return
         m_Mode: 1
@@ -1485,7 +1485,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 580929078}
-  - component: {fileID: 580929082}
+  - component: {fileID: 580929079}
   m_Layer: 0
   m_Name: BtnsManager
   m_TagString: Untagged
@@ -1513,7 +1513,7 @@ Transform:
   - {fileID: 272490602}
   m_Father: {fileID: 2055195854}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &580929082
+--- !u!114 &580929079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1522,7 +1522,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 580929077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cb92efccf5163e4f827c7e26d9fdc53, type: 3}
+  m_Script: {fileID: 11500000, guid: 47c12cd9a5438044db238b662e22a9a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   resumeBtn: {fileID: 54818651}
@@ -2096,7 +2096,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 580929082}
+      - m_Target: {fileID: 580929079}
         m_TargetAssemblyTypeName: OptionsBtnsScripts, Assembly-CSharp
         m_MethodName: ConfScreen
         m_Mode: 1
@@ -2595,6 +2595,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138600347}
   - component: {fileID: 1138600346}
+  - component: {fileID: 1138600348}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -2623,7 +2624,7 @@ VideoPlayer:
   m_DataSource: 0
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
-  m_AudioOutputMode: 1
+  m_AudioOutputMode: 2
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
@@ -2653,6 +2654,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1138600348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138600345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64e420ed93b29ac4bb5521cd92461c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1153201563
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,7 +3052,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 580929082}
+      - m_Target: {fileID: 580929079}
         m_TargetAssemblyTypeName: OptionsBtnsScripts, Assembly-CSharp
         m_MethodName: ConfKeys
         m_Mode: 1
@@ -4669,7 +4682,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 580929082}
+      - m_Target: {fileID: 580929079}
         m_TargetAssemblyTypeName: OptionsBtnsScripts, Assembly-CSharp
         m_MethodName: ConfAudio
         m_Mode: 1
@@ -4761,7 +4774,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1759416997}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a55ddeb3161867a46ae6ca99613e8b79, type: 3}
+  m_Script: {fileID: 11500000, guid: 34bd2d48e0e8ff0438989c2a032d0823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 1467686792}
@@ -4910,7 +4923,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1957141651}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7ef91ab6c30633449d0991130f11dca, type: 3}
+  m_Script: {fileID: 11500000, guid: be3a6d2ff8d22b044be0bc92f525406b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 419563678}
