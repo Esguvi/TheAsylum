@@ -37,6 +37,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "DoorScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
@@ -45,6 +52,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -57,6 +65,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -83,6 +92,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -137,6 +147,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -156,8 +167,30 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ObjectInteractableMultiplayer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ObjectInteractableSolo",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "ObjectLocalizer",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
@@ -174,10 +207,129 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.Asteroid",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.Bullet",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.Asteroids.Spaceship",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.PunBasics.CameraWork",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.PunBasics.PlayerAnimatorManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.PunBasics.PlayerManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.PunBasics.PlayerUI",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.SlotRacer.PlayerControl",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.Demos.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.Demo.SlotRacer.Utils.SplineWalker",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.PhotonAnimatorView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.PhotonRigidbodyView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.PhotonTransformView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.PhotonTransformViewClassic",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.PhotonView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "PhotonUnityNetworking.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "Photon.Pun.ServerSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PhotonCharacterControllerView",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "PhysicsManager",
             "fullManagedTypeName": "",
             "moduleName": "Physics",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PlayerSetup",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -192,6 +344,13 @@
             "nativeClass": "ResourceManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "RoomManager",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -298,7 +457,9 @@
             "fullManagedTypeName": "UnityEditor.Animations.AnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -331,6 +492,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -375,7 +537,9 @@
             "fullManagedTypeName": "UnityEngine.AnimationClip",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -384,7 +548,9 @@
             "fullManagedTypeName": "UnityEngine.Animator",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -416,6 +582,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -438,6 +605,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -457,7 +625,9 @@
             "fullManagedTypeName": "UnityEngine.Avatar",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -469,7 +639,19 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "BoxCollider",
+            "fullManagedTypeName": "UnityEngine.BoxCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -481,6 +663,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -490,9 +673,19 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "CanvasGroup",
+            "fullManagedTypeName": "UnityEngine.CanvasGroup",
+            "moduleName": "UI",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
             ]
         },
         {
@@ -501,6 +694,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
@@ -512,7 +706,9 @@
             "fullManagedTypeName": "UnityEngine.CapsuleCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -521,7 +717,9 @@
             "fullManagedTypeName": "UnityEngine.CharacterController",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -530,7 +728,9 @@
             "fullManagedTypeName": "UnityEngine.Collider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -542,6 +742,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -558,7 +759,6 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
@@ -584,6 +784,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
@@ -598,6 +799,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -652,16 +854,8 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "LightingSettings",
-            "fullManagedTypeName": "UnityEngine.LightingSettings",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {
@@ -673,6 +867,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -682,16 +877,8 @@
             "fullManagedTypeName": "UnityEngine.LightProbeGroup",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
-            ]
-        },
-        {
-            "managedAssemblyName": "UnityEngine.dll",
-            "nativeClass": "LightProbes",
-            "fullManagedTypeName": "UnityEngine.LightProbes",
-            "moduleName": "Core",
-            "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -725,14 +912,7 @@
         {
             "managedAssemblyName": "Unity.Localization.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Localization.Tables.SharedTableData",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.Localization.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Localization.Tables.StringTable",
+            "fullManagedTypeName": "UnityEngine.Localization.VariantsPropertyDriver",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -745,6 +925,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -754,7 +935,9 @@
             "fullManagedTypeName": "UnityEngine.Mesh",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -763,7 +946,8 @@
             "fullManagedTypeName": "UnityEngine.MeshCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -772,7 +956,9 @@
             "fullManagedTypeName": "UnityEngine.MeshFilter",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -781,7 +967,9 @@
             "fullManagedTypeName": "UnityEngine.MeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -793,6 +981,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -802,7 +991,9 @@
             "fullManagedTypeName": "UnityEngine.Motion",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -814,7 +1005,26 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "ParticleSystem",
+            "fullManagedTypeName": "UnityEngine.ParticleSystem",
+            "moduleName": "ParticleSystem",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "ParticleSystemRenderer",
+            "fullManagedTypeName": "UnityEngine.ParticleSystemRenderer",
+            "moduleName": "ParticleSystem",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
             ]
         },
         {
@@ -830,6 +1040,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
@@ -841,7 +1052,8 @@
             "fullManagedTypeName": "UnityEngine.ReflectionProbe",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -850,7 +1062,9 @@
             "fullManagedTypeName": "UnityEngine.Renderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -1289,6 +1503,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1305,11 +1520,22 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "Rigidbody",
+            "fullManagedTypeName": "UnityEngine.Rigidbody",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "RuntimeAnimatorController",
             "fullManagedTypeName": "UnityEngine.RuntimeAnimatorController",
             "moduleName": "Animation",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {
@@ -1321,6 +1547,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1330,7 +1557,18 @@
             "fullManagedTypeName": "UnityEngine.SkinnedMeshRenderer",
             "moduleName": "Core",
             "usedInScenes": [
-                "Assets/Scenes/GameScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SphereCollider",
+            "fullManagedTypeName": "UnityEngine.SphereCollider",
+            "moduleName": "Physics",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
             ]
         },
         {
@@ -1353,6 +1591,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1365,6 +1604,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1377,6 +1617,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1389,6 +1630,7 @@
                 "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1473,6 +1715,13 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.ScrollRect",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "UnityEngine.UI.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.UI.Shadow",
             "moduleName": "",
             "usedInScenes": []
         },

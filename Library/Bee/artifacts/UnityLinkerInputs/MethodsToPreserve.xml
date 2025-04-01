@@ -15,6 +15,7 @@
 		<type fullname="MainSceneScript">
 			<method name="Credits"/>
 			<method name="Exit"/>
+			<method name="MultiPlayer"/>
 			<method name="Options"/>
 			<method name="StartGame"/>
 		</type>
@@ -65,6 +66,8 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

@@ -3,17 +3,43 @@
 		<type fullname="AudioConfScript" preserve="nothing"/>
 		<type fullname="AudioScript" preserve="nothing"/>
 		<type fullname="ChangeUsername" preserve="nothing"/>
+		<type fullname="DoorScript" preserve="nothing"/>
 		<type fullname="KeyMoConfScript" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
 		<type fullname="MainSceneScript" preserve="nothing"/>
 		<type fullname="MovementScript" preserve="nothing"/>
+		<type fullname="ObjectInteractableMultiplayer" preserve="nothing"/>
+		<type fullname="ObjectInteractableSolo" preserve="nothing"/>
+		<type fullname="ObjectLocalizer" preserve="nothing"/>
 		<type fullname="OptionsBtnsScripts" preserve="nothing"/>
 		<type fullname="PersistentVideo" preserve="nothing"/>
+		<type fullname="PhotonCharacterControllerView" preserve="nothing"/>
+		<type fullname="PlayerSetup" preserve="nothing"/>
 		<type fullname="RegisterManager" preserve="nothing"/>
+		<type fullname="RoomManager" preserve="nothing"/>
 		<type fullname="ScreenScripts" preserve="nothing"/>
 		<type fullname="SessionManager" preserve="nothing"/>
 		<type fullname="ShowHide" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonUnityNetworking.Demos">
+		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.Asteroids.Bullet" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.Asteroids.Spaceship" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.PunBasics.CameraWork" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.PunBasics.PlayerAnimatorManager" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.PunBasics.PlayerManager" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.PunBasics.PlayerUI" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.SlotRacer.PlayerControl" preserve="nothing"/>
+		<type fullname="Photon.Pun.Demo.SlotRacer.Utils.SplineWalker" preserve="nothing"/>
+	</assembly>
+	<assembly fullname="PhotonUnityNetworking">
+		<type fullname="Photon.Pun.PhotonAnimatorView" preserve="nothing"/>
+		<type fullname="Photon.Pun.PhotonRigidbodyView" preserve="nothing"/>
+		<type fullname="Photon.Pun.PhotonTransformView" preserve="nothing"/>
+		<type fullname="Photon.Pun.PhotonTransformViewClassic" preserve="nothing"/>
+		<type fullname="Photon.Pun.PhotonView" preserve="nothing"/>
+		<type fullname="Photon.Pun.ServerSettings" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputActionAsset" preserve="nothing"/>
@@ -28,8 +54,7 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.ProbeVolumesOptions" preserve="nothing"/>
@@ -128,8 +153,10 @@
 		<type fullname="UnityEngine.AudioSource" preserve="nothing"/>
 		<type fullname="UnityEngine.Avatar" preserve="nothing"/>
 		<type fullname="UnityEngine.Behaviour" preserve="nothing"/>
+		<type fullname="UnityEngine.BoxCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Camera" preserve="nothing"/>
 		<type fullname="UnityEngine.Canvas" preserve="nothing"/>
+		<type fullname="UnityEngine.CanvasGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.CanvasRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.CapsuleCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.CharacterController" preserve="nothing"/>
@@ -140,10 +167,8 @@
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
-		<type fullname="UnityEngine.LightingSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbeGroup" preserve="nothing"/>
-		<type fullname="UnityEngine.LightProbes" preserve="nothing"/>
 		<type fullname="UnityEngine.Material" preserve="nothing"/>
 		<type fullname="UnityEngine.Mesh" preserve="nothing"/>
 		<type fullname="UnityEngine.MeshCollider" preserve="nothing"/>
@@ -152,6 +177,8 @@
 		<type fullname="UnityEngine.MonoBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Motion" preserve="nothing"/>
 		<type fullname="UnityEngine.Object" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystem" preserve="nothing"/>
+		<type fullname="UnityEngine.ParticleSystemRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.QualitySettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RectTransform" preserve="nothing"/>
 		<type fullname="UnityEngine.ReflectionProbe" preserve="nothing"/>
@@ -159,9 +186,11 @@
 		<type fullname="UnityEngine.Rendering.GraphicsSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.RenderTexture" preserve="nothing"/>
+		<type fullname="UnityEngine.Rigidbody" preserve="nothing"/>
 		<type fullname="UnityEngine.RuntimeAnimatorController" preserve="nothing"/>
 		<type fullname="UnityEngine.Shader" preserve="nothing"/>
 		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
+		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
@@ -185,6 +214,7 @@
 		<type fullname="UnityEngine.UI.RectMask2D" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Scrollbar" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.ScrollRect" preserve="nothing"/>
+		<type fullname="UnityEngine.UI.Shadow" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Slider" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Text" preserve="nothing"/>
 		<type fullname="UnityEngine.UI.Toggle" preserve="nothing"/>

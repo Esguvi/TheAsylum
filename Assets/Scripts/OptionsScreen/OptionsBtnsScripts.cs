@@ -1,3 +1,4 @@
+using Photon.Pun;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -77,6 +78,7 @@ public class OptionsBtnsScripts : MonoBehaviour
         Debug.Log("VOLVER");
         if (backScene)
         {
+            PhotonNetwork.Disconnect();
             SceneManager.LoadScene("MainScreen");
         }
         else
