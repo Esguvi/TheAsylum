@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: es
   m_SharedData: {fileID: 11400000, guid: c3a645e6be9a7a841a5425de730ba5b3, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 1393502964261322818
   m_TableData:
   - m_Id: 45802999808
     m_Localized: "Iniciar sesi\xF3n"
@@ -82,6 +83,27 @@ MonoBehaviour:
     m_Localized: "Men\xFA principal"
     m_Metadata:
       m_Items: []
+  - m_Id: 613672096518144
+    m_Localized: 'Usuario: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 1393502964261322818
+  - m_Id: 2065195292839936
+    m_Localized: Pulsa [E] para coger la linterna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4016082988957696
+    m_Localized: Pulsa [E] para interactuar con la puerta
+    m_Metadata:
+      m_Items:
+      - rid: 1393502964261322818
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1393502964261322818
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 613672096518144
+        - id: 4016082988957696

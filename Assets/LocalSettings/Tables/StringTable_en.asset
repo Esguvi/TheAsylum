@@ -16,7 +16,8 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: c3a645e6be9a7a841a5425de730ba5b3, type: 2}
   m_Metadata:
-    m_Items: []
+    m_Items:
+    - rid: 1393502964261322817
   m_TableData:
   - m_Id: 45802999808
     m_Localized: Login
@@ -82,6 +83,27 @@ MonoBehaviour:
     m_Localized: Main menu
     m_Metadata:
       m_Items: []
+  - m_Id: 613672096518144
+    m_Localized: 'User: {0}'
+    m_Metadata:
+      m_Items:
+      - rid: 1393502964261322817
+  - m_Id: 2065195292839936
+    m_Localized: Press [E] to take the flashlight
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4016082988957696
+    m_Localized: Press [E] to interact with the door
+    m_Metadata:
+      m_Items:
+      - rid: 1393502964261322817
   references:
     version: 2
-    RefIds: []
+    RefIds:
+    - rid: 1393502964261322817
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 
+        m_SharedEntries:
+        - id: 613672096518144
+        - id: 4016082988957696
