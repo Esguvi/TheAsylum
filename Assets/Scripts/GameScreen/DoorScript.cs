@@ -12,7 +12,6 @@ public class DoorScript : MonoBehaviour
     
     private bool cerca;
     private bool abierto;
-    private bool enemy;
     private TextMeshProUGUI interactText;
     private GameObject canvas;
     private ObjectLocalizer localizer;
@@ -26,11 +25,10 @@ public class DoorScript : MonoBehaviour
     private void Update()
     {
         interactText.text = localizer.GetLocalizedName();
-        if (cerca || enemy)
+        if (cerca)
         {
-            if (Input.GetKeyDown(KeyCode.E) || enemy)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                enemy = false;
                 if (!abierto)
                 {
                     if (puertaR != null)
@@ -65,8 +63,17 @@ public class DoorScript : MonoBehaviour
         Debug.Log(other.tag);
         if(other.tag == "Enemy")
         {
-            Debug.Log("ABRIR");
-            enemy = true;
+            if (!abierto) {
+                if (puertaR != null)
+                {
+                    puertaR.transform.Rotate(new Vector3(0, 90f, 0));
+                }
+                if (puertaL != null)
+                {
+                    puertaL.transform.Rotate(new Vector3(0, -90f, 0));
+                }
+                abierto = true;
+            }
         }
 
         if (other.gameObject.GetComponent<MovementScript>() != null)
@@ -82,7 +89,18 @@ public class DoorScript : MonoBehaviour
         
         if (other.tag == "Enemy")
         {
-            enemy = true;
+            if (abierto)
+            {
+                if (puertaR != null)
+                {
+                    puertaR.transform.Rotate(new Vector3(0, -90, 0));
+                }
+                if (puertaL != null)
+                {
+                    puertaL.transform.Rotate(new Vector3(0, 90, 0));
+                }
+                abierto = false;
+            }
         }
 
         if (other.gameObject.GetComponent<MovementScript>() != null)

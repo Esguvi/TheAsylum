@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class MovementScript : MonoBehaviour
 {
