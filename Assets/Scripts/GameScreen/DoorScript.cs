@@ -24,9 +24,10 @@ public class DoorScript : MonoBehaviour
     }
     private void Update()
     {
-        interactText.text = localizer.GetLocalizedName();
+        
         if (cerca)
         {
+            interactText.text = localizer.GetLocalizedName();
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if (!abierto)
@@ -60,7 +61,6 @@ public class DoorScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {   
-        Debug.Log(other.tag);
         if(other.tag == "Enemy")
         {
             if (!abierto) {

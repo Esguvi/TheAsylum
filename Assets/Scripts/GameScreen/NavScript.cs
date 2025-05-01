@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
 using Random = UnityEngine.Random;
@@ -17,11 +18,13 @@ public class NavScript : MonoBehaviour
     private bool down = true;
     private bool changeHeigh;
     private Transform destine;
+    private Animator anim;
     private void Start()
     {
         randomInt = Random.Range(0, (points.Count - 1));
         delayTime = Time.time + 2;
         destine = points[randomInt].transform;
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -34,43 +37,48 @@ public class NavScript : MonoBehaviour
         }
         else
         {
-            if ((down && points[randomInt].position.y > 100) || (!down && points[randomInt].position.y < 100))
+            if (delayTime < Time.time)
             {
-                if (down)
+
+                if ((down && points[randomInt].position.y > 100) || (!down && points[randomInt].position.y < 100))
                 {
-                    agent.SetDestination(downPoint.position);
+                    if (down)
+                    {
+                        agent.SetDestination(downPoint.position);
+                    }
+                    else
+                    {
+                        agent.SetDestination(upPoint.position);
+                    }
+                    changeHeigh = true;
                 }
                 else
                 {
-                    agent.SetDestination(upPoint.position);
+                    agent.SetDestination(destine.position);
+                    anim.SetBool("isRunning", true);
                 }
-                changeHeigh = true;
+
+
+                if (agent.remainingDistance > 0 && agent.remainingDistance < 2)
+                {
+                    anim.SetBool("isRunning", false);
+                    delayTime = Time.time + 2;
+
+                    if (destine.childCount > 0)
+                    {
+                        destine = destine.GetChild(0);
+                    }
+                    else if (destine.childCount == 0)
+                    {
+                        randomInt = Random.Range(0, (points.Count - 1));
+                        randomInt++;
+                        destine = points[randomInt].transform;
+                    }
+                }
             }
             else
             {
-                agent.SetDestination(destine.position);
-            }
-
-
-            if (agent.remainingDistance > 0 && agent.remainingDistance < 2 && delayTime < Time.time)
-            {
-                
-                delayTime = Time.time + 2;
-                
-                Debug.Log(destine.childCount);
-                if(destine.childCount > 0)
-                {
-                    Debug.Log("ENTRA");
-                    destine = destine.GetChild(0);
-                }
-                else if(destine.childCount == 0)
-                {
-                    Debug.Log("LLEGA");
-                    randomInt = Random.Range(0, (points.Count - 1));
-                    randomInt++;
-                    destine = points[randomInt].transform;
-                    
-                }
+                Debug.Log("Esperando " + (Time.time - delayTime));
             }
         }
     }

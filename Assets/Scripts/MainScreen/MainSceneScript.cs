@@ -5,19 +5,16 @@ public class MainSceneScript : MonoBehaviour
 {
     public void StartGame()
     {
-        Debug.Log("JUGAR");
         SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
     }
 
     public void MultiPlayer()
     {
-        Debug.Log("MULTIJUGADOR");
         SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
     }
 
     public void Options()
     {
-        Debug.Log("OPCIONES");
         SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
         OptionsBtnsScripts.backScene = false;
     }
@@ -29,7 +26,6 @@ public class MainSceneScript : MonoBehaviour
 
     public void Exit()
     {
-        Debug.Log("SALIR");
         Application.Quit();
     }
 }

@@ -8,7 +8,6 @@ public class MovementScript : MonoBehaviour
     public float gravedad;
     public float sensibility;
     public Transform grabPoint;
-    public GameObject camera;
     //public Transform flashLight;
 
     private CharacterController controller;
@@ -41,6 +40,7 @@ public class MovementScript : MonoBehaviour
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
+            Camera.main.GetComponent<AudioListener>().enabled = false;
         }
 
         if (Input.GetMouseButtonDown(0))
