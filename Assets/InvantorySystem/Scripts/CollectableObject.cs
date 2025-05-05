@@ -31,16 +31,19 @@ public class CollectableObject : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player"  && !justSpawned)
+        if (other.tag == "Character1"  && !justSpawned)
         {
-            other.GetComponent<Invantory>().AddItemToInvanntory(this);
-            Destroy(gameObject);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                other.GetComponent<Invantory>().AddItemToInvanntory(this);
+            }
+            
         }
     }
 
     void OnTriggerExit(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Character1")
         {
             justSpawned = false;
             StopCoroutine(SpawnSleepTimer());

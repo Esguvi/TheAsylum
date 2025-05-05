@@ -34,9 +34,11 @@ public class Invantory : MonoBehaviour
     private List<InvantoryObject> invantoryItems = new List<InvantoryObject>();
     [Tooltip("Enables the tooltip text in the UI, otherwise this will be ignored")][SerializeField]private bool useTooltip;
     [Tooltip("Should be set, leave me alone please")][SerializeField]private Text tooltipText;
-
+    public float tabCooldown = 0.1f;            
+    private float lastTabPressed = -0.1f;
     void Start()
     {
+        invantoryRoot.SetActive(true);
         objectsInInvantory = new List<InvantoryObject>();
         invantorySlots = new List<GameObject>();
         invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
@@ -49,6 +51,7 @@ public class Invantory : MonoBehaviour
         for (var i = 0; i < invantorySlots.Count; ++i)
             invantorySlots[i].GetComponent<InvantorySlot>().ToggleSlot(false);
         invantorySlots[currentlySelectedItem].GetComponent<InvantorySlot>().ToggleSlot(true);
+        
         invantoryItems = Resources.LoadAll<InvantoryObject>("InvantoryItems").ToList();
         if(resetInvantoryOnStart)
             ResetInvantory();
@@ -56,9 +59,20 @@ public class Invantory : MonoBehaviour
         {
             tooltipText.gameObject.SetActive(true);
         }
+        invantoryRoot.SetActive(false);
     }
 
-    // Update the input logic here to change how the the slots get toggled and the selected item is used.
+    
+        void Awake()
+        {
+        if (invantoryRoot == null)
+            invantoryRoot = GameObject.Find("InvantoryRoot");
+        if (invantoryObjectTemplate == null) invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
+        if (invantoryItems == null)
+                invantoryItems= new List<InvantoryObject>(); 
+        }
+
+    
     void Update()
     {
         // Cycle through the in
@@ -67,9 +81,13 @@ public class Invantory : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
             ToggleSlot(false);
 
-        if (Input.GetButtonDown("Submit"))
-            UseSelectedItem();
-        
+        if (Input.GetKeyDown(KeyCode.Tab)
+           && Time.time >= lastTabPressed + tabCooldown)
+        {
+            invantoryRoot.SetActive(!invantoryRoot.activeSelf);
+            lastTabPressed = Time.time;
+        }
+
     }
 
     private void ToggleSlot(bool goUp)
