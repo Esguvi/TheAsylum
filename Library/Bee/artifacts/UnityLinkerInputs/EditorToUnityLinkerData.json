@@ -44,6 +44,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "DoorScriptMultiplayer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
@@ -76,6 +83,13 @@
             "nativeClass": "GlobalGameManager",
             "fullManagedTypeName": "",
             "moduleName": "Core",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "InteractionManager",
+            "moduleName": "",
             "usedInScenes": []
         },
         {
@@ -471,13 +485,6 @@
             "usedInScenes": []
         },
         {
-            "managedAssemblyName": "Unity.TextMeshPro.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "TMPro.TMP_SubMeshUI",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
             "managedAssemblyName": "Unity.AI.Navigation.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Unity.AI.Navigation.NavMeshSurface",
@@ -739,6 +746,7 @@
                 "Assets/Scenes/GameScreen1.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -761,6 +769,7 @@
                 "Assets/Scenes/GameScreen1.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -856,6 +865,7 @@
                 "Assets/Scenes/GameScreen1.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -979,20 +989,6 @@
             "managedAssemblyName": "Unity.Localization.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Localization.Settings.LocalizationSettings",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.Localization.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Localization.Tables.SharedTableData",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Unity.Localization.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "UnityEngine.Localization.Tables.StringTable",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1151,6 +1147,7 @@
                 "Assets/Scenes/GameScreen1.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity"
             ]
         },
@@ -1684,7 +1681,9 @@
             "fullManagedTypeName": "UnityEngine.SphereCollider",
             "moduleName": "Physics",
             "usedInScenes": [
-                "Assets/Scenes/LoginRegisterScreen.unity"
+                "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
+                "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
         {

@@ -4,6 +4,8 @@
 		<type fullname="AudioScript" preserve="nothing"/>
 		<type fullname="ChangeUsername" preserve="nothing"/>
 		<type fullname="DoorScript" preserve="nothing"/>
+		<type fullname="DoorScriptMultiplayer" preserve="nothing"/>
+		<type fullname="InteractionManager" preserve="nothing"/>
 		<type fullname="KeyMoConfScript" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
@@ -59,8 +61,6 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
@@ -139,7 +139,6 @@
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
-		<type fullname="TMPro.TMP_SubMeshUI" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>
