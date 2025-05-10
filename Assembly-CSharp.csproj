@@ -76,6 +76,7 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
     <Compile Include="Assets\Scripts\LoginRegisterScreen\LoginManager.cs" />
     <Compile Include="Assets\Scripts\SessionManager\SessionManager.cs" />
+    <Compile Include="Assets\Characters\Enemy\Demo Scripts\AnimationController.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\AudioScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
@@ -115,9 +116,12 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
     <Compile Include="Assets\Scripts\PersistentVideo.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\PhotonCharacterControllerView.cs" />
+    <Compile Include="Assets\Characters\Enemy\Demo Scripts\AnimationItemData.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\Characters\Enemy\Demo Scripts\UIElementController.cs" />
+    <Compile Include="Assets\Characters\Enemy\Demo Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\OptionsScreen\AudioConfScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />

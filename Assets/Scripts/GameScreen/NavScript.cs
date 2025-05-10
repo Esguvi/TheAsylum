@@ -29,7 +29,8 @@ public class NavScript : MonoBehaviour
     {
         Vector3 offset = new Vector3(0, 105f, 0);
         Debug.DrawLine((transform.position+offset), (player.position + offset));
-        if (!Physics.Linecast((transform.position+offset), (player.position + offset)))
+
+        if (!Physics.Linecast((transform.position + offset), (player.position + offset)))
         {
             agent.SetDestination(player.position);
         }
@@ -37,10 +38,9 @@ public class NavScript : MonoBehaviour
         {
             if (delayTime < Time.time)
             {
-                agent.SetDestination(destine.position);
                 anim.SetBool("isRunning", true);
-
-
+                agent.SetDestination(destine.position);
+                
                 if (agent.remainingDistance > 0 && agent.remainingDistance < 2)
                 {
                     anim.SetBool("isRunning", false);
