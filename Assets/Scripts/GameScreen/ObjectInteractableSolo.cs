@@ -28,10 +28,9 @@ public class ObjectInteractableSolo : MonoBehaviour
     void Update()
     {
         RaycastHit hit = GetRaycastHitFromGrabPoint();
-
-
         if (hit.collider != null && hit.collider.CompareTag("FlashLight"))
         {
+           
             localizer = hit.collider.gameObject.GetComponent<ObjectLocalizer>();
             interactText.text = $"{localizer.GetLocalizedName()}";
             interactText.gameObject.SetActive(true);

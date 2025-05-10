@@ -9,8 +9,6 @@ public class NavScript : MonoBehaviour
 {
     public NavMeshAgent agent;
     public List<Transform> points;
-    public Transform downPoint;
-    public Transform upPoint;
     public Transform player;
 
     private int randomInt;
@@ -39,24 +37,8 @@ public class NavScript : MonoBehaviour
         {
             if (delayTime < Time.time)
             {
-
-                if ((down && points[randomInt].position.y > 100) || (!down && points[randomInt].position.y < 100))
-                {
-                    if (down)
-                    {
-                        agent.SetDestination(downPoint.position);
-                    }
-                    else
-                    {
-                        agent.SetDestination(upPoint.position);
-                    }
-                    changeHeigh = true;
-                }
-                else
-                {
-                    agent.SetDestination(destine.position);
-                    anim.SetBool("isRunning", true);
-                }
+                agent.SetDestination(destine.position);
+                anim.SetBool("isRunning", true);
 
 
                 if (agent.remainingDistance > 0 && agent.remainingDistance < 2)
