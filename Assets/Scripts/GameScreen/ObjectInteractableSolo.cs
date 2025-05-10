@@ -1,3 +1,4 @@
+using System;
 using TMPro;
 using UnityEngine;
 
@@ -15,18 +16,23 @@ public class ObjectInteractableSolo : MonoBehaviour
     private bool isFlashlightEquipped = false;
     private bool isFlashlightOn = false;
 
+    public static bool showDoorText = false;
+
     void Start()
     {
         interactText.gameObject.SetActive(false);
         localizer = GetComponent<ObjectLocalizer>();
+        showDoorText = false;
     }
 
     void Update()
     {
         RaycastHit hit = GetRaycastHitFromGrabPoint();
 
+
         if (hit.collider != null && hit.collider.CompareTag("FlashLight"))
         {
+            localizer = hit.collider.gameObject.GetComponent<ObjectLocalizer>();
             interactText.text = $"{localizer.GetLocalizedName()}";
             interactText.gameObject.SetActive(true);
 
@@ -35,7 +41,7 @@ public class ObjectInteractableSolo : MonoBehaviour
                 EquipFlashLight();
             }
         }
-        else
+        else if (!showDoorText)
         {
             interactText.gameObject.SetActive(false);
         }
@@ -54,6 +60,7 @@ public class ObjectInteractableSolo : MonoBehaviour
             transform.localPosition = new Vector3(18.1000004f, -2.5999999f, 2f);
             transform.localRotation = Quaternion.Euler(86.4812469f, 174.312363f, 180.000015f);
             transform.localScale = new Vector3(20, 20, 20);
+            gameObject.GetComponent<CapsuleCollider>().enabled = false;
 
             if (TryGetComponent<Rigidbody>(out Rigidbody rb))
             {
@@ -61,12 +68,6 @@ public class ObjectInteractableSolo : MonoBehaviour
             }
 
             isFlashlightEquipped = true;
-
-            Debug.Log("Linterna equipada en la mano.");
-        }
-        else
-        {
-            Debug.LogWarning("HandPosition no asignado en el Inspector.");
         }
 
         interactText.gameObject.SetActive(false);

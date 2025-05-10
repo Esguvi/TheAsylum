@@ -1,6 +1,6 @@
 m_ProjectFiles:
   m_ManifestFileStatus:
-    m_FilePath: C:/Users/victo/Desktop/UnityProjects/Test/Packages/manifest.json
+    m_FilePath: C:/Users/victo/Desktop/UnityProjects/TheAsylum/Packages/manifest.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -8,7 +8,7 @@ m_ProjectFiles:
       ticks: 638785127080351963
     m_Hash: 926861833
   m_LockFileStatus:
-    m_FilePath: C:/Users/victo/Desktop/UnityProjects/Test/Packages/packages-lock.json
+    m_FilePath: C:/Users/victo/Desktop/UnityProjects/TheAsylum/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
@@ -19,7 +19,7 @@ m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
   m_LocalFileStatus: []
-m_ProjectPath: C:/Users/victo/Desktop/UnityProjects/Test/Packages
+m_ProjectPath: C:/Users/victo/Desktop/UnityProjects/TheAsylum/Packages
 m_EditorVersion: 6000.0.37f1 (090b7797214c)
 m_ResolvedPackages:
 - packageId: com.unity.ai.navigation@2.0.5
@@ -27,7 +27,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.5
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.ai.navigation@9f76b145f0a8
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.ai.navigation@9f76b145f0a8
   assetPath: Packages/com.unity.ai.navigation
   name: com.unity.ai.navigation
   displayName: AI Navigation
@@ -61,10 +61,12 @@ m_ResolvedPackages:
     - 2.0.4
     - 2.0.5
     - 2.0.6
+    - 2.0.7
     compatible:
     - 2.0.5
     - 2.0.6
-    recommended: 2.0.6
+    - 2.0.7
+    recommended: 2.0.7
     deprecated: []
   dependencies:
   - name: com.unity.modules.ai
@@ -137,7 +139,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.7.1
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.collab-proxy@50ac96531b63
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.collab-proxy@50ac96531b63
   assetPath: Packages/com.unity.collab-proxy
   name: com.unity.collab-proxy
   displayName: Version Control
@@ -321,7 +323,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 3.0.31
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.ide.rider@7921be93db40
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.ide.rider@7921be93db40
   assetPath: Packages/com.unity.ide.rider
   name: com.unity.ide.rider
   displayName: JetBrains Rider Editor
@@ -382,11 +384,13 @@ m_ResolvedPackages:
     - 3.0.31
     - 3.0.34
     - 3.0.35
+    - 3.0.36
     compatible:
     - 3.0.31
     - 3.0.34
     - 3.0.35
-    recommended: 3.0.35
+    - 3.0.36
+    recommended: 3.0.36
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
@@ -442,7 +446,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.22
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.ide.visualstudio@8140e851d83e
   assetPath: Packages/com.unity.ide.visualstudio
   name: com.unity.ide.visualstudio
   displayName: Visual Studio Editor
@@ -482,9 +486,11 @@ m_ResolvedPackages:
     - 2.0.20
     - 2.0.21
     - 2.0.22
+    - 2.0.23
     compatible:
     - 2.0.22
-    recommended: 2.0.22
+    - 2.0.23
+    recommended: 2.0.23
     deprecated: []
   dependencies:
   - name: com.unity.test-framework
@@ -548,7 +554,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.12.0
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.inputsystem@920b46832575
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.inputsystem@920b46832575
   assetPath: Packages/com.unity.inputsystem
   name: com.unity.inputsystem
   displayName: Input System
@@ -733,7 +739,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.5.4
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.localization@f2647f7408bd
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.localization@f2647f7408bd
   assetPath: Packages/com.unity.localization
   name: com.unity.localization
   displayName: Localization
@@ -893,7 +899,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.0.0
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.multiplayer.center@f502d8ac613f
   assetPath: Packages/com.unity.multiplayer.center
   name: com.unity.multiplayer.center
   displayName: Multiplayer Center
@@ -983,7 +989,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.render-pipelines.universal@15fef0f41df6
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.render-pipelines.universal@15fef0f41df6
   assetPath: Packages/com.unity.render-pipelines.universal
   name: com.unity.render-pipelines.universal
   displayName: Universal RP
@@ -1145,7 +1151,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.4.5
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.test-framework@0a21eb82d95c
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.test-framework@0a21eb82d95c
   assetPath: Packages/com.unity.test-framework
   name: com.unity.test-framework
   displayName: Test Framework
@@ -1310,7 +1316,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.8.7
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.timeline@c58b4ee65782
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.timeline@c58b4ee65782
   assetPath: Packages/com.unity.timeline
   name: com.unity.timeline
   displayName: Timeline
@@ -1496,7 +1502,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 2.0.0
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.ugui@603b5c2e4e5a
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.ugui@603b5c2e4e5a
   assetPath: Packages/com.unity.ugui
   name: com.unity.ugui
   displayName: Unity UI
@@ -1588,7 +1594,7 @@ m_ResolvedPackages:
   isDirectDependency: 1
   version: 1.9.5
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.visualscripting@1b53f46e931b
   assetPath: Packages/com.unity.visualscripting
   name: com.unity.visualscripting
   displayName: Visual Scripting
@@ -4128,7 +4134,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.0.5
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.ext.nunit@60ef35ffd3cd
   assetPath: Packages/com.unity.ext.nunit
   name: com.unity.ext.nunit
   displayName: Custom NUnit
@@ -4207,7 +4213,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.render-pipelines.core@89eb3bdcd743
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.render-pipelines.core@89eb3bdcd743
   assetPath: Packages/com.unity.render-pipelines.core
   name: com.unity.render-pipelines.core
   displayName: Core RP Library
@@ -4421,7 +4427,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.shadergraph@911117698220
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.shadergraph@911117698220
   assetPath: Packages/com.unity.shadergraph
   name: com.unity.shadergraph
   displayName: Shader Graph
@@ -4624,7 +4630,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 17.0.3
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.render-pipelines.universal-config@fa63c96d3e1a
   assetPath: Packages/com.unity.render-pipelines.universal-config
   name: com.unity.render-pipelines.universal-config
   displayName: Universal RP Config
@@ -4722,7 +4728,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.2.2
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.addressables@4f7e840f4cce
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.addressables@4f7e840f4cce
   assetPath: Packages/com.unity.addressables
   name: com.unity.addressables
   displayName: Addressables
@@ -4861,6 +4867,7 @@ m_ResolvedPackages:
     - 1.22.2
     - 1.22.3
     - 1.23.1
+    - 1.24.0
     - 2.0.3
     - 2.0.4
     - 2.0.6
@@ -4872,6 +4879,8 @@ m_ResolvedPackages:
     - 2.3.7
     - 2.3.16
     - 2.4.1
+    - 2.4.2
+    - 2.4.3
     compatible:
     - 2.2.2
     - 2.3.0
@@ -4879,6 +4888,8 @@ m_ResolvedPackages:
     - 2.3.7
     - 2.3.16
     - 2.4.1
+    - 2.4.2
+    - 2.4.3
     recommended: 2.2.2
     deprecated: []
   dependencies:
@@ -4974,7 +4985,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.2.1
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.nuget.newtonsoft-json@74deb55db2a0
   assetPath: Packages/com.unity.nuget.newtonsoft-json
   name: com.unity.nuget.newtonsoft-json
   displayName: Newtonsoft Json
@@ -4997,6 +5008,21 @@ m_ResolvedPackages:
   errors: []
   versions:
     all:
+    - 1.0.0-preview.2
+    - 1.0.0-preview.3
+    - 1.0.0-preview.4
+    - 1.0.1-preview.1
+    - 1.1.2
+    - 2.0.0-preview
+    - 2.0.0-preview.1
+    - 2.0.0-preview.2
+    - 2.0.0
+    - 2.0.1-preview.1
+    - 2.0.2
+    - 3.0.1
+    - 3.0.2
+    - 3.1.0
+    - 3.2.0
     - 3.2.1
     compatible:
     - 3.2.1
@@ -5015,9 +5041,9 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   entitlements:
-    licensingModel: 0
+    licensingModel: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 0
+  datePublishedTicks: 638186318800000000
   documentationUrl: 
   hasRepository: 1
   repository:
@@ -5050,7 +5076,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 4.9.2
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.searcher@90d011a70418
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.searcher@90d011a70418
   assetPath: Packages/com.unity.searcher
   name: com.unity.searcher
   displayName: Searcher
@@ -5136,7 +5162,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.8.19
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.burst@7a907cf5a459
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.burst@7a907cf5a459
   assetPath: Packages/com.unity.burst
   name: com.unity.burst
   displayName: Burst
@@ -5285,9 +5311,13 @@ m_ResolvedPackages:
     - 1.8.17
     - 1.8.18
     - 1.8.19
+    - 1.8.20
+    - 1.8.21
     compatible:
     - 1.8.19
-    recommended: 1.8.19
+    - 1.8.20
+    - 1.8.21
+    recommended: 1.8.21
     deprecated: []
   dependencies:
   - name: com.unity.mathematics
@@ -5360,7 +5390,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.3.2
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.mathematics@8017b507cc74
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.mathematics@8017b507cc74
   assetPath: Packages/com.unity.mathematics
   name: com.unity.mathematics
   displayName: Mathematics
@@ -5449,7 +5479,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.5.1
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.collections@56bff8827a7e
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.collections@56bff8827a7e
   assetPath: Packages/com.unity.collections
   name: com.unity.collections
   displayName: Collections
@@ -5513,6 +5543,7 @@ m_ResolvedPackages:
     - 1.3.1
     - 1.4.0
     - 1.5.1
+    - 1.5.2
     - 2.1.0-exp.4
     - 2.1.0-pre.2
     - 2.1.0-pre.6
@@ -5536,13 +5567,15 @@ m_ResolvedPackages:
     - 2.5.1
     - 2.5.2
     - 2.5.3
+    - 2.5.7
     - 2.6.0-exp.2
     compatible:
     - 2.5.1
     - 2.5.2
     - 2.5.3
+    - 2.5.7
     - 2.6.0-exp.2
-    recommended: 2.5.3
+    recommended: 2.5.7
     deprecated: []
   dependencies:
   - name: com.unity.burst
@@ -5621,7 +5654,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.1
   source: 2
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.rendering.light-transport@307bc27a498f
   assetPath: Packages/com.unity.rendering.light-transport
   name: com.unity.rendering.light-transport
   displayName: Unity Light Transport Library
@@ -5717,7 +5750,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.0.2
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.profiling.core@aac7b93912bc
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.profiling.core@aac7b93912bc
   assetPath: Packages/com.unity.profiling.core
   name: com.unity.profiling.core
   displayName: Unity Profiling Core API
@@ -5792,7 +5825,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 2.1.4
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.scriptablebuildpipeline@101dcb4353ce
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.scriptablebuildpipeline@101dcb4353ce
   assetPath: Packages/com.unity.scriptablebuildpipeline
   name: com.unity.scriptablebuildpipeline
   displayName: Scriptable Build Pipeline
@@ -5875,6 +5908,7 @@ m_ResolvedPackages:
     - 1.21.24
     - 1.21.25
     - 1.22.1
+    - 1.22.2
     - 2.0.1
     - 2.0.2
     - 2.1.0
@@ -5885,12 +5919,18 @@ m_ResolvedPackages:
     - 2.2.4
     - 2.2.11
     - 2.3.0
+    - 2.3.1
+    - 2.3.2
+    - 2.3.3
     compatible:
     - 2.1.4
     - 2.1.5
     - 2.2.4
     - 2.2.11
     - 2.3.0
+    - 2.3.1
+    - 2.3.2
+    - 2.3.3
     recommended: 2.1.5
     deprecated: []
   dependencies: []
@@ -5947,7 +5987,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 1.11.4
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.nuget.mono-cecil@d6f9955a5d5f
   assetPath: Packages/com.unity.nuget.mono-cecil
   name: com.unity.nuget.mono-cecil
   displayName: Mono Cecil
@@ -6029,7 +6069,7 @@ m_ResolvedPackages:
   isDirectDependency: 0
   version: 3.0.3
   source: 1
-  resolvedPath: C:\Users\victo\Desktop\UnityProjects\Test\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
+  resolvedPath: C:\Users\victo\Desktop\UnityProjects\TheAsylum\Library\PackageCache\com.unity.test-framework.performance@fb0dc592af8b
   assetPath: Packages/com.unity.test-framework.performance
   name: com.unity.test-framework.performance
   displayName: Performance testing API
@@ -6095,8 +6135,10 @@ m_ResolvedPackages:
     - 3.0.1
     - 3.0.2
     - 3.0.3
+    - 3.1.0
     compatible:
     - 3.0.3
+    - 3.1.0
     recommended: 3.0.3
     deprecated: []
   dependencies:

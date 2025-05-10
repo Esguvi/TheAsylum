@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class MovementScript : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class MovementScript : MonoBehaviour
     private float rotHor;
     private bool pulsado;
     private float velocidadY;
+    private float yHead;
 
     private Animator anim;
 
@@ -35,6 +37,7 @@ public class MovementScript : MonoBehaviour
     private void Update()
     {
         sensibility = KeyMoConfScript.sensibility;
+        yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
         if (Input.GetKey(KeyCode.Escape) && SceneManager.sceneCount == 1)
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
@@ -89,8 +92,8 @@ public class MovementScript : MonoBehaviour
                 anim.SetBool("isJumping", false);
             }
         }
-        Vector3 offset = transform.rotation * new Vector3(0, 75f, 15f);
-        Camera.main.transform.position = transform.position + offset;
+        Vector3 offset = transform.rotation * new Vector3(0,0,20f);
+        Camera.main.transform.position = new Vector3(transform.position.x, yHead ,transform.position.z)+offset;
 
         Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 100f, Color.red);
         RaycastHit hit;
@@ -128,7 +131,7 @@ public class MovementScript : MonoBehaviour
 
         float inputY = Input.GetAxis("Mouse Y") * sensibility;
         rotHor -= inputY;
-        rotHor = Mathf.Clamp(rotHor, -100, 60);
+        rotHor = Mathf.Clamp(rotHor, -90, 90);
         //rotHor = Mathf.Clamp(rotHor, -100, 70);
 
         transform.eulerAngles = new Vector2(0, rotVer);
