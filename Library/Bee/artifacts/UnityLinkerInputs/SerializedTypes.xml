@@ -5,6 +5,9 @@
 	<assembly fullname="PhotonUnityNetworking">
 		<type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedLayer" preserve="nothing" serialized="true"/>
 		<type fullname="Photon.Pun.PhotonAnimatorView/SynchronizedParameter" preserve="nothing" serialized="true"/>
+		<type fullname="Photon.Pun.PhotonTransformViewPositionModel" preserve="nothing" serialized="true"/>
+		<type fullname="Photon.Pun.PhotonTransformViewRotationModel" preserve="nothing" serialized="true"/>
+		<type fullname="Photon.Pun.PhotonTransformViewScaleModel" preserve="nothing" serialized="true"/>
 	</assembly>
 	<assembly fullname="Unity.InputSystem">
 		<type fullname="UnityEngine.InputSystem.InputAction" preserve="nothing" serialized="true"/>

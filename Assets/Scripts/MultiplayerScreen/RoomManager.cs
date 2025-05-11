@@ -1,7 +1,7 @@
 using Photon.Pun;
 using UnityEngine;
 
-public class RoomManager : MonoBehaviourPunCallbacks
+public class RoomManager: MonoBehaviourPunCallbacks
 {
     public PhotonView player;
     public Transform spawnPoint;
@@ -41,7 +41,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
             return;
         }
 
-        GameObject _player = PhotonNetwork.Instantiate("Character1", spawnPoint.position, spawnPoint.rotation);
+        GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, spawnPoint.rotation);
 
         PlayerSetup setup = _player.GetComponent<PlayerSetup>();
         if (setup != null)
