@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class NavScript : MonoBehaviour
@@ -13,7 +14,7 @@ public class NavScript : MonoBehaviour
 
     private int randomInt;
     private float delayTime;
-    private bool down = true;
+    private bool persigiendo = false;
     private bool changeHeigh;
     private Transform destine;
     private Animator anim;
@@ -30,18 +31,32 @@ public class NavScript : MonoBehaviour
         Vector3 offset = new Vector3(0, 105f, 0);
         Debug.DrawLine((transform.position+offset), (player.position + offset));
 
+        if (persigiendo)
+        {
+            Debug.Log(agent.remainingDistance);
+
+            if (agent.remainingDistance > 0 && agent.remainingDistance < 50)
+            {
+                anim.SetBool("isRunning", false);
+                SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
+            }
+           }
+
         if (!Physics.Linecast((transform.position + offset), (player.position + offset)))
         {
+            anim.SetBool("isRunning", true);
             agent.SetDestination(player.position);
+            persigiendo = true;
         }
         else
         {
+            persigiendo = false;
             if (delayTime < Time.time)
             {
-                anim.SetBool("isRunning", true);
                 agent.SetDestination(destine.position);
-                
-                if (agent.remainingDistance > 0 && agent.remainingDistance < 2)
+                anim.SetBool("isRunning", true);
+
+                if (agent.remainingDistance > 0 && agent.remainingDistance < 1)
                 {
                     anim.SetBool("isRunning", false);
                     delayTime = Time.time + 2;
