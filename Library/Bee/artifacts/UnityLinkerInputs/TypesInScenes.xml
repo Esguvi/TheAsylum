@@ -16,6 +16,7 @@
 		<type fullname="OptionsBtnsScripts" preserve="nothing"/>
 		<type fullname="PersistentVideo" preserve="nothing"/>
 		<type fullname="PlayerSetup" preserve="nothing"/>
+		<type fullname="Readme" preserve="nothing"/>
 		<type fullname="RegisterManager" preserve="nothing"/>
 		<type fullname="RoomManager" preserve="nothing"/>
 		<type fullname="ScreenScripts" preserve="nothing"/>
@@ -57,9 +58,9 @@
 	<assembly fullname="Unity.Localization">
 		<type fullname="UnityEngine.Localization.Components.LocalizeStringEvent" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
 		<type fullname="UnityEngine.Rendering.ProbeVolumesOptions" preserve="nothing"/>

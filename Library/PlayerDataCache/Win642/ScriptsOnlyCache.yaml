@@ -17,11 +17,13 @@ ScriptsOnlyBuild:
     - MainSceneScript
     - MovementScript
     - NavScript
+    - ObjectInteractableMultiplayer
     - ObjectInteractableSolo
     - ObjectLocalizer
     - OptionsBtnsScripts
     - PersistentVideo
     - PlayerSetup
+    - Readme
     - RegisterManager
     - RoomManager
     - ScreenScripts
@@ -52,8 +54,6 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformViewClassic
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
-    Unity.AI.Navigation.Editor.dll:
-    - Unity.AI.Navigation.Editor.NavMeshAssetManager
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.Addressables.Editor.dll:
@@ -75,13 +75,13 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.RemoteInputPlayerConnection
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Localization.Editor.dll:
-    - UnityEditor.Localization.LocalizationProjectSettings
+    - UnityEditor.Localization.StringTableCollection
     Unity.Localization.dll:
     - UnityEngine.Localization.Components.LocalizeStringEvent
     - UnityEngine.Localization.Locale
-    - UnityEngine.Localization.LocalizationBehaviour
     - UnityEngine.Localization.Settings.LocalizationSettings
-    - UnityEngine.Localization.VariantsPropertyDriver
+    - UnityEngine.Localization.Tables.SharedTableData
+    - UnityEngine.Localization.Tables.StringTable
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
     - UnityEngine.Rendering.UI.DebugUIHandlerButton
@@ -172,10 +172,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -1129,6 +1127,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19868}
     - Class: 114
+      Script: {instanceID: 20040}
+    - Class: 114
       Script: {instanceID: 20072}
     - Class: 114
       Script: {instanceID: 21066}
@@ -1146,8 +1146,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 24084}
     - Class: 114
       Script: {instanceID: 25572}
-    - Class: 114
-      Script: {instanceID: 27760}
     - Class: 114
       Script: {instanceID: 28464}
     - Class: 114
@@ -4218,18 +4216,6 @@ ScriptsOnlyBuild:
     assemblyName: Firebase.Platform.dll
     namespaceName: Firebase.Platform
     className: FirebaseMonoBehaviour
-  - hash:
-      serializedVersion: 2
-      Hash: 65c6401d340b44d4fbc8308d1d3528b7
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Launcher
-  - hash:
-      serializedVersion: 2
-      Hash: cf96bbd0b9763e1b4a35da7ea76b9f4b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: MovementScriptMultiplayer
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginRegisterScreen.unity

@@ -3094,6 +3094,7 @@ GameObject:
   - component: {fileID: 3705468618574922200}
   - component: {fileID: 1826676471786373720}
   - component: {fileID: 8941997286900244413}
+  - component: {fileID: 3079976404072343896}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -3321,6 +3322,34 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
+--- !u!114 &3079976404072343896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8320626500348063445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4eb5feee781f23b45a08c2fa58fdc9d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactText: {fileID: 4853122864627492276}
+  grabPoint: {fileID: 714808795472264297}
+  interactDistance: 1000
+  handPosition: {fileID: 3340470573479515788}
+  flashlightText:
+    m_TableReference:
+      m_TableCollectionName: GUID:c3a645e6be9a7a841a5425de730ba5b3
+    m_TableEntryReference:
+      m_KeyId: 2065195292839936
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 0
+    m_LocalVariables: []
+  references:
+    version: 2
+    RefIds: []
 --- !u!1 &8604214348622395372
 GameObject:
   m_ObjectHideFlags: 0

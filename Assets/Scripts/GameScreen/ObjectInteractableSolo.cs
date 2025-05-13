@@ -12,6 +12,8 @@ public class ObjectInteractableSolo : MonoBehaviour
 
     public Transform handPosition;
     public GameObject flashLight;
+    public Transform objectsParent;
+
 
     private bool isFlashlightEquipped = false;
     private bool isFlashlightOn = false;
@@ -50,6 +52,12 @@ public class ObjectInteractableSolo : MonoBehaviour
         {
             ToggleFlashlight();
         }
+
+        if (isFlashlightEquipped && Input.GetKeyDown(KeyCode.G))
+        {
+            DropFlashLight();
+        }
+
     }
 
     private void EquipFlashLight()
@@ -57,27 +65,55 @@ public class ObjectInteractableSolo : MonoBehaviour
         if (handPosition != null)
         {
             transform.SetParent(handPosition);
-            transform.localPosition = new Vector3(18.1000004f, -2.5999999f, 2f);
-            transform.localRotation = Quaternion.Euler(86.4812469f, 174.312363f, 180.000015f);
-            transform.localScale = new Vector3(20, 20, 20);
-            gameObject.GetComponent<CapsuleCollider>().enabled = false;
+
+            transform.localPosition = new Vector3(0.0667999983f, 0.0074f, 0.103100002f);
+            transform.localRotation = Quaternion.Euler(356.111847f, 336.274353f, 69.830574f);
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+
+            CapsuleCollider col = GetComponent<CapsuleCollider>();
+            if (col != null) col.enabled = false;
 
             if (TryGetComponent<Rigidbody>(out Rigidbody rb))
             {
-                rb.isKinematic = true;
+                rb.isKinematic = true; 
+                rb.useGravity = false;
             }
 
             isFlashlightEquipped = true;
+            interactText.gameObject.SetActive(false);  
         }
-
-        interactText.gameObject.SetActive(false);
     }
+
 
     private void ToggleFlashlight()
     {
         isFlashlightOn = !isFlashlightOn;
         flashLight.SetActive(isFlashlightOn);
         Debug.Log("Linterna " + (isFlashlightOn ? "ENCENDIDA" : "APAGADA"));
+    }
+
+    private void DropFlashLight()
+    {
+        if (handPosition != null && objectsParent != null)
+        {
+            transform.SetParent(objectsParent);
+
+            if (TryGetComponent<Rigidbody>(out Rigidbody rb))
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+            }
+
+            CapsuleCollider col = GetComponent<CapsuleCollider>();
+            if (col != null) col.enabled = true;
+
+            if (isFlashlightOn)
+            {
+                isFlashlightOn = false;
+            }
+
+            isFlashlightEquipped = false;
+        }
     }
 
     private RaycastHit GetRaycastHitFromGrabPoint()
