@@ -66,8 +66,8 @@ public class ObjectInteractableSolo : MonoBehaviour
         {
             transform.SetParent(handPosition);
 
-            transform.localPosition = new Vector3(0.0667999983f, 0.0074f, 0.103100002f);
-            transform.localRotation = Quaternion.Euler(356.111847f, 336.274353f, 69.830574f);
+            transform.localPosition = new Vector3(-0.0627999976f, 0.0763999969f, 0.132300004f);
+            transform.localRotation = Quaternion.Euler(11.2050133f, 215.799973f, 86.432991f);
             transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
 
             CapsuleCollider col = GetComponent<CapsuleCollider>();
@@ -87,9 +87,16 @@ public class ObjectInteractableSolo : MonoBehaviour
 
     private void ToggleFlashlight()
     {
-        isFlashlightOn = !isFlashlightOn;
-        flashLight.SetActive(isFlashlightOn);
-        Debug.Log("Linterna " + (isFlashlightOn ? "ENCENDIDA" : "APAGADA"));
+        if (flashLight.activeSelf)
+        {
+            flashLight.SetActive(false);
+            Debug.Log("Linterna apagada");
+        }
+        else
+        {
+            flashLight.SetActive(true);
+            Debug.Log("Linterna encendida");
+        }
     }
 
     private void DropFlashLight()
@@ -97,11 +104,13 @@ public class ObjectInteractableSolo : MonoBehaviour
         if (handPosition != null && objectsParent != null)
         {
             transform.SetParent(objectsParent);
+            transform.position = handPosition.transform.position + handPosition.transform.forward * 0.5f;
 
             if (TryGetComponent<Rigidbody>(out Rigidbody rb))
             {
                 rb.isKinematic = false;
                 rb.useGravity = true;
+                // FALTA AÑADIR MAS FUERZA DE CAIDA AL SOLTAR EL OBJETO
             }
 
             CapsuleCollider col = GetComponent<CapsuleCollider>();
