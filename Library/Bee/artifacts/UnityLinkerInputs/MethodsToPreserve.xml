@@ -1,40 +1,14 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
-		<type fullname="AudioConfScript">
-			<method name="changeVolum"/>
-		</type>
-		<type fullname="KeyMoConfScript">
-			<method name="changeSensibility"/>
-		</type>
-		<type fullname="LocaleSelector">
-			<method name="ToggleLanguage"/>
-		</type>
-		<type fullname="LoginManager">
-			<method name="HandleLogin"/>
-		</type>
 		<type fullname="MainSceneScript">
 			<method name="Credits"/>
 			<method name="Exit"/>
+			<method name="MultiPlayer"/>
 			<method name="Options"/>
 			<method name="StartGame"/>
 		</type>
-		<type fullname="OptionsBtnsScripts">
-			<method name="ConfAudio"/>
-			<method name="ConfKeys"/>
-			<method name="ConfScreen"/>
-			<method name="Resume"/>
-			<method name="Return"/>
-		</type>
-		<type fullname="RegisterManager">
-			<method name="openWebPage"/>
-		</type>
-		<type fullname="ScreenScripts">
-			<method name="changeLenguage"/>
-			<method name="fullScreen"/>
-		</type>
-		<type fullname="ShowHide">
-			<method name="returnForms"/>
-			<method name="showLoginForm"/>
+		<type fullname="RoomSelector">
+			<method name="Join"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
@@ -65,16 +39,6 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
-			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

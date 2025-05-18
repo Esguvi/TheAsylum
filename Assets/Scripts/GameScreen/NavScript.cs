@@ -33,12 +33,14 @@ public class NavScript : MonoBehaviour
 
         if (persigiendo)
         {
-            Debug.Log(agent.remainingDistance);
-
-            if (agent.remainingDistance > 0 && agent.remainingDistance < 50)
+            if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
             {
                 anim.SetBool("isRunning", false);
-                SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
+                anim.SetBool("isCatch", true);
+                if (agent.remainingDistance > 0 && agent.remainingDistance < 50)
+                {
+                    SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
+                }
             }
            }
 

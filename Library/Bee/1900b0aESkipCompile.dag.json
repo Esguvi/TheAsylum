@@ -29,7 +29,7 @@
       "DisplayName": "Writing 6097564273297756792.rsp",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 7840,
+      "PayloadLength": 8670,
       "PayloadDebugContentSnippet": "-a=\"C:\\Users\\Dell\\Desktop\\TheA",
       "Inputs": [],
       "InputFlags": [],
@@ -54,7 +54,14 @@
         "Assets/Firebase/Plugins/Firebase.Platform.dll",
         "Assets/Firebase/Plugins/Firebase.TaskExtension.dll",
         "Assets/Firebase/Plugins/Google.MiniJson.dll",
+        "Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll",
+        "Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll",
         "Library/ScriptAssemblies/Assembly-CSharp.dll",
+        "Library/ScriptAssemblies/PhotonChat.dll",
+        "Library/ScriptAssemblies/PhotonRealtime.dll",
+        "Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll",
+        "Library/ScriptAssemblies/PhotonUnityNetworking.dll",
+        "Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.dll",
         "Library/ScriptAssemblies/Unity.Addressables.dll",
         "Library/ScriptAssemblies/Unity.AI.Navigation.dll",
         "Library/ScriptAssemblies/Unity.Burst.dll",
@@ -104,6 +111,13 @@
         "Library/Bee/artifacts/rsp/6097564273297756792.rsp"
       ],
       "InputFlags": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -324,6 +338,12 @@
       "File": "Assets/mcs.rsp"
     },
     {
+      "File": "Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll"
+    },
+    {
+      "File": "Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll"
+    },
+    {
       "File": "Library/Bee/1900b0aESkipCompile-inputdata.json"
     },
     {
@@ -367,6 +387,21 @@
     },
     {
       "File": "Library/ScriptAssemblies/Assembly-CSharp.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/PhotonChat.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/PhotonRealtime.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/PhotonUnityNetworking.Demos.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/PhotonUnityNetworking.dll"
+    },
+    {
+      "File": "Library/ScriptAssemblies/PhotonUnityNetworking.Utilities.dll"
     },
     {
       "File": "Library/ScriptAssemblies/Unity.Addressables.dll"
@@ -502,6 +537,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aESkipCompile.dag.json",
-  "PayloadsFile": "C:/Users/Dell/Desktop/TheAsylumTFG/TestAsylum/Library/Bee/1900b0aESkipCompile.dag.payloads",
+  "PayloadsFile": "C:/Users/Dell/Desktop/TheAsylumTFG/TheAsylum/Library/Bee/1900b0aESkipCompile.dag.payloads",
   "RelativePathToRoot": "../.."
 }

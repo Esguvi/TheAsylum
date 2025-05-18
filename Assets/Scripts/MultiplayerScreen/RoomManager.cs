@@ -15,20 +15,21 @@ public class RoomManager : MonoBehaviourPunCallbacks
     {
         base.OnConnectedToMaster();
         Debug.Log("Connected to master server");
-        PhotonNetwork.JoinRandomOrCreateRoom();
+        Debug.Log(RoomSelector.roomName);
+        PhotonNetwork.JoinLobby();
     }
 
     public override void OnJoinedLobby()
     {
         base.OnJoinedLobby();
-
-        PhotonNetwork.JoinOrCreateRoom("test", null, null);
+        Debug.Log(RoomSelector.roomName);
+        PhotonNetwork.JoinOrCreateRoom(RoomSelector.roomName, null, null);
     }
 
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
-        Debug.Log("Joined room");
+        Debug.LogError("Joined room" + PhotonNetwork.CurrentRoom.Name + " PLAYERS: "+ PhotonNetwork.CurrentRoom.Players);
 
         if (player == null)
         {
@@ -41,7 +42,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
             return;
         }
 
-        GameObject _player = PhotonNetwork.Instantiate("Character1", spawnPoint.position, spawnPoint.rotation);
+        GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, spawnPoint.rotation);
 
         PlayerSetup setup = _player.GetComponent<PlayerSetup>();
         if (setup != null)

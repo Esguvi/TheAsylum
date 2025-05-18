@@ -10,7 +10,7 @@ public class MainSceneScript : MonoBehaviour
 
     public void MultiPlayer()
     {
-        SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
+        SceneManager.LoadScene("RoomManager", LoadSceneMode.Single);
     }
 
     public void Options()

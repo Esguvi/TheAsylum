@@ -40,8 +40,14 @@ public class MovementScript : MonoBehaviour
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
-            Camera.main.GetComponent<AudioListener>().enabled = false;
+            GetComponent<AudioSource>().enabled = false;
         }
+
+        if (!GetComponent<AudioSource>().enabled && SceneManager.sceneCount < 2)
+        {
+            GetComponent<AudioSource>().enabled = true;
+        }
+
 
         if (Input.GetMouseButtonDown(0))
         {
@@ -54,6 +60,7 @@ public class MovementScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
         {
+            
             anim.SetBool("isRunning", true);
             velocidad = 200f;
             if (Input.GetKey(KeyCode.Space))
