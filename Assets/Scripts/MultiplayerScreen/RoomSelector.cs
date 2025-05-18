@@ -13,4 +13,8 @@ public class RoomSelector : MonoBehaviour
         roomName = room.text;
         SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
     }
+    public void Return()
+    {
+        SceneManager.LoadScene("MainScreen");
+    }
 }
