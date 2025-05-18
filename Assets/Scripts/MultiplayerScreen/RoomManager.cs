@@ -4,6 +4,7 @@ using UnityEngine;
 public class RoomManager: MonoBehaviourPunCallbacks
 {
     public PhotonView player;
+    public PhotonView player2;
     public Transform spawnPoint;
 
     private void Start()
@@ -29,10 +30,16 @@ public class RoomManager: MonoBehaviourPunCallbacks
     {
         base.OnJoinedRoom();
         Debug.Log("Joined room");
+        GameObject _player = null;
 
         if (player == null)
         {
             Debug.LogError("El prefab del jugador (player) no está asignado.");
+            return;
+        }
+        if (player2 == null)
+        {
+            Debug.LogError("El prefab del jugador (player2) no está asignado.");
             return;
         }
         if (spawnPoint == null)
@@ -41,7 +48,15 @@ public class RoomManager: MonoBehaviourPunCallbacks
             return;
         }
 
-        GameObject _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, spawnPoint.rotation);
+        if (PhotonNetwork.CurrentRoom.PlayerCount == 1)
+        {
+             _player = PhotonNetwork.Instantiate(player.name, spawnPoint.position, spawnPoint.rotation);
+        }
+        else if (PhotonNetwork.CurrentRoom.PlayerCount == 2)
+        {
+            _player = PhotonNetwork.Instantiate(player2.name, spawnPoint.position, spawnPoint.rotation);
+
+        }
 
         PlayerSetup setup = _player.GetComponent<PlayerSetup>();
         if (setup != null)
