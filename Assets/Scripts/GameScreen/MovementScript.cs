@@ -1,37 +1,29 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class MovementScript : MonoBehaviour
 {
-    public float velocidad = 5f;
-    public float salto = 5f;
-    public float gravedad = 9.81f;
-    public float sensibility = 2f;
+    public float velocidad;
+    public float salto;
+    public float gravedad;
+    public float sensibility;
     public Transform grabPoint;
-    public Transform flashLight;
+    //public Transform flashLight;
 
     private CharacterController controller;
     private float rotVer;
     private float rotHor;
     private bool pulsado;
     private float velocidadY;
+    private float yHead;
 
     private Animator anim;
-
-    public GameObject inventario;
-    private float nextAllowedPressTime = 0f;
-    public float cooldown = 1f;
-
 
     private void Start()
     {
         controller = GetComponent<CharacterController>();
         LockMouse();
         anim = GetComponent<Animator>();
-        inventario = GameObject.Find("InvantoryBar");
-        inventario.SetActive(false);
-       
     }
 
     public static void LockMouse()
@@ -42,13 +34,13 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
-
         sensibility = KeyMoConfScript.sensibility;
-
+        yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
         if (Input.GetKey(KeyCode.Escape) && SceneManager.sceneCount == 1)
         {
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
+            Camera.main.GetComponent<AudioListener>().enabled = false;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -59,36 +51,52 @@ public class MovementScript : MonoBehaviour
         {
             pulsado = false;
         }
-        if (inventario != null)
-        {
-            if(inventario.activeSelf == false && Input.GetKey(KeyCode.Q) && Time.time >= nextAllowedPressTime)
-            {
-                
-                inventario.SetActive(true);
-                nextAllowedPressTime = Time.time + cooldown;
 
-            }
-            else if (inventario.activeSelf == true && Input.GetKey(KeyCode.Q) && Time.time >= nextAllowedPressTime)
+        if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.LeftShift))
+        {
+            anim.SetBool("isRunning", true);
+            velocidad = 200f;
+            if (Input.GetKey(KeyCode.Space))
             {
-                
-                inventario.SetActive(false);
-                nextAllowedPressTime = Time.time + cooldown;
+                salto = 200f;
+                anim.SetBool("isRunJump", true);
+            }
+            else
+            {
+                salto = 200f;
+                anim.SetBool("isRunJump", false);
             }
         }
-
-        bool enSuelo = controller.isGrounded;
-
-        if (Input.GetKeyDown(KeyCode.Space) && enSuelo)
+        else
         {
-            velocidadY = salto;
+            anim.SetBool("isRunning", false);
+            velocidad = 100f;
         }
 
-        Vector3 offset = transform.rotation * new Vector3(0, 85f, 11f);
-        Camera.main.transform.position = transform.position + offset;
+        //bool enSuelo = controller.isGrounded;
+        bool enSuelo = Physics.Raycast(transform.position, Vector3.down, 10f);
+        //bool enSuelo = Physics.CapsuleCast(transform.position, transform.position + Vector3.up * 0.1f, controller.radius, Vector3.down, 0.2f);
+        //Debug.Log(enSuelo);
 
-        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 4f, Color.red);
+        if (enSuelo)
+        {
+
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                velocidadY = salto;
+                anim.SetBool("isJumping", true);
+            }
+            else
+            {
+                anim.SetBool("isJumping", false);
+            }
+        }
+        Vector3 offset = transform.rotation * new Vector3(0,0,20f);
+        Camera.main.transform.position = new Vector3(transform.position.x, yHead ,transform.position.z)+offset;
+
+        Debug.DrawRay(Camera.main.transform.position, Camera.main.transform.forward * 100f, Color.red);
         RaycastHit hit;
-        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 4f))
+        if (Physics.Raycast(Camera.main.transform.position, Camera.main.transform.forward, out hit, 100f))
         {
             if (hit.rigidbody != null)
             {
@@ -123,12 +131,13 @@ public class MovementScript : MonoBehaviour
         float inputY = Input.GetAxis("Mouse Y") * sensibility;
         rotHor -= inputY;
         rotHor = Mathf.Clamp(rotHor, -90, 90);
+        //rotHor = Mathf.Clamp(rotHor, -100, 70);
 
         transform.eulerAngles = new Vector2(0, rotVer);
         Camera.main.transform.eulerAngles = new Vector2(rotHor, rotVer);
 
-        flashLight.position = Camera.main.transform.position;
-        flashLight.rotation = Camera.main.transform.rotation;
+        //flashLight.position = Camera.main.transform.position;
+        //flashLight.rotation = Camera.main.transform.rotation;
     }
 
     private void FixedUpdate()
@@ -136,13 +145,20 @@ public class MovementScript : MonoBehaviour
         float hor = Input.GetAxis("Horizontal") * velocidad;
         float ver = Input.GetAxis("Vertical") * velocidad;
 
+        float velocidadMovimiento = new Vector3(hor, 0f, ver).magnitude;
+
+        float velocidadNormalizada = Mathf.Clamp01(velocidadMovimiento / velocidad);
+
+        anim.SetFloat("VelX", hor);
+        anim.SetFloat("VelY", ver);
+
         Vector3 move = transform.right * hor + transform.forward * ver;
 
         if (controller.isGrounded)
         {
             if (velocidadY < 0)
             {
-                velocidadY = -20f; 
+                velocidadY = -20f;
             }
         }
         else
@@ -161,11 +177,5 @@ public class MovementScript : MonoBehaviour
 
         controller.Move(move * Time.deltaTime);
 
-        anim.SetFloat("VelX", hor);
-        anim.SetFloat("VelY", ver);
-    }
-    private IEnumerator SpawnDelay()
-    {
-        yield return new WaitForSeconds(2);
     }
 }
