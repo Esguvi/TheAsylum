@@ -24,7 +24,7 @@ public class DoorScript : MonoBehaviour
     }
     private void Update()
     {
-
+       
         if (cerca)
         {
             interactText.text = localizer.GetLocalizedName();

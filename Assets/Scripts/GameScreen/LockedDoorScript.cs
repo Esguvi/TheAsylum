@@ -28,38 +28,28 @@ public class LockedDoorScript : MonoBehaviour
         localizer = GetComponent<ObjectLocalizer>();
         canvas = GameObject.FindWithTag("Canva");
         interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
+
     }
 
 
 
-    void Awake()
-    {
-        if (puertaL == null)
-            puertaL = transform.Find("RotationLeft")?.gameObject;
-
-        if (puertaR == null)
-            puertaR = transform.Find("RotationRight")?.gameObject;
-    }
     private void Update()
     {
-        hit = GetRaycastHitFromGrabPoint();
+       
+       
 
-        if (hit.collider != null)
-        {
-            string tag = hit.collider.tag;
+      
             if (cerca)
             {
-                if (puertaCerrada.tag == "PuertaCerrada")
+                
+
+                interactText.text = localizer.GetLocalizedName();
+
+                if (puertaCerrada.tag == "PuertaCerrada" )
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        ObjectLocalizer hitLocalizer = hit.collider.GetComponent<ObjectLocalizer>();
-                        if (hitLocalizer != null)
-                        {
-                            interactText.text = hitLocalizer.GetLocalizedName();
-                            interactText.gameObject.SetActive(true);
-                        }
-
 
                         int llaveIndex = -1;
 
@@ -70,18 +60,21 @@ public class LockedDoorScript : MonoBehaviour
                                 playerInventory.objectsInInvantory[i].itemLogic.name == "Llave")
                             {
                                 llaveIndex = i;
+                                Debug.Log("Llave encontrada en el inventario." + llaveIndex);
                                 break;
                             }
                         }
-
+                        Debug.Log("LlaveIndex: " + llaveIndex);
                         if (llaveIndex >= 0)
                         {
                             Debug.Log("Llave encontrada.");
                             playerInventory.UseItemAtID(llaveIndex);
                             abrirPuertas();
                             puertaCerrada.tag = "PuertaAbierta";
-                            localizeEvent.StringReference.TableEntryReference = "puertaAbierta";
+                            localizer.localizedObjectName.TableEntryReference = "door";
+                            localizeEvent.StringReference.TableEntryReference = "door";                   
                             localizeEvent.RefreshString();
+
                         }
                         else
                         {
@@ -95,12 +88,12 @@ public class LockedDoorScript : MonoBehaviour
 
                 }
                 else if (puertaCerrada.tag == "PuertaAbierta")
-
-                    abrirPuertas();
-                    localizeEvent.StringReference.TableEntryReference = "puertaAbierta";
-                    localizeEvent.RefreshString();
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        abrirPuertas();
+                    }
             }
-        }
+        
     }
     private RaycastHit GetRaycastHitFromGrabPoint()
     {
@@ -113,43 +106,39 @@ public class LockedDoorScript : MonoBehaviour
     }
     private void abrirPuertas()
     {
-        if (cerca)
+
+
+        if (!abierto)
         {
-            interactText.text = localizer.GetLocalizedName();
-            if (Input.GetKeyDown(KeyCode.E))
+            if (puertaR != null)
             {
-                if (!abierto)
-                {
-                    if (puertaR != null)
-                    {
-                        puertaR.transform.Rotate(new Vector3(0, 90f, 0));
-                    }
-                    if (puertaL != null)
-                    {
-                        puertaL.transform.Rotate(new Vector3(0, -90f, 0));
-                    }
-                    abierto = true;
-                }
-                else
-                {
-                    if (puertaR != null)
-                    {
-                        puertaR.transform.Rotate(new Vector3(0, -90, 0));
-                    }
-                    if (puertaL != null)
-                    {
-                        puertaL.transform.Rotate(new Vector3(0, 90, 0));
-                    }
-                    abierto = false;
-                }
+                puertaR.transform.Rotate(new Vector3(0, 90f, 0));
             }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(new Vector3(0, -90f, 0));
+            }
+            abierto = true;
         }
+        else
+        {
+            if (puertaR != null)
+            {
+                puertaR.transform.Rotate(new Vector3(0, -90, 0));
+            }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(new Vector3(0, 90, 0));
+            }
+            abierto = false;
+        }
+        
     }
 
 
 
     private void OnTriggerEnter(Collider other)
-    {
+    { 
         if (other.tag == "Enemy")
         {
             if (!abierto)
@@ -169,9 +158,13 @@ public class LockedDoorScript : MonoBehaviour
         if (other.gameObject.GetComponent<MovementScript>() != null)
         {
             cerca = true;
+
             ObjectInteractableSolo.showDoorText = true;
             interactText.gameObject.SetActive(true);
         }
+    
+       
+
     }
 
     private void OnTriggerExit(Collider other)

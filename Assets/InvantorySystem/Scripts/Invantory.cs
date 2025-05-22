@@ -25,12 +25,15 @@ public class Invantory : MonoBehaviour
 {
     [Tooltip("Resets the entire invantory system to have 0 items picked up. This is useful for testing in editor and for restarting each game")]
     public bool resetInvantoryOnStart = true;
-    private List<InvantoryObject> objectsInInvantory;
+    public List<InvantoryObject> objectsInInvantory;
     private List<GameObject> invantorySlots;
     [Tooltip("Should be set, leave me alone please")]public GameObject invantoryRoot;
     private GameObject invantoryObjectTemplate;
     [Tooltip("The number of slots for the system to generate")]public int maxInvantorySlots = 8;
     private int currentlySelectedItem = 0;
+    public int CurrentlySelectedItem => currentlySelectedItem;
+
+
     private List<InvantoryObject> invantoryItems = new List<InvantoryObject>();
     [Tooltip("Enables the tooltip text in the UI, otherwise this will be ignored")][SerializeField]private bool useTooltip;
     [Tooltip("Should be set, leave me alone please")][SerializeField]private Text tooltipText;
@@ -55,30 +58,25 @@ public class Invantory : MonoBehaviour
         invantoryItems = Resources.LoadAll<InvantoryObject>("InvantoryItems").ToList();
         if(resetInvantoryOnStart)
             ResetInvantory();
-        if(useTooltip)
+        invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
+        invantoryObjectTemplate.SetActive(false);  
+
+        if (useTooltip)
         {
             tooltipText.gameObject.SetActive(true);
         }
-        invantoryRoot.SetActive(false);
     }
 
     
-        void Awake()
-        {
-        if (invantoryRoot == null)
-            invantoryRoot = GameObject.Find("InvantoryRoot");
-        if (invantoryObjectTemplate == null) invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
-        if (invantoryItems == null)
-                invantoryItems= new List<InvantoryObject>(); 
-        }
+        
 
     
     void Update()
     {
         // Cycle through the in
-        if (Input.GetAxis("Mouse ScrollWheel") > 0)
-            ToggleSlot(true);
         if (Input.GetAxis("Mouse ScrollWheel") < 0)
+            ToggleSlot(true);
+        if (Input.GetAxis("Mouse ScrollWheel") > 0)
             ToggleSlot(false);
 
         if (Input.GetKeyDown(KeyCode.Tab)
@@ -88,6 +86,17 @@ public class Invantory : MonoBehaviour
             lastTabPressed = Time.time;
         }
 
+    }
+    public int BuscarObjetoPorNombre(string nombreObjeto)
+    {
+        for (int i = 0; i < objectsInInvantory.Count; i++)
+        {
+            if (objectsInInvantory[i].itemLogic.name == nombreObjeto)
+            {
+                return i; 
+            }
+        }
+        return -1; 
     }
 
     private void ToggleSlot(bool goUp)
@@ -125,62 +134,24 @@ public class Invantory : MonoBehaviour
 
     private void InitGUI()
     {
-        float padding = 5.0f;
-
-        bool even = maxInvantorySlots%2 == 0;
-        int slotCounter = 0;
-
-        if (even)
+        for (int i = 0; i < maxInvantorySlots; i++)
         {
-            GameObject tempGameObject = Instantiate(invantoryObjectTemplate);
-            tempGameObject.transform.SetParent(invantoryRoot.transform);
-            tempGameObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
-            var oldPos = tempGameObject.GetComponent<RectTransform>().position;
-            oldPos.x -= (tempGameObject.GetComponent<RectTransform>().rect.width /2 + 2.5f);
-            tempGameObject.GetComponent<RectTransform>().position = oldPos;
+            GameObject tempGameObject = Instantiate(invantoryObjectTemplate, invantoryRoot.transform);
+            tempGameObject.transform.localScale = Vector3.one;
+            tempGameObject.SetActive(true);
+
             invantorySlots.Add(tempGameObject);
-            slotCounter++;
+
+            var slot = tempGameObject.GetComponent<InvantorySlot>();
+            slot.slotID = i;
+            slot.owningInvantory = this;
+            AddListener(tempGameObject.GetComponent<Button>(), i);
         }
-
-        for (int i = 0; i < maxInvantorySlots / 2; i++)
-        {
-            GameObject tempGameObject = Instantiate(invantoryObjectTemplate);
-            tempGameObject.transform.SetParent(invantoryRoot.transform);
-            tempGameObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
-
-            var oldPos = tempGameObject.GetComponent<RectTransform>().position;
-            oldPos.x += i * tempGameObject.GetComponent<RectTransform>().rect.width + (i * padding) + (even ? (tempGameObject.GetComponent<RectTransform>().rect.width / 2) + 2.5f : 0);
-            tempGameObject.GetComponent<RectTransform>().position = oldPos;
-            int tempid = slotCounter;
-            invantorySlots.Add(tempGameObject);
-            slotCounter++;
-        }
-
-        for (int i = 1; i < maxInvantorySlots / 2; i++)
-        {
-            GameObject tempGameObject = Instantiate(invantoryObjectTemplate);
-            tempGameObject.transform.SetParent(invantoryRoot.transform);
-            tempGameObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
-
-            var oldPos = tempGameObject.GetComponent<RectTransform>().position;
-            oldPos.x -= ((i * tempGameObject.GetComponent<RectTransform>().rect.width) + (i * padding) + (even ? (tempGameObject.GetComponent<RectTransform>().rect.width / 2) + 2.5f : 0));
-            tempGameObject.GetComponent<RectTransform>().position = oldPos;
-            int tempid = slotCounter;
-            invantorySlots.Add(tempGameObject);
-            slotCounter++;
-        }
-
-        invantorySlots = invantorySlots.OrderBy(a => a.GetComponent<RectTransform>().position.x).ToList();
-        for(int i = 0; i < invantorySlots.Count; ++i)
-        {
-            invantorySlots[i].GetComponent<InvantorySlot>().slotID = i;
-            invantorySlots[i].GetComponent<InvantorySlot>().owningInvantory = this;
-            AddListener(invantorySlots[i].GetComponent<Button>(), i);
-        }
-        invantoryObjectTemplate.SetActive(false);
     }
 
-    void AddListener(Button b, int value) 
+
+
+void AddListener(Button b, int value) 
     {
         b.onClick.AddListener(() => UseItemAtID(value));
     }
@@ -188,7 +159,12 @@ public class Invantory : MonoBehaviour
     
     public void AddItemToInvanntory(CollectableObject obj)
     {
-        if(objectsInInvantory.Count >= invantorySlots.Count)
+        if (obj == null || obj.objectRefrence == null)
+        {
+            Debug.LogError("Intentando añadir un objeto nulo o sin referencia al inventario.");
+            return;
+        }
+        if (objectsInInvantory.Count >= invantorySlots.Count)
             return;
 
         if (!objectsInInvantory.Find(x => x.itemLogic.name == obj.objectRefrence.name))
@@ -212,6 +188,64 @@ public class Invantory : MonoBehaviour
                 tooltipText.text = "";
         }
     }
+
+
+   
+    public void RemoveItemFromInventory(CollectableObject obj)
+    {
+        if (obj == null || obj.objectRefrence == null)
+        {
+            Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
+            return;
+        }
+
+        string objectName = obj.objectRefrence.name;
+        int quantityToRemove = obj.quantity;
+
+        int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
+        if (idx == -1)
+        {
+            Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
+            return;
+        }
+
+        // Resta la cantidad
+        objectsInInvantory[idx].quantity -= quantityToRemove;
+
+        if (objectsInInvantory[idx].quantity <= 0)
+        {
+            // Elimina el objeto completamente del inventario
+            objectsInInvantory.RemoveAt(idx);
+            objectsInInvantory.TrimExcess();
+
+            // Actualiza visualmente los slots
+            int i;
+            for (i = idx; i < objectsInInvantory.Count; i++)
+            {
+                invantorySlots[i].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[i].objectImage, objectsInInvantory[i].quantity);
+            }
+
+            for (int j = i; j < invantorySlots.Count; j++)
+            {
+                invantorySlots[j].GetComponent<InvantorySlot>().SetItem(null, 0);
+            }
+        }
+        else
+        {
+            // Solo actualiza la cantidad
+            invantorySlots[idx].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[idx].objectImage, objectsInInvantory[idx].quantity);
+        }
+
+        // Actualiza el tooltip si está activo
+        if (useTooltip)
+        {
+            if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+                tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
+            else
+                tooltipText.text = "";
+        }
+    }
+
 
     public void UseSelectedItem()
     {

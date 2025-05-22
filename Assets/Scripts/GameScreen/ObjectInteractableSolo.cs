@@ -1,146 +1,154 @@
 using System;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectInteractableSolo : MonoBehaviour
 {
     public TextMeshProUGUI interactText;
-    public TextMeshProUGUI objectiveText;
+    private ObjectLocalizer localizer;
 
     public GameObject grabPoint;
     public float interactDistance = 3f;
 
     public Transform handPosition;
     public GameObject flashLight;
+    public Transform objectsParent;
 
     public Invantory inventory;
     public CollectableObject linterna;
-
     private bool isFlashlightEquipped = false;
     private bool isFlashlightOn = false;
-    private bool isKeyEquipped = false;
+  
+
+
     public static bool showDoorText = false;
-    RaycastHit hit;
+
     void Start()
     {
         interactText.gameObject.SetActive(false);
-
-        if (objectiveText != null)
-        {
-            objectiveText.text = "Objetivo: Consigue la linterna";
-        }
+        localizer = GetComponent<ObjectLocalizer>();
+        showDoorText = false;
     }
 
     void Update()
     {
-         hit = GetRaycastHitFromGrabPoint();
+        RaycastHit hit = GetRaycastHitFromGrabPoint();
 
-        if (hit.collider != null)
+
+        if (hit.collider != null && hit.collider.CompareTag("FlashLight"))
         {
-            string tag = hit.collider.tag;
+            localizer = hit.collider.gameObject.GetComponent<ObjectLocalizer>();
+            interactText.text = $"{localizer.GetLocalizedName()}";
+            interactText.gameObject.SetActive(true);
 
-            if (tag == "FlashLight" ||  tag == "Door")
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                ObjectLocalizer hitLocalizer = hit.collider.GetComponent<ObjectLocalizer>();
-                if (hitLocalizer != null)
-                {
-                    interactText.text = hitLocalizer.GetLocalizedName();
-                    interactText.gameObject.SetActive(true);
-                }
-
-                if (tag == "Door")
-                {
-                    showDoorText = true;
-                }
-
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    if (tag == "FlashLight")
-                    {
-                      
-                        EquipFlashLight(hit.collider.gameObject);
-                        inventory.AddItemToInvanntory(linterna);
-                        if (objectiveText != null)
-                            objectiveText.text = "Objetivo: Explora el entorno";
-                    }
-
-
-                }
-            }
-            else if (!showDoorText)
-            {
-                HideInteractText();
+                EquipFlashLight();
+                inventory.AddItemToInvanntory(linterna);
             }
         }
-        else
+        else if (!showDoorText)
         {
-            if (!showDoorText)
-            {
-                HideInteractText();
-            }
+            interactText.gameObject.SetActive(false);
         }
 
         if (isFlashlightEquipped && Input.GetKeyDown(KeyCode.F))
         {
             ToggleFlashlight();
         }
+
+        if (isFlashlightEquipped && Input.GetKeyDown(KeyCode.G))
+        {
+         
+                DropFlashLight(); 
+            
+          
+
+        }
+
     }
-    
-  
-    
-    private void EquipFlashLight(GameObject flashlightObject)
+
+    private void EquipFlashLight()
     {
-        
-        flashlightObject.transform.SetParent(handPosition);
-        flashlightObject.transform.localPosition = new Vector3(18.1f, -2.6f, 2f);
-        flashlightObject.transform.localRotation = Quaternion.Euler(86.48f, 174.31f, 180f);
-        flashlightObject.transform.localScale = new Vector3(20f, 20f, 20f);
+        if (handPosition != null)
+        {
+            transform.SetParent(handPosition);
 
-        if (flashlightObject.TryGetComponent(out CapsuleCollider col))
-            col.enabled = false;
+            transform.localPosition = new Vector3(-0.0627999976f, 0.0763999969f, 0.132300004f);
+            transform.localRotation = Quaternion.Euler(11.2050133f, 215.799973f, 86.432991f);
+            transform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
 
-        if (flashlightObject.TryGetComponent(out Rigidbody rb))
-            rb.isKinematic = true;
+            CapsuleCollider col = GetComponent<CapsuleCollider>();
+            if (col != null) col.enabled = false;
 
-        isFlashlightEquipped = true;
-        HideInteractText();
+            if (TryGetComponent<Rigidbody>(out Rigidbody rb))
+            {
+                rb.isKinematic = true;
+                rb.useGravity = false;
+                    
+            }
+
+            isFlashlightEquipped = true;
+            interactText.gameObject.SetActive(false);  
+        }
     }
-    
 
 
     private void ToggleFlashlight()
     {
-        isFlashlightOn = !isFlashlightOn;
-        flashLight.SetActive(isFlashlightOn);
-        Debug.Log("Linterna " + (isFlashlightOn ? "ENCENDIDA" : "APAGADA"));
+        if (flashLight.activeSelf)
+        {
+            flashLight.SetActive(false);
+            Debug.Log("Linterna apagada");
+        }
+        else
+        {
+            flashLight.SetActive(true);
+            Debug.Log("Linterna encendida");
+        }
+    }
+
+    private void DropFlashLight()
+    {
+        int index = inventory.BuscarObjetoPorNombre("Linterna");
+        if (inventory.CurrentlySelectedItem != index)
+        {
+            Debug.Log("No puedes soltar la linterna si no está seleccionada.");
+            return;
+        }
+        if (handPosition != null && objectsParent != null)
+        {
+            transform.SetParent(objectsParent);
+            transform.position = handPosition.transform.position + handPosition.transform.forward * 0.5f;
+
+            if (TryGetComponent<Rigidbody>(out Rigidbody rb))
+            {
+                rb.isKinematic = false;
+                rb.useGravity = true;
+                rb.AddForce(grabPoint.transform.forward * 5f, ForceMode.Impulse); // Añadir fuerza al soltar el objeto
+                // FALTA AÑADIR MAS FUERZA DE CAIDA AL SOLTAR EL OBJETO
+            }
+
+            CapsuleCollider col = GetComponent<CapsuleCollider>();
+            if (col != null) col.enabled = true;
+
+            if (isFlashlightOn)
+            {
+                isFlashlightOn = false;
+            }
+            inventory.RemoveItemFromInventory(linterna);
+            isFlashlightEquipped = false;
+        }
     }
 
     private RaycastHit GetRaycastHitFromGrabPoint()
     {
-        if (Physics.Raycast(grabPoint.transform.position, grabPoint.transform.forward, out RaycastHit hit, interactDistance))
+        RaycastHit hit;
+        if (Physics.Raycast(grabPoint.transform.position, grabPoint.transform.forward, out hit, interactDistance))
         {
             return hit;
         }
 
-        return default;
-    }
-
-    public void ShowDoorText(string message)
-    {
-        interactText.text = message;
-        interactText.gameObject.SetActive(true);
-        showDoorText = true;
-    }
-
-    public void HideDoorText()
-    {
-        HideInteractText();
-        showDoorText = false;
-    }
-
-    private void HideInteractText()
-    {
-        interactText.gameObject.SetActive(false);
+        return default(RaycastHit);
     }
 }

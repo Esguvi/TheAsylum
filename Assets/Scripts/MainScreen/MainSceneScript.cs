@@ -9,6 +9,12 @@ public class MainSceneScript : MonoBehaviour
         SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
     }
 
+    public void MultiPlayer()
+    {
+        Debug.Log("MULTIJUGADOR");
+        SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
+    }
+
     public void Options()
     {
         Debug.Log("OPCIONES");
