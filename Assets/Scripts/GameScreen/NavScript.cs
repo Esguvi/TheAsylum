@@ -33,6 +33,7 @@ public class NavScript : MonoBehaviour
 
         if (persigiendo)
         {
+            anim.SetBool("isRunning", true);
             if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
             {
                 anim.SetBool("isRunning", false);
@@ -58,10 +59,14 @@ public class NavScript : MonoBehaviour
                 agent.SetDestination(destine.position);
                 anim.SetBool("isRunning", true);
 
-                if (agent.remainingDistance > 0 && agent.remainingDistance < 1)
+                if ((agent.remainingDistance > 0 && agent.remainingDistance < 1))
                 {
-                    anim.SetBool("isRunning", false);
-                    delayTime = Time.time + 2;
+                    Debug.Log(agent.remainingDistance);
+                    if (delayTime+2 < Time.time)
+                    {
+                        anim.SetBool("isRunning", false);
+                        delayTime = Time.time + 2;
+                    }
 
                     if (destine.childCount > 0)
                     {

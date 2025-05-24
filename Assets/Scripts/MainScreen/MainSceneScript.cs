@@ -5,7 +5,7 @@ public class MainSceneScript : MonoBehaviour
 {
     public void StartGame()
     {
-        SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
+        CargaNivel.SceneLoader("GameScreen");
     }
 
     public void MultiPlayer()
