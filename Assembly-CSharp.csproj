@@ -74,9 +74,11 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\ChannelSelector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
+    <Compile Include="Assets\Scripts\GameScreen\LockedDoorScript.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\ObjectPickup.cs" />
     <Compile Include="Assets\Scripts\LoginRegisterScreen\LoginManager.cs" />
     <Compile Include="Assets\Scripts\SessionManager\SessionManager.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\InvantoryObject.cs" />
     <Compile Include="Assets\Characters\Enemy\Demo Scripts\AnimationController.cs" />
     <Compile Include="Assets\Photon\PhotonRealtime\Demos\DemoLoadBalancing\ConnectAndJoinRandomLb.cs" />
     <Compile Include="Assets\Scripts\AudioScript.cs" />
@@ -95,13 +97,16 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\Scripts\GameScreen\MovementScript.cs" />
+    <Compile Include="Assets\Scripts\GameOverScripts.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\Example\SmoothMouseLook.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\NamePickGui.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\PlayerSetup.cs" />
     <Compile Include="Assets\Scripts\MainScreen\MainSceneScript.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\Example\ExampleHealth.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\Scripts\LoginRegisterScreen\RegisterManager.cs" />
@@ -114,10 +119,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\InvantorySlot.cs" />
     <Compile Include="Assets\Scripts\GameScreen\ObjectLocalizer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\Logic\Medkit.cs" />
     <Compile Include="Assets\Scripts\PersistentVideo.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\PhotonCharacterControllerView.cs" />
     <Compile Include="Assets\Characters\Enemy\Demo Scripts\AnimationItemData.cs" />
@@ -126,9 +133,11 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
     <Compile Include="Assets\Characters\Enemy\Demo Scripts\UIElementController.cs" />
     <Compile Include="Assets\Characters\Enemy\Demo Scripts\CameraController.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\RuntimeInvantoryLogic.cs" />
     <Compile Include="Assets\Scripts\OptionsScreen\AudioConfScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\CollectableObject.cs" />
     <Compile Include="Assets\Scripts\GameScreen\NavScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\Scripts\CopyMultiplayerScreen\DoorScriptMultiplayer.cs" />
@@ -139,9 +148,13 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\Example\ExamplePlayer.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\Invantory.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\ObjectInteractableMultiplayer.cs" />
+    <Compile Include="Assets\Scripts\GameScreen\LlaveInteractableScript.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\EventSystemSpawner.cs" />
+    <Compile Include="Assets\InvantorySystem\Scripts\InvantoryItemLogic.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -152,6 +165,7 @@
     <None Include="Assets\Firebase\Plugins\x86_64\FirebaseCppFirestore.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile-2-Pass.shader" />
     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
+    <None Include="Assets\InvantorySystem\Licence.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Unity - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />

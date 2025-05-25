@@ -8,12 +8,14 @@ public class ObjectInteractableSolo : MonoBehaviour
     private ObjectLocalizer localizer;
 
     public GameObject grabPoint;
-    public float interactDistance = 3f;
+    public float interactDistance;
 
     public Transform handPosition;
     public GameObject flashLight;
     public Transform objectsParent;
 
+    public Invantory inventory;
+    public CollectableObject linterna;
 
     private bool isFlashlightEquipped = false;
     private bool isFlashlightOn = false;
@@ -41,6 +43,7 @@ public class ObjectInteractableSolo : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 EquipFlashLight();
+                inventory.AddItemToInvanntory(linterna);
             }
         }
         else if (!showDoorText)
@@ -75,12 +78,12 @@ public class ObjectInteractableSolo : MonoBehaviour
 
             if (TryGetComponent<Rigidbody>(out Rigidbody rb))
             {
-                rb.isKinematic = true; 
+                rb.isKinematic = true;
                 rb.useGravity = false;
             }
 
             isFlashlightEquipped = true;
-            interactText.gameObject.SetActive(false);  
+            interactText.gameObject.SetActive(false);
         }
     }
 
@@ -101,6 +104,12 @@ public class ObjectInteractableSolo : MonoBehaviour
 
     private void DropFlashLight()
     {
+        int index = inventory.BuscarObjetoPorNombre("Linterna");
+        if (inventory.CurrentlySelectedItem != index)
+        {
+            Debug.Log("No puedes soltar la linterna si no estÃ¡ seleccionada.");
+            return;
+        }
         if (handPosition != null && objectsParent != null)
         {
             transform.SetParent(objectsParent);
@@ -110,7 +119,7 @@ public class ObjectInteractableSolo : MonoBehaviour
             {
                 rb.isKinematic = false;
                 rb.useGravity = true;
-                // FALTA AÑADIR MAS FUERZA DE CAIDA AL SOLTAR EL OBJETO
+                // FALTA Aï¿½ADIR MAS FUERZA DE CAIDA AL SOLTAR EL OBJETO
             }
 
             CapsuleCollider col = GetComponent<CapsuleCollider>();
@@ -121,7 +130,9 @@ public class ObjectInteractableSolo : MonoBehaviour
                 isFlashlightOn = false;
             }
 
+            inventory.RemoveItemFromInventory(linterna);
             isFlashlightEquipped = false;
+            
         }
     }
 

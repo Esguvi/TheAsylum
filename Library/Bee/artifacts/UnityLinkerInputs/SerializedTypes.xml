@@ -1,4 +1,7 @@
 <linker>
+	<assembly fullname="Assembly-CSharp">
+		<type fullname="InvantoryItemLogic" preserve="nothing" serialized="true"/>
+	</assembly>
 	<assembly fullname="PhotonRealtime">
 		<type fullname="Photon.Realtime.AppSettings" preserve="nothing" serialized="true"/>
 	</assembly>

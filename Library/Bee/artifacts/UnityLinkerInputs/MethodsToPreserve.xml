@@ -3,6 +3,10 @@
 		<type fullname="AudioConfScript">
 			<method name="changeVolum"/>
 		</type>
+		<type fullname="GameOverScripts">
+			<method name="mainMenu"/>
+			<method name="replay"/>
+		</type>
 		<type fullname="KeyMoConfScript">
 			<method name="changeSensibility"/>
 		</type>
@@ -66,6 +70,10 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

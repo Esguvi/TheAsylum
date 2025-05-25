@@ -33,6 +33,7 @@ public class NavScript : MonoBehaviour
 
         if (persigiendo)
         {
+            anim.SetBool("isRunning", true);
             if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
             {
                 anim.SetBool("isRunning", false);

@@ -52,7 +52,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPun
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        objectPickup.Equip(handPosition);
+                        objectPickup.Equip();
                         equippedObject = objectPickup;
                         interactText.gameObject.SetActive(false);
                     }
