@@ -3,16 +3,18 @@ using UnityEngine.Video;
 
 public class AudioScript : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()
     {
-        if (transform.GetComponent<AudioSource>() != null && transform.GetComponent<AudioSource>().volume != AudioConfScript.volume)
+        AudioSource audioSource = GetComponent<AudioSource>();
+        VideoPlayer videoPlayer = GetComponent<VideoPlayer>();
+
+        if (audioSource != null && audioSource.volume != AudioConfScript.volume)
         {
-            transform.GetComponent<AudioSource>().volume = AudioConfScript.volume;
+            audioSource.volume = AudioConfScript.volume;
         }
-        else if (transform.GetComponent<VideoPlayer>().GetDirectAudioVolume(0) != AudioConfScript.volume && transform.GetComponent<VideoPlayer>() != null)
+        else if (videoPlayer != null && videoPlayer.GetDirectAudioVolume(0) != AudioConfScript.volume)
         {
-            transform.GetComponent<VideoPlayer>().SetDirectAudioVolume(0,AudioConfScript.volume);
+            videoPlayer.SetDirectAudioVolume(0, AudioConfScript.volume);
         }
     }
 }

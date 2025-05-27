@@ -8,26 +8,23 @@ public class DoorScript : MonoBehaviour
 {
     public GameObject puertaR;
     public GameObject puertaL;
-    public AudioClip abrir;
-    public AudioClip cerrar;
-    
+
+
     private bool cerca;
     private bool abierto;
     private TextMeshProUGUI interactText;
     private GameObject canvas;
     private ObjectLocalizer localizer;
-    private AudioSource reproductor;
 
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
         canvas = GameObject.FindWithTag("Canva");
         interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
-        reproductor = GetComponent<AudioSource>();
     }
     private void Update()
     {
-        
+
         if (cerca)
         {
             interactText.text = localizer.GetLocalizedName();
@@ -35,8 +32,6 @@ public class DoorScript : MonoBehaviour
             {
                 if (!abierto)
                 {
-                    reproductor.clip = abrir;
-                    reproductor.Play();
                     if (puertaR != null)
                     {
                         puertaR.transform.Rotate(new Vector3(0, 90f, 0));
@@ -49,8 +44,6 @@ public class DoorScript : MonoBehaviour
                 }
                 else
                 {
-                    reproductor.clip = cerrar;
-                    reproductor.Play();
                     if (puertaR != null)
                     {
                         puertaR.transform.Rotate(new Vector3(0, -90, 0));
@@ -67,10 +60,11 @@ public class DoorScript : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {   
-        if(other.tag == "Enemy")
+    {
+        if (other.tag == "Enemy")
         {
-            if (!abierto) {
+            if (!abierto)
+            {
                 if (puertaR != null)
                 {
                     puertaR.transform.Rotate(new Vector3(0, 90f, 0));
@@ -93,7 +87,7 @@ public class DoorScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        
+
         if (other.tag == "Enemy")
         {
             if (abierto)

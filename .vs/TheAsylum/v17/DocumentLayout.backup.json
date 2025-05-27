@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\assets\\scripts\\loadingscene\\carganivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\assets\\scripts\\gamescreen\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamescreen\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|c:\\users\\dell\\desktop\\theasylumtfg\\theasylum\\assets\\scripts\\loadingscene\\carganivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadingscene\\carganivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -31,10 +35,6 @@
       "RelativeMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamescreen\\movementscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\assets\\scripts\\gamescreen\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamescreen\\navscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\assets\\scripts\\gameoverscripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C7D896E6-A50C-0411-4628-BAC9EFBD1824}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameoverscripts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CargaNivel.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\LoadingScene\\CargaNivel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\LoadingScene\\CargaNivel.cs",
@@ -67,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MovementScript.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\GameScreen\\MovementScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameScreen\\MovementScript.cs",
@@ -79,7 +79,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "DoorScript.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\GameScreen\\DoorScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameScreen\\DoorScript.cs",
@@ -87,12 +87,11 @@
               "RelativeToolTip": "Assets\\Scripts\\GameScreen\\DoorScript.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-18T08:30:54.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-18T08:30:54.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "RoomSelector.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\MultiplayerScreen\\RoomSelector.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MultiplayerScreen\\RoomSelector.cs",
@@ -104,7 +103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainSceneScript.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\MainScreen\\MainSceneScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainScreen\\MainSceneScript.cs",
@@ -112,12 +111,11 @@
               "RelativeToolTip": "Assets\\Scripts\\MainScreen\\MainSceneScript.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-15T09:10:38.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-15T09:10:38.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "RoomManager.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\MultiplayerScreen\\RoomManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MultiplayerScreen\\RoomManager.cs",
@@ -141,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "OptionsBtnsScripts.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\OptionsScreen\\OptionsBtnsScripts.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OptionsScreen\\OptionsBtnsScripts.cs",
@@ -153,15 +151,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "NavScript.cs",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\GameScreen\\NavScript.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameScreen\\NavScript.cs",
               "ToolTip": "C:\\Users\\Dell\\Desktop\\TheAsylumTFG\\TheAsylum\\Assets\\Scripts\\GameScreen\\NavScript.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameScreen\\NavScript.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwCIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEAAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-10T08:25:41.828Z"
+              "WhenOpened": "2025-05-10T08:25:41.828Z",
+              "EditorCaption": ""
             }
           ]
         }

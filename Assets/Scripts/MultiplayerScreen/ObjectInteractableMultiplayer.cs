@@ -1,187 +1,75 @@
-using Photon.Pun;
-using TMPro;
 using UnityEngine;
+using TMPro;
+using Photon.Pun;
+using UnityEngine.Localization;
 using UnityEngine.Localization.Components;
 
-public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
+public class ObjectInteractableMultiplayer : MonoBehaviourPun
 {
-    private TextMeshProUGUI interactText;
-    private ObjectLocalizer localizer;
+    public TextMeshProUGUI interactText;
+    public GameObject grabPoint;
+    public float interactDistance;
+    public Transform handPosition;
 
-    private GameObject grabPoint;
-    private Transform handPosition;
-    private GameObject flashLight;
-    private GameObject lightt;
+    private ObjectPickup equippedObject;
 
-    private bool isFlashlightEquipped = false;
-    private bool isFlashlightOn = false;
-
-    private float interactDistance = 100f;
-    private bool playerInitialized = false;
-
-    void Awake()
-    {
-        localizer = GetComponent<ObjectLocalizer>();
-    }
+    public LocalizedString flashlightText;
 
     void Start()
     {
-        TryFindPlayerComponents();
-    }
-
-    void Update()
-    {
-        if (!playerInitialized)
-        {
-            TryFindPlayerComponents();
-            return;
-        }
-
-        if (!photonView.IsMine) return;
-
-        RaycastHit hit = GetRaycastHitFromGrabPoint();
-
-        if (hit.collider != null && hit.collider.CompareTag("FlashLight"))
-        {
-            interactText.text = $"{localizer?.GetLocalizedName()}";
-            interactText.gameObject.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                EquipFlashLight();
-                //PhotonNetwork.Destroy(gameObject);
-                Debug.Log("Linterna destruida");
-            }
-        }
-        else
+        if (!photonView.IsMine)
         {
             interactText.gameObject.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            lightt = transform.Find("Light").gameObject;
-            ToggleFlashlight();
-
-        }
-    }
-
-    private void TryFindPlayerComponents()
-    {
-        GameObject player = GameObject.FindWithTag("Player");
-
-        if (player == null) return;
-
-        interactText = player.transform.Find("Canvas/InteractionText")?.GetComponent<TextMeshProUGUI>();
-        handPosition = player.transform.Find("Main Camera/HandPosition");
-        grabPoint = player.transform.Find("Main Camera/GrabPoint")?.gameObject;
-
-        if (interactText != null)
-        {
-            interactText.gameObject.SetActive(false);
-        }
-
-        if (handPosition == null || grabPoint == null || interactText == null)
-        {
-            Debug.LogError("No se encontraron todos los componentes del Player.");
+            enabled = false;
             return;
-        }
-
-        flashLight = gameObject;
-
-        LocalizeStringEvent localizeEvent = flashLight.GetComponent<LocalizeStringEvent>();
-        if (localizeEvent == null)
-        {
-            localizeEvent = flashLight.AddComponent<LocalizeStringEvent>();
-        }
-
-        localizeEvent.StringReference.SetReference("StringTable", "flashlight");
-
-        localizeEvent.OnUpdateString.AddListener((localizedText) =>
-        {
-            if (interactText != null)
-            {
-                interactText.text = localizedText;
-            }
-        });
-
-        playerInitialized = true;
-        Debug.Log("Player encontrado y referencias asignadas correctamente.");
-    }
-
-    private void EquipFlashLight()
-    {
-        if (handPosition != null)
-        {
-            if (flashLight == null)
-            {
-                flashLight = PhotonNetwork.Instantiate("FlashLight", Vector3.zero, Quaternion.identity);
-            }
-
-            flashLight.transform.SetParent(handPosition);
-            flashLight.transform.localPosition = new Vector3(18.1f, -2.6f, 2f);
-            flashLight.transform.localRotation = Quaternion.Euler(86.48f, 174.31f, 180f);
-            flashLight.transform.localScale = new Vector3(20, 20, 20);
-
-            if (flashLight.TryGetComponent<Rigidbody>(out Rigidbody rb))
-            {
-                rb.isKinematic = true;
-            }
-
-            isFlashlightEquipped = true;
-
-            photonView.RPC("OnFlashlightEquipped", RpcTarget.Others, flashLight.GetComponent<PhotonView>().ViewID);
-
-            Debug.Log("Linterna equipada en la mano.");
-        }
-        else
-        {
-            Debug.LogWarning("HandPosition no asignado en el Inspector.");
         }
 
         interactText.gameObject.SetActive(false);
     }
 
-    private void ToggleFlashlight()
+    void Update()
     {
-        if (lightt == null) return;
-
-        isFlashlightOn = !isFlashlightOn;
-        lightt.SetActive(isFlashlightOn);
-        photonView.RPC("OnFlashlightToggled", RpcTarget.Others, isFlashlightOn);
-        Debug.Log("Linterna " + (isFlashlightOn ? "ENCENDIDA" : "APAGADA"));
+        HandleInteractionRaycast();
+        HandleObjectToggle();
     }
 
-    private RaycastHit GetRaycastHitFromGrabPoint()
+    private void HandleInteractionRaycast()
     {
-        if (grabPoint == null) return default;
-
-        if (Physics.Raycast(grabPoint.transform.position, grabPoint.transform.forward, out RaycastHit hit, interactDistance))
+        RaycastHit hit;
+        if (Physics.Raycast(grabPoint.transform.position, grabPoint.transform.forward, out hit, interactDistance))
         {
-            return hit;
+            if (hit.collider.CompareTag("FlashLight"))
+            {
+                flashlightText.TableReference = "StringTable";  
+                flashlightText.TableEntryReference = "flashlight"; 
+
+                interactText.text = flashlightText.GetLocalizedString();
+
+                interactText.gameObject.SetActive(true);
+
+                ObjectPickup objectPickup = hit.collider.GetComponent<ObjectPickup>();
+                if (objectPickup != null && !objectPickup.IsEquipped)
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        objectPickup.Equip();
+                        equippedObject = objectPickup;
+                        interactText.gameObject.SetActive(false);
+                    }
+
+                    return;
+                }
+            }
         }
 
-        return default;
+        interactText.gameObject.SetActive(false);
     }
 
-    [PunRPC]
-    private void OnFlashlightEquipped(int flashlightViewID)
+    private void HandleObjectToggle()
     {
-        PhotonView flashlightPhotonView = PhotonView.Find(flashlightViewID);
-        if (flashlightPhotonView != null)
+        if (equippedObject != null && Input.GetKeyDown(KeyCode.F))
         {
-            flashLight = flashlightPhotonView.gameObject;
-            flashLight.transform.SetParent(handPosition);
-            flashLight.transform.localPosition = new Vector3(18.1f, -2.6f, 2f);
-            flashLight.transform.localRotation = Quaternion.Euler(86.48f, 174.31f, 180f);
-            flashLight.transform.localScale = new Vector3(20, 20, 20);
+            equippedObject.Toggle();
         }
-    }
-
-    [PunRPC]
-    private void OnFlashlightToggled(bool isOn)
-    {
-        if (flashLight == null) return;
-        flashLight.SetActive(isOn);
     }
 }

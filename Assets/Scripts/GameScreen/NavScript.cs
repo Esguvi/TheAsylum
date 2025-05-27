@@ -29,7 +29,7 @@ public class NavScript : MonoBehaviour
     void Update()
     {
         Vector3 offset = new Vector3(0, 105f, 0);
-        Debug.DrawLine((transform.position+offset), (player.position + offset));
+        Debug.DrawLine((transform.position + offset), (player.position + offset));
 
         if (persigiendo)
         {
@@ -43,7 +43,7 @@ public class NavScript : MonoBehaviour
                     SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
                 }
             }
-           }
+        }
 
         if (!Physics.Linecast((transform.position + offset), (player.position + offset)))
         {
@@ -59,14 +59,10 @@ public class NavScript : MonoBehaviour
                 agent.SetDestination(destine.position);
                 anim.SetBool("isRunning", true);
 
-                if ((agent.remainingDistance > 0 && agent.remainingDistance < 1))
+                if (agent.remainingDistance > 0 && agent.remainingDistance < 1)
                 {
-                    Debug.Log(agent.remainingDistance);
-                    if (delayTime+2 < Time.time)
-                    {
-                        anim.SetBool("isRunning", false);
-                        delayTime = Time.time + 2;
-                    }
+                    anim.SetBool("isRunning", false);
+                    delayTime = Time.time + 2;
 
                     if (destine.childCount > 0)
                     {
