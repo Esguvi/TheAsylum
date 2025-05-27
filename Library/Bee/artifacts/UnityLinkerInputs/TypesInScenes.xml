@@ -11,12 +11,14 @@
 		<type fullname="InvantorySlot" preserve="nothing"/>
 		<type fullname="KeyMoConfScript" preserve="nothing"/>
 		<type fullname="LlaveInteractableScript" preserve="nothing"/>
+		<type fullname="LobbyManager" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LockedDoorScript" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
 		<type fullname="MainSceneScript" preserve="nothing"/>
 		<type fullname="Medkit" preserve="nothing"/>
 		<type fullname="MovementScript" preserve="nothing"/>
+		<type fullname="MultiplayerManager" preserve="nothing"/>
 		<type fullname="NavScript" preserve="nothing"/>
 		<type fullname="ObjectInteractableMultiplayer" preserve="nothing"/>
 		<type fullname="ObjectInteractableMultiplayerrr" preserve="nothing"/>
@@ -27,7 +29,7 @@
 		<type fullname="PersistentVideo" preserve="nothing"/>
 		<type fullname="PlayerSetup" preserve="nothing"/>
 		<type fullname="RegisterManager" preserve="nothing"/>
-		<type fullname="RoomManager" preserve="nothing"/>
+		<type fullname="RoomSelector" preserve="nothing"/>
 		<type fullname="ScreenScripts" preserve="nothing"/>
 		<type fullname="SessionManager" preserve="nothing"/>
 		<type fullname="ShowHide" preserve="nothing"/>
@@ -69,8 +71,6 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
-		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
@@ -149,7 +149,6 @@
 		<type fullname="TMPro.TMP_Settings" preserve="nothing"/>
 		<type fullname="TMPro.TMP_SpriteAsset" preserve="nothing"/>
 		<type fullname="TMPro.TMP_StyleSheet" preserve="nothing"/>
-		<type fullname="TMPro.TMP_SubMeshUI" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="UnityEngine">
 		<type fullname="UnityEditor.Animations.AnimatorController" preserve="nothing"/>

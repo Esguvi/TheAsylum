@@ -824,6 +824,10 @@ PrefabInstance:
       value: flashlight
       objectReference: {fileID: 0}
     - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
       propertyPath: m_TagString
       value: FlashLight
       objectReference: {fileID: 0}
@@ -2569,7 +2573,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
       propertyPath: m_TagString
@@ -4427,7 +4431,7 @@ GameObject:
   - component: {fileID: 1041452531}
   - component: {fileID: 1041452530}
   m_Layer: 0
-  m_Name: RoomManager
+  m_Name: MultiplayerManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4445,11 +4449,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c8c0d4c3946d747939c3e49e14dfcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 6298782877127942592, guid: 0046af97b0517194ea5b14293309e7e8, type: 3}
-  player2: {fileID: 5926619682224955196, guid: b7e384a7a0436ff47a7430e4423b1c26, type: 3}
-  player3: {fileID: 8661491806769602303, guid: d409b7d9718acdb46bc50cce69abd8e1, type: 3}
-  playerEnemy: {fileID: 466571700785119876, guid: a5d8096b0ef6315489bb46c34d7177b5, type: 3}
-  spawnPoint: {fileID: 1839930930}
+  playerPrefab1: {fileID: 8320626500348063445, guid: 0046af97b0517194ea5b14293309e7e8, type: 3}
+  playerPrefab2: {fileID: 5082421613976598014, guid: d409b7d9718acdb46bc50cce69abd8e1, type: 3}
+  playerPrefab3: {fileID: 5122015524350777430, guid: b7e384a7a0436ff47a7430e4423b1c26, type: 3}
+  enemyPrefab: {fileID: 8771546009183047223, guid: a5d8096b0ef6315489bb46c34d7177b5, type: 3}
+  spawnPointPlayers: {fileID: 1839930930}
   spawnPointEnemy: {fileID: 366516250}
 --- !u!4 &1041452531
 Transform:

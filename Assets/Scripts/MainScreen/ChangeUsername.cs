@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
+using Photon.Pun;
 
 public class ChangeUsername : MonoBehaviour
 {
@@ -31,5 +32,6 @@ public class ChangeUsername : MonoBehaviour
     void UpdateUsernameText(string value)
     {
         usernameText.text = value;
+        PhotonNetwork.NickName = value;
     }
 }

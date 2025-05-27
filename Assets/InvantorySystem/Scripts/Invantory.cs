@@ -59,7 +59,6 @@ public class Invantory : MonoBehaviour
         invantoryItems = Resources.LoadAll<InvantoryObject>("InvantoryItems").ToList();
         if (resetInvantoryOnStart)
             ResetInvantory();
-        invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
         invantoryObjectTemplate.SetActive(false);
 
         if (useTooltip)

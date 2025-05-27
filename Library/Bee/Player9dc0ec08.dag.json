@@ -347,7 +347,11 @@
         337,
         338,
         339,
-        340
+        340,
+        341,
+        342,
+        343,
+        344
       ],
       "DebugActionIndex": 0
     },
@@ -514,24 +518,6 @@
       "DebugActionIndex": 9
     },
     {
-      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/level4.resS",
-      "DisplayName": "Copying level4.resS",
-      "ActionType": "CopyFiles",
-      "Inputs": [
-        "Library/PlayerDataCache/Win642/Data/level4.resS"
-      ],
-      "InputFlags": [
-        0
-      ],
-      "Outputs": [
-        "C:/Users/victo/Desktop/UnityTest/Test_Data/level4.resS"
-      ],
-      "OutputFlags": [
-        2
-      ],
-      "DebugActionIndex": 10
-    },
-    {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/level5",
       "DisplayName": "Copying level5",
       "ActionType": "CopyFiles",
@@ -547,7 +533,61 @@
       "OutputFlags": [
         2
       ],
+      "DebugActionIndex": 10
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/level6",
+      "DisplayName": "Copying level6",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/level6"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/level6"
+      ],
+      "OutputFlags": [
+        2
+      ],
       "DebugActionIndex": 11
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/level6.resS",
+      "DisplayName": "Copying level6.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/level6.resS"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/level6.resS"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 12
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/level7",
+      "DisplayName": "Copying level7",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/level7"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/level7"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 13
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/resources.assets",
@@ -565,7 +605,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 12
+      "DebugActionIndex": 14
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/resources.assets.resS",
@@ -583,7 +623,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 13
+      "DebugActionIndex": 15
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/resources.resource",
@@ -601,7 +641,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 14
+      "DebugActionIndex": 16
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Resources/unity_builtin_extra",
@@ -619,7 +659,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 15
+      "DebugActionIndex": 17
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/RuntimeInitializeOnLoads.json",
@@ -637,7 +677,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 16
+      "DebugActionIndex": 18
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/ScriptingAssemblies.json",
@@ -655,7 +695,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 17
+      "DebugActionIndex": 19
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets0.assets",
@@ -673,7 +713,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 18
+      "DebugActionIndex": 20
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets0.assets.resS",
@@ -691,7 +731,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 19
+      "DebugActionIndex": 21
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets0.resource",
@@ -709,7 +749,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 20
+      "DebugActionIndex": 22
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets1.assets",
@@ -727,7 +767,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 21
+      "DebugActionIndex": 23
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets2.assets",
@@ -745,7 +785,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 22
+      "DebugActionIndex": 24
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets2.assets.resS",
@@ -763,7 +803,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 23
+      "DebugActionIndex": 25
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets3.assets",
@@ -781,7 +821,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 24
+      "DebugActionIndex": 26
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets4.assets",
@@ -799,7 +839,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 25
+      "DebugActionIndex": 27
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets5.assets",
@@ -817,32 +857,68 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 26
+      "DebugActionIndex": 28
     },
     {
-      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets5.assets.resS",
-      "DisplayName": "Copying sharedassets5.assets.resS",
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets6.assets",
+      "DisplayName": "Copying sharedassets6.assets",
       "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/PlayerDataCache/Win642/Data/sharedassets5.assets.resS"
+        "Library/PlayerDataCache/Win642/Data/sharedassets6.assets"
       ],
       "InputFlags": [
         0
       ],
       "Outputs": [
-        "C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets5.assets.resS"
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets6.assets"
       ],
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 27
+      "DebugActionIndex": 29
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets7.assets",
+      "DisplayName": "Copying sharedassets7.assets",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/sharedassets7.assets"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets7.assets"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 30
+    },
+    {
+      "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets7.assets.resS",
+      "DisplayName": "Copying sharedassets7.assets.resS",
+      "ActionType": "CopyFiles",
+      "Inputs": [
+        "Library/PlayerDataCache/Win642/Data/sharedassets7.assets.resS"
+      ],
+      "InputFlags": [
+        0
+      ],
+      "Outputs": [
+        "C:/Users/victo/Desktop/UnityTest/Test_Data/sharedassets7.assets.resS"
+      ],
+      "OutputFlags": [
+        2
+      ],
+      "DebugActionIndex": 31
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/boot.config_tyr4.info",
       "DisplayName": "Writing boot.config_tyr4.info",
       "ActionType": "WriteFile",
       "PayloadOffset": 83,
-      "PayloadLength": 57333,
+      "PayloadLength": 57541,
       "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
       "Inputs": [],
       "InputFlags": [],
@@ -852,7 +928,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 28
+      "DebugActionIndex": 32
     },
     {
       "Annotation": "AddBootConfigGUID Library/Bee/artifacts/WinPlayerBuildProgram/boot.config",
@@ -870,8 +946,10 @@
         "Library/PlayerDataCache/Win642/Data/level2.resS",
         "Library/PlayerDataCache/Win642/Data/level3",
         "Library/PlayerDataCache/Win642/Data/level4",
-        "Library/PlayerDataCache/Win642/Data/level4.resS",
         "Library/PlayerDataCache/Win642/Data/level5",
+        "Library/PlayerDataCache/Win642/Data/level6",
+        "Library/PlayerDataCache/Win642/Data/level6.resS",
+        "Library/PlayerDataCache/Win642/Data/level7",
         "Library/PlayerDataCache/Win642/Data/resources.assets",
         "Library/PlayerDataCache/Win642/Data/resources.assets.resS",
         "Library/PlayerDataCache/Win642/Data/resources.resource",
@@ -887,7 +965,9 @@
         "Library/PlayerDataCache/Win642/Data/sharedassets3.assets",
         "Library/PlayerDataCache/Win642/Data/sharedassets4.assets",
         "Library/PlayerDataCache/Win642/Data/sharedassets5.assets",
-        "Library/PlayerDataCache/Win642/Data/sharedassets5.assets.resS",
+        "Library/PlayerDataCache/Win642/Data/sharedassets6.assets",
+        "Library/PlayerDataCache/Win642/Data/sharedassets7.assets",
+        "Library/PlayerDataCache/Win642/Data/sharedassets7.assets.resS",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AIModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.AMDModule.dll",
         "C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Variations/mono/Managed/UnityEngine.ARModule.dll",
@@ -1768,6 +1848,10 @@
         0,
         0,
         0,
+        0,
+        0,
+        0,
+        0,
         2,
         2,
         2,
@@ -1811,11 +1895,11 @@
         0
       ],
       "ToBuildDependencies": [
-        28
+        32
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 29
+      "DebugActionIndex": 33
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/boot.config",
@@ -1834,9 +1918,9 @@
         2
       ],
       "ToBuildDependencies": [
-        29
+        33
       ],
-      "DebugActionIndex": 30
+      "DebugActionIndex": 34
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/google-services-desktop.json",
@@ -1854,7 +1938,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 31
+      "DebugActionIndex": 35
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/google-services.json",
@@ -1872,7 +1956,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 32
+      "DebugActionIndex": 36
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/catalog.bin",
@@ -1890,7 +1974,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 33
+      "DebugActionIndex": 37
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/catalog.hash",
@@ -1908,7 +1992,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 34
+      "DebugActionIndex": 38
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/settings.json",
@@ -1926,7 +2010,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 35
+      "DebugActionIndex": 39
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/AddressablesLink/link.xml",
@@ -1944,7 +2028,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 36
+      "DebugActionIndex": 40
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/StandaloneWindows64/3a6a69ee53e899c31e084b519c347902_monoscripts_08a661d2056e811995dc976f8c77c03e.bundle",
@@ -1962,7 +2046,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 37
+      "DebugActionIndex": 41
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-assets-shared_assets_all.bundle",
@@ -1980,7 +2064,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 38
+      "DebugActionIndex": 42
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-locales_assets_all.bundle",
@@ -1998,7 +2082,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 39
+      "DebugActionIndex": 43
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-english(en)_assets_all.bundle",
@@ -2016,7 +2100,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 40
+      "DebugActionIndex": 44
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/StreamingAssets/aa/StandaloneWindows64/localization-string-tables-spanish(es)_assets_all.bundle",
@@ -2034,7 +2118,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 41
+      "DebugActionIndex": 45
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Plugins/x86_64/FirebaseCppFirestore.dll",
@@ -2052,7 +2136,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 42
+      "DebugActionIndex": 46
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Plugins/x86_64/FirebaseCppAuth.dll",
@@ -2070,7 +2154,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 43
+      "DebugActionIndex": 47
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Plugins/x86_64/FirebaseCppApp-12_7_0.dll",
@@ -2088,13 +2172,13 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 44
+      "DebugActionIndex": 48
     },
     {
       "Annotation": "WriteResponseFile Library/Bee/artifacts/rsp/1902109718409029134.rsp",
       "DisplayName": "Writing 1902109718409029134.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 57505,
+      "PayloadOffset": 57713,
       "PayloadLength": 86747,
       "PayloadDebugContentSnippet": "--allowed-assembly=\"C:/Program",
       "Inputs": [],
@@ -2105,7 +2189,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 45
+      "DebugActionIndex": 49
     },
     {
       "Annotation": "UnityLinker C:/Users/victo/Desktop/UnityProjects/TheAsylum/Library/Bee/artifacts/unitylinker_dwek.traceevents",
@@ -3481,7 +3565,7 @@
         0
       ],
       "ToBuildDependencies": [
-        45
+        49
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
@@ -3507,7 +3591,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 46
+      "DebugActionIndex": 50
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Assembly-CSharp.dll",
@@ -3526,9 +3610,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 47
+      "DebugActionIndex": 51
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.App.dll",
@@ -3547,9 +3631,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 48
+      "DebugActionIndex": 52
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Auth.dll",
@@ -3568,9 +3652,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 49
+      "DebugActionIndex": 53
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Firestore.dll",
@@ -3589,9 +3673,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 50
+      "DebugActionIndex": 54
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Platform.dll",
@@ -3610,9 +3694,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 51
+      "DebugActionIndex": 55
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.TaskExtension.dll",
@@ -3631,9 +3715,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 52
+      "DebugActionIndex": 56
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Google.MiniJson.dll",
@@ -3652,9 +3736,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 53
+      "DebugActionIndex": 57
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Mono.Security.dll",
@@ -3673,9 +3757,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 54
+      "DebugActionIndex": 58
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/mscorlib.dll",
@@ -3694,9 +3778,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 55
+      "DebugActionIndex": 59
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/netstandard.dll",
@@ -3715,9 +3799,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 56
+      "DebugActionIndex": 60
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Newtonsoft.Json.dll",
@@ -3736,9 +3820,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 57
+      "DebugActionIndex": 61
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Photon3Unity3D.dll",
@@ -3757,9 +3841,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 58
+      "DebugActionIndex": 62
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonChat.dll",
@@ -3778,9 +3862,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 59
+      "DebugActionIndex": 63
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonRealtime.dll",
@@ -3799,9 +3883,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 60
+      "DebugActionIndex": 64
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.Demos.dll",
@@ -3820,9 +3904,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 61
+      "DebugActionIndex": 65
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.dll",
@@ -3841,9 +3925,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 62
+      "DebugActionIndex": 66
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.Utilities.dll",
@@ -3862,9 +3946,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 63
+      "DebugActionIndex": 67
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.ComponentModel.Composition.dll",
@@ -3883,9 +3967,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 64
+      "DebugActionIndex": 68
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Configuration.dll",
@@ -3904,9 +3988,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 65
+      "DebugActionIndex": 69
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Core.dll",
@@ -3925,9 +4009,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 66
+      "DebugActionIndex": 70
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Data.DataSetExtensions.dll",
@@ -3946,9 +4030,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 67
+      "DebugActionIndex": 71
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Data.dll",
@@ -3967,9 +4051,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 68
+      "DebugActionIndex": 72
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.dll",
@@ -3988,9 +4072,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 69
+      "DebugActionIndex": 73
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Drawing.dll",
@@ -4009,9 +4093,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 70
+      "DebugActionIndex": 74
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.EnterpriseServices.dll",
@@ -4030,9 +4114,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 71
+      "DebugActionIndex": 75
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.IO.Compression.dll",
@@ -4051,9 +4135,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 72
+      "DebugActionIndex": 76
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.IO.Compression.FileSystem.dll",
@@ -4072,9 +4156,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 73
+      "DebugActionIndex": 77
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Net.Http.dll",
@@ -4093,9 +4177,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 74
+      "DebugActionIndex": 78
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Numerics.dll",
@@ -4114,9 +4198,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 75
+      "DebugActionIndex": 79
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Runtime.dll",
@@ -4135,9 +4219,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 76
+      "DebugActionIndex": 80
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Runtime.Serialization.dll",
@@ -4156,9 +4240,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 77
+      "DebugActionIndex": 81
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Security.dll",
@@ -4177,9 +4261,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 78
+      "DebugActionIndex": 82
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.ServiceModel.Internals.dll",
@@ -4198,9 +4282,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 79
+      "DebugActionIndex": 83
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Transactions.dll",
@@ -4219,9 +4303,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 80
+      "DebugActionIndex": 84
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Xml.dll",
@@ -4240,9 +4324,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 81
+      "DebugActionIndex": 85
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/System.Xml.Linq.dll",
@@ -4261,9 +4345,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 82
+      "DebugActionIndex": 86
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Addressables.dll",
@@ -4282,9 +4366,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 83
+      "DebugActionIndex": 87
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.AI.Navigation.dll",
@@ -4303,9 +4387,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 84
+      "DebugActionIndex": 88
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Burst.dll",
@@ -4324,9 +4408,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 85
+      "DebugActionIndex": 89
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Burst.Unsafe.dll",
@@ -4345,9 +4429,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 86
+      "DebugActionIndex": 90
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Collections.dll",
@@ -4366,9 +4450,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 87
+      "DebugActionIndex": 91
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Collections.LowLevel.ILSupport.dll",
@@ -4387,9 +4471,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 88
+      "DebugActionIndex": 92
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InputSystem.dll",
@@ -4408,9 +4492,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 89
+      "DebugActionIndex": 93
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InputSystem.ForUI.dll",
@@ -4429,9 +4513,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 90
+      "DebugActionIndex": 94
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InternalAPIEngineBridge.013.dll",
@@ -4450,9 +4534,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 91
+      "DebugActionIndex": 95
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Localization.dll",
@@ -4471,9 +4555,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 92
+      "DebugActionIndex": 96
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Mathematics.dll",
@@ -4492,9 +4576,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 93
+      "DebugActionIndex": 97
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Multiplayer.Center.Common.dll",
@@ -4513,9 +4597,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 94
+      "DebugActionIndex": 98
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Profiling.Core.dll",
@@ -4534,9 +4618,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 95
+      "DebugActionIndex": 99
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Rendering.LightTransport.Runtime.dll",
@@ -4555,9 +4639,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 96
+      "DebugActionIndex": 100
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.dll",
@@ -4576,9 +4660,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 97
+      "DebugActionIndex": 101
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll",
@@ -4597,9 +4681,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 98
+      "DebugActionIndex": 102
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.dll",
@@ -4618,9 +4702,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 99
+      "DebugActionIndex": 103
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll",
@@ -4639,9 +4723,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 100
+      "DebugActionIndex": 104
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.dll",
@@ -4660,9 +4744,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 101
+      "DebugActionIndex": 105
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll",
@@ -4681,9 +4765,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 102
+      "DebugActionIndex": 106
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.dll",
@@ -4702,9 +4786,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 103
+      "DebugActionIndex": 107
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.dll",
@@ -4723,9 +4807,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 104
+      "DebugActionIndex": 108
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Runtime.dll",
@@ -4744,9 +4828,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 105
+      "DebugActionIndex": 109
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Shaders.dll",
@@ -4765,9 +4849,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 106
+      "DebugActionIndex": 110
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.ResourceManager.dll",
@@ -4786,9 +4870,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 107
+      "DebugActionIndex": 111
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.ScriptableBuildPipeline.dll",
@@ -4807,9 +4891,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 108
+      "DebugActionIndex": 112
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.TextMeshPro.dll",
@@ -4828,9 +4912,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 109
+      "DebugActionIndex": 113
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Timeline.dll",
@@ -4849,9 +4933,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 110
+      "DebugActionIndex": 114
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll",
@@ -4870,9 +4954,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 111
+      "DebugActionIndex": 115
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.Core.dll",
@@ -4891,9 +4975,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 112
+      "DebugActionIndex": 116
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.Flow.dll",
@@ -4912,9 +4996,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 113
+      "DebugActionIndex": 117
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.State.dll",
@@ -4933,9 +5017,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 114
+      "DebugActionIndex": 118
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AccessibilityModule.dll",
@@ -4954,9 +5038,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 115
+      "DebugActionIndex": 119
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AIModule.dll",
@@ -4975,9 +5059,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 116
+      "DebugActionIndex": 120
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AMDModule.dll",
@@ -4996,9 +5080,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 117
+      "DebugActionIndex": 121
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AndroidJNIModule.dll",
@@ -5017,9 +5101,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 118
+      "DebugActionIndex": 122
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AnimationModule.dll",
@@ -5038,9 +5122,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 119
+      "DebugActionIndex": 123
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ARModule.dll",
@@ -5059,9 +5143,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 120
+      "DebugActionIndex": 124
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AssetBundleModule.dll",
@@ -5080,9 +5164,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 121
+      "DebugActionIndex": 125
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AudioModule.dll",
@@ -5101,9 +5185,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 122
+      "DebugActionIndex": 126
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClothModule.dll",
@@ -5122,9 +5206,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 123
+      "DebugActionIndex": 127
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClusterInputModule.dll",
@@ -5143,9 +5227,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 124
+      "DebugActionIndex": 128
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClusterRendererModule.dll",
@@ -5164,9 +5248,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 125
+      "DebugActionIndex": 129
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ContentLoadModule.dll",
@@ -5185,9 +5269,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 126
+      "DebugActionIndex": 130
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.CoreModule.dll",
@@ -5206,9 +5290,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 127
+      "DebugActionIndex": 131
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.CrashReportingModule.dll",
@@ -5227,9 +5311,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 128
+      "DebugActionIndex": 132
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.DirectorModule.dll",
@@ -5248,9 +5332,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 129
+      "DebugActionIndex": 133
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.dll",
@@ -5269,9 +5353,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 130
+      "DebugActionIndex": 134
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.DSPGraphModule.dll",
@@ -5290,9 +5374,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 131
+      "DebugActionIndex": 135
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GameCenterModule.dll",
@@ -5311,9 +5395,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 132
+      "DebugActionIndex": 136
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GIModule.dll",
@@ -5332,9 +5416,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 133
+      "DebugActionIndex": 137
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.dll",
@@ -5353,9 +5437,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 134
+      "DebugActionIndex": 138
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GridModule.dll",
@@ -5374,9 +5458,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 135
+      "DebugActionIndex": 139
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.HierarchyCoreModule.dll",
@@ -5395,9 +5479,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 136
+      "DebugActionIndex": 140
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.HotReloadModule.dll",
@@ -5416,9 +5500,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 137
+      "DebugActionIndex": 141
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ImageConversionModule.dll",
@@ -5437,9 +5521,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 138
+      "DebugActionIndex": 142
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.IMGUIModule.dll",
@@ -5458,9 +5542,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 139
+      "DebugActionIndex": 143
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputForUIModule.dll",
@@ -5479,9 +5563,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 140
+      "DebugActionIndex": 144
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputLegacyModule.dll",
@@ -5500,9 +5584,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 141
+      "DebugActionIndex": 145
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputModule.dll",
@@ -5521,9 +5605,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 142
+      "DebugActionIndex": 146
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.JSONSerializeModule.dll",
@@ -5542,9 +5626,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 143
+      "DebugActionIndex": 147
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.LocalizationModule.dll",
@@ -5563,9 +5647,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 144
+      "DebugActionIndex": 148
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.MarshallingModule.dll",
@@ -5584,9 +5668,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 145
+      "DebugActionIndex": 149
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.MultiplayerModule.dll",
@@ -5605,9 +5689,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 146
+      "DebugActionIndex": 150
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.NVIDIAModule.dll",
@@ -5626,9 +5710,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 147
+      "DebugActionIndex": 151
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ParticleSystemModule.dll",
@@ -5647,9 +5731,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 148
+      "DebugActionIndex": 152
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PerformanceReportingModule.dll",
@@ -5668,9 +5752,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 149
+      "DebugActionIndex": 153
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.Physics2DModule.dll",
@@ -5689,9 +5773,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 150
+      "DebugActionIndex": 154
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PhysicsModule.dll",
@@ -5710,9 +5794,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 151
+      "DebugActionIndex": 155
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PropertiesModule.dll",
@@ -5731,9 +5815,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 152
+      "DebugActionIndex": 156
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll",
@@ -5752,9 +5836,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 153
+      "DebugActionIndex": 157
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ScreenCaptureModule.dll",
@@ -5773,9 +5857,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 154
+      "DebugActionIndex": 158
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.dll",
@@ -5794,9 +5878,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 155
+      "DebugActionIndex": 159
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SharedInternalsModule.dll",
@@ -5815,9 +5899,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 156
+      "DebugActionIndex": 160
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SpriteMaskModule.dll",
@@ -5836,9 +5920,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 157
+      "DebugActionIndex": 161
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SpriteShapeModule.dll",
@@ -5857,9 +5941,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 158
+      "DebugActionIndex": 162
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.StreamingModule.dll",
@@ -5878,9 +5962,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 159
+      "DebugActionIndex": 163
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SubstanceModule.dll",
@@ -5899,9 +5983,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 160
+      "DebugActionIndex": 164
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SubsystemsModule.dll",
@@ -5920,9 +6004,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 161
+      "DebugActionIndex": 165
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TerrainModule.dll",
@@ -5941,9 +6025,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 162
+      "DebugActionIndex": 166
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.dll",
@@ -5962,9 +6046,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 163
+      "DebugActionIndex": 167
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll",
@@ -5983,9 +6067,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 164
+      "DebugActionIndex": 168
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll",
@@ -6004,9 +6088,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 165
+      "DebugActionIndex": 169
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextRenderingModule.dll",
@@ -6025,9 +6109,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 166
+      "DebugActionIndex": 170
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TilemapModule.dll",
@@ -6046,9 +6130,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 167
+      "DebugActionIndex": 171
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TLSModule.dll",
@@ -6067,9 +6151,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 168
+      "DebugActionIndex": 172
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UI.dll",
@@ -6088,9 +6172,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 169
+      "DebugActionIndex": 173
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UIElementsModule.dll",
@@ -6109,9 +6193,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 170
+      "DebugActionIndex": 174
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UIModule.dll",
@@ -6130,9 +6214,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 171
+      "DebugActionIndex": 175
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UmbraModule.dll",
@@ -6151,9 +6235,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 172
+      "DebugActionIndex": 176
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll",
@@ -6172,9 +6256,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 173
+      "DebugActionIndex": 177
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
@@ -6193,9 +6277,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 174
+      "DebugActionIndex": 178
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityConnectModule.dll",
@@ -6214,9 +6298,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 175
+      "DebugActionIndex": 179
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityCurlModule.dll",
@@ -6235,9 +6319,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 176
+      "DebugActionIndex": 180
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityTestProtocolModule.dll",
@@ -6256,9 +6340,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 177
+      "DebugActionIndex": 181
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll",
@@ -6277,9 +6361,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 178
+      "DebugActionIndex": 182
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll",
@@ -6298,9 +6382,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 179
+      "DebugActionIndex": 183
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestModule.dll",
@@ -6319,9 +6403,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 180
+      "DebugActionIndex": 184
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll",
@@ -6340,9 +6424,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 181
+      "DebugActionIndex": 185
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll",
@@ -6361,9 +6445,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 182
+      "DebugActionIndex": 186
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VehiclesModule.dll",
@@ -6382,9 +6466,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 183
+      "DebugActionIndex": 187
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VFXModule.dll",
@@ -6403,9 +6487,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 184
+      "DebugActionIndex": 188
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VideoModule.dll",
@@ -6424,9 +6508,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 185
+      "DebugActionIndex": 189
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VirtualTexturingModule.dll",
@@ -6445,9 +6529,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 186
+      "DebugActionIndex": 190
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VRModule.dll",
@@ -6466,9 +6550,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 187
+      "DebugActionIndex": 191
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.WindModule.dll",
@@ -6487,9 +6571,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 188
+      "DebugActionIndex": 192
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.XRModule.dll",
@@ -6508,9 +6592,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 189
+      "DebugActionIndex": 193
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/websocket-sharp.dll",
@@ -6529,9 +6613,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 190
+      "DebugActionIndex": 194
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Assembly-CSharp.pdb",
@@ -6550,9 +6634,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 191
+      "DebugActionIndex": 195
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.App.pdb",
@@ -6571,9 +6655,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 192
+      "DebugActionIndex": 196
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Auth.pdb",
@@ -6592,9 +6676,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 193
+      "DebugActionIndex": 197
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Firestore.pdb",
@@ -6613,9 +6697,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 194
+      "DebugActionIndex": 198
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.Platform.pdb",
@@ -6634,9 +6718,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 195
+      "DebugActionIndex": 199
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Firebase.TaskExtension.pdb",
@@ -6655,9 +6739,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 196
+      "DebugActionIndex": 200
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Newtonsoft.Json.pdb",
@@ -6676,9 +6760,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 197
+      "DebugActionIndex": 201
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Photon3Unity3D.pdb",
@@ -6697,9 +6781,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 198
+      "DebugActionIndex": 202
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonChat.pdb",
@@ -6718,9 +6802,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 199
+      "DebugActionIndex": 203
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonRealtime.pdb",
@@ -6739,9 +6823,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 200
+      "DebugActionIndex": 204
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.Demos.pdb",
@@ -6760,9 +6844,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 201
+      "DebugActionIndex": 205
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.pdb",
@@ -6781,9 +6865,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 202
+      "DebugActionIndex": 206
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/PhotonUnityNetworking.Utilities.pdb",
@@ -6802,9 +6886,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 203
+      "DebugActionIndex": 207
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Addressables.pdb",
@@ -6823,9 +6907,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 204
+      "DebugActionIndex": 208
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.AI.Navigation.pdb",
@@ -6844,9 +6928,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 205
+      "DebugActionIndex": 209
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Burst.pdb",
@@ -6865,9 +6949,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 206
+      "DebugActionIndex": 210
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Collections.pdb",
@@ -6886,9 +6970,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 207
+      "DebugActionIndex": 211
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InputSystem.ForUI.pdb",
@@ -6907,9 +6991,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 208
+      "DebugActionIndex": 212
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InputSystem.pdb",
@@ -6928,9 +7012,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 209
+      "DebugActionIndex": 213
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.InternalAPIEngineBridge.013.pdb",
@@ -6949,9 +7033,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 210
+      "DebugActionIndex": 214
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Localization.pdb",
@@ -6970,9 +7054,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 211
+      "DebugActionIndex": 215
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Mathematics.pdb",
@@ -6991,9 +7075,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 212
+      "DebugActionIndex": 216
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Multiplayer.Center.Common.pdb",
@@ -7012,9 +7096,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 213
+      "DebugActionIndex": 217
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Profiling.Core.pdb",
@@ -7033,9 +7117,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 214
+      "DebugActionIndex": 218
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Rendering.LightTransport.Runtime.pdb",
@@ -7054,9 +7138,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 215
+      "DebugActionIndex": 219
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipeline.Universal.ShaderLibrary.pdb",
@@ -7075,9 +7159,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 216
+      "DebugActionIndex": 220
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.pdb",
@@ -7096,9 +7180,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 217
+      "DebugActionIndex": 221
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.Runtime.Shared.pdb",
@@ -7117,9 +7201,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 218
+      "DebugActionIndex": 222
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.pdb",
@@ -7138,9 +7222,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 219
+      "DebugActionIndex": 223
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.GPUDriven.Runtime.pdb",
@@ -7159,9 +7243,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 220
+      "DebugActionIndex": 224
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.pdb",
@@ -7180,9 +7264,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 221
+      "DebugActionIndex": 225
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.2D.Runtime.pdb",
@@ -7201,9 +7285,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 222
+      "DebugActionIndex": 226
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Config.Runtime.pdb",
@@ -7222,9 +7306,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 223
+      "DebugActionIndex": 227
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Runtime.pdb",
@@ -7243,9 +7327,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 224
+      "DebugActionIndex": 228
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.RenderPipelines.Universal.Shaders.pdb",
@@ -7264,9 +7348,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 225
+      "DebugActionIndex": 229
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.ResourceManager.pdb",
@@ -7285,9 +7369,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 226
+      "DebugActionIndex": 230
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.ScriptableBuildPipeline.pdb",
@@ -7306,9 +7390,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 227
+      "DebugActionIndex": 231
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.TextMeshPro.pdb",
@@ -7327,9 +7411,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 228
+      "DebugActionIndex": 232
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.Timeline.pdb",
@@ -7348,9 +7432,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 229
+      "DebugActionIndex": 233
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.Core.pdb",
@@ -7369,9 +7453,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 230
+      "DebugActionIndex": 234
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.Flow.pdb",
@@ -7390,9 +7474,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 231
+      "DebugActionIndex": 235
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/Unity.VisualScripting.State.pdb",
@@ -7411,9 +7495,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 232
+      "DebugActionIndex": 236
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AccessibilityModule.pdb",
@@ -7432,9 +7516,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 233
+      "DebugActionIndex": 237
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AIModule.pdb",
@@ -7453,9 +7537,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 234
+      "DebugActionIndex": 238
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AMDModule.pdb",
@@ -7474,9 +7558,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 235
+      "DebugActionIndex": 239
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AndroidJNIModule.pdb",
@@ -7495,9 +7579,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 236
+      "DebugActionIndex": 240
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AnimationModule.pdb",
@@ -7516,9 +7600,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 237
+      "DebugActionIndex": 241
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ARModule.pdb",
@@ -7537,9 +7621,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 238
+      "DebugActionIndex": 242
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AssetBundleModule.pdb",
@@ -7558,9 +7642,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 239
+      "DebugActionIndex": 243
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.AudioModule.pdb",
@@ -7579,9 +7663,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 240
+      "DebugActionIndex": 244
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClothModule.pdb",
@@ -7600,9 +7684,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 241
+      "DebugActionIndex": 245
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClusterInputModule.pdb",
@@ -7621,9 +7705,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 242
+      "DebugActionIndex": 246
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ClusterRendererModule.pdb",
@@ -7642,9 +7726,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 243
+      "DebugActionIndex": 247
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ContentLoadModule.pdb",
@@ -7663,9 +7747,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 244
+      "DebugActionIndex": 248
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.CoreModule.pdb",
@@ -7684,9 +7768,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 245
+      "DebugActionIndex": 249
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.CrashReportingModule.pdb",
@@ -7705,9 +7789,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 246
+      "DebugActionIndex": 250
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.DirectorModule.pdb",
@@ -7726,9 +7810,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 247
+      "DebugActionIndex": 251
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.DSPGraphModule.pdb",
@@ -7747,9 +7831,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 248
+      "DebugActionIndex": 252
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GameCenterModule.pdb",
@@ -7768,9 +7852,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 249
+      "DebugActionIndex": 253
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GIModule.pdb",
@@ -7789,9 +7873,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 250
+      "DebugActionIndex": 254
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GraphicsStateCollectionSerializerModule.pdb",
@@ -7810,9 +7894,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 251
+      "DebugActionIndex": 255
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.GridModule.pdb",
@@ -7831,9 +7915,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 252
+      "DebugActionIndex": 256
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.HierarchyCoreModule.pdb",
@@ -7852,9 +7936,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 253
+      "DebugActionIndex": 257
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.HotReloadModule.pdb",
@@ -7873,9 +7957,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 254
+      "DebugActionIndex": 258
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ImageConversionModule.pdb",
@@ -7894,9 +7978,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 255
+      "DebugActionIndex": 259
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.IMGUIModule.pdb",
@@ -7915,9 +7999,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 256
+      "DebugActionIndex": 260
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputForUIModule.pdb",
@@ -7936,9 +8020,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 257
+      "DebugActionIndex": 261
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputLegacyModule.pdb",
@@ -7957,9 +8041,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 258
+      "DebugActionIndex": 262
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.InputModule.pdb",
@@ -7978,9 +8062,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 259
+      "DebugActionIndex": 263
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.JSONSerializeModule.pdb",
@@ -7999,9 +8083,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 260
+      "DebugActionIndex": 264
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.LocalizationModule.pdb",
@@ -8020,9 +8104,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 261
+      "DebugActionIndex": 265
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.MarshallingModule.pdb",
@@ -8041,9 +8125,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 262
+      "DebugActionIndex": 266
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.MultiplayerModule.pdb",
@@ -8062,9 +8146,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 263
+      "DebugActionIndex": 267
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.NVIDIAModule.pdb",
@@ -8083,9 +8167,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 264
+      "DebugActionIndex": 268
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ParticleSystemModule.pdb",
@@ -8104,9 +8188,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 265
+      "DebugActionIndex": 269
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.pdb",
@@ -8125,9 +8209,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 266
+      "DebugActionIndex": 270
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PerformanceReportingModule.pdb",
@@ -8146,9 +8230,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 267
+      "DebugActionIndex": 271
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.Physics2DModule.pdb",
@@ -8167,9 +8251,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 268
+      "DebugActionIndex": 272
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PhysicsModule.pdb",
@@ -8188,9 +8272,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 269
+      "DebugActionIndex": 273
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.PropertiesModule.pdb",
@@ -8209,9 +8293,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 270
+      "DebugActionIndex": 274
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.pdb",
@@ -8230,9 +8314,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 271
+      "DebugActionIndex": 275
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ScreenCaptureModule.pdb",
@@ -8251,9 +8335,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 272
+      "DebugActionIndex": 276
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.ShaderVariantAnalyticsModule.pdb",
@@ -8272,9 +8356,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 273
+      "DebugActionIndex": 277
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SharedInternalsModule.pdb",
@@ -8293,9 +8377,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 274
+      "DebugActionIndex": 278
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SpriteMaskModule.pdb",
@@ -8314,9 +8398,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 275
+      "DebugActionIndex": 279
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SpriteShapeModule.pdb",
@@ -8335,9 +8419,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 276
+      "DebugActionIndex": 280
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.StreamingModule.pdb",
@@ -8356,9 +8440,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 277
+      "DebugActionIndex": 281
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SubstanceModule.pdb",
@@ -8377,9 +8461,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 278
+      "DebugActionIndex": 282
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.SubsystemsModule.pdb",
@@ -8398,9 +8482,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 279
+      "DebugActionIndex": 283
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TerrainModule.pdb",
@@ -8419,9 +8503,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 280
+      "DebugActionIndex": 284
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TerrainPhysicsModule.pdb",
@@ -8440,9 +8524,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 281
+      "DebugActionIndex": 285
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextCoreFontEngineModule.pdb",
@@ -8461,9 +8545,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 282
+      "DebugActionIndex": 286
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextCoreTextEngineModule.pdb",
@@ -8482,9 +8566,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 283
+      "DebugActionIndex": 287
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TextRenderingModule.pdb",
@@ -8503,9 +8587,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 284
+      "DebugActionIndex": 288
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TilemapModule.pdb",
@@ -8524,9 +8608,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 285
+      "DebugActionIndex": 289
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.TLSModule.pdb",
@@ -8545,9 +8629,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 286
+      "DebugActionIndex": 290
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UI.pdb",
@@ -8566,9 +8650,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 287
+      "DebugActionIndex": 291
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UIElementsModule.pdb",
@@ -8587,9 +8671,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 288
+      "DebugActionIndex": 292
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UIModule.pdb",
@@ -8608,9 +8692,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 289
+      "DebugActionIndex": 293
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UmbraModule.pdb",
@@ -8629,9 +8713,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 290
+      "DebugActionIndex": 294
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.pdb",
@@ -8650,9 +8734,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 291
+      "DebugActionIndex": 295
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityAnalyticsModule.pdb",
@@ -8671,9 +8755,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 292
+      "DebugActionIndex": 296
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityConnectModule.pdb",
@@ -8692,9 +8776,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 293
+      "DebugActionIndex": 297
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityCurlModule.pdb",
@@ -8713,9 +8797,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 294
+      "DebugActionIndex": 298
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityTestProtocolModule.pdb",
@@ -8734,9 +8818,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 295
+      "DebugActionIndex": 299
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.pdb",
@@ -8755,9 +8839,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 296
+      "DebugActionIndex": 300
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestAudioModule.pdb",
@@ -8776,9 +8860,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 297
+      "DebugActionIndex": 301
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestModule.pdb",
@@ -8797,9 +8881,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 298
+      "DebugActionIndex": 302
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestTextureModule.pdb",
@@ -8818,9 +8902,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 299
+      "DebugActionIndex": 303
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.UnityWebRequestWWWModule.pdb",
@@ -8839,9 +8923,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 300
+      "DebugActionIndex": 304
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VehiclesModule.pdb",
@@ -8860,9 +8944,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 301
+      "DebugActionIndex": 305
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VFXModule.pdb",
@@ -8881,9 +8965,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 302
+      "DebugActionIndex": 306
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VideoModule.pdb",
@@ -8902,9 +8986,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 303
+      "DebugActionIndex": 307
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VirtualTexturingModule.pdb",
@@ -8923,9 +9007,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 304
+      "DebugActionIndex": 308
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.VRModule.pdb",
@@ -8944,9 +9028,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 305
+      "DebugActionIndex": 309
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.WindModule.pdb",
@@ -8965,9 +9049,9 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 306
+      "DebugActionIndex": 310
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Managed/UnityEngine.XRModule.pdb",
@@ -8986,15 +9070,15 @@
         2
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
-      "DebugActionIndex": 307
+      "DebugActionIndex": 311
     },
     {
       "Annotation": "GenerateNativePluginsForAssemblies Library/Bee/artifacts/WinPlayerBuildProgram/AsyncPluginsFromLinker",
       "DisplayName": "Running Burst Compiler",
       "ActionType": "RunRPCCommand",
-      "PayloadOffset": 144375,
+      "PayloadOffset": 144583,
       "PayloadLength": 13657,
       "PayloadDebugContentSnippet": "{\"PlayerBuildProgramLibrary.Da",
       "Action": "GenerateNativePluginsForAssemblies",
@@ -9307,7 +9391,7 @@
         0
       ],
       "ToBuildDependencies": [
-        46
+        50
       ],
       "StatSignatures": [
         {
@@ -9333,7 +9417,7 @@
           "Recurse": 1
         }
       ],
-      "DebugActionIndex": 308
+      "DebugActionIndex": 312
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Plugins/x86_64/lib_burst_generated.dll",
@@ -9352,9 +9436,9 @@
         2
       ],
       "ToBuildDependencies": [
-        308
+        312
       ],
-      "DebugActionIndex": 309
+      "DebugActionIndex": 313
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Plugins/x86_64/lib_burst_generated.pdb",
@@ -9373,15 +9457,15 @@
         2
       ],
       "ToBuildDependencies": [
-        308
+        312
       ],
-      "DebugActionIndex": 310
+      "DebugActionIndex": 314
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info",
       "DisplayName": "Writing app.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 158121,
+      "PayloadOffset": 158329,
       "PayloadLength": 19,
       "PayloadDebugContentSnippet": "DefaultCompany\nTest",
       "Inputs": [],
@@ -9392,7 +9476,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 311
+      "DebugActionIndex": 315
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/app.info",
@@ -9411,9 +9495,9 @@
         2
       ],
       "ToBuildDependencies": [
-        311
+        315
       ],
-      "DebugActionIndex": 312
+      "DebugActionIndex": 316
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test_Data/Resources/unity default resources",
@@ -9431,7 +9515,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 313
+      "DebugActionIndex": 317
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/Test.exe",
@@ -9449,7 +9533,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 314
+      "DebugActionIndex": 318
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll",
@@ -9467,7 +9551,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 315
+      "DebugActionIndex": 319
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll",
@@ -9485,7 +9569,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 316
+      "DebugActionIndex": 320
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser",
@@ -9503,7 +9587,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 317
+      "DebugActionIndex": 321
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
@@ -9521,7 +9605,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 318
+      "DebugActionIndex": 322
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/2.0/machine.config",
@@ -9539,7 +9623,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 319
+      "DebugActionIndex": 323
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/2.0/settings.map",
@@ -9557,7 +9641,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 320
+      "DebugActionIndex": 324
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/2.0/web.config",
@@ -9575,7 +9659,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 321
+      "DebugActionIndex": 325
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser",
@@ -9593,7 +9677,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 322
+      "DebugActionIndex": 326
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
@@ -9611,7 +9695,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 323
+      "DebugActionIndex": 327
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.0/machine.config",
@@ -9629,7 +9713,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 324
+      "DebugActionIndex": 328
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.0/settings.map",
@@ -9647,7 +9731,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 325
+      "DebugActionIndex": 329
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.0/web.config",
@@ -9665,7 +9749,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 326
+      "DebugActionIndex": 330
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser",
@@ -9683,7 +9767,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 327
+      "DebugActionIndex": 331
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
@@ -9701,7 +9785,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 328
+      "DebugActionIndex": 332
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.5/machine.config",
@@ -9719,7 +9803,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 329
+      "DebugActionIndex": 333
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.5/settings.map",
@@ -9737,7 +9821,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 330
+      "DebugActionIndex": 334
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/4.5/web.config",
@@ -9755,7 +9839,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 331
+      "DebugActionIndex": 335
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/browscap.ini",
@@ -9773,7 +9857,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 332
+      "DebugActionIndex": 336
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/config",
@@ -9791,7 +9875,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 333
+      "DebugActionIndex": 337
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/MonoBleedingEdge/etc/mono/mconfig/config.xml",
@@ -9809,7 +9893,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 334
+      "DebugActionIndex": 338
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/UnityCrashHandler64.exe",
@@ -9827,7 +9911,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 335
+      "DebugActionIndex": 339
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/UnityPlayer.dll",
@@ -9845,7 +9929,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 336
+      "DebugActionIndex": 340
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/WinPixEventRuntime.dll",
@@ -9863,7 +9947,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 337
+      "DebugActionIndex": 341
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/D3D12/D3D12Core.dll",
@@ -9881,7 +9965,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 338
+      "DebugActionIndex": 342
     },
     {
       "Annotation": "CopyFiles C:/Users/victo/Desktop/UnityTest/D3D12/d3d12SDKLayers.dll",
@@ -9899,7 +9983,7 @@
       "OutputFlags": [
         2
       ],
-      "DebugActionIndex": 339
+      "DebugActionIndex": 343
     },
     {
       "Annotation": "Player",
@@ -9936,10 +10020,10 @@
         25,
         26,
         27,
+        28,
+        29,
         30,
         31,
-        32,
-        33,
         34,
         35,
         36,
@@ -9951,10 +10035,10 @@
         42,
         43,
         44,
+        45,
+        46,
         47,
         48,
-        49,
-        50,
         51,
         52,
         53,
@@ -10212,12 +10296,12 @@
         305,
         306,
         307,
+        308,
         309,
         310,
-        312,
+        311,
         313,
         314,
-        315,
         316,
         317,
         318,
@@ -10241,9 +10325,13 @@
         336,
         337,
         338,
-        339
+        339,
+        340,
+        341,
+        342,
+        343
       ],
-      "DebugActionIndex": 340
+      "DebugActionIndex": 344
     }
   ],
   "FileSignatures": [
@@ -10467,7 +10555,7 @@
   "EmitDataForBeeWhy": 0,
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 340
+          "Player": 344
         }
 ,  "DefaultNodes": [
     0

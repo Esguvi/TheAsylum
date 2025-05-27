@@ -9,7 +9,7 @@ public class MovementScript : MonoBehaviour
     public float gravedad;
     public float sensibility;
     public Transform grabPoint;
-    public GameObject camera;
+    public GameObject cameraPlayer;
     //public Transform flashLight;
 
     private CharacterController controller;
@@ -93,11 +93,11 @@ public class MovementScript : MonoBehaviour
             }
         }
         Vector3 offset = transform.rotation * new Vector3(0,0,20f);
-        camera.transform.position = new Vector3(transform.position.x, yHead ,transform.position.z)+offset;
+        cameraPlayer.transform.position = new Vector3(transform.position.x, yHead ,transform.position.z)+offset;
 
-        Debug.DrawRay(camera.transform.position, camera.transform.forward * 100f, Color.red);
+        Debug.DrawRay(cameraPlayer.transform.position, cameraPlayer.transform.forward * 100f, Color.red);
         RaycastHit hit;
-        if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, 100f))
+        if (Physics.Raycast(cameraPlayer.transform.position, cameraPlayer.transform.forward, out hit, 100f))
         {
             if (hit.rigidbody != null)
             {
@@ -115,7 +115,7 @@ public class MovementScript : MonoBehaviour
                 {
                     hit.rigidbody.useGravity = true;
                     pulsado = false;
-                    hit.rigidbody.AddForce(camera.transform.forward * 1000f);
+                    hit.rigidbody.AddForce(cameraPlayer.transform.forward * 1000f);
                 }
             }
         }
@@ -135,7 +135,7 @@ public class MovementScript : MonoBehaviour
         //rotHor = Mathf.Clamp(rotHor, -100, 70);
 
         transform.eulerAngles = new Vector2(0, rotVer);
-        camera.transform.eulerAngles = new Vector2(rotHor, rotVer);
+        cameraPlayer.transform.eulerAngles = new Vector2(rotHor, rotVer);
 
         //flashLight.position = camera.transform.position;
         //flashLight.rotation = camera.transform.rotation;

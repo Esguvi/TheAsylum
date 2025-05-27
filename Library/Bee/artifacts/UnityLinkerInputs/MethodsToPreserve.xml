@@ -10,6 +10,10 @@
 		<type fullname="KeyMoConfScript">
 			<method name="changeSensibility"/>
 		</type>
+		<type fullname="LobbyManager">
+			<method name="Play"/>
+			<method name="Return"/>
+		</type>
 		<type fullname="LocaleSelector">
 			<method name="ToggleLanguage"/>
 		</type>
@@ -32,6 +36,11 @@
 		</type>
 		<type fullname="RegisterManager">
 			<method name="openWebPage"/>
+		</type>
+		<type fullname="RoomSelector">
+			<method name="Join"/>
+			<method name="Join"/>
+			<method name="Return"/>
 		</type>
 		<type fullname="ScreenScripts">
 			<method name="changeLenguage"/>
@@ -70,6 +79,17 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

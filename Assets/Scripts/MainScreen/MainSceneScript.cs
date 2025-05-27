@@ -11,10 +11,12 @@ public class MainSceneScript : MonoBehaviour
         SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
     }
 
+    [System.Obsolete]
     public void MultiPlayer()
     {
         Debug.Log("MULTIJUGADOR");
-        SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
+        SceneManager.LoadScene("RoomManagerScreen", LoadSceneMode.Single);
+        StartCoroutine(CleanupSceneConflicts());
     }
 
     [System.Obsolete]
