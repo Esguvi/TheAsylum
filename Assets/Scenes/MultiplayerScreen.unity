@@ -4448,7 +4448,7 @@ MonoBehaviour:
   player: {fileID: 6298782877127942592, guid: 0046af97b0517194ea5b14293309e7e8, type: 3}
   player2: {fileID: 5926619682224955196, guid: b7e384a7a0436ff47a7430e4423b1c26, type: 3}
   player3: {fileID: 8661491806769602303, guid: d409b7d9718acdb46bc50cce69abd8e1, type: 3}
-  playerEnemy: {fileID: 466571700785119876, guid: a5d8096b0ef6315489bb46c34d7177b5, type: 3}
+  playerEnemy: {fileID: 466571700785119876, guid: 01c0d82c0bebff2438d6219f79925193, type: 3}
   spawnPoint: {fileID: 1839930930}
   spawnPointEnemy: {fileID: 366516250}
 --- !u!4 &1041452531
@@ -5830,6 +5830,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3191249994816072993, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.017753366
+      objectReference: {fileID: 0}
     - target: {fileID: 3195002522962766573, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.10206
@@ -5837,6 +5841,14 @@ PrefabInstance:
     - target: {fileID: 3195002522962766573, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.22606
+      objectReference: {fileID: 0}
+    - target: {fileID: 3215850692971728343, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3217003480969269707, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3286839816621862477, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       propertyPath: m_Layer
@@ -5913,6 +5925,14 @@ PrefabInstance:
     - target: {fileID: 3579987827406790253, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654883346993934984, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3654883346993934984, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3795122706260795354, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       propertyPath: m_Layer
