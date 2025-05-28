@@ -19,17 +19,24 @@ public class DoorScript : MonoBehaviour
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
-        canvas = GameObject.FindWithTag("Canva");
-        interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
     }
     private void Update()
     {
-
         if (cerca)
         {
-            interactText.text = localizer.GetLocalizedName();
+            if (interactText != null)
+            {
+                interactText.text = localizer.GetLocalizedName();
+            }
+            else
+            {
+                Debug.Log("NO LO ENCUENTRA");
+            }
+
             if (Input.GetKeyDown(KeyCode.E))
             {
+                Debug.Log("E KEY");
                 if (!abierto)
                 {
                     if (puertaR != null)
@@ -79,9 +86,23 @@ public class DoorScript : MonoBehaviour
 
         if (other.gameObject.GetComponent<MovementScript>() != null)
         {
+            Debug.Log(cerca);
             cerca = true;
+            Debug.Log(cerca);
+
+            canvas = other.transform.Find("Canvas")?.gameObject;
+            interactText = canvas?.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
             ObjectInteractableSolo.showDoorText = true;
-            interactText.gameObject.SetActive(true);
+
+            if (interactText != null)
+            {
+                interactText.gameObject.SetActive(true);
+            }
+            else
+            {
+                Debug.Log("NO LO ENCUENTRA");
+            }
         }
     }
 
@@ -107,7 +128,20 @@ public class DoorScript : MonoBehaviour
         if (other.gameObject.GetComponent<MovementScript>() != null)
         {
             cerca = false;
+
+            canvas = other.transform.Find("Canvas")?.gameObject;
+            interactText = canvas?.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
             ObjectInteractableSolo.showDoorText = false;
+
+            if (interactText != null)
+            {
+                interactText.gameObject.SetActive(false);
+            }
+            else
+            {
+                Debug.Log("NO LO ENCUENTRA");
+            }
         }
     }
 }

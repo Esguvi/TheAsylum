@@ -51,6 +51,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "DoorScriptMultiplayer",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "EditorExtension",
             "fullManagedTypeName": "",
@@ -260,6 +267,20 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "NavScript",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "NoteObject",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "NoteSystem",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -768,6 +789,7 @@
             "fullManagedTypeName": "UnityEngine.AudioSource",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity",
                 "Assets/Scenes/LobbyManagerScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
@@ -1092,6 +1114,20 @@
             "managedAssemblyName": "Unity.Localization.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Localization.Settings.LocalizationSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.SharedTableData",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.StringTable",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1809,6 +1845,15 @@
                 "Assets/Scenes/MultiplayerScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity",
                 "Assets/Scenes/RoomManagerScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "SpriteRenderer",
+            "fullManagedTypeName": "UnityEngine.SpriteRenderer",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/GameScreen.unity"
             ]
         },
         {

@@ -5,6 +5,7 @@
 		<type fullname="ChangeUsername" preserve="nothing"/>
 		<type fullname="CollectableObject" preserve="nothing"/>
 		<type fullname="DoorScript" preserve="nothing"/>
+		<type fullname="DoorScriptMultiplayer" preserve="nothing"/>
 		<type fullname="GameOverScripts" preserve="nothing"/>
 		<type fullname="Invantory" preserve="nothing"/>
 		<type fullname="InvantoryObject" preserve="nothing"/>
@@ -20,6 +21,8 @@
 		<type fullname="MovementScript" preserve="nothing"/>
 		<type fullname="MultiplayerManager" preserve="nothing"/>
 		<type fullname="NavScript" preserve="nothing"/>
+		<type fullname="NoteObject" preserve="nothing"/>
+		<type fullname="NoteSystem" preserve="nothing"/>
 		<type fullname="ObjectInteractableMultiplayer" preserve="nothing"/>
 		<type fullname="ObjectInteractableMultiplayerrr" preserve="nothing"/>
 		<type fullname="ObjectInteractableSolo" preserve="nothing"/>
@@ -71,6 +74,8 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
@@ -212,6 +217,7 @@
 		<type fullname="UnityEngine.SkinnedMeshRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.SphereCollider" preserve="nothing"/>
 		<type fullname="UnityEngine.Sprite" preserve="nothing"/>
+		<type fullname="UnityEngine.SpriteRenderer" preserve="nothing"/>
 		<type fullname="UnityEngine.TextAsset" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture" preserve="nothing"/>
 		<type fullname="UnityEngine.Texture2D" preserve="nothing"/>

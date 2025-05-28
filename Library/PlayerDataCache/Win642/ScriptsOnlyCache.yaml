@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - ChangeUsername
     - CollectableObject
     - DoorScript
+    - DoorScriptMultiplayer
     - GameOverScripts
     - Invantory
     - InvantoryObject
@@ -34,6 +35,8 @@ ScriptsOnlyBuild:
     - MovementScript
     - MultiplayerManager
     - NavScript
+    - NoteObject
+    - NoteSystem
     - ObjectInteractableMultiplayer
     - ObjectInteractableSolo
     - ObjectLocalizer
@@ -71,6 +74,14 @@ ScriptsOnlyBuild:
     - Photon.Pun.PhotonTransformViewClassic
     - Photon.Pun.PhotonView
     - Photon.Pun.ServerSettings
+    Unity.2D.Tilemap.Editor.dll:
+    - UnityEditor.Tilemaps.GridPaintingState
+    - UnityEditor.Tilemaps.GridPaletteBrushes
+    - UnityEditor.Tilemaps.GridPalettes
+    - UnityEditor.Tilemaps.SceneViewGridManager
+    - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
+    - UnityEditor.Tilemaps.TileDragAndDropManager
+    - UnityEditor.Tilemaps.TilemapPrefabStageHelper
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.Addressables.Editor.dll:
@@ -93,11 +104,16 @@ ScriptsOnlyBuild:
     - UnityEngine.InputSystem.UI.InputSystemUIInputModule
     Unity.Localization:
     - UnityEngine.Localization.Components.LocalizeStringEvent
+    Unity.Localization.Editor.dll:
+    - UnityEditor.Localization.LocalizationProjectSettings
+    - UnityEditor.Localization.StringTableCollection
     Unity.Localization.dll:
     - UnityEngine.Localization.Components.LocalizeStringEvent
     - UnityEngine.Localization.Locale
     - UnityEngine.Localization.LocalizationBehaviour
     - UnityEngine.Localization.Settings.LocalizationSettings
+    - UnityEngine.Localization.Tables.SharedTableData
+    - UnityEngine.Localization.Tables.StringTable
     - UnityEngine.Localization.VariantsPropertyDriver
     Unity.RenderPipelines.Core.Runtime:
     - UnityEngine.Rendering.UI.DebugUIHandlerBitField
@@ -507,6 +523,18 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: MainSceneScript
     methodName: StartGame
+  - assembly: Assembly-CSharp
+    fullTypeName: NoteSystem
+    methodName: NextNote
+  - assembly: Assembly-CSharp
+    fullTypeName: NoteSystem
+    methodName: CloseNote
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
+  - assembly: Unity.TextMeshPro
+    fullTypeName: TMPro.TMP_Text
+    methodName: set_text
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -615,21 +643,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: RoomSelector
     methodName: Join
-  - assembly: Unity.TextMeshPro
-    fullTypeName: TMPro.TMP_Text
-    methodName: set_text
   - assembly: Assembly-CSharp
     fullTypeName: LobbyManager
     methodName: Return
-  - assembly: Unity.TextMeshPro
-    fullTypeName: TMPro.TMP_Text
-    methodName: set_text
-  - assembly: Unity.TextMeshPro
-    fullTypeName: TMPro.TMP_Text
-    methodName: set_text
-  - assembly: Unity.TextMeshPro
-    fullTypeName: TMPro.TMP_Text
-    methodName: set_text
   - assembly: Unity.TextMeshPro
     fullTypeName: TMPro.TMP_Text
     methodName: set_text
@@ -804,6 +820,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
     - Class: 90
       Script: {instanceID: 0}
     - Class: 91
@@ -876,6 +894,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 29452}
     - Class: 114
       Script: {instanceID: 29562}
+    - Class: 114
+      Script: {instanceID: 387910}
+    - Class: 114
+      Script: {instanceID: 387914}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -895,6 +917,8 @@ ScriptsOnlyBuild:
     - Class: 196
       Script: {instanceID: 0}
     - Class: 205
+      Script: {instanceID: 0}
+    - Class: 212
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -1427,8 +1451,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16564}
     - Class: 114
-      Script: {instanceID: 16798}
-    - Class: 114
       Script: {instanceID: 17104}
     - Class: 114
       Script: {instanceID: 17492}
@@ -1492,6 +1514,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 29452}
     - Class: 114
       Script: {instanceID: 29562}
+    - Class: 114
+      Script: {instanceID: 112242}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -2405,7 +2429,7 @@ ScriptsOnlyBuild:
     className: DebugUIHandlerIntField
   - hash:
       serializedVersion: 2
-      Hash: 21c6e403fc11b625c134c8aa69ca0362
+      Hash: f5ba50b86c64b012d3820c113fb1de18
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MultiplayerManager
@@ -4541,10 +4565,10 @@ ScriptsOnlyBuild:
     className: AssetTable
   - hash:
       serializedVersion: 2
-      Hash: a439211d12cec06d5d239d198671f27d
+      Hash: 74e1e201145d77962b5f0c683dd5b841
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: DoorScriptMultiplayer
+    className: DoorScriptMultiplayerr
   - hash:
       serializedVersion: 2
       Hash: 5c080381f1bc21381c65022e1ca8dda4
@@ -4749,6 +4773,24 @@ ScriptsOnlyBuild:
     assemblyName: Firebase.Platform.dll
     namespaceName: Firebase.Platform
     className: FirebaseMonoBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: a439211d12cec06d5d239d198671f27d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: DoorScriptMultiplayer
+  - hash:
+      serializedVersion: 2
+      Hash: a3e01c19c244d79979c827465161f2c5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NoteObject
+  - hash:
+      serializedVersion: 2
+      Hash: 3ea119715de74e3f9e168bfecfbfcc51
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: NoteSystem
   platform: 19
   scenePathNames:
   - Assets/Scenes/LoginRegisterScreen.unity

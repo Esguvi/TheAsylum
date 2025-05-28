@@ -27,6 +27,10 @@
 			<method name="Options"/>
 			<method name="StartGame"/>
 		</type>
+		<type fullname="NoteSystem">
+			<method name="CloseNote"/>
+			<method name="NextNote"/>
+		</type>
 		<type fullname="OptionsBtnsScripts">
 			<method name="ConfAudio"/>
 			<method name="ConfKeys"/>
@@ -79,8 +83,6 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
-			<method name="set_text"/>
-			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

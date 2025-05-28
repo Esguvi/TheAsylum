@@ -60,7 +60,7 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
 
         if (isEnemy)
         {
-            playerInstance = PhotonNetwork.Instantiate(playerPrefab1.name, spawnPointPlayers.position, spawnPointPlayers.rotation);
+            playerInstance = PhotonNetwork.Instantiate(enemyPrefab.name, spawnPointEnemy.position, spawnPointEnemy.rotation);
             Debug.Log("Has sido asignado como enemigo.");
         }
         else
