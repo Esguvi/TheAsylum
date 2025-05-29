@@ -7,10 +7,7 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
     public GameObject puertaR;
     public GameObject puertaL;
 
-    private bool cerca;
     private bool abierto;
-    private TextMeshProUGUI interactText;
-    private GameObject canvas;
     private ObjectLocalizer localizer;
 
     private void Start()
@@ -18,20 +15,64 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         localizer = GetComponent<ObjectLocalizer>();
     }
 
-    private void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        if (cerca)
+        PhotonView otherPhotonView = other.GetComponent<PhotonView>();
+
+        if (other.CompareTag("Enemy") && !abierto)
         {
+            photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+        }
+
+        if (other.TryGetComponent<PhotonView>(out var pv) && pv.IsMine && other.GetComponent<MovementScript>() != null)
+        {
+            Transform canvas = other.transform.Find("Canvas");
+            TextMeshProUGUI interactText = canvas?.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
             if (interactText != null)
             {
                 interactText.text = localizer.GetLocalizedName();
+                interactText.gameObject.SetActive(true);
+                StartCoroutine(WaitForInteractionKey(other.transform, interactText));
             }
+        }
 
+    }
+
+    private System.Collections.IEnumerator WaitForInteractionKey(Transform playerTransform, TextMeshProUGUI interactText)
+    {
+        while (Vector3.Distance(playerTransform.position, transform.position) < 3f)
+        {
             if (Input.GetKeyDown(KeyCode.E))
             {
                 Debug.Log("Tecla E pulsada");
-
                 photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+                break;
+            }
+            yield return null;
+        }
+
+        if (interactText != null)
+            interactText.gameObject.SetActive(false);
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        PhotonView otherPhotonView = other.GetComponent<PhotonView>();
+
+        if (other.CompareTag("Enemy") && abierto)
+        {
+            photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+        }
+
+        if (other.TryGetComponent<PhotonView>(out var pv) && pv.IsMine && other.GetComponent<MovementScript>() != null)
+        {
+            Transform canvas = other.transform.Find("Canvas");
+            TextMeshProUGUI interactText = canvas?.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+
+            if (interactText != null)
+            {
+                interactText.gameObject.SetActive(false);
             }
         }
     }
@@ -50,55 +91,6 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
             if (puertaR != null) puertaR.transform.Rotate(new Vector3(0, -90f, 0));
             if (puertaL != null) puertaL.transform.Rotate(new Vector3(0, 90f, 0));
             abierto = false;
-        }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            if (!abierto)
-            {
-                photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
-            }
-        }
-
-        if (other.gameObject.GetComponent<MovementScript>() != null)
-        {
-            cerca = true;
-            canvas = other.transform.Find("Canvas")?.gameObject;
-            interactText = canvas?.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
-
-            if (interactText != null)
-            {
-                ObjectInteractableSolo.showDoorText = true;
-                interactText.gameObject.SetActive(true);
-            }
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Enemy"))
-        {
-            if (abierto)
-            {
-                photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
-            }
-        }
-
-        if (other.gameObject.GetComponent<MovementScript>() != null)
-        {
-            cerca = false;
-
-            canvas = other.transform.Find("Canvas")?.gameObject;
-            interactText = canvas?.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
-
-            if (interactText != null)
-            {
-                ObjectInteractableSolo.showDoorText = false;
-                interactText.gameObject.SetActive(false);
-            }
         }
     }
 }

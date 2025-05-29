@@ -19,6 +19,7 @@ using UnityEngine;
 
 public class CollectableObject : MonoBehaviour
 {
+    public string nombreObjeto;
     public int quantity = 0;
     public InvantoryObject objectRefrence;
     private bool justSpawned = false;

@@ -73,7 +73,7 @@ public class NoteObject : MonoBehaviour
         }
     }
 
-    private void PickUpNote()
+    public void PickUpNote()
     {
         Note newNote = new Note(noteTitle, noteContent);
         Object.FindFirstObjectByType<NoteSystem>().PickUpNote(newNote); // ? Corrected method
