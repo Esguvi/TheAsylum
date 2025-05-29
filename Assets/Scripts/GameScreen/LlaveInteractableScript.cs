@@ -26,13 +26,13 @@ public class LlaveInteractableScript : MonoBehaviour
     {
         hit = GetRaycastHitFromGrabPoint();
 
-        if (hit.collider != null && hit.collider.CompareTag("Llave"))
+        if (hit.collider != null && hit.collider.CompareTag("Llave") )
         {
             localizer = hit.collider.gameObject.GetComponent<ObjectLocalizer>();
             interactText.text = $"{localizer.GetLocalizedName()}";
             interactText.gameObject.SetActive(true);
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && hit.collider.name.ToString().Equals(name))
             {
 
                 inventory.AddItemToInvanntory(llave);
@@ -76,7 +76,7 @@ public class LlaveInteractableScript : MonoBehaviour
 
     private void DropKey()
     {
-        int index = inventory.BuscarObjetoPorNombre("Llave");
+        int index = inventory.BuscarObjetoPorNombre(name);
         if (inventory.CurrentlySelectedItem != index)
         {
             Debug.Log("No puedes soltar la llave si no está seleccionada.");

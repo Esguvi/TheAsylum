@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c01835e24e2e7848950c45d03926306, type: 3}
+  m_Name: Llave Roja
+  m_EditorClassIdentifier: 
+  objectPrefab: {fileID: -927199367670048503, guid: 6f861a5f3e542c94a80038eab2cb83d1, type: 3}
+  objectImage: {fileID: 21300000, guid: 2be3d122fa4eee343ba7a2b256dc63b5, type: 3}
+  quantity: 2
+  itemLogic:
+    logicType: 0
+    name: Llave Roja
+  objectTooltip: 

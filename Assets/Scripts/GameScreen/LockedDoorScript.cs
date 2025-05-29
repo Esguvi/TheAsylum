@@ -7,13 +7,16 @@ public class LockedDoorScript : MonoBehaviour
     public GameObject puertaR;
     public GameObject puertaL;
     public Invantory playerInventory;
+    public LocalizeStringEvent localizeEvent;
+    public GameObject puertaCerrada;
+    public string keyName;
+    
     private bool cerca;
     private bool abierto;
-    public GameObject puertaCerrada;
     private TextMeshProUGUI interactText;
     private GameObject canvas;
     private ObjectLocalizer localizer;
-    public LocalizeStringEvent localizeEvent;
+    
 
     private void Start()
     {
@@ -28,21 +31,22 @@ public class LockedDoorScript : MonoBehaviour
             {
                 interactText.gameObject.SetActive(true);
                 interactText.text = localizer.GetLocalizedName();
-                Debug.Log("Cerca de la puerta: " + localizer.GetLocalizedName());
+                Debug.LogWarning("Cerca de la puerta: " + localizer.GetLocalizedName());
 
             if (puertaCerrada.tag == "PuertaCerrada" )
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-
                         int llaveIndex = -1;
 
                         for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
                         {
+                        Debug.LogWarning(playerInventory.objectsInInvantory[i].itemLogic.name);
                             if (playerInventory.objectsInInvantory[i] != null &&
                                 playerInventory.objectsInInvantory[i].itemLogic != null &&
-                                playerInventory.objectsInInvantory[i].itemLogic.name == "Llave")
+                                playerInventory.objectsInInvantory[i].itemLogic.name == keyName)
                             {
+                                
                                 llaveIndex = i;
                                 Debug.Log("Llave encontrada en el inventario." + llaveIndex);
                                 break;

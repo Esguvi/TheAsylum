@@ -36,12 +36,17 @@ public class NavScript : MonoBehaviour
             anim.SetBool("isRunning", true);
             if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
             {
+                player.gameObject.GetComponent<MovementScript>().enabled = false;
+                player.LookAt((transform.position + offset));
+                Camera.main.transform.LookAt((transform.position + offset));
                 anim.SetBool("isRunning", false);
                 anim.SetBool("isCatch", true);
                 if (agent.remainingDistance > 0 && agent.remainingDistance < 50)
                 {
+                    
                     SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
                 }
+
             }
         }
 

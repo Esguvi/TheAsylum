@@ -138,10 +138,10 @@
     <Compile Include="Assets\Scripts\OptionsScreen\AudioConfScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Scripts\CopyMultiplayerScreen\DoorScriptMultiplayerCopyç.cs" />
     <Compile Include="Assets\InvantorySystem\Scripts\CollectableObject.cs" />
     <Compile Include="Assets\Scripts\GameScreen\NavScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Scripts\CopyMultiplayerScreen\DoorScriptMultiplayer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\OnStartDelete.cs" />
     <Compile Include="Assets\Scripts\MainScreen\ChangeUsername.cs" />
@@ -158,6 +158,7 @@
     <Compile Include="Assets\InvantorySystem\Scripts\InvantoryItemLogic.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\Common\TextButtonTransition.cs" />
     <Compile Include="Assets\Scripts\MultiplayerScreen\RoomSelector.cs" />
+    <Compile Include="Assets\Scripts\MultiplayerScreen\DoorScriptMutliplayer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
