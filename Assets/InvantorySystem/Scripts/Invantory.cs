@@ -197,24 +197,24 @@ void AddListener(Button b, int value)
 
 
    
-    public void RemoveItemFromInventory(CollectableObject obj)
+    public void RemoveItemFromInventory(int idx)
     {
-        if (obj == null || obj.objectRefrence == null)
-        {
-            Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
-            return;
-        }
+        //if (obj == null || obj.objectRefrence == null)
+        //{
+        //    Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
+        //    return;
+        //}
 
-        string objectName = obj.objectRefrence.name;
-        int quantityToRemove = obj.quantity;
+        //string objectName = obj.objectRefrence.name;
+        
 
-        int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
-        if (idx == -1)
-        {
-            Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
-            return;
-        }
-
+        //int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
+        //if (idx == -1)
+        //{
+        //    Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
+        //    return;
+        //}
+        int quantityToRemove = 1;
         // Resta la cantidad
         objectsInInvantory[idx].quantity -= quantityToRemove;
 

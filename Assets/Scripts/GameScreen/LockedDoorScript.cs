@@ -31,7 +31,6 @@ public class LockedDoorScript : MonoBehaviour
             {
                 interactText.gameObject.SetActive(true);
                 interactText.text = localizer.GetLocalizedName();
-                Debug.LogWarning("Cerca de la puerta: " + localizer.GetLocalizedName());
 
             if (puertaCerrada.tag == "PuertaCerrada" )
                 {

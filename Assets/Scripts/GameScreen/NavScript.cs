@@ -81,10 +81,6 @@ public class NavScript : MonoBehaviour
                     }
                 }
             }
-            else
-            {
-                Debug.Log("Esperando " + (Time.time - delayTime));
-            }
         }
     }
 }

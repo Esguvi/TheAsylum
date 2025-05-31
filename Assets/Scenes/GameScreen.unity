@@ -2867,20 +2867,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3188769377273139243, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
   m_PrefabInstance: {fileID: 1387157428}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &513143355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513143351}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5335ea980f7392044addc11b89509f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puertaR: {fileID: 524813093}
-  puertaL: {fileID: 1373873732}
 --- !u!114 &513143356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3128,7 +3114,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
       propertyPath: m_Name
-      value: flashlight
+      value: Linterna
       objectReference: {fileID: 0}
     - target: {fileID: 1275266641364890, guid: e3109ccf9db0f54408d5c02b496761c1, type: 3}
       propertyPath: m_TagString
@@ -8909,7 +8895,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1319379892}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1319379896
 Camera:
   m_ObjectHideFlags: 0
@@ -10025,9 +10011,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3188769377273139243, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 513143355}
-    - targetCorrespondingSourceObject: {fileID: 3188769377273139243, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 513143357}
     - targetCorrespondingSourceObject: {fileID: 3188769377273139243, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       insertIndex: -1
@@ -10119,9 +10102,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3070124928053321724, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1387157448}
-    - targetCorrespondingSourceObject: {fileID: 3070124928053321724, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1387157449}
     - targetCorrespondingSourceObject: {fileID: 183176744747592058, guid: beef3bcde1610f04aa96275436147bb9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1781577492}
@@ -10421,20 +10401,6 @@ MonoBehaviour:
   localizeEvent: {fileID: 1387157442}
   puertaCerrada: {fileID: 1387157437}
   keyName: Llave Azul
---- !u!114 &1387157449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1387157437}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5335ea980f7392044addc11b89509f97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puertaR: {fileID: 1387157436}
-  puertaL: {fileID: 1387157435}
 --- !u!114 &1392492114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14194,6 +14160,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7974713766423990287, guid: 5f08b27a2bd4ac24cbb785c4d26fdf7e, type: 3}
+      propertyPath: camara
+      value: 
+      objectReference: {fileID: 1319379892}
     - target: {fileID: 7974713766423990287, guid: 5f08b27a2bd4ac24cbb785c4d26fdf7e, type: 3}
       propertyPath: camera
       value: 

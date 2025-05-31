@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectInteractableSolo : MonoBehaviour
@@ -27,6 +29,7 @@ public class ObjectInteractableSolo : MonoBehaviour
     private ObjectLocalizer localizer;
     private GameObject currentObject;
     private string currentTag;
+    private List<GameObject> objectsInInventory;
 
     public static bool showDoorText = false;
 
@@ -34,6 +37,7 @@ public class ObjectInteractableSolo : MonoBehaviour
     {
         interactText.gameObject.SetActive(false);
         showDoorText = false;
+        objectsInInventory = new List<GameObject>();
     }
 
     void Update()
@@ -56,6 +60,8 @@ public class ObjectInteractableSolo : MonoBehaviour
                     EquipObject(currentObject, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, handPositionL);
                     inventory.AddItemToInvanntory(linterna);
                     isFlashlightEquipped = true;
+                    objectsInInventory.Add(currentObject);
+
                 }
                 else if (currentTag == "Llave")
                 {
@@ -70,6 +76,7 @@ public class ObjectInteractableSolo : MonoBehaviour
                     };
                     
                     isKeyEquipped++;
+                    objectsInInventory.Add(currentObject);
                 }
                 else if (currentTag == "Note")
                 {
@@ -93,19 +100,25 @@ public class ObjectInteractableSolo : MonoBehaviour
                 ToggleFlashlight();
             }
 
-            if (Input.GetKeyDown(KeyCode.G))
-            {
-                DropObject(currentObject, linterna, handPositionL);
-                isFlashlightEquipped = false;
-                isFlashlightOn = false;
-            }
+            //if (Input.GetKeyDown(KeyCode.G))
+            //{
+            //    DropObject(currentObject, linterna, handPositionL);
+            //    isFlashlightEquipped = false;
+            //    isFlashlightOn = false;
+            //}
         }
 
-        if (isKeyEquipped > 0 && Input.GetKeyDown(KeyCode.G))
-        {
-            DropObject(currentObject, llaveAzul, handPositionR);
-            DropObject(currentObject, llaveRoja, handPositionR);
-            isKeyEquipped --;
+        //if (isKeyEquipped > 0 && Input.GetKeyDown(KeyCode.G))
+        //{
+        //    DropObject(currentObject, llaveAzul, handPositionR);
+        //    DropObject(currentObject, llaveRoja, handPositionR);
+        //    isKeyEquipped --;
+        //}
+
+
+        if (Input.GetKeyDown(KeyCode.G))
+        { 
+            DropObject();
         }
     }
 
@@ -128,29 +141,40 @@ public class ObjectInteractableSolo : MonoBehaviour
         interactText.gameObject.SetActive(false);
     }
 
-    private void DropObject(GameObject obj, CollectableObject collectable, Transform handPosition)
+    private void DropObject()
     {
-        int index = inventory.BuscarObjetoPorNombre(collectable.name);
-        if (inventory.CurrentlySelectedItem != index)
+        //int index = inventory.BuscarObjetoPorNombre(collectable.name);
+        //if (inventory.CurrentlySelectedItem != index)
+        //{
+        //    Debug.Log($"No puedes soltar {collectable.name} si no está seleccionado.");
+        //    return;
+        //}
+
+        int index = inventory.CurrentlySelectedItem;
+        GameObject obj;
+        try
         {
-            Debug.Log($"No puedes soltar {collectable.name} si no está seleccionado.");
+            obj = objectsInInventory[index];
+        } catch (ArgumentOutOfRangeException)
+        {
             return;
         }
 
         obj.transform.SetParent(objectsParent);
-        obj.transform.position = handPosition.position + handPosition.forward * 0.5f;
+        //obj.transform.position = handPosition.position + handPosition.forward * 0.5f;
 
         if (obj.TryGetComponent<Rigidbody>(out var rb))
         {
             rb.isKinematic = false;
             rb.useGravity = true;
-            rb.AddForce(handPosition.forward * 2f, ForceMode.Impulse);
+            //rb.AddForce(Vector3.down*20f, ForceMode.Acceleration);
         }
 
         if (obj.TryGetComponent<CapsuleCollider>(out var col))
             col.enabled = true;
 
-        inventory.RemoveItemFromInventory(collectable);
+        inventory.RemoveItemFromInventory(index);
+        objectsInInventory.Remove(obj);
     }
 
     private void ToggleFlashlight()

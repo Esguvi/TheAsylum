@@ -98,7 +98,7 @@ public class LlaveInteractableScript : MonoBehaviour
             CapsuleCollider col = GetComponent<CapsuleCollider>();
             if (col != null) col.enabled = true;
 
-            inventory.RemoveItemFromInventory(llave);
+            //inventory.RemoveItemFromInventory(llave);
             isKeyEquipped = false;
             
         }
