@@ -8,6 +8,8 @@ public class DoorScript : MonoBehaviour
 {
     public GameObject puertaR;
     public GameObject puertaL;
+    public AudioClip audioAbrir;
+    public AudioClip audioCerrar;
 
 
     private bool cerca;
@@ -15,12 +17,14 @@ public class DoorScript : MonoBehaviour
     private TextMeshProUGUI interactText;
     private GameObject canvas;
     private ObjectLocalizer localizer;
+    private AudioSource audioSource;
 
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
         canvas = GameObject.FindWithTag("Canva");
         interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+        audioSource = GetComponent<AudioSource>();
 
     }
     private void Update()
@@ -36,6 +40,8 @@ public class DoorScript : MonoBehaviour
             {
                 if (!abierto)
                 {
+                    audioSource.clip = audioAbrir;
+                    audioSource.Play();
                     if (puertaR != null)
                     {
                         puertaR.transform.Rotate(new Vector3(0, 90f, 0));
@@ -48,6 +54,8 @@ public class DoorScript : MonoBehaviour
                 }
                 else
                 {
+                    audioSource.clip = audioCerrar;
+                    audioSource.Play();
                     if (puertaR != null)
                     {
                         puertaR.transform.Rotate(new Vector3(0, -90, 0));

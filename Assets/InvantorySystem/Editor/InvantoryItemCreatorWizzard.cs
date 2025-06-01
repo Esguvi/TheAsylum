@@ -49,6 +49,7 @@ public class InvantoryItemCreatorWizzard : ScriptableWizard
         }
     }
 
+    [System.Obsolete]
     void OnWizardCreate()
     {
         InvantoryObject io = ScriptableObjectClasses.CreateInvantoryAsset();
@@ -98,7 +99,7 @@ public class InvantoryItemCreatorWizzard : ScriptableWizard
 
     }
 
-
+    [System.Obsolete]
     static GameObject CreatePrefab(GameObject existingObject)
     {
         GameObject obj = existingObject ? existingObject : Selection.activeGameObject;

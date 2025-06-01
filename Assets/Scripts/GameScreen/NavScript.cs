@@ -34,7 +34,7 @@ public class NavScript : MonoBehaviour
         if (persigiendo)
         {
             anim.SetBool("isRunning", true);
-            if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
+            if (agent.remainingDistance > 0 && agent.remainingDistance < 100)
             {
                 player.gameObject.GetComponent<MovementScript>().enabled = false;
                 player.LookAt((transform.position + offset));
