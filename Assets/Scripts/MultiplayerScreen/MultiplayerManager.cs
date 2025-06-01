@@ -10,10 +10,15 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
     public GameObject playerPrefab2;
     public GameObject playerPrefab3;
     public GameObject enemyPrefab;
+    public GameObject flashlight;
 
     [Header("Spawn Points")]
-    public Transform spawnPointPlayers;
+    public Transform spawnPointPlayer1;
+    public Transform spawnPointPlayer2;
+    public Transform spawnPointPlayer3;
     public Transform spawnPointEnemy;
+    public Transform objectsParent;
+
 
     private const string ENEMY_KEY = "EnemyActorNumber";
     private bool isEnemy = false;
@@ -31,7 +36,10 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             AssignRandomEnemy();
         }
 
+
+        StartCoroutine(SpawnObjects());
         StartCoroutine(SpawnPlayerWhenReady());
+        
     }
 
     private void AssignRandomEnemy()
@@ -60,7 +68,8 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
 
         if (isEnemy)
         {
-            playerInstance = PhotonNetwork.Instantiate(enemyPrefab.name, spawnPointEnemy.position, spawnPointEnemy.rotation);
+            //playerInstance = PhotonNetwork.Instantiate(enemyPrefab.name, spawnPointEnemy.position, spawnPointEnemy.rotation);
+            playerInstance = PhotonNetwork.Instantiate(playerPrefab1.name, spawnPointPlayer1.position, spawnPointPlayer1.rotation);
             Debug.Log("Has sido asignado como enemigo.");
         }
         else
@@ -70,13 +79,13 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             switch (index)
             {
                 case 0:
-                    playerInstance = PhotonNetwork.Instantiate(playerPrefab1.name, spawnPointPlayers.position, spawnPointPlayers.rotation);
+                    //playerInstance = PhotonNetwork.Instantiate(playerPrefab1.name, spawnPointPlayer1.position, spawnPointPlayer1.rotation);
                     break;
                 case 1:
-                    playerInstance = PhotonNetwork.Instantiate(playerPrefab2.name, spawnPointPlayers.position, spawnPointPlayers.rotation);
+                    playerInstance = PhotonNetwork.Instantiate(playerPrefab2.name, spawnPointPlayer2.position, spawnPointPlayer2.rotation);
                     break;
                 case 2:
-                    playerInstance = PhotonNetwork.Instantiate(playerPrefab3.name, spawnPointPlayers.position, spawnPointPlayers.rotation);
+                    playerInstance = PhotonNetwork.Instantiate(playerPrefab3.name, spawnPointPlayer3.position, spawnPointPlayer3.rotation);
                     break;
             }
 
@@ -93,4 +102,28 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             Debug.LogWarning("Prefab no tiene PlayerSetup.");
         }
     }
+
+
+    private IEnumerator SpawnObjects()
+    {
+        yield return new WaitForSeconds(0f);
+
+        objectsParent = GameObject.Find("Objects")?.transform;
+
+        Vector3 flashlightPosition = new Vector3(-860.280029f, 232.059998f, -723.179993f);
+        Quaternion flashlightRotation = Quaternion.Euler(272.821106f, 269.999603f, 115.179367f);
+
+        flashlight = PhotonNetwork.Instantiate(flashlight.name, flashlightPosition, flashlightRotation);
+
+        if (objectsParent != null && flashlight != null)
+        {
+            flashlight.transform.SetParent(objectsParent);
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró el objeto padre 'Objects' o la linterna no fue instanciada correctamente.");
+        }
+    }
+
+
 }

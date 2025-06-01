@@ -29,6 +29,8 @@
 		</type>
 		<type fullname="NoteSystem">
 			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="NextNote"/>
 			<method name="NextNote"/>
 		</type>
 		<type fullname="OptionsBtnsScripts">
@@ -83,6 +85,8 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

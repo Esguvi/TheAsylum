@@ -47,6 +47,11 @@ MonoBehaviour:
   - AbrirPuertaRPC
   - CerrarPuertaRPC
   - ToggleDoor
+  - HideObject
+  - HideObjectGlobally
+  - RPC_DropObject
+  - RPC_SetActiveState
+  - RPC_ToggleFlashlight
   DisableAutoOpenWizard: 1
   ShowSettings: 0
   DevRegionSetOnce: 1

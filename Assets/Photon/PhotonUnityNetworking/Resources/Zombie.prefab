@@ -3406,7 +3406,6 @@ GameObject:
   - component: {fileID: 594692247146211393}
   - component: {fileID: 7468366719635636644}
   - component: {fileID: 7988949803570878526}
-  - component: {fileID: 2458851902445837121}
   - component: {fileID: 3034089080379855158}
   m_Layer: 0
   m_Name: Zombie
@@ -3671,34 +3670,6 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
---- !u!114 &2458851902445837121
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8771546009183047223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4eb5feee781f23b45a08c2fa58fdc9d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactText: {fileID: 5993125496830361154}
-  grabPoint: {fileID: 0}
-  interactDistance: 1000
-  handPosition: {fileID: 0}
-  flashlightText:
-    m_TableReference:
-      m_TableCollectionName: GUID:c3a645e6be9a7a841a5425de730ba5b3
-    m_TableEntryReference:
-      m_KeyId: 2065195292839936
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
 --- !u!114 &3034089080379855158
 MonoBehaviour:
   m_ObjectHideFlags: 0

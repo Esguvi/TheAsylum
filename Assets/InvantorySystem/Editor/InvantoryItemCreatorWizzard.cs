@@ -43,7 +43,8 @@ public class InvantoryItemCreatorWizzard : ScriptableWizard
             errorString = "Please assign an object from the scene, an object image or name the object!";
             isValid = false;
         }
-        else {
+        else
+        {
             errorString = "";
             isValid = true;
         }
@@ -74,7 +75,7 @@ public class InvantoryItemCreatorWizzard : ScriptableWizard
                 hasTriggerCollider = true;
             }
         }
-        if(!hasTriggerCollider)
+        if (!hasTriggerCollider)
         {
             var co = objectToPrefab.AddComponent<SphereCollider>();
             co.isTrigger = true;

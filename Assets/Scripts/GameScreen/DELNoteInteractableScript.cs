@@ -130,7 +130,7 @@ public class NoteInteractableScript : MonoBehaviour
                 isFlashlightOn = false;
             }
 
-            inventory.RemoveItemFromInventory(linterna);
+            //inventory.RemoveItemFromInventory(linterna);
             isFlashlightEquipped = false;
 
         }

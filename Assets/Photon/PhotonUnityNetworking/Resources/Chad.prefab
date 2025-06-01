@@ -2500,7 +2500,7 @@ GameObject:
   - component: {fileID: 2422811137104503081}
   - component: {fileID: 3333202520283832899}
   - component: {fileID: 7266901272670961071}
-  - component: {fileID: 1068008289967459842}
+  - component: {fileID: -8974891307974886275}
   m_Layer: 0
   m_Name: Chad
   m_TagString: Player
@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
---- !u!114 &1068008289967459842
+--- !u!114 &-8974891307974886275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2743,20 +2743,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactText: {fileID: 81403220252631999}
   grabPoint: {fileID: 7848291552667637487}
-  interactDistance: 1000
-  handPosition: {fileID: 5334787728670882184}
-  flashlightText:
-    m_TableReference:
-      m_TableCollectionName: GUID:c3a645e6be9a7a841a5425de730ba5b3
-    m_TableEntryReference:
-      m_KeyId: 2065195292839936
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  handPositionR: {fileID: 8733410311218722540}
+  handPositionL: {fileID: 4126546263387984623}
+  objectsParent: {fileID: 0}
+  flashLight: {fileID: 0}
+  flashLightPosition: {x: 0, y: 0, z: 0}
+  linterna: {fileID: 0}
+  llaveAzul: {fileID: 0}
+  llaveRoja: {fileID: 0}
+  keyPosition: {x: 0, y: 0, z: 0}
+  note: {fileID: 0}
+  inventory: {fileID: 877604785568170020}
 --- !u!1 &5222016636737994455
 GameObject:
   m_ObjectHideFlags: 0

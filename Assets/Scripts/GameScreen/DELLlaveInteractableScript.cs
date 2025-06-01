@@ -11,7 +11,7 @@ public class LlaveInteractableScript : MonoBehaviour
     public Transform handPosition;
     public Transform objectsParent;
     public Invantory inventory;
-    public CollectableObject llave;
+    //public CollectableObject llave;
     private bool isKeyEquipped = false;
     RaycastHit hit;
 
@@ -35,7 +35,7 @@ public class LlaveInteractableScript : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
 
-                inventory.AddItemToInvanntory(llave);
+                //inventory.AddItemToInvanntory(llave);
                 LlaveEquipada();
             }
 
@@ -98,7 +98,7 @@ public class LlaveInteractableScript : MonoBehaviour
             CapsuleCollider col = GetComponent<CapsuleCollider>();
             if (col != null) col.enabled = true;
 
-            inventory.RemoveItemFromInventory(llave);
+            //inventory.RemoveItemFromInventory(llave);
             isKeyEquipped = false;
             
         }

@@ -28,17 +28,17 @@ public class Invantory : MonoBehaviour
     public bool resetInvantoryOnStart = true;
     public List<InvantoryObject> objectsInInvantory;
     private List<GameObject> invantorySlots;
-    [Tooltip("Should be set, leave me alone please")]public GameObject invantoryRoot;
+    [Tooltip("Should be set, leave me alone please")] public GameObject invantoryRoot;
     private GameObject invantoryObjectTemplate;
-    [Tooltip("The number of slots for the system to generate")]public int maxInvantorySlots = 8;
+    [Tooltip("The number of slots for the system to generate")] public int maxInvantorySlots = 8;
     private int currentlySelectedItem = 0;
     public int CurrentlySelectedItem => currentlySelectedItem;
 
 
     private List<InvantoryObject> invantoryItems = new List<InvantoryObject>();
-    [Tooltip("Enables the tooltip text in the UI, otherwise this will be ignored")][SerializeField]private bool useTooltip;
-    [Tooltip("Should be set, leave me alone please")][SerializeField]private Text tooltipText;
-    public float tabCooldown = 0.1f;            
+    [Tooltip("Enables the tooltip text in the UI, otherwise this will be ignored")][SerializeField] private bool useTooltip;
+    [Tooltip("Should be set, leave me alone please")][SerializeField] private Text tooltipText;
+    public float tabCooldown = 0.1f;
     private float lastTabPressed = -0.1f;
     void Start()
     {
@@ -59,6 +59,7 @@ public class Invantory : MonoBehaviour
         invantoryItems = Resources.LoadAll<InvantoryObject>("InvantoryItems").ToList();
         if (resetInvantoryOnStart)
             ResetInvantory();
+        invantoryObjectTemplate = GameObject.Find("InvantoryTemplate");
         invantoryObjectTemplate.SetActive(false);
 
         if (useTooltip)
@@ -71,7 +72,7 @@ public class Invantory : MonoBehaviour
 
     IEnumerator DisableInventoryRootNextFrame()
     {
-        yield return null; 
+        yield return null;
         invantoryRoot.SetActive(false);
     }
 
@@ -98,10 +99,10 @@ public class Invantory : MonoBehaviour
         {
             if (objectsInInvantory[i].itemLogic.name == nombreObjeto)
             {
-                return i; 
+                return i;
             }
         }
-        return -1; 
+        return -1;
     }
 
     private void ToggleSlot(bool goUp)
@@ -111,11 +112,11 @@ public class Invantory : MonoBehaviour
             currentlySelectedItem++;
         else
             currentlySelectedItem--;
-        currentlySelectedItem = Mathf.Clamp(currentlySelectedItem, 0,invantorySlots.Count-1);
+        currentlySelectedItem = Mathf.Clamp(currentlySelectedItem, 0, invantorySlots.Count - 1);
         invantorySlots[currentlySelectedItem].GetComponent<InvantorySlot>().ToggleSlot(true);
-        if(useTooltip)
+        if (useTooltip)
         {
-            if(currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+            if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
                 tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
             else
                 tooltipText.text = "";
@@ -126,11 +127,11 @@ public class Invantory : MonoBehaviour
     {
         invantorySlots[currentlySelectedItem].GetComponent<InvantorySlot>().ToggleSlot(false);
         currentlySelectedItem = id;
-        currentlySelectedItem = Mathf.Clamp(currentlySelectedItem, 0,invantorySlots.Count-1);
+        currentlySelectedItem = Mathf.Clamp(currentlySelectedItem, 0, invantorySlots.Count - 1);
         invantorySlots[currentlySelectedItem].GetComponent<InvantorySlot>().ToggleSlot(true);
-        if(useTooltip)
+        if (useTooltip)
         {
-            if(currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+            if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
                 tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
             else
                 tooltipText.text = "";
@@ -156,12 +157,12 @@ public class Invantory : MonoBehaviour
 
 
 
-void AddListener(Button b, int value) 
+    void AddListener(Button b, int value)
     {
         b.onClick.AddListener(() => UseItemAtID(value));
     }
 
-    
+
     public void AddItemToInvanntory(CollectableObject obj)
     {
         if (obj == null || obj.objectRefrence == null)
@@ -185,9 +186,9 @@ void AddListener(Button b, int value)
             invantorySlots[idx].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[idx].objectImage, objectsInInvantory[idx].quantity);
         }
 
-        if(useTooltip)
+        if (useTooltip)
         {
-            if(currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+            if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
                 tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
             else
                 tooltipText.text = "";
@@ -195,25 +196,25 @@ void AddListener(Button b, int value)
     }
 
 
-   
-    public void RemoveItemFromInventory(CollectableObject obj)
+
+    public void RemoveItemFromInventory(int idx)
     {
-        if (obj == null || obj.objectRefrence == null)
-        {
-            Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
-            return;
-        }
+        //if (obj == null || obj.objectRefrence == null)
+        //{
+        //    Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
+        //    return;
+        //}
 
-        string objectName = obj.objectRefrence.name;
-        int quantityToRemove = obj.quantity;
+        //string objectName = obj.objectRefrence.name;
 
-        int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
-        if (idx == -1)
-        {
-            Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
-            return;
-        }
 
+        //int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
+        //if (idx == -1)
+        //{
+        //    Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
+        //    return;
+        //}
+        int quantityToRemove = 1;
         // Resta la cantidad
         objectsInInvantory[idx].quantity -= quantityToRemove;
 
@@ -265,7 +266,7 @@ void AddListener(Button b, int value)
             objectsInInvantory.RemoveAt(currentlySelectedItem);
             objectsInInvantory.TrimExcess();
             int i;
-            
+
             for (i = currentlySelectedItem; i < objectsInInvantory.Count; i++)
             {
                 invantorySlots[i].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[i].objectImage, objectsInInvantory[i].quantity);
@@ -275,9 +276,9 @@ void AddListener(Button b, int value)
                 invantorySlots[i1].GetComponent<InvantorySlot>().SetItem(null, 0);
             }
         }
-        if(useTooltip)
+        if (useTooltip)
         {
-            if(currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+            if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
                 tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
             else
                 tooltipText.text = "";
@@ -298,7 +299,7 @@ void AddListener(Button b, int value)
             objectsInInvantory.RemoveAt(id);
             objectsInInvantory.TrimExcess();
             int i;
-            
+
             for (i = id; i < objectsInInvantory.Count; i++)
             {
                 invantorySlots[i].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[i].objectImage, objectsInInvantory[i].quantity);
@@ -308,9 +309,9 @@ void AddListener(Button b, int value)
                 invantorySlots[i1].GetComponent<InvantorySlot>().SetItem(null, 0);
             }
         }
-        if(useTooltip)
+        if (useTooltip)
         {
-            if(id >= 0 && id < objectsInInvantory.Count)
+            if (id >= 0 && id < objectsInInvantory.Count)
                 tooltipText.text = objectsInInvantory[id].objectTooltip;
             else
                 tooltipText.text = "";

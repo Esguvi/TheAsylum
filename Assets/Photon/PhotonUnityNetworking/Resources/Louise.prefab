@@ -2620,7 +2620,7 @@ GameObject:
   - component: {fileID: 198299396330646639}
   - component: {fileID: 8341993229695290500}
   - component: {fileID: 69751446350127095}
-  - component: {fileID: 8134402545535570224}
+  - component: {fileID: 4472703152732390342}
   m_Layer: 0
   m_Name: Louise
   m_TagString: Player
@@ -2849,7 +2849,7 @@ MonoBehaviour:
   m_SynchronizeLayers:
   - SynchronizeType: 0
     LayerIndex: 0
---- !u!114 &8134402545535570224
+--- !u!114 &4472703152732390342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2863,20 +2863,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactText: {fileID: 4425766416886188119}
   grabPoint: {fileID: 3680277261244396202}
-  interactDistance: 1000
-  handPosition: {fileID: 4495786865674818720}
-  flashlightText:
-    m_TableReference:
-      m_TableCollectionName: GUID:c3a645e6be9a7a841a5425de730ba5b3
-    m_TableEntryReference:
-      m_KeyId: 2065195292839936
-      m_Key: 
-    m_FallbackState: 0
-    m_WaitForCompletion: 0
-    m_LocalVariables: []
-  references:
-    version: 2
-    RefIds: []
+  handPositionR: {fileID: 4400299122995392174}
+  handPositionL: {fileID: 7392941645477591163}
+  objectsParent: {fileID: 0}
+  flashLight: {fileID: 0}
+  flashLightPosition: {x: 0, y: 0, z: 0}
+  linterna: {fileID: 0}
+  llaveAzul: {fileID: 0}
+  llaveRoja: {fileID: 0}
+  keyPosition: {x: 0, y: 0, z: 0}
+  note: {fileID: 0}
+  inventory: {fileID: 4747973164157145547}
 --- !u!1 &5185622888253536455
 GameObject:
   m_ObjectHideFlags: 0
