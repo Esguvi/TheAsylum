@@ -539,8 +539,8 @@ namespace UnityEngine.EventSystems
                         eventSystemCount++;
                 }
 
-                if (eventSystemCount > 1)
-                    Debug.LogWarning("There are " + eventSystemCount + " event systems in the scene. Please ensure there is always exactly one event system in the scene");
+                //if (eventSystemCount > 1)
+                    //Debug.LogWarning("There are " + eventSystemCount + " event systems in the scene. Please ensure there is always exactly one event system in the scene");
             }
 #endif
         }

@@ -29,14 +29,9 @@ public class DoorScript : MonoBehaviour
             {
                 interactText.text = localizer.GetLocalizedName();
             }
-            else
-            {
-                Debug.Log("NO LO ENCUENTRA");
-            }
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("E KEY");
                 if (!abierto)
                 {
                     if (puertaR != null)
@@ -86,9 +81,7 @@ public class DoorScript : MonoBehaviour
 
         if (other.gameObject.GetComponent<MovementScript>() != null)
         {
-            Debug.Log(cerca);
             cerca = true;
-            Debug.Log(cerca);
 
             canvas = other.transform.Find("Canvas")?.gameObject;
             interactText = canvas?.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
@@ -98,10 +91,6 @@ public class DoorScript : MonoBehaviour
             if (interactText != null)
             {
                 interactText.gameObject.SetActive(true);
-            }
-            else
-            {
-                Debug.Log("NO LO ENCUENTRA");
             }
         }
     }

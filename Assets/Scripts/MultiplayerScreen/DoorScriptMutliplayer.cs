@@ -23,7 +23,8 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
 
     private void Update()
     {
-        if (!cerca || !photonView.IsMine) return;
+        if (!cerca) return;
+
 
         if (interactText != null)
         {

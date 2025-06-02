@@ -10,7 +10,7 @@ public class MovementScript : MonoBehaviour
     public float sensibility;
     public Transform grabPoint;
     public GameObject cameraPlayer;
-    //public Transform flashLight;
+    public static GameObject cameraPlayerr;
 
     private CharacterController controller;
     private float rotVer;
@@ -26,6 +26,7 @@ public class MovementScript : MonoBehaviour
         controller = GetComponent<CharacterController>();
         LockMouse();
         anim = GetComponent<Animator>();
+        cameraPlayerr = cameraPlayer;
     }
 
     public static void LockMouse()
@@ -40,6 +41,7 @@ public class MovementScript : MonoBehaviour
         yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
         if (Input.GetKey(KeyCode.Escape) && SceneManager.sceneCount == 1)
         {
+            cameraPlayerr.GetComponent<AudioListener>().enabled = false;
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
         }

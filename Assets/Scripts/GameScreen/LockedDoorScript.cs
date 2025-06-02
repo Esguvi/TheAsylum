@@ -24,56 +24,49 @@ public class LockedDoorScript : MonoBehaviour
 
     private void Update()
     {
-            if (cerca)
+        if (cerca)
+        {
+            interactText.gameObject.SetActive(true);
+            interactText.text = localizer.GetLocalizedName();
+
+            if (puertaCerrada.tag == "PuertaCerrada")
             {
-                interactText.gameObject.SetActive(true);
-                interactText.text = localizer.GetLocalizedName();
-                Debug.Log("Cerca de la puerta: " + localizer.GetLocalizedName());
-
-            if (puertaCerrada.tag == "PuertaCerrada" )
+                if (Input.GetKeyDown(KeyCode.E))
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
+
+                    int llaveIndex = -1;
+
+                    for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
                     {
-
-                        int llaveIndex = -1;
-
-                        for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
+                        if (playerInventory.objectsInInvantory[i] != null &&
+                            playerInventory.objectsInInvantory[i].itemLogic != null &&
+                            playerInventory.objectsInInvantory[i].itemLogic.name == "Llave")
                         {
-                            if (playerInventory.objectsInInvantory[i] != null &&
-                                playerInventory.objectsInInvantory[i].itemLogic != null &&
-                                playerInventory.objectsInInvantory[i].itemLogic.name == "Llave")
-                            {
-                                llaveIndex = i;
-                                Debug.Log("Llave encontrada en el inventario." + llaveIndex);
-                                break;
-                            }
+                            llaveIndex = i;
+                            break;
                         }
-                        Debug.Log("LlaveIndex: " + llaveIndex);
-                        if (llaveIndex >= 0)
-                        {
-                            Debug.Log("Llave encontrada.");
-                            playerInventory.UseItemAtID(llaveIndex);
-                            abrirPuertas();
-                            puertaCerrada.tag = "PuertaAbierta";
-                            localizer.localizedObjectName.TableEntryReference = "door";
-                            localizeEvent.StringReference.TableEntryReference = "door";                   
-                            localizeEvent.RefreshString();
-
-                        }
-                        else
-                        {
-                            Debug.Log("No tienes una llave.");
-                        }
-
                     }
-
-                }
-                else if (puertaCerrada.tag == "PuertaAbierta")
-                    if (Input.GetKeyDown(KeyCode.E))
+                    Debug.Log("LlaveIndex: " + llaveIndex);
+                    if (llaveIndex >= 0)
                     {
+                        playerInventory.UseItemAtID(llaveIndex);
                         abrirPuertas();
+                        puertaCerrada.tag = "PuertaAbierta";
+                        localizer.localizedObjectName.TableEntryReference = "door";
+                        localizeEvent.StringReference.TableEntryReference = "door";
+                        localizeEvent.RefreshString();
+
                     }
-            }    
+                }
+            }
+            else if (puertaCerrada.tag == "PuertaAbierta")
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    abrirPuertas();
+                }
+            }
+        }
     }
 
     private void abrirPuertas()
@@ -131,9 +124,6 @@ public class LockedDoorScript : MonoBehaviour
             ObjectInteractableSolo.showDoorText = true;
             interactText.gameObject.SetActive(true);
         }
-    
-       
-
     }
 
     private void OnTriggerExit(Collider other)

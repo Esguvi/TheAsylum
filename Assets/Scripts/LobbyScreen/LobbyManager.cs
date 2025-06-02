@@ -24,13 +24,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     public override void OnPlayerEnteredRoom(Player newPlayer)
     {
-        Debug.Log($"Jugador entró: {newPlayer.NickName}");
         UpdateRoomData();
     }
 
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
-        Debug.Log($"Jugador salió: {otherPlayer.NickName}");
         UpdateRoomData();
     }
 
@@ -51,18 +49,15 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     {
         if (!PhotonNetwork.IsMasterClient)
         {
-            Debug.LogWarning("Solo el MasterClient puede iniciar el juego.");
             return;
         }
-
-        Debug.Log("Empieza el juego...");
+        // FALTA AÑADIR PANTALLA CARGA
         PhotonNetwork.LoadLevel("MultiplayerScreen");
     }
 
     public void Return()
     {
-        Debug.Log("Volviendo al menú...");
         PhotonNetwork.LeaveRoom();
-        SceneManager.LoadScene("MainScreen", LoadSceneMode.Single);
+        CargaNivel.SceneLoader("MainScreen");
     }
 }

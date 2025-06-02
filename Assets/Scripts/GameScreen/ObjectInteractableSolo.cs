@@ -45,7 +45,7 @@ public class ObjectInteractableSolo : MonoBehaviour
         RaycastHit hit = GetRaycastHitFromGrabPoint();
 
 
-        if (hit.collider != null && (hit.collider.CompareTag("FlashLight") || hit.collider.CompareTag("Llave") /*|| hit.collider.CompareTag("Note")*/))
+        if (hit.collider != null && (hit.collider.CompareTag("FlashLight") || hit.collider.CompareTag("Llave") || hit.collider.CompareTag("Note")))
         {
             currentObject = hit.collider.gameObject;
             currentTag = hit.collider.tag;
@@ -81,11 +81,11 @@ public class ObjectInteractableSolo : MonoBehaviour
                 }
                 else if (currentTag == "Note")
                 {
-                    //NoteObject noteObj = currentObject.GetComponent<NoteObject>();
-                    //if (noteObj != null)
-                    //{
-                    //    noteObj.PickUpNote();
-                    //}
+                    NoteObject noteObj = currentObject.GetComponent<NoteObject>();
+                    if (noteObj != null)
+                    {
+                        noteObj.PickUpNote();
+                    }
                 }
             }
         }
@@ -100,22 +100,7 @@ public class ObjectInteractableSolo : MonoBehaviour
             {
                 ToggleFlashlight();
             }
-
-            //if (Input.GetKeyDown(KeyCode.G))
-            //{
-            //    DropObject(currentObject, linterna, handPositionL);
-            //    isFlashlightEquipped = false;
-            //    isFlashlightOn = false;
-            //}
         }
-
-        //if (isKeyEquipped > 0 && Input.GetKeyDown(KeyCode.G))
-        //{
-        //    DropObject(currentObject, llaveAzul, handPositionR);
-        //    DropObject(currentObject, llaveRoja, handPositionR);
-        //    isKeyEquipped --;
-        //}
-
 
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -144,13 +129,6 @@ public class ObjectInteractableSolo : MonoBehaviour
 
     private void DropObject()
     {
-        //int index = inventory.BuscarObjetoPorNombre(collectable.name);
-        //if (inventory.CurrentlySelectedItem != index)
-        //{
-        //    Debug.Log($"No puedes soltar {collectable.name} si no está seleccionado.");
-        //    return;
-        //}
-
         int index = inventory.CurrentlySelectedItem;
         GameObject obj;
         try
@@ -163,7 +141,6 @@ public class ObjectInteractableSolo : MonoBehaviour
         }
 
         obj.transform.SetParent(objectsParent);
-        //obj.transform.position = handPosition.position + handPosition.forward * 0.5f;
 
         if (obj.TryGetComponent<Rigidbody>(out var rb))
         {
@@ -183,14 +160,12 @@ public class ObjectInteractableSolo : MonoBehaviour
     {
         if (flashLight == null)
         {
-            Debug.LogWarning("FlashLight no está asignado.");
             return;
         }
         else
         {
             flashLight.SetActive(!flashLight.activeSelf);
             isFlashlightOn = flashLight.activeSelf;
-            Debug.Log(isFlashlightOn ? "Linterna encendida" : "Linterna apagada");
         }
     }
 

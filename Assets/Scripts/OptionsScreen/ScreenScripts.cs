@@ -44,6 +44,5 @@ public class ScreenScripts : MonoBehaviour
     public void fullScreen()
     {
         Screen.fullScreen = fullScr.isOn;
-        Debug.Log(fullScr.isOn);
     }
 }

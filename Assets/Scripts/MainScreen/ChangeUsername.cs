@@ -23,10 +23,6 @@ public class ChangeUsername : MonoBehaviour
             localizedUsername.StringChanged += UpdateUsernameText;
             localizedUsername.RefreshString();
         }
-        else
-        {
-            Debug.LogError("SessionManager.Instance es NULL. No se puede actualizar el nombre de usuario.");
-        }
     }
 
     void UpdateUsernameText(string value)

@@ -48,8 +48,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
         objectsParent = GameObject.Find("Objects")?.transform;
 
         flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
-        //flashLight = GameObject.Find("Objects/flashlight/FlashLight")?.gameObject;
-        linterna = FindObjectsOfType<CollectableObject>().FirstOrDefault(go => go.name.Contains("flashlight"));
+        linterna = GameObject.Find("Objects/flashlight")?.GetComponent<CollectableObject>();
         llaveAzul = GameObject.Find("Objects/Llave Azul")?.GetComponent<CollectableObject>();
         llaveRoja = GameObject.Find("Objects/Llave Roja")?.GetComponent<CollectableObject>();
         note = GameObject.Find("Objects/Note")?.gameObject;
@@ -60,7 +59,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
         RaycastHit hit = GetRaycastHitFromGrabPoint();
 
 
-        if (hit.collider != null && (hit.collider.CompareTag("FlashLight") || hit.collider.CompareTag("Llave") /*|| hit.collider.CompareTag("Note")*/))
+        if (hit.collider != null && (hit.collider.CompareTag("FlashLight") || hit.collider.CompareTag("Llave") || hit.collider.CompareTag("Note")))
         {
             currentObject = hit.collider.gameObject;
             currentTag = hit.collider.tag;
@@ -96,11 +95,11 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
                 }
                 else if (currentTag == "Note")
                 {
-                    //NoteObject noteObj = currentObject.GetComponent<NoteObject>();
-                    //if (noteObj != null)
-                    //{
-                    //    noteObj.PickUpNote();
-                    //}
+                    NoteObject noteObj = currentObject.GetComponent<NoteObject>();
+                    if (noteObj != null)
+                    {
+                        noteObj.PickUpNote();
+                    }
                 }
             }
         }
@@ -123,22 +122,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
             {
                 ToggleFlashlight();
             }
-
-            //if (Input.GetKeyDown(KeyCode.G))
-            //{
-            //    DropObject(currentObject, linterna, handPositionL);
-            //    isFlashlightEquipped = false;
-            //    isFlashlightOn = false;
-            //}
         }
-
-        //if (isKeyEquipped > 0 && Input.GetKeyDown(KeyCode.G))
-        //{
-        //    DropObject(currentObject, llaveAzul, handPositionR);
-        //    DropObject(currentObject, llaveRoja, handPositionR);
-        //    isKeyEquipped --;
-        //}
-
 
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -167,13 +151,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
 
     private void DropObject()
     {
-        //int index = inventory.BuscarObjetoPorNombre(collectable.name);
-        //if (inventory.CurrentlySelectedItem != index)
-        //{
-        //    Debug.Log($"No puedes soltar {collectable.name} si no está seleccionado.");
-        //    return;
-        //}
-
         int index = inventory.CurrentlySelectedItem;
         GameObject obj;
         try
@@ -186,7 +163,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
         }
 
         obj.transform.SetParent(objectsParent);
-        //obj.transform.position = handPosition.position + handPosition.forward * 0.5f;
 
         if (obj.TryGetComponent<Rigidbody>(out var rb))
         {
