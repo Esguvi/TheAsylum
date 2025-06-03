@@ -18,6 +18,8 @@ public class ObjectInteractableSolo : MonoBehaviour
     public CollectableObject linterna;
     public CollectableObject llaveAzul;
     public CollectableObject llaveRoja;
+    public CollectableObject llaveVerde;
+    public CollectableObject llaveFinal;
     public GameObject note;
 
     public Invantory inventory;
@@ -72,6 +74,12 @@ public class ObjectInteractableSolo : MonoBehaviour
                             break;
                         case "Llave Roja":
                             inventory.AddItemToInvanntory(llaveRoja);
+                            break;
+                        case "Llave Verde":
+                            inventory.AddItemToInvanntory(llaveVerde);
+                            break;
+                        case "Llave Final":
+                            inventory.AddItemToInvanntory(llaveFinal);
                             break;
                     };
                     
