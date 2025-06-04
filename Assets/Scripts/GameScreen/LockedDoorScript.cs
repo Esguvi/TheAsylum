@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Localization.Components;
+using UnityEngine.SceneManagement;
 
 public class LockedDoorScript : MonoBehaviour
 {
@@ -40,6 +41,10 @@ public class LockedDoorScript : MonoBehaviour
 
                         for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
                         {
+                            if (keyName.Equals(playerInventory.objectsInInvantory[i].itemLogic.name)) 
+                            {
+                                SceneManager.LoadScene("WinScreen");
+                            }
                             if (playerInventory.objectsInInvantory[i] != null &&
                                 playerInventory.objectsInInvantory[i].itemLogic != null &&
                                 playerInventory.objectsInInvantory[i].itemLogic.name == keyName)

@@ -43,7 +43,6 @@ public class LlaveInteractableScript : MonoBehaviour
         }
         if (isKeyEquipped && Input.GetKeyDown(KeyCode.G))
         {
-            Debug.Log("Soltando la llave con G...");
             DropKey();
         }
 

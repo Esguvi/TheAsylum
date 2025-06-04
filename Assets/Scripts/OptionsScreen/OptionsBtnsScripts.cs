@@ -29,7 +29,6 @@ public class OptionsBtnsScripts : MonoBehaviour
         audioConf.SetActive(true);
         if (backScene)
         {
-            Debug.Log("ENTRO");
             videoPlayer.Stop();
             resumeBtn.SetActive(true);
             videoPlayer.clip = video;
@@ -46,7 +45,6 @@ public class OptionsBtnsScripts : MonoBehaviour
     }
     public void Resume()
     {
-        Debug.Log("Reanudar");
 
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
 
@@ -55,27 +53,23 @@ public class OptionsBtnsScripts : MonoBehaviour
 
     public void ConfAudio()
     {
-        Debug.Log("AUDIO");
         disableAll();
         audioConf.SetActive(true);
     }
 
     public void ConfKeys()
     {
-        Debug.Log("TECLADO / RATÓN");
         disableAll();
         keyMoConf.SetActive(true);
     }
     public void ConfScreen()
     {
-        Debug.Log("PANTALLA");
         disableAll();
         screenConf.SetActive(true);
     }
 
     public void Return()
     {
-        Debug.Log("VOLVER");
         if (backScene)
         {
             PhotonNetwork.Disconnect();

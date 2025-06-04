@@ -73,7 +73,5 @@ public class ObjectPickup : MonoBehaviourPun
 
         bool newState = !lightObject.activeSelf;
         lightObject.SetActive(newState);
-
-        Debug.Log("Objeto " + (newState ? "ENCENDIDO" : "APAGADO"));
     }
 }

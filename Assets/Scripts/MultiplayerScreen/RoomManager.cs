@@ -23,7 +23,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public override void OnConnectedToMaster()
     {
         base.OnConnectedToMaster();
-        Debug.Log("Connected to master server");
         PhotonNetwork.JoinRandomOrCreateRoom();
     }
 
@@ -36,7 +35,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public override void OnJoinedRoom()
     {
         base.OnJoinedRoom();
-        Debug.Log("Joined room");
 
         if (player == null || player2 == null || player3 == null || playerEnemy == null || spawnPoint == null || spawnPointEnemy == null)
         {
@@ -60,8 +58,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
         hash.Add(ENEMY_KEY, enemyActorNumber);
         PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
-
-        Debug.Log($"[RoomManager] Jugador con ActorNumber {enemyActorNumber} ha sido asignado como enemigo.");
     }
 
     private IEnumerator SpawnPlayerWhenReady()
@@ -79,7 +75,6 @@ public class RoomManager : MonoBehaviourPunCallbacks
         if (isEnemy)
         {
             _player = PhotonNetwork.Instantiate(playerEnemy.name, spawnPointEnemy.position, spawnPointEnemy.rotation);
-            Debug.Log("Este jugador ha sido asignado como enemigo.");
         }
         else
         {
@@ -96,19 +91,13 @@ public class RoomManager : MonoBehaviourPunCallbacks
                 case 2:
                     _player = PhotonNetwork.Instantiate(player3.name, spawnPoint.position, spawnPoint.rotation);
                     break;
-            }
-
-            Debug.Log("Este jugador ha sido asignado como jugador normal.");
+            };
         }
 
         PlayerSetup setup = _player.GetComponent<PlayerSetup>();
         if (setup != null)
         {
             setup.IsLocalPlayer();
-        }
-        else
-        {
-            Debug.LogError("El prefab del jugador no tiene el script PlayerSetup.");
         }
     }
 }

@@ -196,7 +196,6 @@ public class ObjectInteractableSolo : MonoBehaviour
         {
             flashLight.SetActive(!flashLight.activeSelf);
             isFlashlightOn = flashLight.activeSelf;
-            Debug.Log(isFlashlightOn ? "Linterna encendida" : "Linterna apagada");
         }
     }
 

@@ -47,7 +47,6 @@ public class ObjectInteractableMultiplayerrr : MonoBehaviourPunCallbacks
             if (Input.GetKeyDown(KeyCode.E))
             {
                 EquipFlashLight(hit.collider.gameObject);
-                Debug.Log("Linterna equipada.");
             }
         }
         else
@@ -116,7 +115,6 @@ public class ObjectInteractableMultiplayerrr : MonoBehaviourPunCallbacks
         lightPart.SetActive(isFlashlightOn);
 
         photonView.RPC("OnFlashlightToggled", RpcTarget.Others, isFlashlightOn);
-        Debug.Log("Linterna " + (isFlashlightOn ? "ENCENDIDA" : "APAGADA"));
     }
 
     private RaycastHit GetRaycastHitFromGrabPoint()

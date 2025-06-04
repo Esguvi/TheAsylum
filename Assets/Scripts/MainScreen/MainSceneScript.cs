@@ -7,20 +7,17 @@ public class MainSceneScript : MonoBehaviour
 {
     public void StartGame()
     {
-        Debug.Log("JUGAR");
         SceneManager.LoadScene("GameScreen", LoadSceneMode.Single);
     }
 
     public void MultiPlayer()
     {
-        Debug.Log("MULTIJUGADOR");
         SceneManager.LoadScene("MultiplayerScreen", LoadSceneMode.Single);
     }
 
     [System.Obsolete]
     public void Options()
     {
-        Debug.Log("OPCIONES");
         SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
         OptionsBtnsScripts.backScene = false;
         StartCoroutine(CleanupSceneConflicts());
@@ -28,12 +25,9 @@ public class MainSceneScript : MonoBehaviour
 
     public void Credits()
     {
-        Debug.Log("CREDITOS");
     }
 
     public void Exit()
-    {
-        Debug.Log("SALIR");
         Application.Quit();
     }
 

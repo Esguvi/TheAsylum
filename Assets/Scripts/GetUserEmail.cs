@@ -23,17 +23,12 @@ public class GetUserEmail : MonoBehaviour
                 if (request.result == UnityWebRequest.Result.Success)
                 {
                     userEmail = request.downloadHandler.text;
-                    Debug.Log("Correo recibido: " + userEmail);
 
                     if (!string.IsNullOrEmpty(userEmail))
                     {
                         
                         break; 
                     }
-                }
-                else
-                {
-                    Debug.Log("Esperando email...");
                 }
             }
 

@@ -29,7 +29,6 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("Tecla E pulsada");
 
                 photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
             }

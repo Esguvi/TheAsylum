@@ -287,7 +287,6 @@ void AddListener(Button b, int value)
 
     public void UseItemAtID(int id)
     {
-        Debug.Log(id);
         if (id >= objectsInInvantory.Count || objectsInInvantory.Count == 0)
             return;
 
