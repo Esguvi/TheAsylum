@@ -31,13 +31,15 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             return;
         }
 
-        if (PhotonNetwork.IsMasterClient && !PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey(ENEMY_KEY))
+        if (PhotonNetwork.IsMasterClient)
         {
-            AssignRandomEnemy();
+            if (!PhotonNetwork.CurrentRoom.CustomProperties.ContainsKey(ENEMY_KEY))
+            {
+                AssignRandomEnemy();
+            }
+            StartCoroutine(SpawnObjects());
         }
 
-
-        StartCoroutine(SpawnObjects());
         StartCoroutine(SpawnPlayerWhenReady());
         
     }
@@ -106,7 +108,7 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
 
     private IEnumerator SpawnObjects()
     {
-        yield return new WaitForSeconds(0f);
+        yield return new WaitForSeconds(0.5f);
 
         objectsParent = GameObject.Find("Objects")?.transform;
 
@@ -118,10 +120,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         if (objectsParent != null && flashlight != null)
         {
             flashlight.transform.SetParent(objectsParent);
-        }
-        else
-        {
-            Debug.LogWarning("No se encontró el objeto padre 'Objects' o la linterna no fue instanciada correctamente.");
         }
     }
 

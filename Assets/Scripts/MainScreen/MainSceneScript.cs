@@ -25,12 +25,21 @@ public class MainSceneScript : MonoBehaviour
         StartCoroutine(CleanupSceneConflicts());
     }
 
+    [System.Obsolete]
     public void Credits()
     {
-        // FALTA POR HACER VENTANA CREDITOS
+        Debug.Log("Loading Credits Screen");
+
+        PersistentVideo persistentVideo = FindObjectOfType<PersistentVideo>();
+        if (persistentVideo != null)
+        {
+            Destroy(persistentVideo.gameObject);
+        }
+
+        SceneManager.LoadScene("CreditsScreen", LoadSceneMode.Single);
     }
 
-    public void Exit()
+public void Exit()
     {
         Application.Quit();
     }

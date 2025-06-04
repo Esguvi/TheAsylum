@@ -1,11 +1,13 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using Photon.Pun;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class ObjectInteractableMultiplayer : MonoBehaviour
+public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
 {
     public TextMeshProUGUI interactText;
     public GameObject grabPoint;
@@ -45,14 +47,10 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
         showDoorText = false;
         objectsInInventory = new List<GameObject>();
 
-        objectsParent = GameObject.Find("Objects")?.transform;
-
-        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
-        linterna = GameObject.Find("Objects/flashlight")?.GetComponent<CollectableObject>();
-        llaveAzul = GameObject.Find("Objects/Llave Azul")?.GetComponent<CollectableObject>();
-        llaveRoja = GameObject.Find("Objects/Llave Roja")?.GetComponent<CollectableObject>();
-        note = GameObject.Find("Objects/Note")?.gameObject;
+        StartCoroutine(WaitForObjectsToLoad());
     }
+
+    
 
     void Update()
     {
@@ -201,5 +199,25 @@ public class ObjectInteractableMultiplayer : MonoBehaviour
         }
 
         return default;
+    }
+
+
+    [Obsolete]
+    private IEnumerator WaitForObjectsToLoad()
+    {
+        yield return new WaitForSeconds(1f);
+
+        objectsParent = GameObject.Find("Objects").transform;
+
+        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
+        linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("flashlight"));
+        llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
+        llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
+        note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));
+
+        if (flashLight == null || linterna == null)
+        {
+            Debug.LogWarning("No se pudo encontrar la linterna u otros objetos importantes.");
+        }
     }
 }

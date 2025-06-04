@@ -3,6 +3,9 @@
 		<type fullname="AudioConfScript">
 			<method name="changeVolum"/>
 		</type>
+		<type fullname="CreditsSceneScript">
+			<method name="Return"/>
+		</type>
 		<type fullname="GameOverScripts">
 			<method name="mainMenu"/>
 			<method name="replay"/>
@@ -85,6 +88,8 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

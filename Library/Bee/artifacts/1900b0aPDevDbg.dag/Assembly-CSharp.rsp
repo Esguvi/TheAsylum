@@ -398,6 +398,7 @@
 "Assets/Photon/PhotonRealtime/Demos/DemoLoadBalancing/ConnectAndJoinRandomLb.cs"
 "Assets/Scripts/AudioScript.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/CreditsScreen/CreditsSceneScript.cs"
 "Assets/Scripts/DELCopyMultiplayerScreen/DoorScriptMultiplayerr.cs"
 "Assets/Scripts/DELCopyMultiplayerScreen/InteractionManager.cs"
 "Assets/Scripts/DELCopyMultiplayerScreen/ObjectInteractableMultiplayerrr.cs"
@@ -427,7 +428,6 @@
 "Assets/Scripts/MultiplayerScreen/ObjectInteractableMultiplayer.cs"
 "Assets/Scripts/MultiplayerScreen/ObjectPickup.cs"
 "Assets/Scripts/MultiplayerScreen/PhotonCharacterControllerView.cs"
-"Assets/Scripts/MultiplayerScreen/PlayerInteraction.cs"
 "Assets/Scripts/MultiplayerScreen/PlayerSetup.cs"
 "Assets/Scripts/OptionsScreen/AudioConfScript.cs"
 "Assets/Scripts/OptionsScreen/KeyMoConfScript.cs"
@@ -474,7 +474,9 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/_Assets/Models/Note/NotePrefab/NoteObject.cs"
+"Assets/_Assets/Models/Note/NotePrefab/NoteObjectMultiplayer.cs"
 "Assets/_Assets/Models/Note/NotePrefab/NoteSystem.cs"
+"Assets/_Assets/Models/Note/NotePrefab/NoteSystemMultiplayer.cs"
 -langversion:9.0
 /deterministic
 /optimize-
