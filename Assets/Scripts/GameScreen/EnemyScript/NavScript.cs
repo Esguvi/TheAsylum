@@ -34,11 +34,18 @@ public class NavScript : MonoBehaviour
         if (persigiendo)
         {
             anim.SetBool("isRunning", true);
-            if (agent.remainingDistance > 0 && agent.remainingDistance < 150)
+
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+            if (distanceToPlayer < 150)
             {
+                player.gameObject.GetComponent<MovementScript>().enabled = false;
+                player.LookAt((transform.position + offset));
+                Camera.main.transform.LookAt((transform.position + offset));
                 anim.SetBool("isRunning", false);
                 anim.SetBool("isCatch", true);
-                if (agent.remainingDistance > 0 && agent.remainingDistance < 50)
+
+                if (distanceToPlayer < 50)
                 {
                     SceneManager.LoadScene("GameOverScreen", LoadSceneMode.Single);
                 }
@@ -75,10 +82,6 @@ public class NavScript : MonoBehaviour
                         destine = points[randomInt].transform;
                     }
                 }
-            }
-            else
-            {
-                //Debug.Log("Esperando " + (Time.time - delayTime));
             }
         }
     }

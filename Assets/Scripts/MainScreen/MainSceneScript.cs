@@ -28,8 +28,6 @@ public class MainSceneScript : MonoBehaviour
     [System.Obsolete]
     public void Credits()
     {
-        Debug.Log("Loading Credits Screen");
-
         PersistentVideo persistentVideo = FindObjectOfType<PersistentVideo>();
         if (persistentVideo != null)
         {

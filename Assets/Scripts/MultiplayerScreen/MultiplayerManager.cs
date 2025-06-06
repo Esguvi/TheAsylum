@@ -2,6 +2,7 @@ using Photon.Pun;
 using UnityEngine;
 using System.Collections;
 using Photon.Realtime;
+using System.Linq;
 
 public class MultiplayerManager : MonoBehaviourPunCallbacks
 {
@@ -37,9 +38,10 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             {
                 AssignRandomEnemy();
             }
+            Debug.Log("Eres el Master Client. Asignando enemigo y creando objetos de juego.");
             StartCoroutine(SpawnObjects());
+            Debug.Log("Objetos de juego creados correctamente.");
         }
-
         StartCoroutine(SpawnPlayerWhenReady());
         
     }
@@ -108,20 +110,35 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
 
     private IEnumerator SpawnObjects()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.1f);
 
         objectsParent = GameObject.Find("Objects")?.transform;
+        if (objectsParent == null)
+        {
+            Debug.LogError("No se encontró el objeto 'Objects'");
+            yield break;
+        }
 
         Vector3 flashlightPosition = new Vector3(-860.280029f, 232.059998f, -723.179993f);
         Quaternion flashlightRotation = Quaternion.Euler(272.821106f, 269.999603f, 115.179367f);
 
-        flashlight = PhotonNetwork.Instantiate(flashlight.name, flashlightPosition, flashlightRotation);
+        flashlight = PhotonNetwork.Instantiate("Flashlight", flashlightPosition, flashlightRotation);
 
-        if (objectsParent != null && flashlight != null)
+        yield return new WaitForSeconds(0.5f); 
+
+        if (flashlight != null)
         {
             flashlight.transform.SetParent(objectsParent);
+            flashlight.name = "Flashlight";
+            Debug.Log("Flashlight seteado correctamente como hijo de 'Objects'");
+        }
+        else
+        {
+            Debug.LogError("No se pudo instanciar la linterna");
         }
     }
+
+
 
 
 }

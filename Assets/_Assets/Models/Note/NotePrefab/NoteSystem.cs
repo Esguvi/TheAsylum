@@ -42,13 +42,15 @@ public class NoteSystem : MonoBehaviour
         if (audioSource && pickUpSFX)
             audioSource.PlayOneShot(pickUpSFX);
 
-        currentNote = note;
-        ShowNote();
+        if (!isNoteOpen)
+        {
+            currentNote = note;
+            ShowNote();
+        }
     }
 
     public void ShowNote()
     {
-        Debug.Log("Mostrando nota: " + currentNote.title);
 
         if (currentNote == null) return;
 

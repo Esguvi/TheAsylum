@@ -2638,7 +2638,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 506.4812, y: 0.8876114, z: -173.91223}
-  m_LocalScale: {x: 50, y: 50, z: 50}
+  m_LocalScale: {x: 54, y: 54, z: 54}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2246235695514452732}
@@ -2663,7 +2663,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5082421613976598014}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 17b571bca05da0f4598a29a7e676c1a5, type: 3}
+  m_Avatar: {fileID: 9000000, guid: e5e06bef5a401794e8a4bcf7a54ca8a2, type: 3}
   m_Controller: {fileID: 9100000, guid: 56010d5e6ac811141a4a36aaeea1aa6d, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
@@ -2695,10 +2695,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 1.2282951
-  m_Height: 4.3837547
+  m_Radius: 0.56791747
+  m_Height: 2.4565902
   m_Direction: 1
-  m_Center: {x: 0, y: 1.91, z: 0.31094068}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &5667968697621714157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2736,7 +2736,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 1
+  m_Radius: 0.6
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

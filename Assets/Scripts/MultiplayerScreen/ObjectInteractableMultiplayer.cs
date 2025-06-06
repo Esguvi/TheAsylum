@@ -50,7 +50,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         StartCoroutine(WaitForObjectsToLoad());
     }
 
-    
 
     void Update()
     {
@@ -69,15 +68,25 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
             {
                 if (currentTag == "FlashLight")
                 {
-                    EquipObject(currentObject, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, handPositionL);
+                    if (!photonView.IsMine)
+                    {
+                        return;
+                    }
+                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, "Left");
+                    //EquipObject(currentObject, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, handPositionL);
+                    Debug.Log(linterna);
                     inventory.AddItemToInvanntory(linterna);
                     isFlashlightEquipped = true;
                     objectsInInventory.Add(currentObject);
-
                 }
                 else if (currentTag == "Llave")
                 {
-                    EquipObject(currentObject, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, handPositionR);
+                    if (!photonView.IsMine)
+                    {
+                        return;
+                    }
+                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, "Right");
+                    //EquipObject(currentObject, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, handPositionR);
                     switch (hit.collider.name)
                     {
                         case "Llave Azul":
@@ -93,6 +102,10 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                 }
                 else if (currentTag == "Note")
                 {
+                    if (!photonView.IsMine)
+                    {
+                        return;
+                    }
                     NoteObject noteObj = currentObject.GetComponent<NoteObject>();
                     if (noteObj != null)
                     {
@@ -114,22 +127,34 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
             }
         }
 
-        if (isFlashlightEquipped)
+        if (isFlashlightEquipped && Input.GetKeyDown(KeyCode.F))
         {
-            if (Input.GetKeyDown(KeyCode.F))
-            {
-                ToggleFlashlight();
-            }
+            photonView.RPC("ToggleFlashlight", RpcTarget.AllBuffered, flashLight.GetPhotonView().ViewID);
         }
 
         if (Input.GetKeyDown(KeyCode.G))
         {
-            DropObject();
+            int index = inventory.CurrentlySelectedItem;
+
+            if (index >= 0 && index < objectsInInventory.Count)
+            {
+                if (!photonView.IsMine)
+                {
+                    return;
+                }
+                int viewID = objectsInInventory[index].GetComponent<PhotonView>().ViewID;
+                photonView.RPC("DropObjectByID", RpcTarget.All, viewID);
+                Debug.Log("Objeto soltado correctamente");
+            }
         }
     }
 
-    private void EquipObject(GameObject obj, Vector3 localPos, Quaternion localRot, Vector3 localScale, Transform handPosition)
+    [PunRPC]
+    private void EquipObject(int objectViewID, Vector3 localPos, Quaternion localRot, Vector3 localScale, string hand)
     {
+        GameObject obj = PhotonView.Find(objectViewID).gameObject;
+        Transform handPosition = hand == "Left" ? handPositionL : handPositionR;
+
         obj.transform.SetParent(handPosition);
         obj.transform.localPosition = localPos;
         obj.transform.localRotation = localRot;
@@ -147,49 +172,55 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         interactText.gameObject.SetActive(false);
     }
 
-    private void DropObject()
+    [PunRPC]
+    private void DropObjectByID(int viewID)
     {
         int index = inventory.CurrentlySelectedItem;
-        GameObject obj;
-        try
-        {
-            obj = objectsInInventory[index];
-        }
-        catch (ArgumentOutOfRangeException)
-        {
-            return;
-        }
+        GameObject obj = PhotonView.Find(viewID).gameObject;
 
         obj.transform.SetParent(objectsParent);
+        obj.transform.position = grabPoint.transform.position + grabPoint.transform.forward * 0.5f;
+        obj.transform.rotation = Quaternion.identity;
 
         if (obj.TryGetComponent<Rigidbody>(out var rb))
         {
             rb.isKinematic = false;
             rb.useGravity = true;
-            //rb.AddForce(Vector3.down*20f, ForceMode.Acceleration);
         }
 
-        if (obj.TryGetComponent<CapsuleCollider>(out var col))
+        if (obj.TryGetComponent<Collider>(out var col))
             col.enabled = true;
 
         inventory.RemoveItemFromInventory(index);
         objectsInInventory.Remove(obj);
+
+        if (obj.name.Contains("Flashlight"))
+        {
+            linterna = obj.GetComponent<CollectableObject>();
+        }
+        else if (obj.name.Contains("Llave Azul"))
+        {
+            llaveAzul = obj.GetComponent<CollectableObject>();
+        }
+        else if (obj.name.Contains("Llave Roja"))
+        {
+            llaveRoja = obj.GetComponent<CollectableObject>();
+        }
     }
 
-    private void ToggleFlashlight()
+    [PunRPC]
+    private void ToggleFlashlight(int flashlightViewID)
     {
-        if (flashLight == null)
+        GameObject obj = PhotonView.Find(flashlightViewID).gameObject;
+        obj.SetActive(!obj.activeSelf);
+
+        if (photonView.IsMine)
         {
-            Debug.LogWarning("FlashLight no está asignado.");
-            return;
-        }
-        else
-        {
-            flashLight.SetActive(!flashLight.activeSelf);
-            isFlashlightOn = flashLight.activeSelf;
+            isFlashlightOn = obj.activeSelf;
             Debug.Log(isFlashlightOn ? "Linterna encendida" : "Linterna apagada");
         }
     }
+
 
     private RaycastHit GetRaycastHitFromGrabPoint()
     {
@@ -210,7 +241,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         objectsParent = GameObject.Find("Objects").transform;
 
         flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
-        linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("flashlight"));
+        linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
         llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
         llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
         note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));

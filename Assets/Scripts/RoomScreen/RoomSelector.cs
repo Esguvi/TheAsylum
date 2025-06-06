@@ -14,6 +14,7 @@ public class RoomSelector : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        PhotonNetwork.NetworkingClient.LoadBalancingPeer.DisconnectTimeout = 10000;
         PhotonNetwork.ConnectUsingSettings();
     }
 

@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainScreen.unity
     guid: 7664c351d1f8f264081afb2a68420b4e
   - enabled: 1
-    path: Assets/Scenes/GameScreen.unity
-    guid: 9b04c2bb814b23744ac5f246124285bc
-  - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity
     guid: 69ad837f8ffab29498d93972ebced31d
   - enabled: 1
@@ -35,6 +32,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LoadingScene.unity
     guid: f9c42452f363dee428d68db9825abeba
+  - enabled: 1
+    path: Assets/Scenes/GameScreen.unity
+    guid: 3259aea3f962dee42a58baaf73d72073
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 08c72dca0c7bc1a428efee073f1b0863
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: a01afd3589f243c48a3c1450b1ea2966, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

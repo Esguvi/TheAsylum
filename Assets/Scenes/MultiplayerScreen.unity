@@ -1190,6 +1190,8 @@ MonoBehaviour:
   linterna: {fileID: 208840400}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
+  llaveVerde: {fileID: 0}
+  llaveFinal: {fileID: 0}
   note: {fileID: 0}
   inventory: {fileID: 0}
 --- !u!114 &208840405
@@ -1955,6 +1957,8 @@ MonoBehaviour:
   linterna: {fileID: 0}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
+  llaveVerde: {fileID: 0}
+  llaveFinal: {fileID: 0}
   note: {fileID: 254904548}
   inventory: {fileID: 0}
 --- !u!1 &264595065
@@ -5735,11 +5739,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3002445691925500564, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
   m_PrefabInstance: {fileID: 1094495597}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1094495599 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5499167743511161081, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
-  m_PrefabInstance: {fileID: 1094495597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1094495600 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3795703573275766204, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
@@ -5962,10 +5961,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 294fadcc657aa6846b5914a31972dc2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteTitle: 
-  noteContent: 
-  pickupPromptUI: {fileID: 1094495599}
-  playerCamera: {fileID: 0}
 --- !u!114 &1136534532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6534,6 +6529,8 @@ MonoBehaviour:
   linterna: {fileID: 0}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
+  llaveVerde: {fileID: 0}
+  llaveFinal: {fileID: 0}
   note: {fileID: 1094495605}
   inventory: {fileID: 0}
 --- !u!114 &1274422293
@@ -8961,6 +8958,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -64.820984
       objectReference: {fileID: 0}
+    - target: {fileID: 6513224157754307264, guid: 45febb40a86947e408fd350662627111, type: 3}
+      propertyPath: sceneViewId
+      value: 26
+      objectReference: {fileID: 0}
     - target: {fileID: 7287434960822182569, guid: 45febb40a86947e408fd350662627111, type: 3}
       propertyPath: m_Name
       value: flashlight
@@ -9906,21 +9907,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1291821140}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &1813894763 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5361407296404923073, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
-  m_PrefabInstance: {fileID: 1094495597}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1813894764 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3706076896327658319, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
-  m_PrefabInstance: {fileID: 1094495597}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1813894765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8184057095431199847, guid: 3129450cc8211e14183cf4cf5ed76db8, type: 3}
-  m_PrefabInstance: {fileID: 1094495597}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1813894766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9933,15 +9919,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d75c9ae8c0ecd614fac92aaed28b319f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  noteUI: {fileID: 1813894765}
-  noteTitleText: {fileID: 1094495602}
-  noteContentText: {fileID: 1094495600}
-  exitButton: {fileID: 1813894764}
-  audioSource: {fileID: 1813894763}
-  pickUpSFX: {fileID: 0}
-  closeSFX: {fileID: 0}
-  enterTriggerSFX: {fileID: 0}
-  exitTriggerSFX: {fileID: 0}
 --- !u!1 &1818482638 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 447557301485537916, guid: beef3bcde1610f04aa96275436147bb9, type: 3}

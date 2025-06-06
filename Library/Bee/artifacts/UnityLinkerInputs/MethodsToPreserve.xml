@@ -8,6 +8,8 @@
 		</type>
 		<type fullname="GameOverScripts">
 			<method name="mainMenu"/>
+			<method name="mainMenu"/>
+			<method name="replay"/>
 			<method name="replay"/>
 		</type>
 		<type fullname="KeyMoConfScript">
@@ -33,8 +35,6 @@
 		<type fullname="NoteSystem">
 			<method name="CloseNote"/>
 			<method name="CloseNote"/>
-			<method name="NextNote"/>
-			<method name="NextNote"/>
 		</type>
 		<type fullname="OptionsBtnsScripts">
 			<method name="ConfAudio"/>
@@ -88,6 +88,12 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

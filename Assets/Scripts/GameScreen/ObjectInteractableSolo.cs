@@ -18,6 +18,8 @@ public class ObjectInteractableSolo : MonoBehaviour
     public CollectableObject linterna;
     public CollectableObject llaveAzul;
     public CollectableObject llaveRoja;
+    public CollectableObject llaveVerde;
+    public CollectableObject llaveFinal;
     public GameObject note;
 
     public Invantory inventory;
@@ -74,6 +76,12 @@ public class ObjectInteractableSolo : MonoBehaviour
                         case "Llave Roja":
                             inventory.AddItemToInvanntory(llaveRoja);
                             break;
+                        case "Llave Verde":
+                            inventory.AddItemToInvanntory(llaveVerde);
+                            break;
+                        case "Llave Final":
+                            inventory.AddItemToInvanntory(llaveFinal);
+                            break;
                     };
 
                     isKeyEquipped++;
@@ -100,7 +108,22 @@ public class ObjectInteractableSolo : MonoBehaviour
             {
                 ToggleFlashlight();
             }
+
+            //if (Input.GetKeyDown(KeyCode.G))
+            //{
+            //    DropObject(currentObject, linterna, handPositionL);
+            //    isFlashlightEquipped = false;
+            //    isFlashlightOn = false;
+            //}
         }
+
+        //if (isKeyEquipped > 0 && Input.GetKeyDown(KeyCode.G))
+        //{
+        //    DropObject(currentObject, llaveAzul, handPositionR);
+        //    DropObject(currentObject, llaveRoja, handPositionR);
+        //    isKeyEquipped --;
+        //}
+
 
         if (Input.GetKeyDown(KeyCode.G))
         {
@@ -129,6 +152,13 @@ public class ObjectInteractableSolo : MonoBehaviour
 
     private void DropObject()
     {
+        //int index = inventory.BuscarObjetoPorNombre(collectable.name);
+        //if (inventory.CurrentlySelectedItem != index)
+        //{
+        //    Debug.Log($"No puedes soltar {collectable.name} si no está seleccionado.");
+        //    return;
+        //}
+
         int index = inventory.CurrentlySelectedItem;
         GameObject obj;
         try
@@ -141,6 +171,7 @@ public class ObjectInteractableSolo : MonoBehaviour
         }
 
         obj.transform.SetParent(objectsParent);
+        //obj.transform.position = handPosition.position + handPosition.forward * 0.5f;
 
         if (obj.TryGetComponent<Rigidbody>(out var rb))
         {
@@ -160,6 +191,7 @@ public class ObjectInteractableSolo : MonoBehaviour
     {
         if (flashLight == null)
         {
+            Debug.LogWarning("FlashLight no está asignado.");
             return;
         }
         else

@@ -195,36 +195,22 @@ public class Invantory : MonoBehaviour
         }
     }
 
-
-
     public void RemoveItemFromInventory(int idx)
     {
-        //if (obj == null || obj.objectRefrence == null)
-        //{
-        //    Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
-        //    return;
-        //}
+        if (idx < 0 || idx >= objectsInInvantory.Count)
+        {
+            Debug.LogWarning($"Índice inválido: {idx}. Tamaño del inventario: {objectsInInvantory.Count}");
+            return;
+        }
 
-        //string objectName = obj.objectRefrence.name;
-
-
-        //int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
-        //if (idx == -1)
-        //{
-        //    Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
-        //    return;
-        //}
         int quantityToRemove = 1;
-        // Resta la cantidad
         objectsInInvantory[idx].quantity -= quantityToRemove;
 
         if (objectsInInvantory[idx].quantity <= 0)
         {
-            // Elimina el objeto completamente del inventario
             objectsInInvantory.RemoveAt(idx);
             objectsInInvantory.TrimExcess();
 
-            // Actualiza visualmente los slots
             int i;
             for (i = idx; i < objectsInInvantory.Count; i++)
             {
@@ -238,11 +224,9 @@ public class Invantory : MonoBehaviour
         }
         else
         {
-            // Solo actualiza la cantidad
             invantorySlots[idx].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[idx].objectImage, objectsInInvantory[idx].quantity);
         }
 
-        // Actualiza el tooltip si está activo
         if (useTooltip)
         {
             if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
@@ -251,6 +235,62 @@ public class Invantory : MonoBehaviour
                 tooltipText.text = "";
         }
     }
+
+
+    //public void RemoveItemFromInventory(int idx)
+    //{
+    //    //if (obj == null || obj.objectRefrence == null)
+    //    //{
+    //    //    Debug.LogWarning("Objeto o referencia nula al intentar eliminar del inventario.");
+    //    //    return;
+    //    //}
+
+    //    //string objectName = obj.objectRefrence.name;
+
+
+    //    //int idx = objectsInInvantory.FindIndex(x => x.itemLogic.name == objectName);
+    //    //if (idx == -1)
+    //    //{
+    //    //    Debug.LogWarning($"El objeto '{objectName}' no se encontró en el inventario.");
+    //    //    return;
+    //    //}
+    //    int quantityToRemove = 1;
+    //    // Resta la cantidad
+    //    objectsInInvantory[idx].quantity -= quantityToRemove;
+
+    //    if (objectsInInvantory[idx].quantity <= 0)
+    //    {
+    //        // Elimina el objeto completamente del inventario
+    //        objectsInInvantory.RemoveAt(idx);
+    //        objectsInInvantory.TrimExcess();
+
+    //        // Actualiza visualmente los slots
+    //        int i;
+    //        for (i = idx; i < objectsInInvantory.Count; i++)
+    //        {
+    //            invantorySlots[i].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[i].objectImage, objectsInInvantory[i].quantity);
+    //        }
+
+    //        for (int j = i; j < invantorySlots.Count; j++)
+    //        {
+    //            invantorySlots[j].GetComponent<InvantorySlot>().SetItem(null, 0);
+    //        }
+    //    }
+    //    else
+    //    {
+    //        // Solo actualiza la cantidad
+    //        invantorySlots[idx].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[idx].objectImage, objectsInInvantory[idx].quantity);
+    //    }
+
+    //    // Actualiza el tooltip si está activo
+    //    if (useTooltip)
+    //    {
+    //        if (currentlySelectedItem >= 0 && currentlySelectedItem < objectsInInvantory.Count)
+    //            tooltipText.text = objectsInInvantory[currentlySelectedItem].objectTooltip;
+    //        else
+    //            tooltipText.text = "";
+    //    }
+    //}
 
 
     public void UseSelectedItem()
