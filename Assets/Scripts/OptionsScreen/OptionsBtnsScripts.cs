@@ -8,20 +8,28 @@ public class OptionsBtnsScripts : MonoBehaviour
 {
 
     public static bool backScene;
-
     public GameObject resumeBtn;
     public GameObject audioConf;
     public GameObject keyMoConf;
     public GameObject screenConf;
     public VideoPlayer videoPlayer;
     public VideoClip video;
+    public AudioSource audioo;
 
+    private PersistentVideo persistentVideo;
+
+    [System.Obsolete]
     private void Start()
     {
         disableAll();
         audioConf.SetActive(true);
         if (backScene)
         {
+            persistentVideo = FindObjectOfType<PersistentVideo>();
+            if (persistentVideo != null)
+            {
+                persistentVideo.gameObject.SetActive(false);
+            }
             videoPlayer.Stop();
             resumeBtn.SetActive(true);
             videoPlayer.clip = video;
@@ -30,6 +38,7 @@ public class OptionsBtnsScripts : MonoBehaviour
         else
         {
             resumeBtn.SetActive(false);
+            audioo.enabled = false;
         }
 
         Cursor.visible = true;
@@ -67,12 +76,18 @@ public class OptionsBtnsScripts : MonoBehaviour
         screenConf.SetActive(true);
     }
 
+    [System.Obsolete]
     public void Return()
     {
         if (backScene)
         {
             PhotonNetwork.Disconnect();
             SceneManager.LoadScene("MainScreen");
+            if (persistentVideo != null)
+            {
+                persistentVideo.gameObject.SetActive(true);
+                audioo.enabled = true;
+            }
         }
         else
         {

@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class MovementScript : MonoBehaviour
@@ -39,11 +40,18 @@ public class MovementScript : MonoBehaviour
     {
         sensibility = KeyMoConfScript.sensibility;
         yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
+
+        if (SceneManager.sceneCount <= 1 && !GetComponent<AudioSource>().enabled)
+        {
+            GetComponent<AudioSource>().enabled = true;
+        }
+
         if (Input.GetKey(KeyCode.Escape) && SceneManager.sceneCount == 1)
         {
             cameraPlayerr.GetComponent<AudioListener>().enabled = false;
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
+            GetComponent<AudioSource>().enabled = false; 
         }
 
         if (Input.GetMouseButtonDown(0))
