@@ -1,3 +1,4 @@
+using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -19,6 +20,7 @@ public class MovementScript : MonoBehaviour
     private bool pulsado;
     private float velocidadY;
     private float yHead;
+    public int vidas = 3;
 
     private Animator anim;
 

@@ -2598,6 +2598,7 @@ MonoBehaviour:
   sensibility: 2
   grabPoint: {fileID: 6719416871933843115}
   cameraPlayer: {fileID: 4151012890052935970}
+  vidas: 3
 --- !u!143 &1537595536002752816
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2752,9 +2753,12 @@ MonoBehaviour:
   linterna: {fileID: 0}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
+  llaveVerde: {fileID: 0}
+  llaveFinal: {fileID: 0}
   keyPosition: {x: 0, y: 0, z: 0}
   note: {fileID: 0}
   inventory: {fileID: 877604785568170020}
+  objectsInInventory: []
 --- !u!82 &5514201754648274631
 AudioSource:
   m_ObjectHideFlags: 0

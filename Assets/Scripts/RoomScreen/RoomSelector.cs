@@ -20,19 +20,16 @@ public class RoomSelector : MonoBehaviourPunCallbacks
 
     public override void OnConnectedToMaster()
     {
-        Debug.Log("Connected to Master Server");
         PhotonNetwork.JoinLobby();
     }
 
     public override void OnJoinedLobby()
     {
-        Debug.Log("Joined Lobby");
     }
 
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
         cachedRoomList = roomList;
-        Debug.Log($"Rooms disponibles: {cachedRoomList.Count}");
     }
 
     public void Join()
@@ -46,8 +43,6 @@ public class RoomSelector : MonoBehaviourPunCallbacks
 
         bool roomExists = cachedRoomList.Exists(room => room.Name == roomName);
 
-        Debug.Log($"Sala '{roomName}' existe? {roomExists}");
-
         RoomOptions options = new RoomOptions { MaxPlayers = 4 };
 
         PhotonNetwork.JoinOrCreateRoom(roomName, options, TypedLobby.Default);
@@ -55,13 +50,11 @@ public class RoomSelector : MonoBehaviourPunCallbacks
 
     public override void OnJoinedRoom()
     {
-        Debug.Log("Joined room: " + PhotonNetwork.CurrentRoom.Name);
         SceneManager.LoadScene("LobbyManagerScreen", LoadSceneMode.Single);
     }
 
     public void Return()
     {
-        Debug.Log("Volviendo menú...");
         PhotonNetwork.LeaveLobby();
         SceneManager.LoadScene("MainScreen", LoadSceneMode.Single);
     }
