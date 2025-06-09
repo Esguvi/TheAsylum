@@ -22,6 +22,8 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     public CollectableObject linterna;
     public CollectableObject llaveAzul;
     public CollectableObject llaveRoja;
+    public CollectableObject llaveVerde;
+    public CollectableObject llaveFinal;
     public Vector3 keyPosition;
     public GameObject note;
 
@@ -34,7 +36,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     private ObjectLocalizer localizer;
     private GameObject currentObject;
     private string currentTag;
-    private List<GameObject> objectsInInventory;
+    public List<GameObject> objectsInInventory;
 
     public static bool showDoorText = false;
     public static string externalInteractText = "";
@@ -53,6 +55,17 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
 
     void Update()
     {
+
+        objectsParent = GameObject.Find("Objects").transform;
+        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
+        linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
+        llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
+        llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
+        llaveVerde = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Verde"));
+        llaveFinal = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Final"));
+        note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));
+
+
         RaycastHit hit = GetRaycastHitFromGrabPoint();
 
 
@@ -109,7 +122,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                     NoteObject noteObj = currentObject.GetComponent<NoteObject>();
                     if (noteObj != null)
                     {
-                        noteObj.PickUpNote();
+                        noteObj.PickUpNote(currentObject.transform.parent.gameObject);
                     }
                 }
             }
@@ -244,6 +257,8 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
         llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
         llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
+        llaveVerde = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Verde"));
+        llaveFinal = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Final"));
         note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));
 
         if (flashLight == null || linterna == null)

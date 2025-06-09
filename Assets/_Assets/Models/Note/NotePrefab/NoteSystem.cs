@@ -53,7 +53,6 @@ public class NoteSystem : MonoBehaviour
     {
 
         if (currentNote == null) return;
-
         noteTitleText.text = currentNote.title;
         noteContentText.text = currentNote.content;
         noteUI.SetActive(true);

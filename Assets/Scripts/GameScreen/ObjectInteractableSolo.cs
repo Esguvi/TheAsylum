@@ -6,6 +6,8 @@ using UnityEngine;
 
 public class ObjectInteractableSolo : MonoBehaviour
 {
+    public static List<GameObject> objectsInInventory;
+
     public TextMeshProUGUI interactText;
     public GameObject grabPoint;
     private float interactDistance = 100;
@@ -20,7 +22,7 @@ public class ObjectInteractableSolo : MonoBehaviour
     public CollectableObject llaveRoja;
     public CollectableObject llaveVerde;
     public CollectableObject llaveFinal;
-    public GameObject note;
+    
 
     public Invantory inventory;
 
@@ -31,7 +33,6 @@ public class ObjectInteractableSolo : MonoBehaviour
     private ObjectLocalizer localizer;
     private GameObject currentObject;
     private string currentTag;
-    private List<GameObject> objectsInInventory;
 
     public static bool showDoorText = false;
 
@@ -92,7 +93,7 @@ public class ObjectInteractableSolo : MonoBehaviour
                     NoteObject noteObj = currentObject.GetComponent<NoteObject>();
                     if (noteObj != null)
                     {
-                        noteObj.PickUpNote();
+                        noteObj.PickUpNote(currentObject.transform.parent.gameObject);
                     }
                 }
             }

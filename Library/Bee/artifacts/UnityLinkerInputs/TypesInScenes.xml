@@ -18,6 +18,7 @@
 		<type fullname="LobbyManager" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LockedDoorScript" preserve="nothing"/>
+		<type fullname="LockedDoorScriptMultiplayer" preserve="nothing"/>
 		<type fullname="LoginManager" preserve="nothing"/>
 		<type fullname="MainSceneScript" preserve="nothing"/>
 		<type fullname="Medkit" preserve="nothing"/>
@@ -41,6 +42,7 @@
 		<type fullname="ShowHide" preserve="nothing"/>
 		<type fullname="SkinlessZombie.AnimationController" preserve="nothing"/>
 		<type fullname="SkinlessZombie.AnimationItemData" preserve="nothing"/>
+		<type fullname="SoundManager" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="PhotonUnityNetworking.Demos">
 		<type fullname="Photon.Pun.Demo.Asteroids.Asteroid" preserve="nothing"/>
@@ -77,6 +79,8 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">

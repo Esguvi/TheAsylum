@@ -332,7 +332,7 @@ public class Invantory : MonoBehaviour
             return;
 
         objectsInInvantory[id].quantity--;
-        objectsInInvantory[id].itemLogic.UseItem(transform, objectsInInvantory[id]);
+        //objectsInInvantory[id].itemLogic.UseItem(transform, objectsInInvantory[id]);
         invantorySlots[id].GetComponent<InvantorySlot>().SetItem(objectsInInvantory[id].objectImage, objectsInInvantory[id].quantity);
         if (objectsInInvantory[id].quantity <= 0)
         {

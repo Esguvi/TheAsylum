@@ -35,6 +35,19 @@
 		<type fullname="NoteSystem">
 			<method name="CloseNote"/>
 			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
+			<method name="CloseNote"/>
 		</type>
 		<type fullname="OptionsBtnsScripts">
 			<method name="ConfAudio"/>
@@ -58,6 +71,9 @@
 		<type fullname="ShowHide">
 			<method name="returnForms"/>
 			<method name="showLoginForm"/>
+		</type>
+		<type fullname="SoundManager">
+			<method name="ToggleAudio"/>
 		</type>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime" ignoreIfMissing="1">
@@ -88,6 +104,33 @@
 	</assembly>
 	<assembly fullname="Unity.TextMeshPro" ignoreIfMissing="1">
 		<type fullname="TMPro.TMP_Text">
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
+			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>
 			<method name="set_text"/>

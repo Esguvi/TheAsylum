@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class NoteObject : MonoBehaviour
@@ -35,10 +36,10 @@ public class NoteObject : MonoBehaviour
             pickupPromptUI.transform.Rotate(0, 180, 0); // Flip the UI to face correctly
         }
 
-        if (isNearNote && Input.GetKeyDown(KeyCode.E))
-        {
-            PickUpNote();
-        }
+        //if (isNearNote && Input.GetKeyDown(KeyCode.E))
+        //{
+        //    PickUpNote();
+        //}
     }
 
     private void OnTriggerEnter(Collider other)
@@ -73,10 +74,10 @@ public class NoteObject : MonoBehaviour
         }
     }
 
-    public void PickUpNote()
+    public void PickUpNote(GameObject note)
     {
         Note newNote = new Note(noteTitle, noteContent);
-        Object.FindFirstObjectByType<NoteSystem>().PickUpNote(newNote); // ? Corrected method
+        note.GetComponent<NoteSystem>().PickUpNote(newNote);// ? Corrected method
 
         if (pickupPromptUI != null)
             pickupPromptUI.SetActive(false);

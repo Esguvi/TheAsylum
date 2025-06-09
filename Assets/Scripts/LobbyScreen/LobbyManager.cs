@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using Photon.Pun;
 using Photon.Realtime;
 using UnityEngine.SceneManagement;
@@ -35,7 +35,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     private void UpdateRoomData()
     {
         if (roomNameText != null)
-            roomNameText.text = "Sala: " + PhotonNetwork.CurrentRoom.Name;
+            roomNameText.text = PhotonNetwork.CurrentRoom.Name;
 
         Player[] players = PhotonNetwork.PlayerList;
 
@@ -51,7 +51,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             return;
         }
-        // FALTA A�ADIR PANTALLA CARGA
+        // FALTA AÑADIR PANTALLA CARGA
         PhotonNetwork.LoadLevel("MultiplayerScreen");
     }
 

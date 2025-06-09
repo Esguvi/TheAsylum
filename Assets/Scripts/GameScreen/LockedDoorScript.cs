@@ -57,6 +57,8 @@ public class LockedDoorScript : MonoBehaviour
                     if (llaveIndex >= 0)
                     {
                         playerInventory.UseItemAtID(llaveIndex);
+                        Destroy(ObjectInteractableSolo.objectsInInventory[llaveIndex]);
+                        ObjectInteractableSolo.objectsInInventory.RemoveAt(llaveIndex);
                         abrirPuertas();
                         puertaCerrada.tag = "PuertaAbierta";
                         localizer.localizedObjectName.TableEntryReference = "door";

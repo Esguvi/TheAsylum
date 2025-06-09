@@ -37,7 +37,6 @@ public class LoginManager : MonoBehaviour
         if (loginTask.Exception != null)
         {
             error.SetActive(true);
-            Debug.LogError("Login failed: " + loginTask.Exception);
         }
         else
         {
@@ -46,10 +45,6 @@ public class LoginManager : MonoBehaviour
             {
                 StartCoroutine(LoadUsername(user));
             }
-            else
-            {
-                Debug.LogError("Error: Usuario es null después del login.");
-            }
         }
     }
 
@@ -57,7 +52,6 @@ public class LoginManager : MonoBehaviour
     {
         if (user == null)
         {
-            Debug.LogError("Error: FirebaseUser es null.");
             yield break;
         }
 
@@ -66,7 +60,6 @@ public class LoginManager : MonoBehaviour
 
         if (userDoc.Exception != null)
         {
-            Debug.LogError("Error obteniendo el username: " + userDoc.Exception);
             yield break;
         }
 
@@ -85,10 +78,6 @@ public class LoginManager : MonoBehaviour
         if (SessionManager.Instance != null)
         {
             SessionManager.Instance.SetUser(username);
-        }
-        else
-        {
-            Debug.LogError("Error: SessionManager.Instance es null.");
         }
 
         SceneManager.LoadScene("MainScreen");

@@ -42,14 +42,26 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
     {
         if (!abierto)
         {
-            puertaR?.transform.Rotate(0, 90f, 0);
-            puertaL?.transform.Rotate(0, -90f, 0);
+            if (puertaR != null)
+            {
+                puertaR.transform.Rotate(new Vector3(0, 90f, 0));
+            }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(new Vector3(0, -90f, 0));
+            }
             abierto = true;
         }
         else
         {
-            puertaR?.transform.Rotate(0, -90f, 0);
-            puertaL?.transform.Rotate(0, 90f, 0);
+            if (puertaR != null)
+            {
+                puertaR.transform.Rotate(new Vector3(0, -90f, 0));
+            }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(new Vector3(0, 90f, 0));
+            }
             abierto = false;
         }
     }
