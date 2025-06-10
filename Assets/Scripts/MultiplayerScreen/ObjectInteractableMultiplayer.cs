@@ -19,12 +19,16 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
 
     public GameObject flashLight;
     public Vector3 flashLightPosition;
+    public Quaternion flashLightRotation;
+    public Vector3 flashLightScale;
     public CollectableObject linterna;
     public CollectableObject llaveAzul;
     public CollectableObject llaveRoja;
     public CollectableObject llaveVerde;
     public CollectableObject llaveFinal;
     public Vector3 keyPosition;
+    public Quaternion keyRotation;
+    public Vector3 keyScale;
     public GameObject note;
 
     public Invantory inventory;
@@ -54,7 +58,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
 
     void Update()
     {
-
         objectsParent = GameObject.Find("Objects").transform;
         flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
         linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
@@ -64,9 +67,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         llaveFinal = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Final"));
         note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));
 
-
         RaycastHit hit = GetRaycastHitFromGrabPoint();
-
 
         if (hit.collider != null && (hit.collider.CompareTag("FlashLight") || hit.collider.CompareTag("Llave") || hit.collider.CompareTag("Note")))
         {
@@ -84,7 +85,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                     {
                         return;
                     }
-                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, "Left");
+                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, flashLightPosition, flashLightRotation, flashLightScale, "Left");
                     //EquipObject(currentObject, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, handPositionL);
                     Debug.Log(linterna);
                     inventory.AddItemToInvanntory(linterna);
@@ -97,7 +98,7 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                     {
                         return;
                     }
-                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, "Right");
+                    photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, keyPosition, keyRotation, keyScale, "Right");
                     //EquipObject(currentObject, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, handPositionR);
                     switch (hit.collider.name)
                     {
@@ -229,7 +230,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         if (photonView.IsMine)
         {
             isFlashlightOn = obj.activeSelf;
-            Debug.Log(isFlashlightOn ? "Linterna encendida" : "Linterna apagada");
         }
     }
 

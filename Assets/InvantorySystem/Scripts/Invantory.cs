@@ -19,7 +19,6 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Collections;
 
 public class Invantory : MonoBehaviour
@@ -40,6 +39,7 @@ public class Invantory : MonoBehaviour
     [Tooltip("Should be set, leave me alone please")][SerializeField] private Text tooltipText;
     public float tabCooldown = 0.1f;
     private float lastTabPressed = -0.1f;
+
     void Start()
     {
         invantoryRoot.SetActive(true);
@@ -85,8 +85,7 @@ public class Invantory : MonoBehaviour
         if (Input.GetAxis("Mouse ScrollWheel") > 0)
             ToggleSlot(false);
 
-        if (Input.GetKeyDown(KeyCode.Tab)
-           && Time.time >= lastTabPressed + tabCooldown)
+        if (Input.GetKeyDown(KeyCode.Tab) && Time.time >= lastTabPressed + tabCooldown)
         {
             invantoryRoot.SetActive(!invantoryRoot.activeSelf);
             lastTabPressed = Time.time;

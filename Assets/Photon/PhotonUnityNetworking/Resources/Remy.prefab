@@ -3859,6 +3859,7 @@ MonoBehaviour:
   sensibility: 2
   grabPoint: {fileID: 8900236504313205962}
   cameraPlayer: {fileID: 438443620093370608}
+  vidas: 3
 --- !u!143 &7979020470688883730
 CharacterController:
   m_ObjectHideFlags: 0
@@ -4009,13 +4010,17 @@ MonoBehaviour:
   handPositionL: {fileID: 948482411705967724}
   objectsParent: {fileID: 0}
   flashLight: {fileID: 0}
-  flashLightPosition: {x: 0, y: 0, z: 0}
+  flashLightPosition: {x: -0.0628, y: 0.0764, z: 0.1323}
+  flashLightRotation: {x: 0.62643856, y: 0.7109033, z: -0.2770875, w: -0.15941744}
+  flashLightScale: {x: 0.3, y: 0.3, z: 0.3}
   linterna: {fileID: 0}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
   llaveVerde: {fileID: 0}
   llaveFinal: {fileID: 0}
-  keyPosition: {x: 0, y: 0, z: 0}
+  keyPosition: {x: -0.0865, y: 0.0377, z: 0.0611}
+  keyRotation: {x: -0.47755432, y: 0.5118789, z: 0.5597412, w: -0.44340903}
+  keyScale: {x: 4, y: 4, z: 4}
   note: {fileID: 0}
   inventory: {fileID: 6440095000559809201}
   objectsInInventory: []

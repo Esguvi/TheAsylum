@@ -28,7 +28,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
     {
         if (PhotonNetwork.CurrentRoom == null)
         {
-            Debug.LogError("No estás en ninguna sala. Volviendo al menú principal.");
             return;
         }
 
@@ -38,9 +37,7 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             {
                 AssignRandomEnemy();
             }
-            Debug.Log("Eres el Master Client. Asignando enemigo y creando objetos de juego.");
             StartCoroutine(SpawnObjects());
-            Debug.Log("Objetos de juego creados correctamente.");
         }
         StartCoroutine(SpawnPlayerWhenReady());
         
@@ -54,8 +51,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         ExitGames.Client.Photon.Hashtable hash = new ExitGames.Client.Photon.Hashtable();
         hash.Add(ENEMY_KEY, enemyActorNumber);
         PhotonNetwork.CurrentRoom.SetCustomProperties(hash);
-
-        Debug.Log($"Jugador con ActorNumber {enemyActorNumber} asignado como enemigo.");
     }
 
     private IEnumerator SpawnPlayerWhenReady()
@@ -73,7 +68,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         if (isEnemy)
         {
             playerInstance = PhotonNetwork.Instantiate(enemyPrefab.name, spawnPointEnemy.position, spawnPointEnemy.rotation);
-            Debug.Log("Has sido asignado como enemigo.");
         }
         else
         {
@@ -91,18 +85,12 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
                     playerInstance = PhotonNetwork.Instantiate(playerPrefab3.name, spawnPointPlayer3.position, spawnPointPlayer3.rotation);
                     break;
             }
-
-            Debug.Log("Este jugador ha sido asignado como jugador normal.");
         }
 
         PlayerSetup setup = playerInstance.GetComponent<PlayerSetup>();
         if (setup != null)
         {
             setup.IsLocalPlayer();
-        }
-        else
-        {
-            Debug.LogWarning("Prefab no tiene PlayerSetup.");
         }
     }
 
@@ -114,7 +102,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         objectsParent = GameObject.Find("Objects")?.transform;
         if (objectsParent == null)
         {
-            Debug.LogError("No se encontró el objeto 'Objects'");
             yield break;
         }
 
@@ -129,11 +116,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         {
             flashlight.transform.SetParent(objectsParent);
             flashlight.name = "Flashlight";
-            Debug.Log("Flashlight seteado correctamente como hijo de 'Objects'");
-        }
-        else
-        {
-            Debug.LogError("No se pudo instanciar la linterna");
         }
     }
 
