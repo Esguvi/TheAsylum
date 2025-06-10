@@ -1,11 +1,14 @@
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.Audio;
 
 public class DoorScriptMultiplayer : MonoBehaviourPun
 {
     public GameObject puertaR;
     public GameObject puertaL;
+    public AudioClip audioAbrir;
+    public AudioClip audioCerrar;
 
     private bool cerca;
     private bool abierto;
@@ -14,11 +17,13 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
     private ObjectLocalizer localizer;
 
     private PhotonView photonView;
+    private AudioSource audioSource;
 
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
         photonView = GetComponent<PhotonView>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -34,6 +39,7 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         if (Input.GetKeyDown(KeyCode.E))
         {
             photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+            PlayDoorSound();
         }
     }
 
@@ -44,11 +50,11 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         {
             if (puertaR != null)
             {
-                puertaR.transform.Rotate(new Vector3(0, 90f, 0));
+                puertaR.transform.Rotate(0, 90f, 0);
             }
             if (puertaL != null)
             {
-                puertaL.transform.Rotate(new Vector3(0, -90f, 0));
+                puertaL.transform.Rotate(0, -90f, 0);
             }
             abierto = true;
         }
@@ -56,11 +62,11 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         {
             if (puertaR != null)
             {
-                puertaR.transform.Rotate(new Vector3(0, -90f, 0));
+                puertaR.transform.Rotate(0, -90f, 0);
             }
             if (puertaL != null)
             {
-                puertaL.transform.Rotate(new Vector3(0, 90f, 0));
+                puertaL.transform.Rotate(0, 90f, 0);
             }
             abierto = false;
         }
@@ -71,6 +77,7 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         if (other.CompareTag("Enemy") && !abierto)
         {
             photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+            PlayDoorSound();
             return;
         }
 
@@ -99,6 +106,7 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
         if (other.CompareTag("Enemy") && abierto)
         {
             photonView.RPC("ToggleDoor", RpcTarget.AllBuffered);
+            PlayDoorSound();
             return;
         }
 
@@ -120,5 +128,11 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
                 ObjectInteractableMultiplayer.externalInteractText = "";
             }
         }
+    }
+
+    private void PlayDoorSound()
+    {
+        audioSource.clip = abierto ? audioAbrir : audioCerrar;
+        audioSource.Play();
     }
 }

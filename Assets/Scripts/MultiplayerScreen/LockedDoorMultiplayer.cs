@@ -4,6 +4,7 @@ using UnityEngine.Localization.Components;
 using Photon.Pun;
 using Unity.VisualScripting;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class LockedDoorScriptMultiplayer : MonoBehaviourPun
 {
@@ -11,6 +12,8 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
     public GameObject puertaL;
     public GameObject puertaCerrada;
     public string keyName;
+    public AudioClip audioAbrir;
+    public AudioClip audioCerrar;
 
     private bool cerca;
     private bool abierto;
@@ -22,11 +25,13 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
     private Invantory playerInventory;
     private List<GameObject> objects;
     public LocalizeStringEvent localizeEvent;
+    private AudioSource audioSource;
 
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
         photonView = GetComponent<PhotonView>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -37,7 +42,7 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-            
+
             if (puertaCerrada.CompareTag("PuertaCerrada"))
             {
                 int llaveIndex = -1;
@@ -75,12 +80,15 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
                     playerInventory.UseItemAtID(llaveIndex);
 
                     photonView.RPC("AbrirPuerta", RpcTarget.AllBuffered);
+                    PlayDoorSound();
                     photonView.RPC("ActualizarLocalizacion", RpcTarget.AllBuffered);
                 }
             }
             else if (puertaCerrada.CompareTag("PuertaAbierta"))
             {
                 photonView.RPC("AbrirPuerta", RpcTarget.AllBuffered);
+                PlayDoorSound();
+
             }
         }
     }
@@ -90,14 +98,26 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
     {
         if (!abierto)
         {
-            puertaR?.transform.Rotate(0, 90f, 0);
-            puertaL?.transform.Rotate(0, -90f, 0);
+            if (puertaR != null)
+            {
+                puertaR.transform.Rotate(0, 90f, 0);
+            }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(0, -90f, 0);
+            }
             abierto = true;
         }
         else
         {
-            puertaR?.transform.Rotate(0, -90f, 0);
-            puertaL?.transform.Rotate(0, 90f, 0);
+            if (puertaR != null)
+            {
+                puertaR.transform.Rotate(0, -90f, 0);
+            }
+            if (puertaL != null)
+            {
+                puertaL.transform.Rotate(0, 90f, 0);
+            }
             abierto = false;
         }
     }
@@ -168,4 +188,11 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
             }
         }
     }
+
+    private void PlayDoorSound()
+    {
+        audioSource.clip = abierto ? audioAbrir : audioCerrar;
+        audioSource.Play();
+    }
+
 }

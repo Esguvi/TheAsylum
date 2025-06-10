@@ -42,7 +42,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     public static string externalInteractText = "";
 
 
-    [Obsolete]
     void Start()
     {
         interactText.gameObject.SetActive(false);

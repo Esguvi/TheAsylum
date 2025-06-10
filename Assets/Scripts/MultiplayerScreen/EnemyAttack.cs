@@ -6,41 +6,48 @@ using System.Collections;
 public class EnemyAttack : MonoBehaviour
 {
     private Transform player;
+    private PhotonView photonView;
+
+    void Start()
+    {
+        photonView = GetComponent<PhotonView>();
+    }
 
     void Update()
     {
-        if (player != null)
+        if (player != null && Input.GetMouseButtonDown(0))
         {
-            if (Input.GetMouseButtonDown(0))
+            Debug.Log("Ataque enemigo a " + player.name);
+            var movement = player.GetComponent<MovementScript>();
+            if (movement != null)
             {
-                Debug.Log("Ataque enemigo a " + player.name);
-                var movement = player.GetComponent<MovementScript>();
-                if (movement != null)
+                movement.vidas--;
+                if (movement.vidas <= 0)
                 {
-                    movement.vidas--;
-                    if (movement.vidas <= 0)
+                    Debug.Log(player.name + " ha sido derrotado.");
+                    if (photonView != null && photonView.IsMine)
                     {
-                        Debug.Log(player.name + " ha sido derrotado.");
-
-                        PhotonView pv = player.GetComponent<PhotonView>();
-
-                        if (pv != null && pv.IsMine)
-                        {
-                            StartCoroutine(DestruirJugadorYSalir(player.gameObject));
-                            Debug.Log("Destruyendo jugador y saliendo a la pantalla principal...");
-                        }
+                        photonView.RPC("ActualizarTag", RpcTarget.All, player.GetComponent<PhotonView>().ViewID);
                     }
+
+
                 }
             }
         }
     }
 
-    private IEnumerator DestruirJugadorYSalir(GameObject playerObj)
+    [PunRPC]
+    void ActualizarTag(int viewID)
     {
-        yield return new WaitForSeconds(1.5f); 
-        PhotonNetwork.Destroy(playerObj);
-        SceneManager.LoadScene("MainScreen");
+        GameObject obj = PhotonView.Find(viewID).gameObject;
+        if (obj != null)
+        {
+            obj.tag = "Finish";
+            Debug.Log(obj.name + " ha sido derrotado y su tag cambiado a 'Finish'.");
+        }
     }
+
+
 
     private void OnTriggerEnter(Collider other)
     {

@@ -23,6 +23,12 @@ public class OptionsBtnsScripts : MonoBehaviour
     {
         disableAll();
         audioConf.SetActive(true);
+
+        if(SceneManager.sceneCount == 1)
+        {
+            Return();
+        }
+
         if (backScene)
         {
             persistentVideo = FindObjectOfType<PersistentVideo>();

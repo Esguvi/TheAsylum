@@ -43,6 +43,14 @@ public class MovementScript : MonoBehaviour
         sensibility = KeyMoConfScript.sensibility;
         yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
 
+        if(this.tag == "Finish")
+        {
+            cameraPlayerr.GetComponent<AudioListener>().enabled = false;
+            SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Single);
+            OptionsBtnsScripts.backScene = true;
+            GetComponent<AudioSource>().enabled = false;
+        }
+        
         if (SceneManager.sceneCount <= 1 && !GetComponent<AudioSource>().enabled)
         {
             GetComponent<AudioSource>().enabled = true;

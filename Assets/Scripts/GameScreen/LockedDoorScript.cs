@@ -11,12 +11,15 @@ public class LockedDoorScript : MonoBehaviour
     public LocalizeStringEvent localizeEvent;
     public GameObject puertaCerrada;
     public string keyName;
+    public AudioClip audioAbrir;
+    public AudioClip audioCerrar;
 
     private bool cerca;
     private bool abierto;
     private TextMeshProUGUI interactText;
     private GameObject canvas;
     private ObjectLocalizer localizer;
+    private AudioSource audioSource;
 
 
     private void Start()
@@ -24,6 +27,7 @@ public class LockedDoorScript : MonoBehaviour
         localizer = GetComponent<ObjectLocalizer>();
         canvas = GameObject.FindWithTag("Canva");
         interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -81,6 +85,8 @@ public class LockedDoorScript : MonoBehaviour
     {
         if (!abierto)
         {
+            audioSource.clip = audioAbrir;
+            audioSource.Play();
             if (puertaR != null)
             {
                 puertaR.transform.Rotate(new Vector3(0, 90f, 0));
@@ -93,6 +99,8 @@ public class LockedDoorScript : MonoBehaviour
         }
         else
         {
+            audioSource.clip = audioCerrar;
+            audioSource.Play();
             if (puertaR != null)
             {
                 puertaR.transform.Rotate(new Vector3(0, -90, 0));
