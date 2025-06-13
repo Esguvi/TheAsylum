@@ -1,8 +1,5 @@
-using System.Collections.Generic;
-using NUnit.Framework;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class DoorScript : MonoBehaviour
 {
@@ -10,7 +7,6 @@ public class DoorScript : MonoBehaviour
     public GameObject puertaL;
     public AudioClip audioAbrir;
     public AudioClip audioCerrar;
-
 
     private bool cerca;
     private bool abierto;
@@ -25,10 +21,12 @@ public class DoorScript : MonoBehaviour
         canvas = GameObject.FindWithTag("Canva");
         interactText = canvas.transform.Find("InteractionText")?.GetComponent<TextMeshProUGUI>();
         audioSource = GetComponent<AudioSource>();
-
     }
+
     private void Update()
     {
+        gameObject.GetComponent<AudioSource>().volume = AudioConfScript.volume;
+
         if (cerca)
         {
             if (interactText != null)
@@ -67,7 +65,6 @@ public class DoorScript : MonoBehaviour
                     abierto = false;
                 }
             }
-
         }
     }
 
@@ -100,7 +97,6 @@ public class DoorScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-
         if (other.tag == "Enemy")
         {
             if (abierto)

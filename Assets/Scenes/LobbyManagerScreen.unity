@@ -1225,6 +1225,7 @@ MonoBehaviour:
   player3: {fileID: 453632858}
   player4: {fileID: 823721198}
   roomNameText: {fileID: 640029285}
+  playButton: {fileID: 1889804914}
 --- !u!1 &682953130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,7 +2058,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1138600345}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: d490aaad9680c78449d2babe2b85880c, type: 3}
+  m_VideoClip: {fileID: 0}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 330585545}
@@ -2501,7 +2502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1889804913
 RectTransform:
   m_ObjectHideFlags: 0

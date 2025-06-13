@@ -1,8 +1,7 @@
-﻿using UnityEngine;
-using Photon.Pun;
+﻿using Photon.Pun;
 using Photon.Realtime;
-using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.UI;
 
 public class LobbyManager : MonoBehaviourPunCallbacks
 {
@@ -11,6 +10,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
     public TextMeshProUGUI player3;
     public TextMeshProUGUI player4;
     public TextMeshProUGUI roomNameText;
+    public Button playButton;
 
     void Awake()
     {
@@ -19,6 +19,11 @@ public class LobbyManager : MonoBehaviourPunCallbacks
 
     private void Start()
     {
+        if (PhotonNetwork.IsMasterClient)
+        {
+            playButton.gameObject.SetActive(true);
+            playButton.interactable = true;
+        }
         UpdateRoomData();
     }
 
@@ -51,7 +56,7 @@ public class LobbyManager : MonoBehaviourPunCallbacks
         {
             return;
         }
-        // FALTA AÑADIR PANTALLA CARGA
+        playButton.interactable = false;
         PhotonNetwork.LoadLevel("MultiplayerScreen");
     }
 

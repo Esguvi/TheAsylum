@@ -1,25 +1,20 @@
 using Photon.Pun;
 using UnityEngine;
 using System.Collections;
-using Photon.Realtime;
-using System.Linq;
 
 public class MultiplayerManager : MonoBehaviourPunCallbacks
 {
-    [Header("Prefabs")]
     public GameObject playerPrefab1;
     public GameObject playerPrefab2;
     public GameObject playerPrefab3;
     public GameObject enemyPrefab;
     public GameObject flashlight;
 
-    [Header("Spawn Points")]
     public Transform spawnPointPlayer1;
     public Transform spawnPointPlayer2;
     public Transform spawnPointPlayer3;
     public Transform spawnPointEnemy;
     public Transform objectsParent;
-
 
     private const string ENEMY_KEY = "EnemyActorNumber";
     private bool isEnemy = false;
@@ -37,10 +32,9 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             {
                 AssignRandomEnemy();
             }
-            StartCoroutine(SpawnObjects());
+            //StartCoroutine(SpawnObjects());
         }
         StartCoroutine(SpawnPlayerWhenReady());
-        
     }
 
     private void AssignRandomEnemy()
@@ -94,7 +88,6 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
         }
     }
 
-
     private IEnumerator SpawnObjects()
     {
         yield return new WaitForSeconds(0.1f);
@@ -110,7 +103,7 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
 
         flashlight = PhotonNetwork.Instantiate("Flashlight", flashlightPosition, flashlightRotation);
 
-        yield return new WaitForSeconds(0.5f); 
+        yield return new WaitForSeconds(0.2f);
 
         if (flashlight != null)
         {
@@ -118,8 +111,4 @@ public class MultiplayerManager : MonoBehaviourPunCallbacks
             flashlight.name = "Flashlight";
         }
     }
-
-
-
-
 }

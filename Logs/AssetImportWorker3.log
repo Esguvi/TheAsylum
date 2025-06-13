@@ -1,0 +1,554 @@
+Using pre-set license
+Built from '6000.0/staging' branch; Version is '6000.0.37f1 (090b7797214c) revision 592759'; Using compiler version '193933523'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Core' Language: 'es' Physical Memory: 15732 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.0.37f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker3
+-projectPath
+C:/Users/victo/Desktop/UnityProjects/TheAsylum
+-logFile
+Logs/AssetImportWorker3.log
+-srvPort
+50114
+-job-worker-count
+7
+-background-job-worker-count
+8
+-gc-helper-count
+1
+Successfully changed project path to: C:/Users/victo/Desktop/UnityProjects/TheAsylum
+C:/Users/victo/Desktop/UnityProjects/TheAsylum
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [26960]  Target information:
+
+Player connection [26960]  * "[IP] 192.168.56.1 [Port] 0 [Flags] 2 [Guid] 3603869569 [EditorId] 3603869569 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HM5MDEKC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26960]  * "[IP] 192.168.1.55 [Port] 0 [Flags] 2 [Guid] 3603869569 [EditorId] 3603869569 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-HM5MDEKC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [26960] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [26960] Host joined alternative multi-casting on [225.0.0.222:34997]...
+JobSystem: Creating JobQueue using job-worker-count value 7
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+Library Redirect Path: Library/
+[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Refreshing native plugins compatible for Editor in 9.12 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 6000.0.37f1 (090b7797214c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/victo/Desktop/UnityProjects/TheAsylum/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Vendor:   NVIDIA
+    VRAM:     5996 MB
+    Driver:   32.0.15.6119
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56076
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.009554 seconds.
+- Loaded All Assemblies, in  0.543 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.397 seconds
+Domain Reload Profiling: 935ms
+	BeginReloadAssembly (176ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (46ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (71ms)
+	LoadAllAssembliesAndSetupDomain (230ms)
+		LoadAssemblies (170ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (226ms)
+			TypeCache.Refresh (224ms)
+				TypeCache.ScanAssembly (207ms)
+			BuildScriptInfoCaches (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (398ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (335ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (34ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (172ms)
+			ProcessInitializeOnLoadMethodAttributes (61ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  1.440 seconds
+Refreshing native plugins compatible for Editor in 8.28 ms, found 6 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.177 seconds
+Domain Reload Profiling: 2601ms
+	BeginReloadAssembly (266ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (43ms)
+	RebuildCommonClasses (50ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (67ms)
+	LoadAllAssembliesAndSetupDomain (1029ms)
+		LoadAssemblies (784ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (415ms)
+			TypeCache.Refresh (325ms)
+				TypeCache.ScanAssembly (300ms)
+			BuildScriptInfoCaches (72ms)
+			ResolveRequiredComponents (14ms)
+	FinalizeReload (1177ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (940ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (185ms)
+			ProcessInitializeOnLoadAttributes (605ms)
+			ProcessInitializeOnLoadMethodAttributes (126ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 6.53 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 237 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 7422 unused Assets / (6.7 MB). Loaded Objects now: 8121.
+Memory consumption went from 181.0 MB to 174.3 MB.
+Total: 12.065600 ms (FindLiveObjects: 0.905000 ms CreateObjectMapping: 0.862500 ms MarkObjects: 6.401700 ms  DeleteObjects: 3.895300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5402.253372 seconds.
+  path: Assets/Resources/Characters/Character1/Animations/Running.anim
+  artifactKey: Guid(07c8772940c8aa645b19599edde24108) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character1/Animations/Running.anim using Guid(07c8772940c8aa645b19599edde24108) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b4f882f406b07707a7578f6d78d3adc6') in 0.2417646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_Flashlight_Normal.png
+  artifactKey: Guid(07e685123e89d2849b8bbc1e59732c17) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_Flashlight_Normal.png using Guid(07e685123e89d2849b8bbc1e59732c17) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '581dc4b9c4bf5069c27bfda991c36741') in 0.0657607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Resources/Prefabs/Note1.prefab
+  artifactKey: Guid(1d5fa2486b7e57b45b3664c28912fee1) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Prefabs/Note1.prefab using Guid(1d5fa2486b7e57b45b3664c28912fee1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0eec9d24fab8c1a4b6ab768936eb3521') in 0.1479504 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 64
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Characters/CharacterEnemy/Animations/Walking.anim
+  artifactKey: Guid(2bf075b6a245c8143a16aa116016a133) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/CharacterEnemy/Animations/Walking.anim using Guid(2bf075b6a245c8143a16aa116016a133) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '73cf5462bf848409ad8a2fea64efe4ce') in 0.0335011 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Characters/Enemy/Demo Scripts
+  artifactKey: Guid(34d7b7d26153418409bd5cb9cd2a3d67) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Demo Scripts using Guid(34d7b7d26153418409bd5cb9cd2a3d67) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e1fba422a30a217bd58705b8180edef6') in 0.0151587 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Survival Tools/Materials/FlashlightGlass.mat
+  artifactKey: Guid(ea6ba5f33fa3acd4b81c2bf9c2dd9ec9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Materials/FlashlightGlass.mat using Guid(ea6ba5f33fa3acd4b81c2bf9c2dd9ec9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c32f99f799a1f511c150cf9ad7a78fb0') in 0.0582806 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_FirstAidKit_Normal.png
+  artifactKey: Guid(9f65d2e3f58211746983a694824ae80f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_FirstAidKit_Normal.png using Guid(9f65d2e3f58211746983a694824ae80f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd36e82bced4b1caef1e312b78f72380b') in 0.0282052 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_Flashlight_MetallicSmoothness.png
+  artifactKey: Guid(4fc31ea4e0ae54047a883f419a4c1941) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_Flashlight_MetallicSmoothness.png using Guid(4fc31ea4e0ae54047a883f419a4c1941) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3926a209efd3e021534f436dc15ea253') in 0.0227376 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Characters/Enemy/Art/Animations/Remy@Walking.fbx
+  artifactKey: Guid(8ea1b29f74bc61c4982c51abf1dabd79) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Art/Animations/Remy@Walking.fbx using Guid(8ea1b29f74bc61c4982c51abf1dabd79) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '30a4f50901d8652c31d9727bdc80564a') in 0.035317 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 140
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Resources/Materials/Azul.mat
+  artifactKey: Guid(2ffc7e8a5c061964c9f64c994abcd629) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Materials/Azul.mat using Guid(2ffc7e8a5c061964c9f64c994abcd629) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '90f46970f02dba06195eb05608168aef') in 0.0340223 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Materials/Material1 1.mat
+  artifactKey: Guid(b522eac380a97974685f53158aa7e168) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Materials/Material1 1.mat using Guid(b522eac380a97974685f53158aa7e168) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd25fb135fb78b2f3000d465853396379') in 0.0228924 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Resources/Characters/Character2/Materials/Ch16_Body.mat
+  artifactKey: Guid(cf8e12233967f2d4a9c5bd021ae0b047) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character2/Materials/Ch16_Body.mat using Guid(cf8e12233967f2d4a9c5bd021ae0b047) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2c4c3e4743931b4426e526c03ad2cc04') in 0.0408595 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Survival Tools/Materials/Tape.mat
+  artifactKey: Guid(e9e79d85b56a60a459df32fa7b4e7793) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Materials/Tape.mat using Guid(e9e79d85b56a60a459df32fa7b4e7793) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3b539f51fe92f2d38965bb0770aeb262') in 0.0554452 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Survival Tools/Meshes/Backdrop.fbx
+  artifactKey: Guid(a4e2fb6568555044aad6812203693103) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Meshes/Backdrop.fbx using Guid(a4e2fb6568555044aad6812203693103) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b39d22a54e93f307779ee11c1f9f2b1a') in 0.069791 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Survival Tools/Prefabs/cannedfood.prefab
+  artifactKey: Guid(baa8d2066558c9a4ebcd1853c4c3ac4e) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Prefabs/cannedfood.prefab using Guid(baa8d2066558c9a4ebcd1853c4c3ac4e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a25764e26c29864f1dbaf5f5433bfeab') in 0.0226683 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_Matches_AlbedoTransparency.png
+  artifactKey: Guid(c781494611a5b374c9111980bcd06014) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_Matches_AlbedoTransparency.png using Guid(c781494611a5b374c9111980bcd06014) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4ef8098039973217d37d3f1e3375812a') in 0.0202853 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_Water_AlbedoTransparency.png
+  artifactKey: Guid(87cd25b03a467e24c878325b2f59babf) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_Water_AlbedoTransparency.png using Guid(87cd25b03a467e24c878325b2f59babf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3fceb638e04c79a6c226d9e0b7db4075') in 0.0241006 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Resources/Survival Tools/Materials/Walkieglass.mat
+  artifactKey: Guid(ef9edaf98d7249a489f4b31144a8b1d0) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Materials/Walkieglass.mat using Guid(ef9edaf98d7249a489f4b31144a8b1d0) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '393ee1eee9605eaa0fd05a913db0149a') in 0.0215246 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Survival Tools/Prefabs/matchbox.prefab
+  artifactKey: Guid(38fb7ded0e1057f438e082c5f655bd53) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Prefabs/matchbox.prefab using Guid(38fb7ded0e1057f438e082c5f655bd53) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b6ce3d4396c83b8f6c772989166fc8ed') in 0.0197169 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 36
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Materials/Pants.mat
+  artifactKey: Guid(120fea42c17029246955c11529aa9678) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Materials/Pants.mat using Guid(120fea42c17029246955c11529aa9678) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '538d24141e5464b54658059d7ebbe36b') in 0.0241386 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 5
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Survival Tools/Meshes/cannedfood.fbx
+  artifactKey: Guid(fcc30f2beefeaf94e990407639b18736) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Meshes/cannedfood.fbx using Guid(fcc30f2beefeaf94e990407639b18736) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '243b6f1f1789082a5ede0ce32bb55794') in 0.0261864 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Survival Tools/Materials/Matchbox.mat
+  artifactKey: Guid(de101b0be6951b646833c2ab48fec359) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Materials/Matchbox.mat using Guid(de101b0be6951b646833c2ab48fec359) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4dc6c629892a001edf8f2fc0de5bc8ef') in 0.0342615 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 4
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_MatchBox_Normal.png
+  artifactKey: Guid(d9dfe452942df4447bba22a0a25c7d81) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_MatchBox_Normal.png using Guid(d9dfe452942df4447bba22a0a25c7d81) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '43e2bf09a508c5f7b5eb1c66c6012e7c') in 0.0261528 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Scripts/MultiplayerScreen/ObjectInteractableMultiplayer.cs
+  artifactKey: Guid(4eb5feee781f23b45a08c2fa58fdc9d2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Scripts/MultiplayerScreen/ObjectInteractableMultiplayer.cs using Guid(4eb5feee781f23b45a08c2fa58fdc9d2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '46419b84c8543cf2493f5376f9e5f493') in 0.0177605 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_MetallicSmoothness.png
+  artifactKey: Guid(ea131859224016a40b887eb56d4f9349) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_MetallicSmoothness.png using Guid(ea131859224016a40b887eb56d4f9349) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0e58de7151d6eed675ef350c8886159d') in 0.0259606 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_MetallicSmoothness.png
+  artifactKey: Guid(fa654fabee8d7d54bafef1d636fecd34) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_MetallicSmoothness.png using Guid(fa654fabee8d7d54bafef1d636fecd34) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7f0ca4d981a6b1d5c3d3c7b198b3a5aa') in 0.0244649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000021 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_Metallic.png
+  artifactKey: Guid(b45d423acd82cac43b4ea0ae507c7e50) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_Metallic.png using Guid(b45d423acd82cac43b4ea0ae507c7e50) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fe27a535ccd2aa1a0d88f8d0cf4a9de8') in 0.0205817 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_Normal.png
+  artifactKey: Guid(89e22ddc5b0a1b3418cb69661783ffb2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_Normal.png using Guid(89e22ddc5b0a1b3418cb69661783ffb2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'fc4726cebe84a3c42c12f274f9ec1dab') in 0.0201353 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Characters/Character2/Textures/Ch16_1002_Diffuse.png
+  artifactKey: Guid(8595ed74c397a114c8815cd7bcb51cd8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character2/Textures/Ch16_1002_Diffuse.png using Guid(8595ed74c397a114c8815cd7bcb51cd8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '18b3cc1200b1468c7538f08693f2a88e') in 0.0246895 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Characters/Character1/Remy@Breathing Idle.fbx
+  artifactKey: Guid(eaefc672ce950f54c9cfa7d2facbf206) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character1/Remy@Breathing Idle.fbx using Guid(eaefc672ce950f54c9cfa7d2facbf206) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'd2d6ca4b65b797f017e8a0bc94415dbf') in 0.0678877 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 184
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_Height.png
+  artifactKey: Guid(13816fc640c77b4469db2e21f9115786) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/zombie pants low_zombie pants_Height.png using Guid(13816fc640c77b4469db2e21f9115786) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5d6be34111b349e601fd5eb4b03c3d1a') in 0.0209594 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Resources/Characters/Character1/Materials
+  artifactKey: Guid(dc39977b756be29448f89cfeca4fa2fc) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character1/Materials using Guid(dc39977b756be29448f89cfeca4fa2fc) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '1f21c55a24700d70ffe956a0e03f8059') in 0.015472 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Resources/Characters/Character2/Remy@Walking.fbx
+  artifactKey: Guid(ea1bbdc1208db6b48833a4dbc7ccfef8) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character2/Remy@Walking.fbx using Guid(ea1bbdc1208db6b48833a4dbc7ccfef8) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '5ea5de5ba61fdb541c28893043758783') in 0.0573643 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 184
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Resources/Survival Tools/Textures/survivaltools2_Pills_Normal.png
+  artifactKey: Guid(1cb66a8696e43c44eac6c92a43a0d53f) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Textures/survivaltools2_Pills_Normal.png using Guid(1cb66a8696e43c44eac6c92a43a0d53f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '91d46fd56d971c86ce3f3602e09e6483') in 0.0232188 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Resources/Survival Tools/Prefabs/tape.prefab
+  artifactKey: Guid(f2eb86ba579ab5c4db54a92a8f0c3b7b) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Prefabs/tape.prefab using Guid(f2eb86ba579ab5c4db54a92a8f0c3b7b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'f63901d10f2c25d96d1ce27530b80eea') in 0.0199023 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Characters/Enemy/Art/Animations/angry01.fbx
+  artifactKey: Guid(0dd1a06bb21981446a1861c7c1767e75) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Art/Animations/angry01.fbx using Guid(0dd1a06bb21981446a1861c7c1767e75) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a579dffe0344fc6d9671985d3e0a2592') in 0.0248301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 142
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000022 seconds.
+  path: Assets/Resources/Survival Tools/Scene/Example Scene
+  artifactKey: Guid(edd0df753d2348d4b9e998280fe2a4a7) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Scene/Example Scene using Guid(edd0df753d2348d4b9e998280fe2a4a7) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b74336e842870721bf58009f9a36d9e8') in 0.0174778 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_BaseColor.png
+  artifactKey: Guid(dd47b3d25d1324140ae26a95165a39db) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Tensori/SkinlessZombie/Art/Textures/axe_fireaxe_BaseColor.png using Guid(dd47b3d25d1324140ae26a95165a39db) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3206235691e8fb09622c95a5ee9df46e') in 0.0213818 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Resources/Characters/Enemy/Art/Textures/zombie low_zombie 2048x2048_MaskMap.png
+  artifactKey: Guid(463ba775d38802e4182030f144ffc0db) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Art/Textures/zombie low_zombie 2048x2048_MaskMap.png using Guid(463ba775d38802e4182030f144ffc0db) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'df0d9e2d32b954bfc8a7b8cec772f499') in 0.0256574 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Resources/Characters/Enemy/Demo
+  artifactKey: Guid(1c058a9e9601b4d4abc85181a59f69b9) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Demo using Guid(1c058a9e9601b4d4abc85181a59f69b9) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '3af4abddaedc04fee9fae20fae12c894') in 0.0176651 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Characters/Character3/Materials/Ch07_hair.mat
+  artifactKey: Guid(0f62d090e8ebab1498954dff997312bd) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character3/Materials/Ch07_hair.mat using Guid(0f62d090e8ebab1498954dff997312bd) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a831e4c95bf8ee95b68d985e751f27cc') in 0.0213638 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Characters/Character3/Ch07_nonPBR.fbx
+  artifactKey: Guid(17b571bca05da0f4598a29a7e676c1a5) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character3/Ch07_nonPBR.fbx using Guid(17b571bca05da0f4598a29a7e676c1a5) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0a4362e54608150b022826f821b32176') in 0.0391191 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 165
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Resources/Survival Tools/Scene/Example Scene/ReflectionProbe-1.exr
+  artifactKey: Guid(34054a90cc174114cb48fd49218859d6) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Survival Tools/Scene/Example Scene/ReflectionProbe-1.exr using Guid(34054a90cc174114cb48fd49218859d6) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '0f5e763f49762fa73e8df90f4f2b9854') in 0.0251478 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Resources/Characters/Character2/Chad.fbx
+  artifactKey: Guid(e5e06bef5a401794e8a4bcf7a54ca8a2) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Character2/Chad.fbx using Guid(e5e06bef5a401794e8a4bcf7a54ca8a2) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '54bd203db625b7aca18c2c921e16f842') in 0.0430815 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 165
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Resources/Characters/Enemy/Resources/ScriptableObjects
+  artifactKey: Guid(43b4f82b44b69984c922887f9c5756de) Importer(2089858483,192608db42251d675da83286b1cce702)
+Start importing Assets/Resources/Characters/Enemy/Resources/ScriptableObjects using Guid(43b4f82b44b69984c922887f9c5756de) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '426985c4e35815c2a6759b3aee2d4d82') in 0.0162507 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

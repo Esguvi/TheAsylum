@@ -287,8 +287,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -472, y: 280}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -1028, y: 280}
+  m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: -2.2, y: 6.5}
 --- !u!114 &160809466
 MonoBehaviour:
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You Win
+  m_text: "\xA1\xA1Has Ganado!!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e5aa576a0c24ba64a88396b863069b69, type: 2}
   m_sharedMaterial: {fileID: -512657285198169218, guid: e5aa576a0c24ba64a88396b863069b69, type: 2}
@@ -898,7 +898,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 778295472}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9a03ae1cf9635de409937182a1bf32f5, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 053144393062a7b4299322cc5a9f8c4c, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 1599218332}
@@ -918,7 +918,7 @@ VideoPlayer:
   - 1
   m_Url: 
   m_EnabledAudioTracks: 01
-  m_DirectAudioMutes: 00
+  m_DirectAudioMutes: 01
   m_ControlledAudioTrackCount: 1
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1

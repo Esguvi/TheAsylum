@@ -10,12 +10,10 @@
 		<type fullname="DoorScriptMultiplayer" preserve="nothing"/>
 		<type fullname="EnemyAttack" preserve="nothing"/>
 		<type fullname="GameOverScripts" preserve="nothing"/>
-		<type fullname="InteractableObject" preserve="nothing"/>
 		<type fullname="Invantory" preserve="nothing"/>
 		<type fullname="InvantoryObject" preserve="nothing"/>
 		<type fullname="InvantorySlot" preserve="nothing"/>
 		<type fullname="KeyMoConfScript" preserve="nothing"/>
-		<type fullname="LlaveInteractableScript" preserve="nothing"/>
 		<type fullname="LobbyManager" preserve="nothing"/>
 		<type fullname="LocaleSelector" preserve="nothing"/>
 		<type fullname="LockedDoorScript" preserve="nothing"/>
@@ -29,10 +27,8 @@
 		<type fullname="NoteObject" preserve="nothing"/>
 		<type fullname="NoteSystem" preserve="nothing"/>
 		<type fullname="ObjectInteractableMultiplayer" preserve="nothing"/>
-		<type fullname="ObjectInteractableMultiplayerrr" preserve="nothing"/>
 		<type fullname="ObjectInteractableSolo" preserve="nothing"/>
 		<type fullname="ObjectLocalizer" preserve="nothing"/>
-		<type fullname="ObjectPickup" preserve="nothing"/>
 		<type fullname="OptionsBtnsScripts" preserve="nothing"/>
 		<type fullname="PersistentVideo" preserve="nothing"/>
 		<type fullname="PlayerSetup" preserve="nothing"/>
@@ -81,6 +77,8 @@
 		<type fullname="UnityEngine.Localization.Locale" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.LocalizationBehaviour" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.Settings.LocalizationSettings" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.SharedTableData" preserve="nothing"/>
+		<type fullname="UnityEngine.Localization.Tables.StringTable" preserve="nothing"/>
 		<type fullname="UnityEngine.Localization.VariantsPropertyDriver" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.RenderPipelines.Core.Runtime">
@@ -196,6 +194,7 @@
 		<type fullname="UnityEngine.Font" preserve="nothing"/>
 		<type fullname="UnityEngine.GameObject" preserve="nothing"/>
 		<type fullname="UnityEngine.Light" preserve="nothing"/>
+		<type fullname="UnityEngine.LightingSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.LightmapSettings" preserve="nothing"/>
 		<type fullname="UnityEngine.LightProbeGroup" preserve="nothing"/>
 		<type fullname="UnityEngine.LODGroup" preserve="nothing"/>

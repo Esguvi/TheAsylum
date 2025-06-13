@@ -28,15 +28,13 @@ public class PhotonCharacterControllerView : MonoBehaviourPun, IPunObservable
     {
         if (!photonView.IsMine)
         {
-            // Si la distancia es demasiado grande, hacer un teletransporte
             if (teleportEnabled && Vector3.Distance(transform.position, networkPosition) > teleportIfDistanceGreaterThan)
             {
-                characterController.enabled = false; // Desactivamos momentáneamente para evitar bugs
+                characterController.enabled = false;
                 transform.position = networkPosition;
                 characterController.enabled = true;
             }
 
-            // Interpolación para movimiento fluido
             transform.position = Vector3.Lerp(transform.position, networkPosition, Time.deltaTime * 10f);
             transform.rotation = Quaternion.Lerp(transform.rotation, networkRotation, Time.deltaTime * 10f);
         }
@@ -46,13 +44,11 @@ public class PhotonCharacterControllerView : MonoBehaviourPun, IPunObservable
     {
         if (stream.IsWriting)
         {
-            // El jugador local envía su posición y rotación
             stream.SendNext(transform.position);
             stream.SendNext(transform.rotation);
         }
         else
         {
-            // Los otros jugadores reciben la posición y rotación
             networkPosition = (Vector3)stream.ReceiveNext();
             networkRotation = (Quaternion)stream.ReceiveNext();
         }

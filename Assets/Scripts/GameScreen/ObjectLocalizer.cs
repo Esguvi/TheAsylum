@@ -10,5 +10,4 @@ public class ObjectLocalizer : MonoBehaviour
         string name = localizedObjectName.GetLocalizedString();
         return name;
     }
-
 }

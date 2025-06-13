@@ -1,4 +1,3 @@
-using JetBrains.Annotations;
 using UnityEngine;
 
 public class PlayerSetup : MonoBehaviour
@@ -11,5 +10,4 @@ public class PlayerSetup : MonoBehaviour
         movement.enabled = true;
         playerCamera.SetActive(true);
     }
-
 }

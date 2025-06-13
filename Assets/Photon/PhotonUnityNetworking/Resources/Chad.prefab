@@ -2576,7 +2576,7 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.56791747
+  m_Radius: 0.3
   m_Height: 2.4565902
   m_Direction: 1
   m_Center: {x: 0, y: 1, z: 0}
@@ -2618,7 +2618,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.6
+  m_Radius: 0.3
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -2749,10 +2749,12 @@ MonoBehaviour:
   handPositionL: {fileID: 4126546263387984623}
   objectsParent: {fileID: 0}
   flashLight: {fileID: 0}
+  flashLight2: {fileID: 0}
   flashLightPosition: {x: 0.006697574, y: 0.01302437, z: 0.03913673}
   flashLightRotation: {x: -0.5968752, y: -0.34489304, z: -0.3151136, w: 0.65229756}
   flashLightScale: {x: 0.1, y: 0.1, z: 0.1}
   linterna: {fileID: 0}
+  linterna2: {fileID: 0}
   llaveAzul: {fileID: 0}
   llaveRoja: {fileID: 0}
   llaveVerde: {fileID: 0}

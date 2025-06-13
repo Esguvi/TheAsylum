@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using UnityEngine.Localization;
-using UnityEngine.Localization.Settings;
 using Photon.Pun;
 
 public class ChangeUsername : MonoBehaviour

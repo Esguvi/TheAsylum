@@ -1,10 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Photon.Pun;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
@@ -18,10 +16,12 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     public Transform objectsParent;
 
     public GameObject flashLight;
+    public GameObject flashLight2;
     public Vector3 flashLightPosition;
     public Quaternion flashLightRotation;
     public Vector3 flashLightScale;
     public CollectableObject linterna;
+    public CollectableObject linterna2;
     public CollectableObject llaveAzul;
     public CollectableObject llaveRoja;
     public CollectableObject llaveVerde;
@@ -45,7 +45,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     public static bool showDoorText = false;
     public static string externalInteractText = "";
 
-
     void Start()
     {
         interactText.gameObject.SetActive(false);
@@ -55,12 +54,11 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         StartCoroutine(WaitForObjectsToLoad());
     }
 
-
     void Update()
     {
         objectsParent = GameObject.Find("Objects").transform;
-        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
-        linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
+        linterna = Resources.FindObjectsOfTypeAll<CollectableObject>().FirstOrDefault(co => co.name.Equals("Flashlight"));
+        linterna2 = Resources.FindObjectsOfTypeAll<CollectableObject>().FirstOrDefault(co => co.name.Equals("Flashlight2"));
         llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
         llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
         llaveVerde = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Verde"));
@@ -86,11 +84,18 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                         return;
                     }
                     photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, flashLightPosition, flashLightRotation, flashLightScale, "Left");
-                    //EquipObject(currentObject, new Vector3(-0.0628f, 0.0764f, 0.1323f), Quaternion.Euler(11.2f, 215.8f, 86.4f), Vector3.one * 0.3f, handPositionL);
-                    Debug.Log(linterna);
                     inventory.AddItemToInvanntory(linterna);
                     isFlashlightEquipped = true;
                     objectsInInventory.Add(currentObject);
+
+                    if (currentObject.name.Equals("Flashlight"))
+                    {
+                        flashLight = currentObject;
+                    }
+                    else if (currentObject.name.Equals("Flashlight2"))
+                    {
+                        flashLight2 = currentObject;
+                    }
                 }
                 else if (currentTag == "Llave")
                 {
@@ -99,7 +104,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                         return;
                     }
                     photonView.RPC("EquipObject", RpcTarget.All, currentObject.GetPhotonView().ViewID, keyPosition, keyRotation, keyScale, "Right");
-                    //EquipObject(currentObject, new Vector3(-0.0865f, 0.0377f, 0.0611f), Quaternion.Euler(351.4f, 271.15f, 265.2f), Vector3.one * 4f, handPositionR);
                     switch (hit.collider.name)
                     {
                         case "Llave Azul":
@@ -142,7 +146,14 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
 
         if (isFlashlightEquipped && Input.GetKeyDown(KeyCode.F))
         {
-            photonView.RPC("ToggleFlashlight", RpcTarget.AllBuffered, flashLight.GetPhotonView().ViewID);
+            if (currentObject.name.Equals("Flashlight") && flashLight != null)
+            {
+                photonView.RPC("ToggleFlashlight", RpcTarget.AllBuffered, flashLight.GetPhotonView().ViewID);
+            }
+            else if (currentObject.name.Equals("Flashlight2") && flashLight2 != null)
+            {
+                photonView.RPC("ToggleFlashlight", RpcTarget.AllBuffered, flashLight2.GetPhotonView().ViewID);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.G))
@@ -157,7 +168,6 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
                 }
                 int viewID = objectsInInventory[index].GetComponent<PhotonView>().ViewID;
                 photonView.RPC("DropObjectByID", RpcTarget.All, viewID);
-                Debug.Log("Objeto soltado correctamente");
             }
         }
     }
@@ -211,6 +221,10 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         {
             linterna = obj.GetComponent<CollectableObject>();
         }
+        else if (obj.name.Contains("Flashlight2"))
+        {
+            linterna2 = obj.GetComponent<CollectableObject>();
+        }
         else if (obj.name.Contains("Llave Azul"))
         {
             llaveAzul = obj.GetComponent<CollectableObject>();
@@ -219,20 +233,48 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
         {
             llaveRoja = obj.GetComponent<CollectableObject>();
         }
+        else if (obj.name.Contains("Llave Verde"))
+        {
+            llaveVerde = obj.GetComponent<CollectableObject>();
+        }
+        else if (obj.name.Contains("Llave Final"))
+        {
+            llaveFinal = obj.GetComponent<CollectableObject>();
+        }
     }
 
     [PunRPC]
     private void ToggleFlashlight(int flashlightViewID)
     {
-        GameObject obj = PhotonView.Find(flashlightViewID).gameObject;
-        obj.SetActive(!obj.activeSelf);
-
-        if (photonView.IsMine)
+        PhotonView pv = PhotonView.Find(flashlightViewID);
+        if (pv == null)
         {
-            isFlashlightOn = obj.activeSelf;
+            return;
+        }
+
+        GameObject flashlightObj = pv.gameObject;
+        Transform lightTransform = null;
+
+        if (flashlightObj.name.Equals("Flashlight"))
+        {
+            lightTransform = flashlightObj.transform.Find("FlashLight");
+        }
+        else if (flashlightObj.name.Equals("Flashlight2"))
+        {
+            lightTransform = flashlightObj.transform.Find("FlashLight2");
+        }
+
+        if (lightTransform != null)
+        {
+            GameObject lightObject = lightTransform.gameObject;
+            lightObject.SetActive(!lightObject.activeSelf);
+
+            if (photonView.IsMine)
+            {
+                isFlashlightOn = lightObject.activeSelf;
+            }
         }
     }
-
 
     private RaycastHit GetRaycastHitFromGrabPoint()
     {
@@ -245,24 +287,20 @@ public class ObjectInteractableMultiplayer : MonoBehaviourPunCallbacks
     }
 
 
-    [Obsolete]
     private IEnumerator WaitForObjectsToLoad()
     {
         yield return new WaitForSeconds(1f);
 
         objectsParent = GameObject.Find("Objects").transform;
 
-        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Contains("FlashLight"));
+        flashLight = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("FlashLight"));
+        flashLight2 = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("FlashLight2"));
         linterna = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight"));
+        linterna2 = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Flashlight2"));
         llaveAzul = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Azul"));
         llaveRoja = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Roja"));
         llaveVerde = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Verde"));
         llaveFinal = objectsParent.GetComponentsInChildren<CollectableObject>(true).FirstOrDefault(co => co.name.Contains("Llave Final"));
         note = Resources.FindObjectsOfTypeAll<GameObject>().FirstOrDefault(go => go.name.Equals("Note"));
-
-        if (flashLight == null || linterna == null)
-        {
-            Debug.LogWarning("No se pudo encontrar la linterna u otros objetos importantes.");
-        }
     }
 }

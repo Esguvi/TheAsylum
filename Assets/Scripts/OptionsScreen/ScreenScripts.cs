@@ -13,6 +13,7 @@ public class ScreenScripts : MonoBehaviour
 
     private TMP_Dropdown dropdown;
     private Toggle fullScr;
+
     private void Start()
     {
         int localeID = PlayerPrefs.GetInt("LocaleKey", 0);
@@ -22,6 +23,7 @@ public class ScreenScripts : MonoBehaviour
         dropdown.value = localeID;
         fullScr.isOn = Screen.fullScreen;
     }
+    
     public void changeLenguage()
     {
         if (active) return;
@@ -33,7 +35,7 @@ public class ScreenScripts : MonoBehaviour
         StartCoroutine(SetLocale(newLocaleID));
     }
 
-    IEnumerator SetLocale(int localeID)
+    public IEnumerator SetLocale(int localeID)
     {
         active = true;
         yield return LocalizationSettings.InitializationOperation;

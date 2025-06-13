@@ -21,7 +21,6 @@ public class LockedDoorScript : MonoBehaviour
     private ObjectLocalizer localizer;
     private AudioSource audioSource;
 
-
     private void Start()
     {
         localizer = GetComponent<ObjectLocalizer>();
@@ -32,6 +31,7 @@ public class LockedDoorScript : MonoBehaviour
 
     private void Update()
     {
+        gameObject.GetComponent<AudioSource>().volume = AudioConfScript.volume;
         if (cerca)
         {
             interactText.gameObject.SetActive(true);
@@ -45,15 +45,14 @@ public class LockedDoorScript : MonoBehaviour
 
                     for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
                     {
-                        if (playerInventory.objectsInInvantory[i].itemLogic.name.Equals("Llave Final"))
+                        if (playerInventory.objectsInInvantory[i].itemLogic.name.Equals("Llave Final") && this.name.Equals("MainDoor"))
                         {
-                            SceneManager.LoadScene("WinScreen");
+                            SceneManager.LoadScene("WinScreen"); 
                         }
                         if (playerInventory.objectsInInvantory[i] != null &&
                             playerInventory.objectsInInvantory[i].itemLogic != null &&
                             playerInventory.objectsInInvantory[i].itemLogic.name == keyName)
                         {
-
                             llaveIndex = i;
                             break;
                         }
@@ -71,7 +70,6 @@ public class LockedDoorScript : MonoBehaviour
 
                     }
                 }
-
             }
             else if (puertaCerrada.tag == "PuertaAbierta")
                 if (Input.GetKeyDown(KeyCode.E))
@@ -111,7 +109,6 @@ public class LockedDoorScript : MonoBehaviour
             }
             abierto = false;
         }
-
     }
 
 
@@ -140,14 +137,10 @@ public class LockedDoorScript : MonoBehaviour
             ObjectInteractableSolo.showDoorText = true;
             interactText.gameObject.SetActive(true);
         }
-
-
-
     }
 
     private void OnTriggerExit(Collider other)
     {
-
         if (other.tag == "Enemy")
         {
             if (abierto)

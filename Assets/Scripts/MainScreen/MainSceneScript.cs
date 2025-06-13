@@ -10,14 +10,12 @@ public class MainSceneScript : MonoBehaviour
         CargaNivel.SceneLoader("GameScreen");
     }
 
-    [System.Obsolete]
     public void MultiPlayer()
     {
         CargaNivel.SceneLoader("RoomManagerScreen");
         StartCoroutine(CleanupSceneConflicts());
     }
 
-    [System.Obsolete]
     public void Options()
     {
         SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
@@ -25,7 +23,6 @@ public class MainSceneScript : MonoBehaviour
         StartCoroutine(CleanupSceneConflicts());
     }
 
-    [System.Obsolete]
     public void Credits()
     {
         PersistentVideo persistentVideo = FindObjectOfType<PersistentVideo>();
@@ -37,12 +34,11 @@ public class MainSceneScript : MonoBehaviour
         SceneManager.LoadScene("CreditsScreen", LoadSceneMode.Single);
     }
 
-public void Exit()
+    public void Exit()
     {
         Application.Quit();
     }
 
-    [System.Obsolete]
     private IEnumerator CleanupSceneConflicts()
     {
         yield return null;

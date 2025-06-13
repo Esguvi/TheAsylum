@@ -40,6 +40,7 @@ public class Invantory : MonoBehaviour
     public float tabCooldown = 0.1f;
     private float lastTabPressed = -0.1f;
 
+
     void Start()
     {
         invantoryRoot.SetActive(true);
@@ -90,8 +91,8 @@ public class Invantory : MonoBehaviour
             invantoryRoot.SetActive(!invantoryRoot.activeSelf);
             lastTabPressed = Time.time;
         }
-
     }
+
     public int BuscarObjetoPorNombre(string nombreObjeto)
     {
         for (int i = 0; i < objectsInInvantory.Count; i++)

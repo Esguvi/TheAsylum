@@ -36,20 +36,19 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
 
     private void Update()
     {
+        gameObject.GetComponent<AudioSource>().volume = AudioConfScript.volume;
         if (!cerca || interactText == null || playerInventory == null) return;
 
         interactText.text = localizer.GetLocalizedName();
 
         if (Input.GetKeyDown(KeyCode.E))
         {
-
             if (puertaCerrada.CompareTag("PuertaCerrada"))
             {
                 int llaveIndex = -1;
 
                 for (int i = 0; i < playerInventory.objectsInInvantory.Count; i++)
                 {
-                    Debug.Log(playerInventory.objectsInInvantory[i]);
                     if (playerInventory.objectsInInvantory[i] == null) continue;
                     var item = playerInventory.objectsInInvantory[i].itemLogic;
 
@@ -88,7 +87,6 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
             {
                 photonView.RPC("AbrirPuerta", RpcTarget.AllBuffered);
                 PlayDoorSound();
-
             }
         }
     }
@@ -194,5 +192,4 @@ public class LockedDoorScriptMultiplayer : MonoBehaviourPun
         audioSource.clip = abierto ? audioAbrir : audioCerrar;
         audioSource.Play();
     }
-
 }

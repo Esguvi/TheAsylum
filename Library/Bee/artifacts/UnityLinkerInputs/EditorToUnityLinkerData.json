@@ -133,13 +133,6 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "InteractableObject",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "Invantory",
             "moduleName": "",
             "usedInScenes": []
@@ -183,13 +176,6 @@
                 "Assets/Scenes/RoomManagerScreen.unity",
                 "Assets/Scenes/WinScreen.unity"
             ]
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "LlaveInteractableScript",
-            "moduleName": "",
-            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
@@ -344,13 +330,6 @@
         {
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
-            "fullManagedTypeName": "ObjectInteractableMultiplayerrr",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
             "fullManagedTypeName": "ObjectInteractableSolo",
             "moduleName": "",
             "usedInScenes": []
@@ -359,13 +338,6 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "ObjectLocalizer",
-            "moduleName": "",
-            "usedInScenes": []
-        },
-        {
-            "managedAssemblyName": "Assembly-CSharp.dll",
-            "nativeClass": "",
-            "fullManagedTypeName": "ObjectPickup",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1178,6 +1150,15 @@
         },
         {
             "managedAssemblyName": "UnityEngine.dll",
+            "nativeClass": "LightingSettings",
+            "fullManagedTypeName": "UnityEngine.LightingSettings",
+            "moduleName": "Core",
+            "usedInScenes": [
+                "Assets/Scenes/LoginRegisterScreen.unity"
+            ]
+        },
+        {
+            "managedAssemblyName": "UnityEngine.dll",
             "nativeClass": "LightmapSettings",
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
@@ -1230,6 +1211,20 @@
             "managedAssemblyName": "Unity.Localization.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.Localization.Settings.LocalizationSettings",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.SharedTableData",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Unity.Localization.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.Localization.Tables.StringTable",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1979,6 +1974,7 @@
             "moduleName": "Core",
             "usedInScenes": [
                 "Assets/Scenes/GameScreen.unity",
+                "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MultiplayerScreen.unity"
             ]
         },
@@ -2192,11 +2188,9 @@
             "usedInScenes": [
                 "Assets/Scenes/CreditsScreen.unity",
                 "Assets/Scenes/GameOverScreen.unity",
-                "Assets/Scenes/LobbyManagerScreen.unity",
                 "Assets/Scenes/LoginRegisterScreen.unity",
                 "Assets/Scenes/MainScreen.unity",
                 "Assets/Scenes/OptionsScreen.unity",
-                "Assets/Scenes/RoomManagerScreen.unity",
                 "Assets/Scenes/WinScreen.unity"
             ]
         },

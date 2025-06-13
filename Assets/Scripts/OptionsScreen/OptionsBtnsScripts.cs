@@ -1,5 +1,4 @@
 using Photon.Pun;
-using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Video;
@@ -18,13 +17,12 @@ public class OptionsBtnsScripts : MonoBehaviour
 
     private PersistentVideo persistentVideo;
 
-    [System.Obsolete]
     private void Start()
     {
         disableAll();
         audioConf.SetActive(true);
 
-        if(SceneManager.sceneCount == 1)
+        if (SceneManager.sceneCount == 1)
         {
             Return();
         }
@@ -50,6 +48,7 @@ public class OptionsBtnsScripts : MonoBehaviour
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
     }
+
     private void disableAll()
     {
         audioConf.SetActive(false);
@@ -62,6 +61,11 @@ public class OptionsBtnsScripts : MonoBehaviour
         MovementScript.cameraPlayerr.GetComponent<AudioListener>().enabled = true;
         SceneManager.UnloadSceneAsync(SceneManager.GetSceneByName("OptionsScreen"));
         MovementScript.LockMouse();
+        if (persistentVideo != null)
+        {
+            persistentVideo.gameObject.SetActive(true);
+            audioo.enabled = true;
+        }
     }
 
     public void ConfAudio()
@@ -82,7 +86,6 @@ public class OptionsBtnsScripts : MonoBehaviour
         screenConf.SetActive(true);
     }
 
-    [System.Obsolete]
     public void Return()
     {
         if (backScene)
@@ -101,4 +104,8 @@ public class OptionsBtnsScripts : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        audioo.volume = AudioConfScript.volume;
+    }
 }

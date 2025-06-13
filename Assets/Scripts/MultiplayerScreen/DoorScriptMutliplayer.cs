@@ -1,7 +1,6 @@
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
-using UnityEngine.Audio;
 
 public class DoorScriptMultiplayer : MonoBehaviourPun
 {
@@ -28,8 +27,8 @@ public class DoorScriptMultiplayer : MonoBehaviourPun
 
     private void Update()
     {
+        gameObject.GetComponent<AudioSource>().volume = AudioConfScript.volume;
         if (!cerca) return;
-
 
         if (interactText != null)
         {

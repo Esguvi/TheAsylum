@@ -1,8 +1,6 @@
 using Photon.Pun;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Video;
-using static TMPro.SpriteAssetUtilities.TexturePacker_JsonArray;
 
 public class MovementScript : MonoBehaviour
 {
@@ -13,6 +11,7 @@ public class MovementScript : MonoBehaviour
     public Transform grabPoint;
     public GameObject cameraPlayer;
     public static GameObject cameraPlayerr;
+    public int vidas = 3;
 
     private CharacterController controller;
     private float rotVer;
@@ -20,8 +19,7 @@ public class MovementScript : MonoBehaviour
     private bool pulsado;
     private float velocidadY;
     private float yHead;
-    public int vidas = 3;
-
+    private PersistentVideo persistentVideo;
     private Animator anim;
 
     private void Start()
@@ -40,17 +38,25 @@ public class MovementScript : MonoBehaviour
 
     private void Update()
     {
+        gameObject.GetComponent<AudioSource>().volume = AudioConfScript.volume;
+
         sensibility = KeyMoConfScript.sensibility;
         yHead = transform.Find("mixamorig:Hips/mixamorig:Spine/mixamorig:Spine1/mixamorig:Spine2/mixamorig:Neck/mixamorig:Head").transform.position.y;
 
-        if(this.tag == "Finish")
+        if (this.tag == "Finish")
         {
             cameraPlayerr.GetComponent<AudioListener>().enabled = false;
-            SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Single);
-            OptionsBtnsScripts.backScene = true;
-            GetComponent<AudioSource>().enabled = false;
+            PhotonNetwork.Disconnect();
+            SceneManager.LoadScene("MainScreen");
+            persistentVideo = FindObjectOfType<PersistentVideo>();
+            if (persistentVideo != null)
+            {
+                persistentVideo.gameObject.SetActive(true);
+            }
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
         }
-        
+
         if (SceneManager.sceneCount <= 1 && !GetComponent<AudioSource>().enabled)
         {
             GetComponent<AudioSource>().enabled = true;
@@ -61,7 +67,7 @@ public class MovementScript : MonoBehaviour
             cameraPlayerr.GetComponent<AudioListener>().enabled = false;
             SceneManager.LoadScene("OptionsScreen", LoadSceneMode.Additive);
             OptionsBtnsScripts.backScene = true;
-            GetComponent<AudioSource>().enabled = false; 
+            GetComponent<AudioSource>().enabled = false;
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -94,14 +100,10 @@ public class MovementScript : MonoBehaviour
             velocidad = 100f;
         }
 
-        //bool enSuelo = controller.isGrounded;
         bool enSuelo = Physics.Raycast(transform.position, Vector3.down, 10f);
-        //bool enSuelo = Physics.CapsuleCast(transform.position, transform.position + Vector3.up * 0.1f, controller.radius, Vector3.down, 0.2f);
-        //Debug.Log(enSuelo);
 
         if (enSuelo)
         {
-
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 velocidadY = salto;
@@ -112,10 +114,10 @@ public class MovementScript : MonoBehaviour
                 anim.SetBool("isJumping", false);
             }
         }
-        Vector3 offset = transform.rotation * new Vector3(0,0,20f);
-        cameraPlayer.transform.position = new Vector3(transform.position.x, yHead ,transform.position.z)+offset;
+        Vector3 offset = transform.rotation * new Vector3(0, 0, 20f);
+        cameraPlayer.transform.position = new Vector3(transform.position.x, yHead, transform.position.z) + offset;
 
-        Debug.DrawRay(cameraPlayer.transform.position, cameraPlayer.transform.forward * 100f, Color.red);
+        //Debug.DrawRay(cameraPlayer.transform.position, cameraPlayer.transform.forward * 100f, Color.red);
         RaycastHit hit;
         if (Physics.Raycast(cameraPlayer.transform.position, cameraPlayer.transform.forward, out hit, 100f))
         {
@@ -152,13 +154,9 @@ public class MovementScript : MonoBehaviour
         float inputY = Input.GetAxis("Mouse Y") * sensibility;
         rotHor -= inputY;
         rotHor = Mathf.Clamp(rotHor, -90, 90);
-        //rotHor = Mathf.Clamp(rotHor, -100, 70);
 
         transform.eulerAngles = new Vector2(0, rotVer);
         cameraPlayer.transform.eulerAngles = new Vector2(rotHor, rotVer);
-
-        //flashLight.position = camera.transform.position;
-        //flashLight.rotation = camera.transform.rotation;
     }
 
     private void FixedUpdate()
@@ -197,6 +195,5 @@ public class MovementScript : MonoBehaviour
         move.y = velocidadY;
 
         controller.Move(move * Time.deltaTime);
-
     }
 }

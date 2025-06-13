@@ -1,6 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -18,6 +16,7 @@ public class NavScript : MonoBehaviour
     private bool changeHeigh;
     private Transform destine;
     private Animator anim;
+    
     private void Start()
     {
         randomInt = Random.Range(0, (points.Count - 1));
@@ -29,7 +28,7 @@ public class NavScript : MonoBehaviour
     void Update()
     {
         Vector3 offset = new Vector3(0, 105f, 0);
-        Debug.DrawLine((transform.position + offset), (player.position + offset));
+        //Debug.DrawLine((transform.position + offset), (player.position + offset));
 
         if (persigiendo)
         {
